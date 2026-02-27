@@ -610,6 +610,78 @@ function initCitationLinks() {
   }
 }
 
+/* ── WMD Article Loader ──────────────────────────────────────── */
+
+/**
+ * Load and render a .wmd article into #wmd-article-root.
+ * Called from init() when the page contains #wmd-article-root and
+ * the WMDParser global is available (loaded by wmd-parser.js).
+ */
+async function loadWMDArticle(config, data) {
+  const root = document.getElementById('wmd-article-root');
+  if (!root || typeof WMDParser === 'undefined') return;
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get('id');
+
+  if (!id) {
+    root.innerHTML = '<p class="text-muted">No article specified. Add <code>?id=article-id</code> to the URL.</p>';
+    return;
+  }
+
+  let source;
+  try {
+    const res = await fetch(id + '.wmd');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    source = await res.text();
+  } catch (err) {
+    root.innerHTML = `<p class="text-muted">Could not load article <strong>${escapeHtml(id)}</strong>. Make sure <code>${escapeHtml(id)}.wmd</code> exists in the articles folder.</p>`;
+    console.error('loadWMDArticle:', err);
+    return;
+  }
+
+  const { meta, html } = WMDParser.parse(source);
+
+  // Build category lookup
+  const catMap = {};
+  data.categories.forEach(c => { catMap[c.id] = c; });
+  const catId = meta.category || '';
+  const cat = catMap[catId] || { label: catId, id: catId };
+
+  // Breadcrumb
+  const breadcrumb = `
+    <nav class="wiki-breadcrumb" aria-label="Breadcrumb">
+      <a href="${ROOT}index.html">Home</a>
+      <span class="sep" aria-hidden="true">›</span>
+      <a href="${ROOT}index.html#cat-${escapeHtml(cat.id)}">${escapeHtml(cat.label)}</a>
+      <span class="sep" aria-hidden="true">›</span>
+      <span aria-current="page">${escapeHtml(meta.title || id)}</span>
+    </nav>`;
+
+  // Meta bar (date, author, tags)
+  const tags = (meta.tags || []).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('');
+  const metaBar = `
+    <div class="wiki-meta">
+      ${meta.lastUpdated ? `<span>Last updated: ${escapeHtml(meta.lastUpdated)}</span>` : ''}
+      ${meta.author ? `<span>${escapeHtml(meta.author)}</span>` : ''}
+      ${tags}
+    </div>`;
+
+  root.innerHTML =
+    breadcrumb +
+    `<h1 class="wiki-title">${escapeHtml(meta.title || id)}</h1>` +
+    metaBar +
+    html;
+
+  // Update browser tab title
+  document.title = `${meta.title || id} — ${config.name}`;
+
+  // Re-typeset MathJax on the newly inserted content
+  if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) {
+    MathJax.typesetPromise([root]).catch(err => console.warn('MathJax error:', err));
+  }
+}
+
 /* ── Main Init ───────────────────────────────────────────────── */
 
 async function init() {
@@ -626,6 +698,11 @@ async function init() {
     const { articles, categories } = data;
 
     buildSidebarNav(articles, categories);
+
+    // If this is the WMD article viewer, load the .wmd content before
+    // running TOC / scroll-spy so they operate on the rendered content.
+    await loadWMDArticle(config, data);
+
     generateTOC();
     initScrollSpy();
     initDropdowns();

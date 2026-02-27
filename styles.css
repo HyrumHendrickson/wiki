@@ -580,6 +580,77 @@ body {
 .wiki-citations li { margin-bottom: .5rem; }
 .wiki-citations a { color: var(--color-primary); }
 
+/* ── Searchable Database ────────────────────────────────────── */
+.wiki-database {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+.wiki-database-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--color-primary);
+  padding: .65rem 1rem;
+  flex-wrap: wrap;
+}
+.wiki-database-title {
+  color: white;
+  font-weight: 700;
+  font-size: .95rem;
+  white-space: nowrap;
+}
+.wiki-database-search {
+  padding: .35rem .75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: .9rem;
+  flex: 1;
+  min-width: 160px;
+  max-width: 320px;
+  outline-offset: 2px;
+}
+.wiki-database-search:focus { outline: 2px solid white; }
+.wiki-database-body { overflow-x: auto; }
+.wiki-database-body table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .9rem;
+}
+.wiki-database-body th {
+  background: var(--color-code-bg);
+  padding: .5rem .9rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-border);
+  white-space: nowrap;
+}
+.wiki-database-body td {
+  padding: .45rem .9rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+.wiki-database-body tr:last-child td { border-bottom: none; }
+.wiki-database-body tr:nth-child(even) { background: var(--color-bg); }
+.wiki-database-body tr:hover { background: var(--color-summary-bg); }
+.wiki-database-loading,
+.wiki-database-empty {
+  padding: 1.5rem 1rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  text-align: center;
+}
+.wiki-database-count {
+  font-size: .8rem;
+  color: var(--color-text-muted);
+  padding: .4rem 1rem;
+  background: var(--color-code-bg);
+  border-top: 1px solid var(--color-border);
+  text-align: right;
+}
+
 /* ── Footer ─────────────────────────────────────────────────── */
 #wiki-footer {
   background: var(--color-text);

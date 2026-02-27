@@ -133,6 +133,13 @@ Latin is one of the most learnable classical languages precisely because so much
 | The Latin Library (thelatinlibrary.com) | Website | Free primary texts |
 :::
 
+## Latin Vocabulary Reference
+
+Use the search box below to look up Latin words by their English meaning, or search for a Latin word to see its translation, part of speech, and grammatical notes. The database covers common verbs, nouns, adjectives, and function words drawn from standard introductory Latin curricula.
+
+:::database Latin Vocabulary | data/latin-vocab.json
+:::
+
 ## See Also
 
 - [Ancient Rome](article.html?id=rome) — the civilization whose language Latin is and which spread it across the Western world

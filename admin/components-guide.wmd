@@ -141,6 +141,51 @@ Admin and help articles should include a notice at the top using the `:::notice`
 :::
 ```
 
+## Searchable Database
+
+The `:::database` block embeds a fully client-side searchable table loaded from a
+JSON data file. Users can type any word into the search box and the table instantly
+filters to matching rows — searching across every column simultaneously.
+
+This is ideal for vocabulary lists, reference tables, timelines, or any structured
+data set that benefits from live filtering.
+
+```
+:::database Latin Vocabulary | data/latin-vocab.json
+:::
+```
+
+The text before the `|` is the **title** displayed in the header bar. The path
+after the `|` is the **relative path from the wiki root** to a JSON data file
+stored in the `data/` folder.
+
+### Data File Format
+
+Create a `.json` file in the `data/` folder with this structure:
+
+```
+{
+  "columns": [
+    { "key": "latin",   "label": "Latin"         },
+    { "key": "english", "label": "English"        },
+    { "key": "pos",     "label": "Part of Speech" },
+    { "key": "notes",   "label": "Notes"          }
+  ],
+  "rows": [
+    { "latin": "amare", "english": "to love", "pos": "verb (1st conj.)", "notes": "amo, amare, amavi, amatum" },
+    { "latin": "aqua",  "english": "water",   "pos": "noun (1st decl.)", "notes": "aqua, aquae, f." }
+  ]
+}
+```
+
+- `columns` — array of `{ "key", "label" }` objects; `key` must match the property names in each row object; `label` is the column header shown to the user.
+- `rows` — array of objects; each object's properties correspond to the `key` values defined in `columns`.
+
+### Live Example
+
+:::database Latin Vocabulary | data/latin-vocab.json
+:::
+
 :::citations
 1. Desmos API documentation. [desmos.com](https://www.desmos.com/api/v1.9/docs/index.html)
 2. MathJax documentation. [docs.mathjax.org](https://docs.mathjax.org/)

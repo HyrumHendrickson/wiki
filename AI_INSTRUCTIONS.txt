@@ -331,6 +331,44 @@ WHEN TO USE: Admin/help articles only. Do not use in regular encyclopedia
 articles.
 
 ────────────────────────────────────────────────────────────────────────────────
+:::database
+────────────────────────────────────────────────────────────────────────────────
+Embeds a fully client-side searchable table loaded from an external JSON file.
+Format: :::database <Title> | <path/to/data.json>
+The path is relative to the wiki root (e.g., data/latin-vocab.json).
+The closing ::: line is required; the block body is empty.
+
+  :::database Latin Vocabulary | data/latin-vocab.json
+  :::
+
+Data file structure (store in the data/ folder):
+  {
+    "columns": [
+      { "key": "latin",   "label": "Latin"         },
+      { "key": "english", "label": "English"        },
+      { "key": "pos",     "label": "Part of Speech" },
+      { "key": "notes",   "label": "Notes"          }
+    ],
+    "rows": [
+      { "latin": "amare", "english": "to love", "pos": "verb (1st conj.)", "notes": "amo, amare, amavi, amatum" }
+    ]
+  }
+
+  columns — define which columns appear and their display labels.
+            Each column needs a unique "key" and a human-readable "label".
+  rows    — each row is an object whose property names match the "key" values.
+
+To create a new database:
+  1. Create a new JSON file in the data/ folder using the format above.
+  2. Reference it in the article with :::database Title | data/filename.json
+  3. The same JSON file can be used in multiple articles.
+
+WHEN TO USE: Language articles (vocabulary lists), history articles (timeline
+tables), science articles (element or formula reference tables), programming
+articles (command references), or any article where a large, filterable
+reference table adds educational value. The component works on any page type.
+
+────────────────────────────────────────────────────────────────────────────────
 :::quote
 ────────────────────────────────────────────────────────────────────────────────
 A styled pull-quote block. The text after :::quote is the attribution line.

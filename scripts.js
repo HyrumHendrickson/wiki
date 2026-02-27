@@ -40,6 +40,12 @@ function slugify(text) {
   return text.toLowerCase().replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '-');
 }
 
+/** Return only the articles whose IDs appear in featuredIds */
+function filterFeaturedArticles(articles, featuredIds) {
+  const featuredSet = new Set(featuredIds || []);
+  return articles.filter(a => featuredSet.has(a.id));
+}
+
 /* ── Site Config ─────────────────────────────────────────────── */
 
 async function applySiteConfig(config) {
@@ -101,34 +107,22 @@ function buildFooter(config) {
 
 /* ── Sidebar Navigation ──────────────────────────────────────── */
 
-function buildSidebarNav(articles, categories) {
+function buildSidebarNav(articles, categories, featuredIds) {
   const sidebar = document.getElementById('wiki-sidebar');
   if (!sidebar) return;
 
-  // Group articles by category
-  const byCategory = {};
-  for (const cat of categories) {
-    byCategory[cat.id] = { ...cat, articles: [] };
-  }
-  for (const art of articles) {
-    if (byCategory[art.category]) {
-      byCategory[art.category].articles.push(art);
-    }
-  }
+  const featuredArticles = filterFeaturedArticles(articles, featuredIds);
 
   const currentPath = window.location.pathname;
 
   let html = '<nav class="sidebar-nav" aria-label="Article navigation">';
-  for (const cat of Object.values(byCategory)) {
-    if (!cat.articles.length) continue;
-    html += `<h3>${cat.icon ? cat.icon + ' ' : ''}${cat.label}</h3><ul>`;
-    for (const art of cat.articles) {
-      const href = ROOT + art.path;
-      const isActive = currentPath.endsWith(art.path.replace(/^.*\//, '/'));
-      html += `<li><a href="${href}"${isActive ? ' class="active" aria-current="page"' : ''}>${art.title}</a></li>`;
-    }
-    html += '</ul>';
+  html += '<h3>Featured Articles</h3><ul>';
+  for (const art of featuredArticles) {
+    const href = ROOT + art.path;
+    const isActive = currentPath.endsWith(art.path.replace(/^.*\//, '/'));
+    html += `<li><a href="${href}"${isActive ? ' class="active" aria-current="page"' : ''}>${art.title}</a></li>`;
   }
+  html += '</ul>';
   html += '</nav>';
 
   // Append to sidebar (TOC comes first via generateTOC, then nav)
@@ -465,10 +459,8 @@ function escapeHtml(str) {
 
 /* ── Index Page ──────────────────────────────────────────────── */
 
-function buildIndexPage(data) {
+function buildIndexPage(data, featuredIds) {
   const featured = document.getElementById('featured-articles');
-  const catGrid = document.getElementById('categories-grid');
-  const allGrid = document.getElementById('all-articles');
 
   const { articles, categories } = data;
 
@@ -478,7 +470,7 @@ function buildIndexPage(data) {
 
   // Featured articles
   if (featured) {
-    const featuredList = articles.filter(a => a.featured && a.category !== 'admin');
+    const featuredList = filterFeaturedArticles(articles, featuredIds);
     featured.innerHTML = featuredList.map(a => `
       <a class="article-card" href="${ROOT}${a.path}">
         <span class="card-category">${catMap[a.category]?.label || a.category}</span>
@@ -486,53 +478,6 @@ function buildIndexPage(data) {
         <span class="card-summary">${a.summary}</span>
       </a>
     `).join('') || '<p>No featured articles yet.</p>';
-  }
-
-  // Categories
-  if (catGrid) {
-    const nonAdminCats = categories.filter(c => c.id !== 'admin');
-    catGrid.innerHTML = nonAdminCats.map(cat => {
-      const count = articles.filter(a => a.category === cat.id).length;
-      return `
-        <a class="category-card" href="${ROOT}index.html#cat-${cat.id}">
-          <span class="cat-icon">${cat.icon}</span>
-          <span class="cat-info">
-            <strong>${cat.label}</strong>
-            <span>${count} article${count !== 1 ? 's' : ''}</span>
-          </span>
-        </a>
-      `;
-    }).join('');
-  }
-
-  // All articles grouped by category
-  if (allGrid) {
-    const grouped = {};
-    for (const cat of categories) grouped[cat.id] = [];
-    for (const art of articles) {
-      if (art.category !== 'admin' && grouped[art.category]) {
-        grouped[art.category].push(art);
-      }
-    }
-
-    let html = '';
-    for (const cat of categories) {
-      if (cat.id === 'admin') continue;
-      const arts = grouped[cat.id];
-      if (!arts.length) continue;
-      html += `<div id="cat-${cat.id}" class="mb-2">
-        <h2 class="section-title">${cat.icon ? cat.icon + ' ' : ''}${cat.label}</h2>
-        <div class="article-grid">
-          ${arts.map(a => `
-            <a class="article-card" href="${ROOT}${a.path}">
-              <span class="card-title">${a.title}</span>
-              <span class="card-summary">${a.summary}</span>
-            </a>
-          `).join('')}
-        </div>
-      </div>`;
-    }
-    allGrid.innerHTML = html || '<p>No articles yet.</p>';
   }
 }
 
@@ -686,9 +631,10 @@ async function loadWMDArticle(config, data) {
 
 async function init() {
   try {
-    const [config, data] = await Promise.all([
+    const [config, data, featuredData] = await Promise.all([
       fetchJSON('config/site.json'),
-      fetchJSON('config/articles.json')
+      fetchJSON('config/articles.json'),
+      fetchJSON('config/featured.json')
     ]);
 
     applySiteConfig(config);
@@ -696,8 +642,9 @@ async function init() {
     buildFooter(config);
 
     const { articles, categories } = data;
+    const featuredIds = featuredData.featured || [];
 
-    buildSidebarNav(articles, categories);
+    buildSidebarNav(articles, categories, featuredIds);
 
     // If this is the WMD article viewer, load the .wmd content before
     // running TOC / scroll-spy so they operate on the rendered content.
@@ -708,7 +655,7 @@ async function init() {
     initDropdowns();
     initSearch(articles);
     initHeroSearch(articles);
-    buildIndexPage(data);
+    buildIndexPage(data, featuredIds);
     buildSearchPage(articles, categories);
     initDesmosGraphs();
     initCitationLinks();

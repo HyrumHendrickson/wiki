@@ -1,0 +1,9 @@
+{
+  "_comment": "List article IDs to feature on the main page and sidebar. Add or remove IDs to control what is highlighted.",
+  "featured": [
+    "calculus",
+    "pythagorean-theorem",
+    "jesus-christ",
+    "book-of-mormon"
+  ]
+}

@@ -1,0 +1,137 @@
+---
+title: Introduction to Calculus
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: math, calculus, derivatives, integrals
+featured: true
+---
+
+:::summary
+Calculus is the branch of mathematics studying **continuous change**. It was developed independently by Isaac Newton and Gottfried Wilhelm Leibniz in the 17th century. Calculus has two major sub-disciplines: *differential calculus*, which concerns rates of change and slopes of curves, and *integral calculus*, which concerns accumulation of quantities and areas under curves. The Fundamental Theorem of Calculus links these two branches.
+:::
+
+:::infobox Calculus at a Glance
+| Field | Mathematics |
+| Key figures | Newton, Leibniz, Euler |
+| Developed | 17th century |
+| Core topics | Limits, derivatives, integrals |
+| Prerequisite | Algebra, Trigonometry |
+:::
+
+## Limits
+
+The concept of a **limit** is the foundation of calculus. A limit describes the value that a function approaches as the input approaches a given point. We write:
+
+$$\lim_{x \to c} f(x) = L$$
+
+This reads: "the limit of $f(x)$ as $x$ approaches $c$ equals $L$." The function does not need to be defined at $c$ — the limit only describes the *approach*.
+
+:::desmos 380 | Visualize a limit — observe how f(x) approaches a value as x → c
+[{"id":"c","latex":"c=2","sliderBounds":{"min":"-5","max":"5","step":"0.5"}},{"id":"f","latex":"f(x) = \\frac{x^2 - 4}{x - 2}","color":"#2563eb"},{"id":"pt","latex":"(c, 4)","color":"#dc2626","pointStyle":"OPEN"}]
+{"left":-1,"right":5,"bottom":-1,"top":8}
+:::
+
+:::dropdown Example: Computing a Limit
+Find $\displaystyle\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$.
+
+Direct substitution gives $\frac{0}{0}$, which is indeterminate. We factor:
+
+$$\frac{x^2 - 4}{x - 2} = \frac{(x-2)(x+2)}{x-2} = x + 2$$
+
+Now we can substitute: $\lim_{x \to 2}(x + 2) = 4$.
+:::
+
+## Derivatives
+
+The **derivative** of a function $f$ at a point $x$ measures the *instantaneous rate of change* — essentially, the slope of the tangent line to the curve at that point. The formal definition is:
+
+$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+
+### Basic Derivative Rules
+
+| Rule | Formula | Example |
+|---|---|---|
+| Power Rule | $\frac{d}{dx}[x^n] = nx^{n-1}$ | $\frac{d}{dx}[x^3] = 3x^2$ |
+| Sum Rule | $(f+g)' = f' + g'$ | $(x^2 + x)' = 2x + 1$ |
+| Product Rule | $(fg)' = f'g + fg'$ | $(x \cdot \sin x)' = \sin x + x\cos x$ |
+| Chain Rule | $(f \circ g)' = (f' \circ g) \cdot g'$ | $\frac{d}{dx}[\sin(x^2)] = 2x\cos(x^2)$ |
+| Constant | $\frac{d}{dx}[c] = 0$ | $\frac{d}{dx}[5] = 0$ |
+
+:::desmos 420 | Explore f(x) and its derivative f′(x)
+[{"id":"f","latex":"f(x) = x^3 - 3x","color":"#2563eb"},{"id":"df","latex":"f\\prime(x)","color":"#dc2626"}]
+:::
+
+:::dropdown Example: Differentiating a Polynomial
+Find the derivative of $f(x) = 4x^3 - 2x^2 + 7x - 1$.
+
+Apply the power rule to each term:
+
+$$f'(x) = 12x^2 - 4x + 7$$
+
+Note that the derivative of the constant $-1$ is $0$, and the derivative of $7x$ is $7$.
+:::
+
+## Integrals
+
+Integration is the reverse process of differentiation. The **definite integral** of $f(x)$ from $a$ to $b$ computes the signed area between the curve and the $x$-axis:
+
+$$\int_a^b f(x)\, dx$$
+
+The **indefinite integral** (antiderivative) reverses differentiation:
+
+$$\int x^n\, dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)$$
+
+### The Fundamental Theorem of Calculus
+
+The **Fundamental Theorem of Calculus** (FTC) connects differentiation and integration. It has two parts:
+
+:::dropdown FTC Part 1 — Differentiation of an Integral
+If $F(x) = \int_a^x f(t)\, dt$, then
+
+$$F'(x) = f(x)$$
+
+In words: differentiation and integration are inverse operations.
+:::
+
+:::dropdown FTC Part 2 — Evaluating Definite Integrals
+If $F$ is an antiderivative of $f$ on $[a, b]$, then
+
+$$\int_a^b f(x)\, dx = F(b) - F(a)$$
+
+**Example:** $\int_0^2 x^2\, dx = \left[\frac{x^3}{3}\right]_0^2 = \frac{8}{3} - 0 = \frac{8}{3}$
+:::
+
+:::desmos 380 | Area under f(x) = x² from 0 to 2
+[{"id":"f","latex":"f(x) = x^2","color":"#2563eb"},{"id":"a","latex":"\\int_0^2 f(x)dx","color":"#2563eb"}]
+{"left":-1,"right":3,"bottom":-1,"top":6}
+:::
+
+## Applications
+
+Calculus has applications across virtually every field of science and engineering:
+
+- **Physics:** velocity and acceleration are derivatives of position.
+- **Engineering:** optimization of designs using critical points.
+- **Economics:** marginal cost and revenue are derivatives of cost functions.
+- **Biology:** population growth models use differential equations.
+- **Computer Science:** machine learning relies on gradient descent, a calculus technique.
+
+:::dropdown Application: Finding Maximum Height of a Projectile
+A ball is thrown upward with initial velocity $v_0 = 20$ m/s. Its height is modeled by:
+
+$$h(t) = -4.9t^2 + 20t$$
+
+Find the maximum height by setting $h'(t) = 0$:
+
+$$h'(t) = -9.8t + 20 = 0 \implies t = \frac{20}{9.8} \approx 2.04 \text{ s}$$
+
+Maximum height: $h(2.04) \approx -4.9(2.04)^2 + 20(2.04) \approx 20.4$ m
+:::
+
+:::citations
+1. Stewart, J. (2015). *Calculus: Early Transcendentals*, 8th ed. Cengage Learning.
+2. Apostol, T. M. (1967). *Calculus, Vol. 1*. Wiley.
+3. Kline, M. (1972). *Mathematical Thought from Ancient to Modern Times*. Oxford University Press.
+4. Khan Academy. (2024). *Calculus*. [khanacademy.org](https://www.khanacademy.org/math/calculus-1)
+:::

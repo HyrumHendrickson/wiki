@@ -1,0 +1,122 @@
+---
+title: Aristotle
+category: philosophy
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: Aristotle, philosophy, Greek philosophy, logic, ethics, metaphysics, biology, Nicomachean Ethics
+featured: false
+---
+
+:::summary
+Aristotle (384–322 BC) was a Greek philosopher and polymath — student of Plato, tutor of Alexander the Great, and founder of the Lyceum. He made foundational contributions to logic, metaphysics, ethics, biology, physics, rhetoric, and poetics. His systematic approach to knowledge and his concept of *eudaimonia* (human flourishing) have profoundly shaped Western philosophy, science, and theology.
+:::
+
+:::infobox Aristotle
+| Born | 384 BC, Stagira, Chalcidice (northern Greece) |
+| Died | 322 BC, Chalcis, Euboea |
+| School | Peripatetic (Aristotelianism) |
+| Key works | *Nicomachean Ethics*, *Politics*, *Metaphysics*, *Organon*, *Poetics* |
+| Teacher | Plato (20 years at the Academy) |
+| Student | Alexander the Great |
+| Institution | The Lyceum, Athens |
+:::
+
+## Life
+
+Aristotle was born in 384 BC in Stagira, a Greek colony in northern Greece. His father, Nicomachus, was the court physician to the Macedonian king Amyntas III, which gave young Aristotle an early orientation toward empirical observation and biology. At age seventeen he traveled to Athens and enrolled in Plato's Academy, where he remained for twenty years — first as student, later as researcher and lecturer.
+
+After Plato's death in 348 BC, Aristotle left Athens, spent time at the court of Hermias of Atarneus (whose niece he married), and then accepted an invitation from King Philip II of Macedon to tutor his thirteen-year-old son Alexander (later "the Great"). After Alexander's accession to power, Aristotle returned to Athens and founded his own school, the **Lyceum**, in 335 BC. His teaching style — walking while lecturing — gave his school the name *Peripatetic* (from the Greek *peripatein*, "to walk about").
+
+When Alexander died in 323 BC, anti-Macedonian feeling in Athens rose, and Aristotle faced charges of impiety. Reportedly unwilling to let Athens "sin twice against philosophy" (recalling Socrates' execution), he withdrew to Chalcis, where he died in 322 BC.
+
+## Logic: The Organon
+
+Aristotle invented formal logic. His collection of logical works, known as the **Organon** ("instrument"), includes:
+- *Categories* — the fundamental kinds of things that can be said
+- *On Interpretation* — propositions and their truth conditions
+- *Prior Analytics* — the theory of the syllogism
+- *Posterior Analytics* — the theory of scientific demonstration
+- *Topics* — dialectical reasoning
+- *Sophistical Refutations* — logical fallacies
+
+The **syllogism** is Aristotle's central logical tool: if all men are mortal, and Socrates is a man, then Socrates is mortal. Aristotle identified valid forms of syllogistic inference with extraordinary precision, and his logical system remained the dominant framework for Western logic until the development of modern symbolic logic in the nineteenth century.
+
+## Metaphysics
+
+Aristotle's *Metaphysics* asks the most fundamental question: **What is being?** (*to on*). While agreeing with Plato that there are stable, knowable essences underlying the flux of experience, Aristotle rejected Plato's claim that Forms exist separately from physical things. For Aristotle, form and matter are always bound together in individual substances.
+
+:::dropdown Substance, Form, and Matter
+For Aristotle, every physical thing is a compound of **matter** (*hyle*) and **form** (*morphe*). The matter is what something is made of; the form is what makes it the *kind* of thing it is.
+
+Example: A bronze statue has bronze as its matter and the shape/appearance of the statue as its form. Neither can exist alone — there is no "pure formless matter," and no "floating forms" separate from things (contra Plato).
+
+This doctrine is called **hylomorphism** (from *hyle*, matter, and *morphe*, form). It had enormous influence on Scholastic Christian theology through Thomas Aquinas.
+:::
+
+:::dropdown The Four Causes
+Aristotle held that to fully explain *why* something is the way it is, one must give four kinds of cause (*aitia*):
+
+1. **Material cause:** What something is made of (bronze for a statue)
+2. **Formal cause:** What kind of thing it is (its shape, structure, essence)
+3. **Efficient cause:** What produced or changed it (the sculptor)
+4. **Final cause (*telos*):** The purpose or end it serves (to honor a god or hero)
+
+Aristotle considered the final cause — purpose — the most important. Everything in nature, he believed, acts for the sake of some end. This **teleological** view of nature was enormously influential in natural philosophy and was later adopted by Christian thinkers who identified God as the ultimate final cause of all things.
+:::
+
+:::dropdown The Unmoved Mover
+In *Metaphysics* Book XII, Aristotle argues for an **Unmoved Mover**: a first cause of all motion and change that is itself unmoved. Since an infinite regress of causes is impossible, there must be a first mover that causes motion without being moved by anything else.
+
+The Unmoved Mover is pure actuality (*energeia*), with no potentiality remaining — it cannot change because there is nothing more perfect for it to become. It causes motion not by pushing things but by being an object of love and desire: all things strive toward it as toward their highest good.
+
+Thomas Aquinas used this argument as one of his "Five Ways" to prove God's existence.
+:::
+
+## Ethics: Nicomachean Ethics
+
+Aristotle's *Nicomachean Ethics* is one of the foundational texts of moral philosophy. Its central question is: **What is the highest good for human beings?**
+
+Aristotle answers: **eudaimonia** — often translated as "happiness" or "flourishing." But *eudaimonia* is not mere pleasure or subjective contentment; it is the activity of the soul in accordance with *arete* (excellence or virtue), over a complete life.
+
+Key ethical concepts:
+- **Virtue (*arete*):** A stable disposition to feel, choose, and act in the right way. Virtues are acquired through practice, not born with us.
+- **The Doctrine of the Mean:** Each virtue is the mean between two vices of excess and deficiency. Courage is the mean between recklessness and cowardice. Generosity is the mean between prodigality and miserliness.
+- **Practical wisdom (*phronesis*):** The master virtue that enables one to discern the right action in particular circumstances.
+- **Friendship (*philia*):** An essential component of the good life; human beings are by nature social animals (*zoon politikon*).
+
+## Politics
+
+For Aristotle, ethics and politics are inseparable. In the *Politics*, he argues that the **polis** (city-state) is natural — humans are political animals who only flourish in community. The state exists not merely to protect life but to promote the good life.
+
+He classifies regimes by who rules and whether they rule for the common good or for private interest:
+
+| Rulers | Common Good | Private Benefit |
+|---|---|---|
+| One | Monarchy | Tyranny |
+| Few | Aristocracy | Oligarchy |
+| Many | Polity | Democracy |
+
+## Influence
+
+Aristotle's influence is unparalleled in the history of thought:
+- **Islamic philosophy** (Averroes, Avicenna) preserved and transmitted Aristotle to the medieval West.
+- **Scholastic theology** (especially Thomas Aquinas) synthesized Aristotle with Christian doctrine.
+- **Modern science** owes its categories and methods partly to Aristotelian empiricism, even where it revolted against his specific conclusions.
+- **Virtue ethics** has undergone a major revival in twentieth- and twenty-first-century moral philosophy.
+
+## See Also
+
+- [Socrates](article.html?id=socrates) — the founder of the tradition Aristotle inherited
+- [Plato](article.html?id=plato) — Aristotle's teacher and primary philosophical interlocutor
+- [Stoicism](article.html?id=stoicism) — a rival school that also drew on Socratic ethics
+- [Philosophy](article.html?id=philosophy) — the broader intellectual tradition
+- [Thomas Aquinas](article.html?id=aquinas) — the medieval theologian who synthesized Aristotle with Christianity
+
+:::citations
+1. Aristotle. *Nicomachean Ethics.* Trans. Terence Irwin. Hackett, 1999.
+2. Aristotle. *Metaphysics.* Trans. W.D. Ross. Oxford University Press, 1924.
+3. Aristotle. *Politics.* Trans. C.D.C. Reeve. Hackett, 1998.
+4. Aristotle. *Prior Analytics.* Trans. Robin Smith. Hackett, 1989.
+5. Barnes, Jonathan. (1982). *Aristotle: A Very Short Introduction.* Oxford University Press.
+6. Ross, W.D. (1923). *Aristotle.* Methuen.
+:::

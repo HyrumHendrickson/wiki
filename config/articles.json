@@ -68,7 +68,7 @@
       "title": "The Pythagorean Theorem",
       "category": "mathematics",
       "path": "articles/article.html?id=pythagorean-theorem",
-      "summary": "The Pythagorean theorem describes the relationship between the three sides of a right triangle: a\u00b2 + b\u00b2 = c\u00b2.",
+      "summary": "The Pythagorean theorem describes the relationship between the three sides of a right triangle: a² + b² = c².",
       "tags": [
         "math",
         "geometry",
@@ -82,7 +82,7 @@
       "title": "Jesus Christ",
       "category": "faith",
       "path": "articles/article.html?id=jesus-christ",
-      "summary": "Jesus Christ is the central figure of Christianity and of Latter-day Saint faith \u2014 the Son of God, Savior, and Redeemer of all mankind.",
+      "summary": "Jesus Christ is the central figure of Christianity and of Latter-day Saint faith — the Son of God, Savior, and Redeemer of all mankind.",
       "tags": [
         "Jesus",
         "Christ",
@@ -117,7 +117,7 @@
       "title": "Joseph Smith",
       "category": "faith",
       "path": "articles/article.html?id=joseph-smith",
-      "summary": "Joseph Smith Jr. (1805\u20131844) was the founding prophet of The Church of Jesus Christ of Latter-day Saints, translator of the Book of Mormon, and restorer of Christ's gospel.",
+      "summary": "Joseph Smith Jr. (1805–1844) was the founding prophet of The Church of Jesus Christ of Latter-day Saints, translator of the Book of Mormon, and restorer of Christ's gospel.",
       "tags": [
         "Joseph Smith",
         "LDS",
@@ -133,7 +133,7 @@
       "title": "Ancient Rome",
       "category": "history",
       "path": "articles/article.html?id=rome",
-      "summary": "Ancient Rome was one of the most powerful civilizations in world history, whose legal, political, and cultural legacy continues to shape the modern world \u2014 and provided the setting for the early Christian church.",
+      "summary": "Ancient Rome was one of the most powerful civilizations in world history, whose legal, political, and cultural legacy continues to shape the modern world — and provided the setting for the early Christian church.",
       "tags": [
         "Rome",
         "Roman Empire",
@@ -166,7 +166,7 @@
       "title": "Ancient Greek",
       "category": "languages",
       "path": "articles/article.html?id=greek",
-      "summary": "Ancient Greek is the language of Homer, Plato, and the New Testament \u2014 one of history's most influential languages and a key tool for scriptural study.",
+      "summary": "Ancient Greek is the language of Homer, Plato, and the New Testament — one of history's most influential languages and a key tool for scriptural study.",
       "tags": [
         "Greek",
         "language",
@@ -183,7 +183,7 @@
       "title": "Old English",
       "category": "languages",
       "path": "articles/article.html?id=old-english",
-      "summary": "Old English (Anglo-Saxon) is the earliest form of the English language, spoken in England from roughly 450\u20131150 AD, and the mother tongue of Beowulf and early Christian writings.",
+      "summary": "Old English (Anglo-Saxon) is the earliest form of the English language, spoken in England from roughly 450–1150 AD, and the mother tongue of Beowulf and early Christian writings.",
       "tags": [
         "Old English",
         "Anglo-Saxon",
@@ -199,7 +199,7 @@
       "title": "Augustine of Hippo",
       "category": "philosophy",
       "path": "articles/article.html?id=augustine",
-      "summary": "Augustine of Hippo (354\u2013430 AD) was one of the most influential theologians in Christian history, whose writings on grace, original sin, and the City of God shaped Western Christianity for over a thousand years.",
+      "summary": "Augustine of Hippo (354–430 AD) was one of the most influential theologians in Christian history, whose writings on grace, original sin, and the City of God shaped Western Christianity for over a thousand years.",
       "tags": [
         "Augustine",
         "theology",
@@ -216,7 +216,7 @@
       "title": "Thomas Aquinas",
       "category": "philosophy",
       "path": "articles/article.html?id=aquinas",
-      "summary": "Thomas Aquinas (1225\u20131274) was a Dominican friar and theologian whose Summa Theologica represents the greatest synthesis of Christian faith and Aristotelian philosophy ever attempted. His Five Ways remain among the most discussed arguments for God's existence.",
+      "summary": "Thomas Aquinas (1225–1274) was a Dominican friar and theologian whose Summa Theologica represents the greatest synthesis of Christian faith and Aristotelian philosophy ever attempted. His Five Ways remain among the most discussed arguments for God's existence.",
       "tags": [
         "Aquinas",
         "theology",
@@ -233,7 +233,7 @@
       "title": "Martin Luther",
       "category": "history",
       "path": "articles/article.html?id=martin-luther",
-      "summary": "Martin Luther (1483\u20131546) was a German monk and reformer whose Ninety-Five Theses sparked the Protestant Reformation \u2014 one of the most consequential events in the history of Christianity.",
+      "summary": "Martin Luther (1483–1546) was a German monk and reformer whose Ninety-Five Theses sparked the Protestant Reformation — one of the most consequential events in the history of Christianity.",
       "tags": [
         "Luther",
         "Reformation",
@@ -250,7 +250,7 @@
       "title": "Parley P. Pratt",
       "category": "faith",
       "path": "articles/article.html?id=parley-pratt",
-      "summary": "Parley Parker Pratt (1807\u20131857) was one of the original Twelve Apostles of The Church of Jesus Christ of Latter-day Saints and a prolific writer, missionary, and theologian whose Key to the Science of Theology was the first systematic presentation of LDS theology.",
+      "summary": "Parley Parker Pratt (1807–1857) was one of the original Twelve Apostles of The Church of Jesus Christ of Latter-day Saints and a prolific writer, missionary, and theologian whose Key to the Science of Theology was the first systematic presentation of LDS theology.",
       "tags": [
         "Parley Pratt",
         "LDS",
@@ -267,7 +267,7 @@
       "title": "Julius Caesar",
       "category": "history",
       "path": "articles/article.html?id=caesar",
-      "summary": "Gaius Julius Caesar (100\u201344 BC) was a Roman general and statesman whose military genius and political ambition transformed the Roman Republic into what became the Roman Empire \u2014 and whose career shaped the world into which Jesus Christ was born.",
+      "summary": "Gaius Julius Caesar (100–44 BC) was a Roman general and statesman whose military genius and political ambition transformed the Roman Republic into what became the Roman Empire — and whose career shaped the world into which Jesus Christ was born.",
       "tags": [
         "Caesar",
         "Rome",
@@ -284,7 +284,7 @@
       "title": "Alexander the Great",
       "category": "history",
       "path": "articles/article.html?id=alexander-the-great",
-      "summary": "Alexander the Great (356\u2013323 BC) was the King of Macedon whose campaigns created one of the largest empires in ancient history, spreading Greek language and culture across the world and creating the Hellenistic environment of the New Testament.",
+      "summary": "Alexander the Great (356–323 BC) was the King of Macedon whose campaigns created one of the largest empires in ancient history, spreading Greek language and culture across the world and creating the Hellenistic environment of the New Testament.",
       "tags": [
         "Alexander",
         "Macedonia",
@@ -301,7 +301,7 @@
       "title": "Athens",
       "category": "history",
       "path": "articles/article.html?id=athens",
-      "summary": "Athens was the cultural and intellectual heart of ancient Greece \u2014 birthplace of democracy, philosophy, drama, and the Western intellectual tradition. Home to Socrates, Plato, and the Parthenon, Athens produced ideas that still shape law, science, and thought across the Western world.",
+      "summary": "Athens was the cultural and intellectual heart of ancient Greece — birthplace of democracy, philosophy, drama, and the Western intellectual tradition. Home to Socrates, Plato, and the Parthenon, Athens produced ideas that still shape law, science, and thought across the Western world.",
       "tags": [
         "Athens",
         "Greece",
@@ -335,7 +335,7 @@
       "title": "Delphi",
       "category": "history",
       "path": "articles/article.html?id=delphi",
-      "summary": "Delphi was the most sacred site in the ancient Greek world \u2014 home to the Oracle of Apollo, whose pronouncements guided kings, generals, and city-states for nearly a thousand years, and whose maxims including 'Know thyself' shaped Greek culture and philosophy.",
+      "summary": "Delphi was the most sacred site in the ancient Greek world — home to the Oracle of Apollo, whose pronouncements guided kings, generals, and city-states for nearly a thousand years, and whose maxims including 'Know thyself' shaped Greek culture and philosophy.",
       "tags": [
         "Delphi",
         "oracle",
@@ -352,7 +352,7 @@
       "title": "Western History",
       "category": "history",
       "path": "articles/article.html?id=western-history",
-      "summary": "Western history is the story of civilizations that grew from ancient Greece and Rome, passed through Christian Europe, and produced the modern world \u2014 and the providential stage on which the Restoration of the gospel took place.",
+      "summary": "Western history is the story of civilizations that grew from ancient Greece and Rome, passed through Christian Europe, and produced the modern world — and the providential stage on which the Restoration of the gospel took place.",
       "tags": [
         "western history",
         "civilization",
@@ -369,7 +369,7 @@
       "title": "King Arthur",
       "category": "literature",
       "path": "articles/article.html?id=king-arthur",
-      "summary": "King Arthur is the legendary British ruler whose story \u2014 with Guinevere, Lancelot, Merlin, and the Knights of the Round Table \u2014 is one of the most enduring in Western literature, rich with themes of chivalry, sacrifice, and the quest for the Holy Grail.",
+      "summary": "King Arthur is the legendary British ruler whose story — with Guinevere, Lancelot, Merlin, and the Knights of the Round Table — is one of the most enduring in Western literature, rich with themes of chivalry, sacrifice, and the quest for the Holy Grail.",
       "tags": [
         "King Arthur",
         "Arthurian legend",
@@ -386,7 +386,7 @@
       "title": "Vikings",
       "category": "history",
       "path": "articles/article.html?id=vikings",
-      "summary": "The Vikings were Norse seafarers from Scandinavia who, between roughly 793 and 1100 AD, raided, traded, explored, and settled across an extraordinary range of the world \u2014 from Newfoundland to the Volga River \u2014 leaving a permanent mark on Western civilization.",
+      "summary": "The Vikings were Norse seafarers from Scandinavia who, between roughly 793 and 1100 AD, raided, traded, explored, and settled across an extraordinary range of the world — from Newfoundland to the Volga River — leaving a permanent mark on Western civilization.",
       "tags": [
         "Vikings",
         "Norse",
@@ -404,7 +404,7 @@
       "title": "Beowulf",
       "category": "literature",
       "path": "articles/article.html?id=beowulf",
-      "summary": "Beowulf is the oldest surviving epic poem in the English language \u2014 a 3,182-line masterpiece of Old English poetry about the hero Beowulf's battles with the monster Grendel, Grendel's mother, and a dragon, and a profound meditation on heroism, loyalty, and mortality.",
+      "summary": "Beowulf is the oldest surviving epic poem in the English language — a 3,182-line masterpiece of Old English poetry about the hero Beowulf's battles with the monster Grendel, Grendel's mother, and a dragon, and a profound meditation on heroism, loyalty, and mortality.",
       "tags": [
         "Beowulf",
         "Old English",
@@ -438,7 +438,7 @@
       "title": "Theology",
       "category": "philosophy",
       "path": "articles/article.html?id=theology",
-      "summary": "Theology is faith seeking understanding \u2014 the disciplined study of God, revelation, and religious doctrine. From classical arguments for God's existence to the distinctive doctrines of the restored gospel, theology explores what God has revealed.",
+      "summary": "Theology is faith seeking understanding — the disciplined study of God, revelation, and religious doctrine. From classical arguments for God's existence to the distinctive doctrines of the restored gospel, theology explores what God has revealed.",
       "tags": [
         "theology",
         "faith",
@@ -472,7 +472,7 @@
       "title": "Christian History",
       "category": "history",
       "path": "articles/article.html?id=christian-history",
-      "summary": "Christian history spans two thousand years, from the ministry of Jesus Christ to the global faith of over 2 billion believers today \u2014 including the Great Apostasy, the medieval church, the Reformation, and the Restoration.",
+      "summary": "Christian history spans two thousand years, from the ministry of Jesus Christ to the global faith of over 2 billion believers today — including the Great Apostasy, the medieval church, the Reformation, and the Restoration.",
       "tags": [
         "Christianity",
         "church history",
@@ -489,7 +489,7 @@
       "title": "The Bible",
       "category": "faith",
       "path": "articles/article.html?id=bible",
-      "summary": "The Bible is the foundational scripture of Christianity \u2014 a library of books spanning thousands of years of God's dealings with mankind. Latter-day Saints revere the King James Version as the word of God, complemented by additional scripture.",
+      "summary": "The Bible is the foundational scripture of Christianity — a library of books spanning thousands of years of God's dealings with mankind. Latter-day Saints revere the King James Version as the word of God, complemented by additional scripture.",
       "tags": [
         "Bible",
         "scripture",
@@ -506,7 +506,7 @@
       "title": "Doctrine and Covenants",
       "category": "faith",
       "path": "articles/article.html?id=doctrine-and-covenants",
-      "summary": "The Doctrine and Covenants is a collection of divine revelations received primarily by Joseph Smith, addressing the restored Church directly in the modern era \u2014 covering church organization, priesthood, cosmic theology, and the afterlife.",
+      "summary": "The Doctrine and Covenants is a collection of divine revelations received primarily by Joseph Smith, addressing the restored Church directly in the modern era — covering church organization, priesthood, cosmic theology, and the afterlife.",
       "tags": [
         "Doctrine and Covenants",
         "D&C",
@@ -523,7 +523,7 @@
       "title": "The Pearl of Great Price",
       "category": "faith",
       "path": "articles/article.html?id=pearl-of-great-price",
-      "summary": "The Pearl of Great Price is one of the four standard works of the LDS Church, containing the Book of Moses, the Book of Abraham, Joseph Smith\u2014History, and the Articles of Faith, restoring ancient truths and clarifying LDS doctrine.",
+      "summary": "The Pearl of Great Price is one of the four standard works of the LDS Church, containing the Book of Moses, the Book of Abraham, Joseph Smith—History, and the Articles of Faith, restoring ancient truths and clarifying LDS doctrine.",
       "tags": [
         "Pearl of Great Price",
         "LDS",
@@ -590,7 +590,7 @@
       "title": "Physics",
       "category": "science",
       "path": "articles/article.html?id=physics",
-      "summary": "Physics is the most fundamental of the natural sciences \u2014 the study of matter, energy, space, and time. From Newton's laws to Einstein's relativity and quantum mechanics, it drives every major technological revolution.",
+      "summary": "Physics is the most fundamental of the natural sciences — the study of matter, energy, space, and time. From Newton's laws to Einstein's relativity and quantum mechanics, it drives every major technological revolution.",
       "tags": [
         "physics",
         "science",
@@ -608,7 +608,7 @@
       "title": "Isaac Newton",
       "category": "science",
       "path": "articles/article.html?id=isaac-newton",
-      "summary": "Sir Isaac Newton (1643\u20131727) was an English mathematician and physicist who formulated the laws of motion and universal gravitation, co-invented calculus, and laid the foundation for classical mechanics and the scientific worldview.",
+      "summary": "Sir Isaac Newton (1643–1727) was an English mathematician and physicist who formulated the laws of motion and universal gravitation, co-invented calculus, and laid the foundation for classical mechanics and the scientific worldview.",
       "tags": [
         "Isaac Newton",
         "physics",
@@ -626,7 +626,7 @@
       "title": "Leonhard Euler",
       "category": "mathematics",
       "path": "articles/article.html?id=euler",
-      "summary": "Leonhard Euler (1707\u20131783) was a Swiss mathematician who made foundational contributions to calculus, number theory, graph theory, and physics. The most prolific mathematician in history, his notation still forms the backbone of modern mathematics.",
+      "summary": "Leonhard Euler (1707–1783) was a Swiss mathematician who made foundational contributions to calculus, number theory, graph theory, and physics. The most prolific mathematician in history, his notation still forms the backbone of modern mathematics.",
       "tags": [
         "Euler",
         "mathematics",
@@ -643,7 +643,7 @@
       "title": "Leonardo da Vinci",
       "category": "history",
       "path": "articles/article.html?id=da-vinci",
-      "summary": "Leonardo da Vinci (1452\u20131519) was an Italian Renaissance polymath \u2014 painter, scientist, engineer, and inventor. Creator of the Mona Lisa and The Last Supper, he is the supreme example of the Renaissance ideal of universal genius.",
+      "summary": "Leonardo da Vinci (1452–1519) was an Italian Renaissance polymath — painter, scientist, engineer, and inventor. Creator of the Mona Lisa and The Last Supper, he is the supreme example of the Renaissance ideal of universal genius.",
       "tags": [
         "da Vinci",
         "Renaissance",
@@ -680,7 +680,7 @@
       "title": "The Crusades",
       "category": "history",
       "path": "articles/article.html?id=crusades",
-      "summary": "The Crusades were a series of religious wars (1095\u20131291) launched by the papacy to recover the Holy Land from Muslim control. Complex in motivation and devastating in impact, they permanently shaped Christian-Muslim relations and medieval Europe.",
+      "summary": "The Crusades were a series of religious wars (1095–1291) launched by the papacy to recover the Holy Land from Muslim control. Complex in motivation and devastating in impact, they permanently shaped Christian-Muslim relations and medieval Europe.",
       "tags": [
         "Crusades",
         "medieval history",
@@ -697,7 +697,7 @@
       "title": "The Reformation",
       "category": "history",
       "path": "articles/article.html?id=reformation",
-      "summary": "The Protestant Reformation was a 16th-century religious revolution launched by Martin Luther that permanently split Western Christianity, reshaped European politics, and \u2014 from an LDS perspective \u2014 providentially prepared the world for the Restoration of the gospel.",
+      "summary": "The Protestant Reformation was a 16th-century religious revolution launched by Martin Luther that permanently split Western Christianity, reshaped European politics, and — from an LDS perspective — providentially prepared the world for the Restoration of the gospel.",
       "tags": [
         "Reformation",
         "Protestant",
@@ -715,7 +715,7 @@
       "title": "J.R.R. Tolkien",
       "category": "literature",
       "path": "articles/article.html?id=jrr-tolkien",
-      "summary": "J.R.R. Tolkien (1892\u20131973) was an English author, poet, and Oxford professor whose devout Catholic faith and love of mythology gave the world Middle-earth \u2014 The Hobbit and The Lord of the Rings.",
+      "summary": "J.R.R. Tolkien (1892–1973) was an English author, poet, and Oxford professor whose devout Catholic faith and love of mythology gave the world Middle-earth — The Hobbit and The Lord of the Rings.",
       "tags": [
         "Tolkien",
         "LOTR",
@@ -733,7 +733,7 @@
       "title": "C.S. Lewis",
       "category": "literature",
       "path": "articles/article.html?id=cs-lewis",
-      "summary": "C.S. Lewis (1898\u20131963) was a British author and Christian apologist whose works \u2014 from Mere Christianity to The Chronicles of Narnia \u2014 have profoundly influenced millions, including many Latter-day Saints.",
+      "summary": "C.S. Lewis (1898–1963) was a British author and Christian apologist whose works — from Mere Christianity to The Chronicles of Narnia — have profoundly influenced millions, including many Latter-day Saints.",
       "tags": [
         "CS Lewis",
         "Lewis",
@@ -832,7 +832,7 @@
         "physics",
         "science",
         "Heisenberg",
-        "Schr\u00f6dinger",
+        "Schrödinger",
         "wave function",
         "uncertainty principle"
       ],
@@ -844,7 +844,7 @@
       "title": "Theory of Relativity",
       "category": "science",
       "path": "articles/article.html?id=relativity",
-      "summary": "Einstein's theory of relativity \u2014 both special and general \u2014 revolutionized our understanding of space, time, gravity, and the universe, replacing Newton's classical mechanics for extreme speeds and massive objects.",
+      "summary": "Einstein's theory of relativity — both special and general — revolutionized our understanding of space, time, gravity, and the universe, replacing Newton's classical mechanics for extreme speeds and massive objects.",
       "tags": [
         "relativity",
         "Einstein",
@@ -962,7 +962,7 @@
       "title": "Love",
       "category": "philosophy",
       "path": "articles/article.html?id=love",
-      "summary": "Love is one of the most fundamental concepts in philosophy and theology \u2014 examined through the Greek distinctions of agape, philia, and eros, and celebrated in Christian thought as the greatest of all virtues.",
+      "summary": "Love is one of the most fundamental concepts in philosophy and theology — examined through the Greek distinctions of agape, philia, and eros, and celebrated in Christian thought as the greatest of all virtues.",
       "tags": [
         "love",
         "agape",
@@ -1034,7 +1034,7 @@
       "title": "Geology",
       "category": "science",
       "path": "articles/article.html?id=geology",
-      "summary": "Geology is the science of the Earth \u2014 its materials, structures, processes, and history. Christians have engaged geology as a discipline that reveals the grandeur of God's creation.",
+      "summary": "Geology is the science of the Earth — its materials, structures, processes, and history. Christians have engaged geology as a discipline that reveals the grandeur of God's creation.",
       "tags": [
         "geology",
         "earth science",
@@ -1179,7 +1179,7 @@
       "title": "American Revolution",
       "category": "history",
       "path": "articles/article.html?id=us-revolution",
-      "summary": "The American Revolution (1765\u20131783) was a political and military struggle that gave birth to the United States. The Founders drew heavily on classical Greek and Roman thought, Christian theology, and English constitutional precedent.",
+      "summary": "The American Revolution (1765–1783) was a political and military struggle that gave birth to the United States. The Founders drew heavily on classical Greek and Roman thought, Christian theology, and English constitutional precedent.",
       "tags": [
         "American Revolution",
         "founding fathers",
@@ -1215,7 +1215,7 @@
       "title": "American Civil War",
       "category": "history",
       "path": "articles/article.html?id=civil-war",
-      "summary": "The American Civil War (1861\u20131865) was the defining crisis of American history, fought over slavery, states' rights, and the meaning of the Union. Christian moral arguments shaped both sides, and Lincoln's Second Inaugural Address stands as one of the great theological documents of American life.",
+      "summary": "The American Civil War (1861–1865) was the defining crisis of American history, fought over slavery, states' rights, and the meaning of the Union. Christian moral arguments shaped both sides, and Lincoln's Second Inaugural Address stands as one of the great theological documents of American life.",
       "tags": [
         "Civil War",
         "Lincoln",
@@ -1233,7 +1233,7 @@
       "title": "Brigham Young",
       "category": "faith",
       "path": "articles/article.html?id=brigham-young",
-      "summary": "Brigham Young (1801\u20131877) was the second President of The Church of Jesus Christ of Latter-day Saints, the leader of the pioneer exodus to the Utah Territory, and one of the most consequential figures in nineteenth-century American religious history.",
+      "summary": "Brigham Young (1801–1877) was the second President of The Church of Jesus Christ of Latter-day Saints, the leader of the pioneer exodus to the Utah Territory, and one of the most consequential figures in nineteenth-century American religious history.",
       "tags": [
         "Brigham Young",
         "LDS",
@@ -1241,6 +1241,342 @@
         "Utah",
         "prophet",
         "faith"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "socrates",
+      "title": "Socrates",
+      "category": "philosophy",
+      "path": "articles/article.html?id=socrates",
+      "summary": "Socrates (c. 470–399 BC) was an Athenian philosopher widely regarded as the founder of Western philosophy. His Socratic method of questioning — preserved in Plato's dialogues — transformed how humanity thinks about ethics, knowledge, and the good life.",
+      "tags": [
+        "Socrates",
+        "philosophy",
+        "Greek philosophy",
+        "Socratic method",
+        "ethics",
+        "ancient Greece"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "plato",
+      "title": "Plato",
+      "category": "philosophy",
+      "path": "articles/article.html?id=plato",
+      "summary": "Plato (c. 428–348 BC) was an Athenian philosopher, student of Socrates, and founder of the Academy. His Theory of Forms, political philosophy, and dialogues on the soul have shaped Western thought for two and a half millennia.",
+      "tags": [
+        "Plato",
+        "philosophy",
+        "Greek philosophy",
+        "theory of forms",
+        "Republic",
+        "metaphysics"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "aristotle",
+      "title": "Aristotle",
+      "category": "philosophy",
+      "path": "articles/article.html?id=aristotle",
+      "summary": "Aristotle (384–322 BC) was a Greek philosopher and polymath — student of Plato, tutor of Alexander the Great, and founder of the Lyceum. He made foundational contributions to logic, metaphysics, ethics, biology, and political philosophy.",
+      "tags": [
+        "Aristotle",
+        "philosophy",
+        "Greek philosophy",
+        "logic",
+        "ethics",
+        "metaphysics"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "marcus-aurelius",
+      "title": "Marcus Aurelius",
+      "category": "philosophy",
+      "path": "articles/article.html?id=marcus-aurelius",
+      "summary": "Marcus Aurelius (AD 121–180) was Roman Emperor and Stoic philosopher whose private journal, the Meditations, is one of the most celebrated works of philosophical reflection ever written — a ruler's daily effort to live virtuously.",
+      "tags": [
+        "Marcus Aurelius",
+        "Stoicism",
+        "Roman philosophy",
+        "Meditations",
+        "emperor",
+        "virtue"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "stoicism",
+      "title": "Stoicism",
+      "category": "philosophy",
+      "path": "articles/article.html?id=stoicism",
+      "summary": "Stoicism is a philosophical school founded in Athens c. 300 BC that holds virtue is the only true good and that happiness depends entirely on one's own character and judgments. It includes a rich metaphysics and a significant comparison between Greek and Roman Stoics.",
+      "tags": [
+        "Stoicism",
+        "philosophy",
+        "Greek philosophy",
+        "Roman philosophy",
+        "virtue",
+        "Marcus Aurelius",
+        "Epictetus",
+        "metaphysics"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "cicero",
+      "title": "Cicero",
+      "category": "philosophy",
+      "path": "articles/article.html?id=cicero",
+      "summary": "Marcus Tullius Cicero (106–43 BC) was the greatest Roman orator, statesman, and the primary transmitter of Greek philosophy to the Latin world. His natural law theory became foundational for Christian political theology and Western jurisprudence.",
+      "tags": [
+        "Cicero",
+        "Roman philosophy",
+        "rhetoric",
+        "natural law",
+        "republic",
+        "Stoicism",
+        "Latin literature"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "shakespeare",
+      "title": "William Shakespeare",
+      "category": "literature",
+      "path": "articles/article.html?id=shakespeare",
+      "summary": "William Shakespeare (1564–1616) is the most celebrated writer in the English language. In 37 plays and 154 sonnets he explored the full range of human experience with a mastery of language and psychological insight that has never been surpassed.",
+      "tags": [
+        "Shakespeare",
+        "literature",
+        "English",
+        "drama",
+        "sonnets",
+        "Renaissance",
+        "Elizabethan"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "ancient-hebrew",
+      "title": "Ancient Hebrew",
+      "category": "languages",
+      "path": "articles/article.html?id=ancient-hebrew",
+      "summary": "Ancient Hebrew is the Semitic language of the Hebrew Bible and one of the oldest continuously attested literary languages in the world. It was the language of ancient Israel and Judah, and its root-and-pattern morphology gives it remarkable depth and coherence.",
+      "tags": [
+        "Hebrew",
+        "ancient languages",
+        "Old Testament",
+        "Bible",
+        "Semitic languages",
+        "Jewish history"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "dead-sea-scrolls",
+      "title": "Dead Sea Scrolls",
+      "category": "history",
+      "path": "articles/article.html?id=dead-sea-scrolls",
+      "summary": "The Dead Sea Scrolls are approximately 981 ancient Jewish manuscripts discovered near Qumran (1947–1956), dating from the third century BC to the first century AD. They are the oldest known manuscripts of the Hebrew Bible and the greatest archaeological find of the twentieth century.",
+      "tags": [
+        "Dead Sea Scrolls",
+        "archaeology",
+        "ancient manuscripts",
+        "Hebrew Bible",
+        "Qumran",
+        "Jewish history"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "faith",
+      "title": "Faith",
+      "category": "faith",
+      "path": "articles/article.html?id=faith",
+      "summary": "Faith is the foundational principle of action in religious life — a confident trust in God and His promises that moves people to act before they have perfect knowledge. In Latter-day Saint theology, faith in Jesus Christ is the first principle of the gospel.",
+      "tags": [
+        "faith",
+        "religion",
+        "belief",
+        "theology",
+        "Latter-day Saint",
+        "Christianity",
+        "trust"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "repentance",
+      "title": "Repentance",
+      "category": "faith",
+      "path": "articles/article.html?id=repentance",
+      "summary": "Repentance is the process of turning from sin toward God — a complete change of mind, heart, and conduct made possible by the Atonement of Jesus Christ. It is the second principle of the gospel and the essential response to sin for those who wish to receive God's forgiveness.",
+      "tags": [
+        "repentance",
+        "gospel",
+        "Latter-day Saint",
+        "sin",
+        "forgiveness",
+        "atonement",
+        "Christianity"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "baptism",
+      "title": "Baptism",
+      "category": "faith",
+      "path": "articles/article.html?id=baptism",
+      "summary": "Baptism is the first saving ordinance of the gospel — an outward covenant act of immersion in water that signifies the remission of sins, entrance into the Church of Jesus Christ, and commitment to follow Him. It is performed by proper priesthood authority.",
+      "tags": [
+        "baptism",
+        "ordinance",
+        "gospel",
+        "Latter-day Saint",
+        "Christianity",
+        "covenant",
+        "immersion"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "lds-doctrine",
+      "title": "Latter-day Saint Doctrine",
+      "category": "faith",
+      "path": "articles/article.html?id=lds-doctrine",
+      "summary": "Latter-day Saint doctrine is a restored form of ancient Christianity revealed through Joseph Smith, with distinctive teachings on the Godhead, the plan of salvation, priesthood authority, and eternal progression that differ significantly from traditional Christian theology.",
+      "tags": [
+        "Latter-day Saint",
+        "LDS",
+        "doctrine",
+        "theology",
+        "restoration",
+        "plan of salvation",
+        "Godhead"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "lds-temples",
+      "title": "Latter-day Saint Temples",
+      "category": "faith",
+      "path": "articles/article.html?id=lds-temples",
+      "summary": "Latter-day Saint temples are the most sacred buildings in the Church — dedicated houses of the Lord where members receive essential ordinances including the endowment, eternal marriage sealings, and proxy baptism for deceased ancestors.",
+      "tags": [
+        "temples",
+        "Latter-day Saint",
+        "LDS",
+        "ordinances",
+        "endowment",
+        "sealing",
+        "eternal marriage"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "roman-catholic-church",
+      "title": "The Roman Catholic Church",
+      "category": "faith",
+      "path": "articles/article.html?id=roman-catholic-church",
+      "summary": "The Roman Catholic Church is the world's largest Christian denomination with approximately 1.4 billion members. It traces its origins to Jesus and the Apostles, claims apostolic succession from Peter, and has shaped Western civilization more deeply than any other single institution.",
+      "tags": [
+        "Roman Catholic",
+        "Catholic Church",
+        "Christianity",
+        "papacy",
+        "theology",
+        "history",
+        "sacraments"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "eastern-orthodox",
+      "title": "Eastern Orthodox Churches",
+      "category": "faith",
+      "path": "articles/article.html?id=eastern-orthodox",
+      "summary": "The Eastern Orthodox Church is the second-largest Christian denomination, with approximately 260 million members. Separated from Rome in 1054, it preserves a distinctive theology centered on theosis (deification) and has shaped the cultures of Greece, Russia, and the broader Eastern world.",
+      "tags": [
+        "Eastern Orthodox",
+        "Orthodox Christianity",
+        "theology",
+        "Byzantine",
+        "theosis",
+        "Great Schism"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "statistics",
+      "title": "Statistics",
+      "category": "mathematics",
+      "path": "articles/article.html?id=statistics",
+      "summary": "Statistics is the mathematical science of collecting, analyzing, and interpreting data. It divides into descriptive statistics (summarizing data) and inferential statistics (drawing conclusions from samples), and is essential to science, economics, and policy.",
+      "tags": [
+        "statistics",
+        "mathematics",
+        "probability",
+        "data",
+        "inference",
+        "hypothesis testing"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "economics",
+      "title": "Economics",
+      "category": "mathematics",
+      "path": "articles/article.html?id=economics",
+      "summary": "Economics is the social science studying how individuals, businesses, and societies allocate scarce resources. It encompasses microeconomics (supply and demand, market structures) and macroeconomics (GDP, inflation, monetary policy), drawing on mathematical modeling and statistical analysis.",
+      "tags": [
+        "economics",
+        "microeconomics",
+        "macroeconomics",
+        "markets",
+        "supply",
+        "demand",
+        "GDP",
+        "Adam Smith"
       ],
       "author": "EduWiki Team",
       "lastUpdated": "2026-02-27",

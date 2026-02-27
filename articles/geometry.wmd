@@ -1,0 +1,145 @@
+---
+title: Geometry
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: mathematics, geometry, shapes, Euclid, space, triangles, circles
+featured: false
+---
+
+:::summary
+Geometry — from the Greek *ge* (earth) and *metrein* (to measure) — is the mathematical study of shape, size, relative position, and the properties of space. From Euclid's *Elements* to the curved spacetime of Einstein's general relativity, geometry has been both a model of rigorous reasoning and one of humanity's deepest tools for understanding the physical world.
+:::
+
+:::infobox Geometry
+| Field | Mathematics |
+| Word origin | Greek: *ge* (earth) + *metrein* (to measure) |
+| Core topics | Points, lines, angles, triangles, circles, polygons, proofs |
+| Key figures | Euclid, Pythagoras, Archimedes, Descartes, Riemann, Gauss |
+| Prerequisites | Algebra |
+| Branches | Euclidean, Analytic, Non-Euclidean, Differential, Topology |
+:::
+
+## What Is Geometry?
+
+Geometry is the mathematical study of spatial relationships — the shapes, sizes, and positions of figures, and the properties of two- and three-dimensional space. It is one of the oldest branches of mathematics, with roots in the practical needs of land surveying, architecture, and astronomy in ancient Egypt and Babylon.
+
+The Greeks transformed geometry from a collection of practical rules into a rigorous deductive science. Euclid's *Elements* (c. 300 BC) organized all known geometry into a systematic deductive system built from five postulates — a model of logical rigor that influenced mathematical thinking for over two thousand years.
+
+## Euclidean Geometry
+
+**Euclid's Five Postulates** (from the *Elements*):
+
+1. A straight line segment can be drawn between any two points.
+2. A straight line segment can be extended indefinitely.
+3. A circle can be drawn with any center and any radius.
+4. All right angles are equal.
+5. **The Parallel Postulate**: Through a point not on a given line, there is exactly one line parallel to the given line.
+
+From these five postulates, Euclid derived hundreds of theorems — including the properties of triangles, circles, and the relationship between them — using only logic and the definitions.
+
+:::dropdown Triangles
+A **triangle** is a polygon with three sides and three angles. The sum of the interior angles of any triangle in Euclidean geometry is always **180°**.
+
+Key types:
+- **Equilateral**: All sides equal, all angles 60°.
+- **Isosceles**: Two sides equal, two angles equal.
+- **Scalene**: All sides and angles different.
+- **Right triangle**: One angle is exactly 90°.
+
+The **Pythagorean Theorem** (one of the most important results in all of mathematics): In a right triangle with legs $a$, $b$ and hypotenuse $c$:
+
+$$a^2 + b^2 = c^2$$
+
+**Triangle Congruence**: Two triangles are congruent (same shape and size) if they satisfy SSS (side-side-side), SAS (side-angle-side), ASA (angle-side-angle), or AAS (angle-angle-side).
+
+**Triangle Similarity**: Two triangles are similar (same shape, possibly different size) if their corresponding angles are equal (AA similarity). Similar triangles have proportional sides.
+:::
+
+:::dropdown Circles
+A **circle** is the set of all points in a plane equidistant from a fixed center point. Key formulas (with radius $r$):
+
+| Measurement | Formula |
+|---|---|
+| Circumference | $C = 2\pi r$ |
+| Area | $A = \pi r^2$ |
+| Arc length | $s = r\theta$ (with $\theta$ in radians) |
+| Sector area | $A = \frac{1}{2}r^2\theta$ |
+
+Key theorems:
+- The **inscribed angle theorem**: An inscribed angle (with vertex on the circle) is half the central angle that subtends the same arc.
+- **Thales' theorem**: An angle inscribed in a semicircle is always a right angle.
+- The tangent to a circle at any point is perpendicular to the radius at that point.
+:::
+
+:::dropdown Area and Perimeter of Common Figures
+| Figure | Perimeter | Area |
+|---|---|---|
+| Rectangle (length $l$, width $w$) | $2l + 2w$ | $lw$ |
+| Square (side $s$) | $4s$ | $s^2$ |
+| Triangle (sides $a, b, c$, base $b$, height $h$) | $a + b + c$ | $\frac{1}{2}bh$ |
+| Circle (radius $r$) | $2\pi r$ | $\pi r^2$ |
+| Parallelogram (base $b$, height $h$) | $2(a+b)$ | $bh$ |
+| Trapezoid (parallel sides $a, b$, height $h$) | $a + b + c + d$ | $\frac{1}{2}(a+b)h$ |
+:::
+
+## Analytic Geometry
+
+**Analytic geometry** (also called coordinate geometry or Cartesian geometry, after René Descartes who developed it in 1637) connects algebra and geometry by placing figures in a coordinate system.
+
+Key ideas:
+
+- The **distance formula** between $(x_1, y_1)$ and $(x_2, y_2)$: $d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$
+- The **midpoint formula**: $\left(\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2}\right)$
+- The equation of a circle with center $(h, k)$ and radius $r$: $(x-h)^2 + (y-k)^2 = r^2$
+- **Conic sections**: The parabola ($y = ax^2$), ellipse ($\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1$), and hyperbola ($\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1$) arise as cross-sections of a cone.
+
+## Three-Dimensional Geometry
+
+In three dimensions, basic objects include:
+
+| Solid | Volume | Surface Area |
+|---|---|---|
+| Cube (side $s$) | $s^3$ | $6s^2$ |
+| Rectangular prism ($l \times w \times h$) | $lwh$ | $2(lw + lh + wh)$ |
+| Sphere (radius $r$) | $\frac{4}{3}\pi r^3$ | $4\pi r^2$ |
+| Cylinder (radius $r$, height $h$) | $\pi r^2 h$ | $2\pi r^2 + 2\pi rh$ |
+| Cone (radius $r$, height $h$) | $\frac{1}{3}\pi r^2 h$ | $\pi r^2 + \pi r\sqrt{r^2+h^2}$ |
+
+**Euler's formula for polyhedra**: For any convex polyhedron with $V$ vertices, $E$ edges, and $F$ faces:
+
+$$V - E + F = 2$$
+
+## Non-Euclidean Geometry
+
+For over two thousand years, mathematicians attempted to prove Euclid's fifth (parallel) postulate from the first four. In the 19th century, mathematicians independently discovered that replacing the parallel postulate produces consistent, non-Euclidean geometries:
+
+- **Hyperbolic geometry** (Lobachevsky, Bolyai): Through a point not on a line, there are infinitely many parallel lines. Triangle angle sums are less than 180°.
+- **Elliptic/Spherical geometry** (Riemann): No parallel lines exist. Triangle angle sums exceed 180°. The surface of a sphere is a model.
+
+**Riemannian geometry** generalized this to arbitrary curved spaces and became the mathematical foundation for Einstein's general relativity: mass curves spacetime, and objects follow geodesics (shortest paths) in that curved space. The geometry of the universe is non-Euclidean.
+
+## Geometry in Art and Architecture
+
+Geometric principles have guided architects, artists, and craftsmen across cultures:
+
+- **The Golden Ratio** ($\phi \approx 1.618$): The ratio $\frac{a+b}{a} = \frac{a}{b}$, appearing in the Parthenon, Renaissance paintings, and natural spirals.
+- **Symmetry groups**: The 17 wallpaper groups classify all possible repeating patterns in the plane — used in Islamic geometric art, Moorish tilework, and crystallography.
+- **Perspective drawing**: The geometry of projective space governs how three-dimensional scenes are represented in two-dimensional images.
+
+## See Also
+
+- [Mathematics](article.html?id=mathematics) — overview of the mathematical enterprise
+- [The Pythagorean Theorem](article.html?id=pythagorean-theorem) — one of the central results of Euclidean geometry
+- [Trigonometry](article.html?id=trigonometry) — the study of triangles and their angle-side relationships
+- [Calculus](article.html?id=calculus) — analytic geometry is a prerequisite for calculus
+- [Algebra](article.html?id=algebra) — connects with geometry through analytic geometry
+- [Proofs](article.html?id=proofs) — Euclidean geometry is a model of proof-based reasoning
+
+:::citations
+1. Euclid. *Elements* (c. 300 BC). Translated by T.L. Heath. Dover, 1956.
+2. Hartshorne, Robin. *Geometry: Euclid and Beyond*. Springer, 2000.
+3. Coxeter, H.S.M. *Introduction to Geometry*. 2nd ed. Wiley, 1989.
+4. Henderson, David W., and Daina Taimiņa. *Experiencing Geometry: Euclidean and Non-Euclidean with History*. 3rd ed. Prentice Hall, 2004.
+5. Greenberg, Marvin Jay. *Euclidean and Non-Euclidean Geometries: Development and History*. 4th ed. W.H. Freeman, 2008.
+:::

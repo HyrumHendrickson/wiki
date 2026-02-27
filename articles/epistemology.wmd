@@ -1,0 +1,100 @@
+---
+title: Epistemology
+category: philosophy
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: philosophy, epistemology, knowledge, belief, justification, truth
+featured: false
+---
+
+:::summary
+Epistemology is the branch of philosophy that investigates the nature, sources, and limits of human knowledge. What does it mean to *know* something? How is knowledge different from mere belief or opinion? Can we be certain of anything? These questions, first raised systematically by Plato and sharpened by Descartes, Hume, and Kant, remain among the most debated in all of philosophy — and have profound implications for faith, science, and reason.
+:::
+
+:::infobox Epistemology
+| Branch of | Philosophy |
+| Word origin | Greek: *episteme* (knowledge) + *logos* (study) |
+| Core questions | What is knowledge? What can we know? How do we justify beliefs? |
+| Key sub-fields | Theory of justification, Skepticism, Philosophy of perception |
+| Key figures | Plato, Descartes, Locke, Hume, Kant, Gettier |
+:::
+
+## What Is Epistemology?
+
+Epistemology is concerned with three central concepts: **knowledge**, **belief**, and **justification**. The classical definition of knowledge, going back to Plato's *Theaetetus*, is **justified true belief** (JTB):
+
+> S knows that P if and only if: (1) P is true; (2) S believes P; and (3) S is justified in believing P.
+
+This definition seems intuitively right — you can't know something false, and a lucky guess doesn't count as knowledge. However, in 1963, Edmund Gettier published a short paper showing that JTB is insufficient: it is possible to have a justified true belief that nonetheless does not count as genuine knowledge (Gettier cases). The search for a correct analysis of knowledge continues.
+
+## Major Epistemological Questions
+
+:::dropdown Rationalism vs. Empiricism
+The most important historical debate in epistemology concerns the *sources* of knowledge:
+
+**Rationalism** (Descartes, Leibniz, Spinoza) holds that some knowledge is innate or derivable by reason alone, independently of sensory experience. Mathematics is the clearest example: we know that $2 + 2 = 4$ not by counting objects but by pure reasoning.
+
+**Empiricism** (Locke, Berkeley, Hume) holds that all knowledge derives ultimately from sensory experience. The mind begins as a blank slate (*tabula rasa*); everything we know has been written there by experience. Hume pushed this to a radical skeptical conclusion: we cannot even be certain that the future will resemble the past (the *problem of induction*), or that causes genuinely produce their effects.
+
+Kant attempted a synthesis: the mind contributes *forms* (space, time) and *categories* (causation, substance) that structure all experience — these are known *a priori* (prior to experience) but apply only to the phenomenal world (things as they appear), not to things as they are in themselves.
+:::
+
+:::dropdown Skepticism and Its Responses
+Skepticism is the view that knowledge is impossible or extremely limited. Descartes used **methodological skepticism** in his *Meditations*: he imagined an evil demon deceiving him about everything — even mathematics. His conclusion: the one thing he could not doubt was that *he was thinking* ("I think, therefore I am"; *cogito ergo sum*). Everything else had to be rebuilt on this foundation.
+
+Contemporary responses to skepticism include:
+
+- **Reliabilism** (Goldman): A belief counts as knowledge if it is produced by a reliable cognitive process, even if the subject cannot articulate why. This avoids requiring that we prove we are not being deceived.
+- **Contextualism**: The standards for "knowledge" vary with context. In everyday life, "I know my keys are on the table" is fine. In a philosophical seminar about Descartes' demon, it may not be.
+- **Reformed Epistemology** (Plantinga, Wolterstorff): Belief in God can be *properly basic* — rational without being based on other beliefs or arguments — just as perceptual beliefs are rational without requiring proof that our senses are reliable.
+:::
+
+:::dropdown Sources of Knowledge
+Epistemologists identify several potential sources of knowledge:
+
+- **Perception**: Direct knowledge through the senses. Its reliability is questioned by skeptics and is subject to illusions and errors.
+- **Memory**: Knowledge preserved from past experience. Memory is fallible and reconstructive.
+- **Testimony**: Knowledge received from others. Most of what we know we learned from others (books, teachers, parents) — raising questions about when testimony is reliable.
+- **Reason and intuition**: Knowledge arrived at through reasoning or direct intellectual insight (as in mathematics).
+- **Revelation**: In religious epistemology, God may communicate truth directly to the mind or spirit.
+
+Latter-day Saint epistemology is notable for treating **revelation** — particularly the witness of the Holy Ghost — as a genuine source of knowledge, not merely of feeling or opinion. Joseph Smith taught that the Spirit can bear witness of truth to the spirit, providing a form of knowledge that complements rather than contradicts rational inquiry.
+:::
+
+## The Gettier Problem
+
+In 1963, philosopher Edmund Gettier published a short but devastating paper showing that justified true belief is not sufficient for knowledge. His counterexamples: imagine you see what looks like a sheep in a field, and form the justified true belief "There is a sheep in the field." Unknown to you, what you saw was actually a dog — but behind a hill, out of your view, there really is a sheep. You have a justified true belief, but intuitively you don't *know* there is a sheep in the field because your belief is not appropriately connected to the sheep.
+
+The Gettier problem launched decades of work on what condition to add to the JTB analysis, including:
+
+- A **no-false-lemmas** condition
+- A **causal** condition (your belief must be causally connected to the fact it is about)
+- A **reliability** condition (your belief must be produced by a reliable process)
+
+No fully satisfying answer has been agreed upon — showing how difficult the concept of knowledge really is.
+
+## Epistemology and Faith
+
+The relationship between faith and knowledge is central to religious epistemology. Key questions:
+
+- Is faith compatible with knowledge, or does it involve believing *without* (or *against*) evidence?
+- Can religious experience serve as evidence for God's existence?
+- Is belief in God rational in the absence of argument?
+
+Alvin Plantinga's **Reformed Epistemology** argues that belief in God is *properly basic* — it can be rational to believe in God without basing that belief on arguments, just as it is rational to trust your senses without proving they are reliable. Latter-day Saint thought broadly agrees: the witness of the Spirit is a legitimate epistemic pathway, not a substitute for thinking but an additional source of evidence available to the sincere seeker.
+
+## See Also
+
+- [Philosophy](article.html?id=philosophy) — the broader discipline of which epistemology is a branch
+- [Metaphysics](article.html?id=metaphysics) — the philosophical study of reality
+- [Formal Logic](article.html?id=formal-logic) — the tool used to assess the validity of epistemic arguments
+- [Theology](article.html?id=theology) — raises its own epistemological questions about the sources of religious knowledge
+
+:::citations
+1. Plato. *Theaetetus*. Translated by M.J. Levett, revised by Myles Burnyeat. Hackett, 1992.
+2. Descartes, René. *Meditations on First Philosophy* (1641). Translated by John Cottingham. Cambridge University Press, 1996.
+3. Hume, David. *An Enquiry Concerning Human Understanding* (1748). Oxford University Press, 1999.
+4. Kant, Immanuel. *Critique of Pure Reason* (1781). Translated by Norman Kemp Smith. St. Martin's Press, 1965.
+5. Gettier, Edmund. "Is Justified True Belief Knowledge?" *Analysis* 23, no. 6 (1963): 121–123.
+6. Plantinga, Alvin. *Warranted Christian Belief*. Oxford University Press, 2000.
+:::

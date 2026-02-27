@@ -1,0 +1,108 @@
+---
+title: Abstract Algebra
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: mathematics, abstract algebra, groups, rings, fields, algebra
+featured: false
+---
+
+:::summary
+Abstract algebra is the branch of mathematics that studies algebraic structures — groups, rings, fields, and vector spaces — by identifying the abstract properties and axioms they share, rather than working with specific numbers or equations. It is a cornerstone of modern mathematics, underlying number theory, geometry, cryptography, and much of theoretical physics.
+:::
+
+:::infobox Abstract Algebra
+| Field | Mathematics |
+| Also called | Modern algebra |
+| Core structures | Groups, Rings, Fields, Vector Spaces |
+| Key figures | Galois, Cayley, Abel, Noether, Dedekind |
+| Prerequisites | Algebra, Proofs, Mathematical maturity |
+| Applications | Cryptography, Number theory, Physics, Coding theory |
+:::
+
+## What Is Abstract Algebra?
+
+Elementary algebra uses letters to represent numbers, allowing us to solve equations like $x^2 - 5x + 6 = 0$. Abstract algebra takes a step further back: instead of asking what the values of variables are, it asks what *kinds of operations* and *what axioms* are necessary and sufficient to derive useful results.
+
+For example, the integers $\mathbb{Z}$, the rational numbers $\mathbb{Q}$, the real numbers $\mathbb{R}$, and the complex numbers $\mathbb{C}$ are all different number systems — but they share many structural properties. Abstract algebra identifies these shared structures, names them (rings, fields), and proves theorems that apply to all instances at once.
+
+This abstraction is enormously powerful: a theorem proved about groups in general applies simultaneously to symmetry groups in geometry, permutation groups in combinatorics, and the group of integers under addition.
+
+## Groups
+
+A **group** is a set $G$ together with a binary operation $*$ satisfying four axioms:
+
+| Axiom | Statement |
+|---|---|
+| Closure | For all $a, b \in G$, $a * b \in G$ |
+| Associativity | For all $a, b, c \in G$, $(a * b) * c = a * (b * c)$ |
+| Identity | There exists $e \in G$ such that $a * e = e * a = a$ for all $a \in G$ |
+| Inverses | For each $a \in G$, there exists $a^{-1} \in G$ such that $a * a^{-1} = a^{-1} * a = e$ |
+
+If additionally $a * b = b * a$ for all $a, b \in G$, the group is called **abelian** (commutative), after the Norwegian mathematician Niels Henrik Abel.
+
+:::dropdown Examples of Groups
+- $(\mathbb{Z}, +)$: The integers under addition. Identity: 0. Inverse of $n$: $-n$. Abelian.
+- $(\mathbb{Z}/n\mathbb{Z}, +)$: The integers modulo $n$ under addition. This **cyclic group** of order $n$ is foundational in number theory and cryptography.
+- $(S_n, \circ)$: The **symmetric group** on $n$ elements — the group of all permutations of a set of $n$ elements under composition. $S_3$ has $3! = 6$ elements and is non-abelian for $n \geq 3$.
+- The **dihedral group** $D_n$: The symmetries of a regular $n$-gon (rotations and reflections). $D_3 = S_3$.
+- $(\mathbb{R} \setminus \{0\}, \times)$: The non-zero reals under multiplication. Abelian.
+:::
+
+:::dropdown Subgroups, Cosets, and Lagrange's Theorem
+A **subgroup** $H$ of a group $G$ is a subset of $G$ that is itself a group under the same operation. The trivial subgroups are $\{e\}$ and $G$ itself.
+
+**Lagrange's Theorem**: If $G$ is a finite group and $H$ is a subgroup, then $|H|$ divides $|G|$ (the order of $H$ divides the order of $G$).
+
+This elegant result has immediate consequences: if $G$ has prime order $p$, its only subgroups are $\{e\}$ and $G$ itself — so $G$ must be cyclic.
+
+**Cosets**: For a subgroup $H \leq G$ and element $g \in G$, the left coset $gH = \{gh : h \in H\}$. Cosets partition $G$ into equal-sized pieces, which is why $|H|$ divides $|G|$.
+:::
+
+:::dropdown Group Homomorphisms and Isomorphisms
+A **homomorphism** from group $(G, *)$ to group $(H, \cdot)$ is a function $\phi: G \to H$ satisfying $\phi(a * b) = \phi(a) \cdot \phi(b)$ — it preserves the group structure.
+
+An **isomorphism** is a bijective homomorphism: if one exists between $G$ and $H$, we say $G \cong H$ (they are isomorphic — the same structure with possibly different names for elements).
+
+The **kernel** of a homomorphism $\phi$ is $\ker(\phi) = \{g \in G : \phi(g) = e_H\}$, which is always a **normal subgroup** of $G$. **Normal subgroups** allow us to form **quotient groups** $G/N$, which are foundational in the classification of groups.
+:::
+
+## Rings
+
+A **ring** is a set $R$ with two operations (usually written $+$ and $\times$) such that $(R, +)$ is an abelian group, multiplication is associative, and multiplication distributes over addition.
+
+Examples: $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, polynomials $\mathbb{Z}[x]$, and $n \times n$ matrices under matrix addition and multiplication.
+
+A **field** is a commutative ring where every non-zero element has a multiplicative inverse. Examples: $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, and the finite fields $\mathbb{F}_p = \mathbb{Z}/p\mathbb{Z}$ for prime $p$.
+
+## Galois Theory
+
+The culminating achievement of classical abstract algebra is **Galois theory**, developed by Évariste Galois (1811–1832) — one of the most dramatic figures in mathematical history, who died in a duel at age 20, having revolutionized algebra overnight.
+
+Galois theory answers a centuries-old question: *Is there a formula, analogous to the quadratic formula, for solving polynomial equations of degree 5 or higher?* Galois showed that there is **not** — and he explained precisely *why* by connecting the solvability of a polynomial equation to the structure of a group associated with that equation (the Galois group).
+
+The key insight: a polynomial is solvable by radicals if and only if its Galois group is a **solvable group**. Quintic (degree 5) polynomials in general have Galois group $S_5$, which is not solvable — hence no general quintic formula exists.
+
+## Applications
+
+Abstract algebra is foundational to:
+
+- **Cryptography**: RSA encryption relies on the difficulty of factoring large integers; elliptic curve cryptography uses the group structure of elliptic curves over finite fields.
+- **Coding theory**: Error-correcting codes (used in CDs, DVDs, and digital communications) are built on the theory of finite fields.
+- **Physics**: The symmetry groups of physical laws (like the Standard Model of particle physics) are Lie groups — continuous groups studied using abstract algebra.
+- **Geometry**: The classification of crystallographic groups explains the 17 possible wallpaper patterns and the 230 possible 3D crystal structures.
+
+## See Also
+
+- [Algebra](article.html?id=algebra) — the elementary algebra that precedes this subject
+- [Proofs](article.html?id=proofs) — abstract algebra is developed entirely through rigorous proof
+- [Real Analysis](article.html?id=real-analysis) — the other major branch of advanced mathematics
+- [Mathematics](article.html?id=mathematics) — overview of the mathematical enterprise
+
+:::citations
+1. Dummit, David S., and Richard M. Foote. *Abstract Algebra*. 3rd ed. Wiley, 2004.
+2. Hungerford, Thomas W. *Algebra*. Springer, 1974.
+3. Artin, Michael. *Algebra*. 2nd ed. Pearson, 2011.
+4. Stewart, Ian. *Galois Theory*. 4th ed. CRC Press, 2015.
+5. Gallian, Joseph A. *Contemporary Abstract Algebra*. 10th ed. CRC Press, 2021.
+:::

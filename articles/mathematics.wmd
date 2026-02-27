@@ -1,0 +1,119 @@
+---
+title: Mathematics
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: mathematics, math, overview, number theory, geometry, algebra, analysis
+featured: false
+---
+
+:::summary
+Mathematics is the science of pattern, structure, quantity, and logical deduction. From counting sheep to modeling the quantum behavior of particles, mathematics is the universal language of precision and rigorous reasoning. It is humanity's most successful tool for understanding the physical world — and, many argue, a window into truths that are eternal, necessary, and beautiful.
+:::
+
+:::infobox Mathematics
+| Definition | The science of structure, quantity, and logical deduction |
+| Word origin | Greek: *mathema* — learning, study |
+| Core branches | Arithmetic, Algebra, Geometry, Analysis, Logic |
+| Key figures | Euclid, Archimedes, Newton, Euler, Gauss, Riemann |
+| Relationship to science | Mathematics is the language of the natural sciences |
+:::
+
+## What Is Mathematics?
+
+Mathematics is notoriously difficult to define. At minimum, it involves:
+
+- **Precision**: Mathematical statements are formulated with complete exactness.
+- **Proof**: Mathematical truths are established by rigorous logical deduction from axioms.
+- **Abstraction**: Mathematics studies structure independent of particular content — numbers, shapes, functions, transformations.
+
+Mathematicians distinguish **pure mathematics** (pursued for its intrinsic interest and beauty, without regard to application) from **applied mathematics** (used to model and solve problems in science, engineering, and economics). The boundary is porous: many pure mathematical results have found unexpected applications, and applied problems have inspired new pure mathematics.
+
+## Major Branches of Mathematics
+
+:::dropdown Arithmetic and Number Theory
+**Arithmetic** is the most elementary branch of mathematics: the study of numbers and the basic operations (addition, subtraction, multiplication, division). It is the first mathematics every person learns.
+
+**Number theory** is arithmetic elevated to a science: the systematic study of the integers, their properties, and the deep patterns they exhibit. Some of the most beautiful and difficult problems in all of mathematics are number-theoretic:
+
+- **The Fundamental Theorem of Arithmetic**: Every integer greater than 1 can be factored uniquely into primes.
+- **Fermat's Last Theorem**: The equation $a^n + b^n = c^n$ has no positive integer solutions for $n \geq 3$. Conjectured by Fermat in 1637; proved by Andrew Wiles in 1995 — one of the great achievements of modern mathematics.
+- **The Riemann Hypothesis**: The non-trivial zeros of the Riemann zeta function all have real part $\frac{1}{2}$. Still unproved; one of the Millennium Prize Problems.
+- **The distribution of primes**: The Prime Number Theorem states that the number of primes up to $x$ is approximately $\frac{x}{\ln x}$.
+:::
+
+:::dropdown Algebra
+Algebra begins with the observation that the same patterns recur across different number systems. Instead of working with specific numbers, we use variables to describe general relationships.
+
+**Elementary algebra** solves equations and works with polynomials. **Linear algebra** studies vector spaces, matrices, and linear transformations — foundational to virtually all of applied mathematics, data science, and quantum mechanics. **Abstract algebra** studies algebraic structures (groups, rings, fields) in complete generality, identifying the shared architecture behind diverse mathematical systems.
+
+See also: [Algebra](article.html?id=algebra), [Abstract Algebra](article.html?id=abstract-algebra).
+:::
+
+:::dropdown Geometry
+Geometry — from the Greek *ge* (earth) + *metrein* (to measure) — is the study of shape, size, and the properties of space. It is one of the oldest branches of mathematics.
+
+**Euclidean geometry** (developed in Euclid's *Elements*, c. 300 BC) studies figures in the familiar flat plane and three-dimensional space using five postulates. It remained the paradigm of rigorous mathematics for over two thousand years.
+
+**Non-Euclidean geometries** (Lobachevsky, Bolyai, Riemann, 19th century) arise from replacing Euclid's parallel postulate with alternatives. Riemannian geometry, developed by Bernhard Riemann, describes curved spaces and is the mathematical foundation of Einstein's general relativity.
+
+**Topology** studies properties of spaces that are preserved under continuous deformations — famously, a coffee mug and a donut are "topologically equivalent" because each has one hole.
+
+See also: [Geometry](article.html?id=geometry), [The Pythagorean Theorem](article.html?id=pythagorean-theorem).
+:::
+
+:::dropdown Analysis
+Mathematical analysis is the rigorous study of continuity, limits, differentiation, and integration — the theoretical foundation of calculus.
+
+**Real analysis** provides rigorous proofs of the theorems of calculus, working with the completeness of the real number line. **Complex analysis** extends calculus to the complex numbers and discovers remarkable properties (holomorphic functions, conformal mappings) with no real analog. **Functional analysis** studies infinite-dimensional vector spaces of functions — the natural setting for quantum mechanics and the mathematics of differential equations.
+
+See also: [Calculus](article.html?id=calculus), [Real Analysis](article.html?id=real-analysis).
+:::
+
+:::dropdown Logic and Foundations
+What is mathematics built on? The **foundations of mathematics** is the branch that asks: what are the basic axioms and rules of inference that all mathematical reasoning uses?
+
+The dominant foundational system in modern mathematics is **Zermelo-Fraenkel set theory with the Axiom of Choice (ZFC)**, which grounds all mathematical objects in set theory. But Gödel's incompleteness theorems (1931) showed that any sufficiently powerful formal system contains true statements that cannot be proved within it — a profound limitation with far-reaching implications.
+
+See also: [Formal Logic](article.html?id=formal-logic), [Proofs](article.html?id=proofs).
+:::
+
+## The History of Mathematics
+
+| Era | Key Developments |
+|---|---|
+| Ancient (~3000–300 BC) | Egyptian and Babylonian arithmetic; Greek geometry (Euclid, Pythagoras, Archimedes) |
+| Classical and Medieval (~300 BC–1600) | Algebra developed in Islamic world (al-Khwarizmi); Hindu-Arabic numeral system |
+| Early Modern (1600–1800) | Analytic geometry (Descartes); calculus (Newton, Leibniz); probability; Euler's prolific output |
+| 19th Century | Rigorous analysis (Cauchy, Weierstrass); non-Euclidean geometry; abstract algebra; set theory |
+| 20th Century | Gödel's theorems; topology; category theory; computers; resolution of Fermat's Last Theorem |
+| 21st Century | Proof of the Poincaré conjecture; advances in number theory; machine-assisted proofs |
+
+## Why Mathematics?
+
+Mathematics has a mysterious quality that has fascinated philosophers: it is the product of pure human reason, yet it describes physical reality with uncanny accuracy. Physicist Eugene Wigner famously called this "the unreasonable effectiveness of mathematics."
+
+For believers, this is no mystery: the universe was created by a God of order and reason, and mathematics reveals the rational structure of that creation. The Pythagoreans, who believed that "all is number," were wrong in detail but right in spirit: the deep fabric of reality appears to be mathematical.
+
+Joseph Smith taught that "the glory of God is intelligence" (D&C 93:36). Mathematics — the most rigorous and certain of the intellectual disciplines — is one of the purest expressions of the intelligence God values.
+
+## See Also
+
+- [Algebra](article.html?id=algebra) — the gateway to higher mathematics
+- [Geometry](article.html?id=geometry) — the study of shape and space
+- [Calculus](article.html?id=calculus) — the mathematics of continuous change
+- [Abstract Algebra](article.html?id=abstract-algebra) — the algebraic study of mathematical structures
+- [Real Analysis](article.html?id=real-analysis) — the rigorous foundation of calculus
+- [Formal Logic](article.html?id=formal-logic) — the logical foundation of mathematical proof
+- [Proofs](article.html?id=proofs) — how mathematical truth is established
+- [Statistics](article.html?id=statistics) — the mathematics of data and uncertainty
+- [Probability Theory](article.html?id=probability-theory) — the mathematical study of randomness
+
+:::citations
+1. Euclid. *Elements* (c. 300 BC). Translated by T. L. Heath. Dover, 1956.
+2. Hardy, G. H. *A Mathematician's Apology*. Cambridge University Press, 1940.
+3. Wigner, Eugene. "The Unreasonable Effectiveness of Mathematics in the Natural Sciences." *Communications in Pure and Applied Mathematics* 13, no. 1 (1960): 1–14.
+4. Stewart, Ian. *The Story of Mathematics*. Quercus, 2013.
+5. Boyer, Carl B. *A History of Mathematics*. 2nd ed. Wiley, 1991.
+6. Doctrine and Covenants 93:36.
+:::

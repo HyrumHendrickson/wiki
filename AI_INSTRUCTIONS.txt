@@ -1,0 +1,505 @@
+================================================================================
+  EduWiki — AI Contributor Instructions
+  Instructions for AI systems adding new articles or editing existing articles
+================================================================================
+
+READ THIS FILE IN FULL BEFORE MAKING ANY CHANGES TO THE WIKI.
+
+--------------------------------------------------------------------------------
+SECTION 1 — TONE AND PURPOSE
+--------------------------------------------------------------------------------
+
+EduWiki is an educational wiki with a clear and intentional editorial perspective.
+Every article must reflect the following values:
+
+CHRISTIAN
+  - Treat Christianity — and specifically The Church of Jesus Christ of
+    Latter-day Saints (LDS) — as the lens through which history, science,
+    philosophy, and culture are interpreted.
+  - Acknowledge God's hand in history, discovery, and human achievement.
+  - Draw connections to scripture (Bible, Book of Mormon, Doctrine and
+    Covenants, Pearl of Great Price) when relevant and authentic.
+  - Present faith not as opposed to reason or learning, but as its foundation.
+  - Never mock, diminish, or present a skeptical view of Christianity or LDS
+    doctrine. Treat religious claims with respect and present them as truth.
+
+LIBERAL ARTS
+  - Celebrate the classical tradition: ancient Greece and Rome, medieval
+    scholarship, the Renaissance, and the Western canon.
+  - Connect subjects across disciplines — mathematics to philosophy, history to
+    literature, science to theology.
+  - Emphasize primary sources, great thinkers, and enduring ideas over trends.
+  - Write for an intellectually curious reader who values depth over brevity.
+  - Encourage students to read foundational texts: Plato, Aristotle, Cicero,
+    Aquinas, Shakespeare, C.S. Lewis, etc.
+
+PATRIOTIC
+  - Present American history, government, and founding ideals with reverence and
+    pride.
+  - Treat the Constitution and Declaration of Independence as inspired documents
+    (consistent with LDS D&C 101:80 — God raised up wise men to establish them).
+  - Highlight the sacrifices of American heroes and the providential nature of
+    the American founding.
+  - Connect American liberty to broader themes of Christian freedom and divine
+    governance.
+  - Avoid cynicism about America's founding or institutions. Acknowledge
+    historical failures honestly, but frame them within the story of a nation
+    striving to live up to its God-given ideals.
+
+GENERAL TONE
+  - Encyclopedic but warm — not cold or clinical.
+  - Scholarly but accessible — no jargon without explanation.
+  - Confident in its worldview without being polemical.
+  - Articles should read like they were written by a knowledgeable, faithful,
+    classically educated scholar who loves learning and loves God.
+
+
+--------------------------------------------------------------------------------
+SECTION 2 — ADDING A NEW ARTICLE (COMPLETE STEP-BY-STEP)
+--------------------------------------------------------------------------------
+
+Adding a new article requires changes in EXACTLY TWO places:
+  1. Create a new .wmd file in the articles/ folder
+  2. Add a registration entry in config/articles.json
+
+Follow every step below precisely.
+
+── STEP 1: Choose an Article ID ────────────────────────────────────────────────
+
+  Pick a short, descriptive, all-lowercase filename using hyphens, no spaces.
+  Examples: "thomas-jefferson", "sermon-on-the-mount", "french-revolution"
+
+  This ID is used:
+    - As the filename:   articles/<id>.wmd
+    - In articles.json:  "id": "<id>"
+    - In article URLs:   articles/article.html?id=<id>
+    - In See Also links: [Title](article.html?id=<id>)
+
+── STEP 2: Create articles/<id>.wmd ────────────────────────────────────────────
+
+  Create the file at:   articles/<id>.wmd
+
+  Every .wmd file has two parts: FRONTMATTER and BODY.
+
+  ┌─ FRONTMATTER (required) ───────────────────────────────────────────────────┐
+  │                                                                             │
+  │  Placed at the very top of the file between --- markers.                   │
+  │                                                                             │
+  │  ---                                                                        │
+  │  title:       Article Title Here                                            │
+  │  category:    <category-id>                                                 │
+  │  author:      EduWiki Team                                                  │
+  │  lastUpdated: YYYY-MM-DD                                                    │
+  │  tags:        keyword1, keyword2, keyword3                                  │
+  │  featured:    false                                                         │
+  │  ---                                                                        │
+  │                                                                             │
+  │  Valid category IDs (from config/articles.json):                           │
+  │    mathematics, science, history, faith, languages, literature,            │
+  │    philosophy, computing, civics                                            │
+  │  (If adding a new category, also add it to config/articles.json —          │
+  │   see Step 3 below.)                                                        │
+  │                                                                             │
+  │  Set featured: true only for especially important flagship articles.       │
+  └─────────────────────────────────────────────────────────────────────────────┘
+
+  ┌─ BODY (required components) ───────────────────────────────────────────────┐
+  │                                                                             │
+  │  These elements are REQUIRED in every article, in this order:             │
+  │                                                                             │
+  │  1. :::summary block (immediately after frontmatter)                       │
+  │     - 2–4 sentences summarizing the article.                               │
+  │     - Appears in the blue box at the top of the page.                     │
+  │     - Also shown in search results and on the home page.                  │
+  │     - Reflect the wiki's Christian/liberal arts/patriotic perspective.    │
+  │                                                                             │
+  │  2. :::infobox block (recommended, right after summary)                   │
+  │     - Quick-facts table that floats on the right side of the article.     │
+  │     - Use for dates, key figures, locations, significance, etc.           │
+  │                                                                             │
+  │  3. Content sections (## headings)                                         │
+  │     - At least 2 major sections (## heading level).                       │
+  │     - Use ### for subsections.                                             │
+  │     - Do NOT use # — the article title is always the <h1>.                │
+  │     - Include inline links to other articles wherever relevant.           │
+  │                                                                             │
+  │  4. ## See Also section (REQUIRED)                                         │
+  │     - Must contain AT LEAST 5 links to other articles in this wiki.       │
+  │     - Use the format: [Article Title](article.html?id=<article-id>)       │
+  │     - Choose articles that are genuinely related to the topic.            │
+  │     - Example:                                                             │
+  │         ## See Also                                                        │
+  │         - [Aristotle](article.html?id=aristotle)                          │
+  │         - [Plato](article.html?id=plato)                                  │
+  │         - [Socrates](article.html?id=socrates)                            │
+  │         - [Western History](article.html?id=western-history)              │
+  │         - [Theology](article.html?id=theology)                            │
+  │                                                                             │
+  │  5. :::citations block (REQUIRED)                                          │
+  │     - List all sources used.                                               │
+  │     - At least 1 citation is required; 3–7 is ideal.                      │
+  │     - In-text references [1], [2] are automatically superscripted.        │
+  └─────────────────────────────────────────────────────────────────────────────┘
+
+── STEP 3: Add Entry to config/articles.json ────────────────────────────────────
+
+  Open config/articles.json and add a new object to the "articles" array.
+  NEVER remove or modify existing entries — only append new ones.
+
+  Required fields:
+
+    {
+      "id": "<your-article-id>",
+      "title": "Your Article Title",
+      "category": "<category-id>",
+      "path": "articles/article.html?id=<your-article-id>",
+      "summary": "One-sentence summary for search results and home page cards.",
+      "tags": ["keyword1", "keyword2", "keyword3"],
+      "author": "EduWiki Team",
+      "lastUpdated": "YYYY-MM-DD",
+      "featured": false
+    }
+
+  Important:
+    - The "path" field MUST follow the pattern above exactly.
+    - The "id" in the JSON entry MUST match the .wmd filename exactly.
+    - The "category" MUST match an existing category id in the same file.
+    - If you need a new category, also add it to the "categories" array:
+        { "id": "civics", "label": "Civics", "icon": "" }
+
+── STEP 4: Verify ───────────────────────────────────────────────────────────────
+
+  After creating both files, mentally verify:
+
+    [ ] articles/<id>.wmd exists and contains valid frontmatter
+    [ ] config/articles.json has the new entry with correct "id" and "path"
+    [ ] The article has a :::summary block
+    [ ] The article has at least 2 ## sections
+    [ ] The ## See Also section lists at least 5 links to other articles
+    [ ] The article has a :::citations block
+    [ ] All article links use the correct format: article.html?id=<id>
+    [ ] All linked article IDs actually exist in the articles/ folder
+    [ ] The article's tone matches the wiki's Christian/liberal arts/patriotic voice
+
+
+--------------------------------------------------------------------------------
+SECTION 3 — EDITING AN EXISTING ARTICLE
+--------------------------------------------------------------------------------
+
+When editing an existing article:
+
+  1. EDIT ONLY the articles/<id>.wmd file.
+     Do not touch config/articles.json unless you are updating metadata like
+     lastUpdated, tags, or summary that truly needs updating.
+
+  2. Update the lastUpdated date in the frontmatter to today's date (YYYY-MM-DD).
+
+  3. Preserve all existing sections unless explicitly instructed to remove one.
+
+  4. If the article's ## See Also section has fewer than 5 links, ADD more links
+     to bring it to at least 5. Never reduce the number of See Also links.
+
+  5. Maintain the existing tone. Do not introduce skeptical, secular, or
+     revisionist framings that contradict the wiki's Christian/patriotic voice.
+
+  6. If adding new content that references other articles, add inline links.
+
+  7. If a :::citations block is missing, add one. If references exist in the text
+     (e.g., [1], [2]) but no :::citations block is present, add the block.
+
+
+--------------------------------------------------------------------------------
+SECTION 4 — MODULAR COMPONENTS
+--------------------------------------------------------------------------------
+
+All components use the :::blocktype syntax. Use them freely and deliberately —
+they significantly improve readability and educational value.
+
+────────────────────────────────────────────────────────────────────────────────
+:::summary
+────────────────────────────────────────────────────────────────────────────────
+REQUIRED in every article. Place immediately after the frontmatter.
+Renders as a blue highlighted box at the top of the article.
+Also used in search results and home page article cards.
+
+  :::summary
+  Write 2–4 sentences here. This is the first thing readers see.
+  :::
+
+WHEN TO USE: Every article, exactly once, at the very top.
+
+────────────────────────────────────────────────────────────────────────────────
+:::infobox
+────────────────────────────────────────────────────────────────────────────────
+A right-floating box of key facts. The text after :::infobox is the box title.
+Rows are | Key | Value | pairs. Supports inline formatting and math.
+
+  :::infobox Aristotle at a Glance
+  | Born       | 384 BC, Stagira, Macedon |
+  | Died       | 322 BC, Chalcis          |
+  | School     | Peripatetic              |
+  | Key works  | Nicomachean Ethics, Metaphysics, Politics |
+  :::
+
+WHEN TO USE: Most articles — especially people, events, places, and concepts
+that have clear factual attributes. Place immediately after :::summary.
+
+────────────────────────────────────────────────────────────────────────────────
+:::dropdown
+────────────────────────────────────────────────────────────────────────────────
+A click-to-expand accordion section. The text after :::dropdown is the
+button label. The body is hidden until the reader clicks.
+Supports full WMD content inside: paragraphs, math, lists, tables, Desmos.
+
+  :::dropdown The Nicene Creed — Text and Commentary
+  The Nicene Creed (325 AD) declared Christ "of one substance with the Father"...
+  :::
+
+WHEN TO USE:
+  - Deep-dive sections that would interrupt the flow of the main text
+  - Worked examples, proofs, or detailed analysis
+  - Long quotations or primary source excerpts
+  - Background context that only some readers need
+  - LDS-specific commentary within an article on a broader topic
+  Use liberally — dropdowns make articles more navigable.
+
+────────────────────────────────────────────────────────────────────────────────
+:::desmos
+────────────────────────────────────────────────────────────────────────────────
+Embeds an interactive Desmos graphing calculator.
+Format: :::desmos <height> | <caption label>
+First body line: JSON array of expression objects.
+Second body line (optional): JSON viewport bounds object.
+
+  :::desmos 400 | Graph of y = sin(x)
+  [{"id":"f","latex":"y=\\sin(x)","color":"#2563eb"}]
+  {"left":-6.28,"right":6.28,"bottom":-2,"top":2}
+  :::
+
+Expression object fields:
+  id           — unique string identifier
+  latex        — LaTeX expression string
+  color        — CSS hex color (e.g., "#2563eb")
+  sliderBounds — {"min":"0","max":"10","step":"0.1"} to create a slider
+  hidden       — true to hide from expression list
+
+WHEN TO USE: Mathematics and science articles where visual or interactive
+exploration of a function, curve, or relationship adds genuine value.
+Examples: calculus, algebra, trigonometry, physics, statistics.
+
+────────────────────────────────────────────────────────────────────────────────
+:::figure
+────────────────────────────────────────────────────────────────────────────────
+Displays a centered image with an optional caption.
+Format: :::figure <path-to-image> | <caption>
+
+  :::figure ../media/parthenon.jpg | The Parthenon on the Athenian Acropolis, c. 447–432 BC
+  :::
+
+Store all images in the media/ folder.
+
+WHEN TO USE: When an image significantly aids understanding (maps, diagrams,
+portraits of historical figures, illustrations of concepts). Do not use
+placeholder images — only include a figure if the image file exists in media/.
+
+────────────────────────────────────────────────────────────────────────────────
+:::citations
+────────────────────────────────────────────────────────────────────────────────
+REQUIRED in every article. Renders the References section.
+Each line must start with a number and period.
+In-text [1], [2] references auto-link to this section.
+
+  :::citations
+  1. Author, A. (Year). *Title of Work*. Publisher.
+  2. Author, B. (Year). *Title*. [publisher.com](https://publisher.com)
+  3. Scripture reference. Book Chapter:Verse.
+  :::
+
+WHEN TO USE: Every article, exactly once, at the very bottom.
+
+────────────────────────────────────────────────────────────────────────────────
+:::notice
+────────────────────────────────────────────────────────────────────────────────
+A yellow notice/warning box. Intended primarily for admin and help articles.
+
+  :::notice
+  **Admin Article** — This guide is for contributors adding new content.
+  :::
+
+WHEN TO USE: Admin/help articles only. Do not use in regular encyclopedia
+articles.
+
+────────────────────────────────────────────────────────────────────────────────
+:::quote
+────────────────────────────────────────────────────────────────────────────────
+A styled pull-quote block. The text after :::quote is the attribution line.
+
+  :::quote Joseph Smith, History 1:17
+  "I saw two Personages, whose brightness and glory defy all description,
+  standing above me in the air."
+  :::
+
+WHEN TO USE: Notable quotations from important figures — scripture, Founding
+Fathers, Church leaders, classical authors — where the exact words deserve
+special visual emphasis. Use 1–3 times per article at most; do not overuse.
+
+────────────────────────────────────────────────────────────────────────────────
+LaTeX Math (inline and display)
+────────────────────────────────────────────────────────────────────────────────
+Rendered by MathJax 3. Supported throughout article body and in most components.
+
+  Inline:   $a^2 + b^2 = c^2$
+  Display:  $$\int_a^b f(x)\,dx = F(b) - F(a)$$
+
+WHEN TO USE: Any mathematics or science article. Also use for formal logic,
+statistics, economics formulas, musical notation (where applicable), etc.
+
+────────────────────────────────────────────────────────────────────────────────
+Tables
+────────────────────────────────────────────────────────────────────────────────
+Use GFM (GitHub Flavored Markdown) table syntax. The separator row is required.
+
+  | Column 1 | Column 2 |
+  |----------|----------|
+  | Value 1  | Value 2  |
+
+WHEN TO USE: Comparisons, timelines, lists of attributes, reference data.
+Tables inside :::dropdown blocks are a great way to add reference material
+without cluttering the main article flow.
+
+────────────────────────────────────────────────────────────────────────────────
+Blockquotes (>)
+────────────────────────────────────────────────────────────────────────────────
+Standard Markdown blockquote. Less visually prominent than :::quote.
+
+  > "The glory of God is intelligence, or, in other words, light and truth."
+  > — Doctrine & Covenants 93:36
+
+WHEN TO USE: Short inline quotations within the flow of prose. Use :::quote
+(above) for quotations you want to give special visual emphasis.
+
+
+--------------------------------------------------------------------------------
+SECTION 5 — SEE ALSO SECTION (MANDATORY MINIMUM)
+--------------------------------------------------------------------------------
+
+EVERY article MUST include a ## See Also section with AT LEAST 5 links
+to other articles in this wiki.
+
+Rules:
+  - The section heading must be exactly:  ## See Also
+  - Each link uses the format: [Article Title](article.html?id=<article-id>)
+  - All linked IDs must correspond to real .wmd files in the articles/ folder
+  - Choose links that are genuinely intellectually related to the article topic
+  - Do NOT include external links (http/https) in the See Also section —
+    those belong in the body or :::citations block
+  - 5 is the MINIMUM. More links are encouraged for rich topics.
+
+Example (for an article on Plato):
+
+  ## See Also
+
+  - [Socrates](article.html?id=socrates) — Plato's teacher and the central figure of his early dialogues
+  - [Aristotle](article.html?id=aristotle) — Plato's most famous student, who later diverged from his idealism
+  - [Athens](article.html?id=athens) — the city-state in which Plato lived and founded the Academy
+  - [Philosophy](article.html?id=philosophy) — the broader discipline Plato helped define
+  - [Aquinas](article.html?id=aquinas) — the Christian philosopher who synthesized Platonic and Aristotelian thought
+  - [Augustine](article.html?id=augustine) — drew heavily on Platonic philosophy in developing Christian theology
+  - [Western History](article.html?id=western-history) — the broader historical context of Greek thought
+
+When editing an existing article that has fewer than 5 See Also links,
+ADD enough links to reach the minimum. Never remove existing See Also links.
+
+
+--------------------------------------------------------------------------------
+SECTION 6 — COMPLETE ARTICLE TEMPLATE
+--------------------------------------------------------------------------------
+
+Copy and adapt this template when creating any new article:
+
+---
+title:       Your Article Title
+category:    history
+author:      EduWiki Team
+lastUpdated: 2026-02-27
+tags:        keyword1, keyword2, keyword3
+featured:    false
+---
+
+:::summary
+Write 2–4 sentences summarizing this article. Reflect the wiki's Christian,
+liberal arts, and patriotic perspective where applicable.
+:::
+
+:::infobox Your Topic at a Glance
+| Field 1     | Value 1     |
+| Field 2     | Value 2     |
+| Key figures | Name, Name  |
+| Significance | Brief note |
+:::
+
+## First Major Section
+
+Content here. Use **bold** for key terms, *italic* for titles and foreign words,
+and [inline links](article.html?id=related-article) to connect to related
+articles. Cite sources with inline references like this. [1]
+
+### Subsection
+
+More detail here.
+
+:::dropdown Deep Dive: Optional Background Detail
+Extended analysis, primary source text, LDS-specific commentary, or worked
+examples that would interrupt the main narrative flow.
+:::
+
+## Second Major Section
+
+More content. Draw connections to Christian thought, classical tradition, or
+American history as appropriate.
+
+:::quote Author Name, Source
+"A meaningful quotation that illustrates the article's theme."
+:::
+
+## See Also
+
+- [Related Article 1](article.html?id=related-article-1)
+- [Related Article 2](article.html?id=related-article-2)
+- [Related Article 3](article.html?id=related-article-3)
+- [Related Article 4](article.html?id=related-article-4)
+- [Related Article 5](article.html?id=related-article-5)
+
+:::citations
+1. Author, A. (Year). *Title of Work*. Publisher.
+2. Author, B. (Year). *Title*. [publisher.com](https://publisher.com)
+3. Scripture reference if applicable.
+:::
+
+
+--------------------------------------------------------------------------------
+SECTION 7 — QUICK REFERENCE CHECKLIST
+--------------------------------------------------------------------------------
+
+NEW ARTICLE checklist:
+  [ ] Created articles/<id>.wmd with valid frontmatter
+  [ ] Added entry to config/articles.json with correct id and path
+  [ ] :::summary block present (2–4 sentences)
+  [ ] :::infobox block present (key facts)
+  [ ] At least 2 ## sections in the body
+  [ ] ## See Also section with at least 5 internal article links
+  [ ] :::citations block present with at least 1 source
+  [ ] Tone reflects Christian, liberal arts, and patriotic perspective
+  [ ] All linked article IDs exist in the articles/ folder
+  [ ] lastUpdated set to today's date
+
+EDITED ARTICLE checklist:
+  [ ] Updated lastUpdated in frontmatter
+  [ ] Preserved all existing content (unless explicitly removing something)
+  [ ] ## See Also section has at least 5 links (added more if needed)
+  [ ] :::citations block present
+  [ ] Tone consistent with the rest of the wiki
+
+================================================================================
+  End of AI_INSTRUCTIONS.txt
+================================================================================

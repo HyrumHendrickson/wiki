@@ -1,0 +1,101 @@
+---
+title: Isaac Newton
+category: science
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: Isaac Newton, physics, calculus, gravity, laws of motion, science, history
+featured: false
+---
+
+:::summary
+Sir Isaac Newton (1643–1727) was an English mathematician, physicist, astronomer, and theologian — one of the most influential scientists in human history. He formulated the laws of motion and universal gravitation, co-invented calculus, and his work laid the foundation for classical mechanics and the scientific worldview for over two centuries. Newton was deeply religious and believed his scientific work revealed the handiwork of God.
+:::
+
+:::infobox Isaac Newton
+| Born | January 4, 1643 (NS), Woolsthorpe, Lincolnshire, England |
+| Died | March 31, 1727, Kensington, London, England |
+| Education | Trinity College, Cambridge |
+| Key works | *Principia Mathematica* (1687), *Opticks* (1704) |
+| Fields | Mathematics, physics, astronomy, optics, theology |
+| Known for | Laws of motion, universal gravitation, calculus, optics |
+:::
+
+## Early Life and Education
+
+Isaac Newton was born prematurely on Christmas Day 1642 (Old Style) in Woolsthorpe, Lincolnshire, England, to a farming family. His father had died before his birth, and when his mother remarried, Newton was raised by his grandmother. By all accounts, he was a solitary, introspective child.
+
+He attended Trinity College, Cambridge from 1661, where he quickly mastered and then surpassed the available curriculum. The closure of the university due to plague in 1665–66 forced Newton back to Woolsthorpe, where — in perhaps the most productive two years in the history of science — he laid the foundations of calculus, the theory of colors, and the law of universal gravitation.
+
+## The Annus Mirabilis (1665–1666)
+
+During the plague years of 1665–66, Newton:
+
+- Developed the method of fluxions (calculus), independently of Leibniz
+- Discovered that white light is composed of all the colors of the spectrum
+- Formulated his laws of motion
+- Derived the inverse-square law of gravitation
+
+The famous story of the falling apple — which reportedly prompted Newton to think about gravity — dates from this period. Whether historically accurate or not, it captures the moment of insight: the same force that pulls the apple also governs the Moon.
+
+## The Principia Mathematica (1687)
+
+Newton's *Philosophiæ Naturalis Principia Mathematica* ("Mathematical Principles of Natural Philosophy," 1687) is widely considered the greatest scientific work ever published. In it, Newton:
+
+:::dropdown Three Laws of Motion
+1. **First Law (Inertia):** Every body continues in its state of rest, or of uniform motion in a straight line, unless it is compelled to change that state by forces impressed upon it.
+2. **Second Law:** The change of motion is proportional to the motive force impressed; and is made in the direction of the right line in which that force is impressed. ($F = ma$)
+3. **Third Law:** To every action there is always opposed an equal reaction.
+:::
+
+:::dropdown The Law of Universal Gravitation
+Every particle of matter attracts every other particle with a force proportional to the product of their masses and inversely proportional to the square of the distance between them:
+
+$$F = G\frac{m_1 m_2}{r^2}$$
+
+This single equation explains the fall of objects on Earth, the orbits of the Moon and planets, the tides, and the shape of the solar system.
+:::
+
+## Calculus
+
+Simultaneously with Leibniz (and independently), Newton developed calculus — the mathematics of continuous change — which he called the "method of fluxions." His notation ($\dot{x}$ for the derivative of $x$ with respect to time) is still used in physics today, while Leibniz's notation ($\frac{dy}{dx}$) is standard in mathematics.
+
+The priority dispute between Newton and Leibniz over the invention of calculus became one of the most bitter controversies in the history of science. Modern historians recognize both men as independent inventors.
+
+## Optics
+
+Newton demonstrated that white light is composed of all the colors of the visible spectrum by passing sunlight through a prism. He correctly concluded that color is a property of light itself, not of the prism, by recombining the spectrum with a second prism.
+
+His *Opticks* (1704) presented his particle theory of light. While later superseded by wave (and then quantum) theories, it contained brilliant experimental work and introduced the "queries" that would shape the direction of physics for a century.
+
+## Newton's Theology
+
+Newton was deeply and sincerely religious, though his private views were unorthodox. He spent enormous effort studying scripture and early Church history, and concluded — like Latter-day Saints — that the doctrine of the Trinity as defined at Nicaea departed from original Christianity. He studied the writings of the early Church Fathers and believed Athanasius had corrupted Christian doctrine.
+
+He wrote extensively on prophecy, including the books of Daniel and Revelation. He believed natural philosophy (science) was a form of worship — understanding God's creation was an act of reverence to the Creator.
+
+"This most beautiful system of the sun, planets, and comets, could only proceed from the counsel and dominion of an intelligent and powerful Being." — Isaac Newton, *Principia*
+
+## Legacy
+
+Newton's influence is almost incalculable:
+
+- Classical mechanics governed physics until Einstein (and still governs most everyday engineering)
+- Calculus is the mathematical language of all physical science
+- His model of science — precise mathematical laws governing the natural world — became the template for all subsequent science
+- His *Principia* was the model of what a scientific treatise should look like
+
+When asked how he had accomplished so much, Newton replied: "If I have seen further, it is by standing on the shoulders of giants."
+
+## See Also
+
+- [Physics](article.html?id=physics) — the science Newton founded
+- [Introduction to Calculus](article.html?id=calculus) — the mathematics Newton co-invented
+- [Euler](article.html?id=euler) — the mathematician who extended Newton's work
+- [The Renaissance](article.html?id=renaissance) — the intellectual revolution that preceded Newton
+
+:::citations
+1. Westfall, Richard S. (1980). *Never at Rest: A Biography of Isaac Newton.* Cambridge University Press.
+2. Newton, Isaac. (1687). *Philosophiæ Naturalis Principia Mathematica.* S. Pepys.
+3. Gleick, James. (2003). *Isaac Newton.* Pantheon Books.
+4. Newton, Isaac. (1704). *Opticks.* Sam. Smith and Benj. Walford.
+:::

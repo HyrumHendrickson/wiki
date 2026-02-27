@@ -1,0 +1,148 @@
+---
+title: Physics
+category: science
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: physics, science, mechanics, Newton, Einstein, gravity, forces
+featured: false
+---
+
+:::summary
+Physics is the most fundamental of the natural sciences — the study of matter, energy, space, and time, and the forces that govern their interactions. From Newton's laws of motion to Einstein's theory of relativity and the quantum mechanics of subatomic particles, physics has driven virtually every major technological revolution in human history. It seeks the deepest explanations of why the universe behaves as it does.
+:::
+
+:::infobox Physics
+| Field | Natural Science |
+| Key figures | Aristotle, Galileo, Newton, Maxwell, Einstein, Bohr |
+| Core branches | Classical mechanics, electromagnetism, thermodynamics, quantum mechanics, relativity |
+| Mathematical tools | Calculus, linear algebra, differential equations |
+| LDS connection | "All things are created spiritually before they are naturally" — creation is physical |
+:::
+
+## What Is Physics?
+
+Physics seeks the most fundamental description of nature. While chemistry asks about atoms and molecules, and biology about living systems, physics asks: what are the most basic rules governing all matter and energy? What is the structure of space and time?
+
+The power of physics lies in its use of mathematics to express general laws that apply everywhere in the universe. Newton's law of gravitation, for example, explains both why an apple falls from a tree and why the Moon orbits the Earth.
+
+## Classical Mechanics
+
+Classical mechanics — developed primarily by Isaac Newton — describes the motion of ordinary objects under the influence of forces.
+
+### Newton's Three Laws of Motion
+
+:::dropdown First Law — Law of Inertia
+An object at rest stays at rest, and an object in motion stays in motion at constant velocity, **unless acted upon by a net external force.**
+
+"Inertia" is resistance to change in motion. A hockey puck on ice keeps sliding because there is very little friction.
+:::
+
+:::dropdown Second Law — F = ma
+The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass:
+
+$$\vec{F} = m\vec{a}$$
+
+**Example:** A 5 kg block is pushed with a net force of 20 N:
+$$a = \frac{F}{m} = \frac{20}{5} = 4 \text{ m/s}^2$$
+:::
+
+:::dropdown Third Law — Action and Reaction
+For every action, there is an equal and opposite reaction. When you push on a wall, the wall pushes back on you with the same force.
+
+This explains how rockets work: the rocket pushes exhaust gases backward, and the exhaust gases push the rocket forward.
+:::
+
+## Gravity
+
+Newton's **Law of Universal Gravitation** states that every mass attracts every other mass:
+
+$$F = G \frac{m_1 m_2}{r^2}$$
+
+where $G = 6.674 \times 10^{-11}$ N·m²/kg² is the gravitational constant and $r$ is the distance between the masses.
+
+Near Earth's surface, the gravitational acceleration is $g \approx 9.8$ m/s². The weight of an object (the gravitational force on it) is:
+
+$$W = mg$$
+
+## Energy and Work
+
+**Work** is done when a force moves an object through a distance:
+
+$$W = F \cdot d \cdot \cos\theta$$
+
+where $\theta$ is the angle between the force and the direction of motion.
+
+**Kinetic Energy** — the energy of motion:
+
+$$KE = \frac{1}{2}mv^2$$
+
+**Potential Energy** — stored energy (gravitational):
+
+$$PE = mgh$$
+
+**Conservation of Energy:** In an isolated system, the total energy remains constant — it only transforms between forms.
+
+## Waves and Sound
+
+A **wave** is a disturbance that carries energy through a medium (or through space for electromagnetic waves). Key properties:
+
+| Property | Symbol | Definition |
+|---|---|---|
+| Amplitude | $A$ | Maximum displacement from equilibrium |
+| Wavelength | $\lambda$ | Distance between successive crests |
+| Frequency | $f$ | Number of cycles per second (Hz) |
+| Period | $T$ | Time for one complete cycle ($T = 1/f$) |
+| Wave speed | $v$ | $v = f\lambda$ |
+
+## Electricity and Magnetism
+
+James Clerk Maxwell unified electricity, magnetism, and optics into four elegant equations (Maxwell's Equations). Key concepts:
+
+- Electric charges create electric fields
+- Moving charges (currents) create magnetic fields
+- A changing magnetic field creates an electric field (electromagnetic induction — the basis of generators)
+- Light is an electromagnetic wave
+
+**Ohm's Law** (for electrical circuits):
+
+$$V = IR$$
+
+where $V$ is voltage, $I$ is current, and $R$ is resistance.
+
+## Thermodynamics
+
+The **laws of thermodynamics** govern heat and energy:
+
+1. **First Law:** Energy is conserved; heat and work are equivalent forms of energy.
+2. **Second Law:** Entropy (disorder) of an isolated system tends to increase. Heat flows from hot to cold, never the reverse spontaneously.
+3. **Third Law:** Absolute zero (0 K = –273.15°C) cannot be reached in a finite number of steps.
+
+## Special Relativity (Einstein, 1905)
+
+Albert Einstein's Special Theory of Relativity overturned Newtonian mechanics for objects moving near the speed of light:
+
+- The speed of light $c = 3 \times 10^8$ m/s is the same for all observers
+- Time slows down for moving objects (time dilation)
+- Length contracts in the direction of motion
+- Mass and energy are equivalent: $E = mc^2$
+
+## Quantum Mechanics
+
+At the atomic and subatomic scale, classical physics breaks down. Quantum mechanics describes particles as having both wave-like and particle-like properties:
+
+- Energy is quantized (comes in discrete packets called quanta/photons)
+- The position and momentum of a particle cannot both be known exactly (Heisenberg Uncertainty Principle)
+- Particles can be in **superposition** (multiple states at once until measured)
+
+## See Also
+
+- [Isaac Newton](article.html?id=isaac-newton) — the father of classical mechanics
+- [Euler](article.html?id=euler) — mathematician who provided much of physics' mathematical language
+- [Introduction to Calculus](article.html?id=calculus) — the mathematical language of physics
+- [Trigonometry](article.html?id=trigonometry) — essential for wave analysis and vector decomposition
+
+:::citations
+1. Serway, Raymond A. & Jewett, John W. (2018). *Physics for Scientists and Engineers.* 10th ed. Cengage.
+2. Feynman, Richard P., Leighton, Robert B., & Sands, Matthew. (1964). *The Feynman Lectures on Physics.* Addison-Wesley.
+3. Halliday, David, Resnick, Robert & Walker, Jearl. (2018). *Fundamentals of Physics.* 11th ed. Wiley.
+:::

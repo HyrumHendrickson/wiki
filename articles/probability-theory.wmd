@@ -1,0 +1,147 @@
+---
+title: Probability Theory
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: probability, mathematics, statistics, random variables, Bayes
+featured: false
+---
+
+:::summary
+Probability theory is the branch of mathematics that studies random phenomena and quantifies uncertainty. From flipping a coin to modeling the spread of disease, probability provides the rigorous tools for reasoning under uncertainty. It underpins statistics, machine learning, physics, finance, and decision-making, and is one of the most practically important areas of modern mathematics.
+:::
+
+:::infobox Probability Theory
+| Field | Mathematics / Statistics |
+| Key concepts | Sample space, events, probability, random variables |
+| Key figures | Pascal, Fermat, Bayes, Laplace, Kolmogorov |
+| Applications | Statistics, physics, finance, AI, medicine |
+| Prerequisite | Algebra, basic set theory |
+:::
+
+## What Is Probability?
+
+Probability measures the likelihood that an event will occur, expressed as a number between 0 (impossible) and 1 (certain). For a fair coin flip, the probability of heads is 0.5 (or 50%). Probability theory provides the mathematical machinery to reason precisely about uncertainty.
+
+The **sample space** $\Omega$ is the set of all possible outcomes of an experiment. An **event** is a subset of the sample space. For a fair six-sided die:
+
+$$\Omega = \{1, 2, 3, 4, 5, 6\}$$
+
+The event "rolling an even number" is $E = \{2, 4, 6\}$, with probability:
+
+$$P(E) = \frac{|E|}{|\Omega|} = \frac{3}{6} = \frac{1}{2}$$
+
+## Kolmogorov's Axioms
+
+Modern probability theory is built on three axioms formulated by Andrei Kolmogorov in 1933:
+
+1. **Non-negativity:** $P(E) \geq 0$ for any event $E$
+2. **Normalization:** $P(\Omega) = 1$ (something must happen)
+3. **Countable Additivity:** For mutually exclusive events $E_1, E_2, \ldots$:
+
+$$P(E_1 \cup E_2 \cup \cdots) = P(E_1) + P(E_2) + \cdots$$
+
+All of probability theory is derived from these three axioms.
+
+## Rules of Probability
+
+### The Complement Rule
+
+$$P(\text{not } E) = 1 - P(E)$$
+
+If the probability of rain tomorrow is 0.3, the probability of no rain is 0.7.
+
+### The Addition Rule
+
+For any two events $A$ and $B$:
+
+$$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+
+If $A$ and $B$ are **mutually exclusive** (cannot both occur), then $P(A \cap B) = 0$ and:
+
+$$P(A \cup B) = P(A) + P(B)$$
+
+### Conditional Probability
+
+The probability of $A$ given that $B$ has occurred:
+
+$$P(A \mid B) = \frac{P(A \cap B)}{P(B)} \quad \text{(provided } P(B) > 0\text{)}$$
+
+### Independence
+
+Events $A$ and $B$ are **independent** if:
+
+$$P(A \cap B) = P(A) \cdot P(B)$$
+
+Equivalently, $P(A \mid B) = P(A)$ — knowing $B$ occurred tells you nothing about $A$.
+
+## Bayes' Theorem
+
+One of the most important results in probability, Bayes' theorem relates conditional probabilities:
+
+$$P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}$$
+
+:::dropdown Example: Medical Testing
+A disease affects 1% of the population. A test for the disease is 99% accurate (1% false positive rate, 1% false negative rate). If you test positive, what is the probability you actually have the disease?
+
+Let $D$ = disease, $T$ = positive test.
+
+- $P(D) = 0.01$, $P(\text{not } D) = 0.99$
+- $P(T \mid D) = 0.99$, $P(T \mid \text{not } D) = 0.01$
+
+By Bayes' theorem:
+$$P(D \mid T) = \frac{0.99 \times 0.01}{0.99 \times 0.01 + 0.01 \times 0.99} = \frac{0.0099}{0.0099 + 0.0099} = 0.5$$
+
+Surprisingly, even with a 99% accurate test, a positive result only gives a 50% chance of actually having the disease (in a low-prevalence population). This is the base rate fallacy in action.
+:::
+
+## Random Variables
+
+A **random variable** $X$ assigns a numerical value to each outcome in a sample space. For a fair die, $X$ could be the value shown (1–6). We can describe $X$ by its **probability distribution**.
+
+### Expected Value
+
+The **expected value** (mean) of a random variable $X$:
+
+$$E[X] = \sum_x x \cdot P(X = x)$$
+
+For a fair die: $E[X] = \frac{1+2+3+4+5+6}{6} = 3.5$
+
+### Variance and Standard Deviation
+
+The **variance** measures spread around the mean:
+
+$$\text{Var}(X) = E[(X - \mu)^2] = E[X^2] - (E[X])^2$$
+
+The **standard deviation** is $\sigma = \sqrt{\text{Var}(X)}$.
+
+## Common Distributions
+
+| Distribution | Use Case | Example |
+|---|---|---|
+| Bernoulli | Single yes/no trial | Coin flip |
+| Binomial | $n$ independent yes/no trials | 10 coin flips, count heads |
+| Geometric | Trials until first success | Roll a die until you get a 6 |
+| Normal | Continuous data with bell curve | Heights, test scores |
+| Poisson | Count of rare events | Emails per hour |
+| Exponential | Time between events | Time between earthquakes |
+
+## The Normal Distribution
+
+The **normal distribution** (Gaussian) is the most important distribution in probability and statistics. Its probability density function is:
+
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
+
+The famous **68-95-99.7 rule**: approximately 68% of data lies within 1 standard deviation of the mean, 95% within 2, and 99.7% within 3.
+
+## See Also
+
+- [Algebra](article.html?id=algebra) — prerequisite mathematical foundation
+- [Introduction to Calculus](article.html?id=calculus) — used in continuous probability distributions
+
+:::citations
+1. Feller, William. (1968). *An Introduction to Probability Theory and Its Applications.* Wiley.
+2. DeGroot, Morris H. & Schervish, Mark J. (2012). *Probability and Statistics.* 4th ed. Addison-Wesley.
+3. Ross, Sheldon M. (2019). *A First Course in Probability.* 10th ed. Pearson.
+4. Kolmogorov, A.N. (1933). *Foundations of the Theory of Probability.* Chelsea Publishing (English trans. 1956).
+:::

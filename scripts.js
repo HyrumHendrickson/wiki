@@ -244,8 +244,8 @@ function initSearch(articles) {
       results.innerHTML = matches.map(a => `
         <li>
           <a href="${ROOT}${a.path}">
-            <span class="result-title">${a.title}</span><br>
-            <span class="result-cat">${a.category}</span>
+            <span class="result-title">${escapeHtml(a.title)}</span><br>
+            <span class="result-cat">${escapeHtml(a.category)}</span>
           </a>
         </li>
       `).join('');
@@ -257,8 +257,9 @@ function initSearch(articles) {
   input.addEventListener('keydown', e => {
     if (e.key === 'Escape') { results.classList.remove('open'); input.blur(); }
     if (e.key === 'Enter') {
-      const first = results.querySelector('a');
-      if (first) window.location = first.href;
+      e.preventDefault();
+      const q = input.value.trim();
+      if (q) window.location = ROOT + 'search.html?q=' + encodeURIComponent(q);
     }
   });
 
@@ -276,17 +277,190 @@ function initHeroSearch(articles) {
   const input = document.getElementById('hero-search-input');
   if (!form || !input) return;
 
+  // Live suggestions dropdown
+  const suggestions = document.createElement('ul');
+  suggestions.id = 'hero-search-suggestions';
+  suggestions.className = 'hero-search-suggestions';
+  suggestions.setAttribute('role', 'listbox');
+  suggestions.setAttribute('aria-label', 'Search suggestions');
+  form.style.position = 'relative';
+  form.appendChild(suggestions);
+
+  function showSuggestions(query) {
+    query = query.trim().toLowerCase();
+    if (!query) { suggestions.classList.remove('open'); return; }
+
+    const matches = articles.filter(a =>
+      a.title.toLowerCase().includes(query) ||
+      a.summary.toLowerCase().includes(query) ||
+      (a.tags || []).some(t => t.toLowerCase().includes(query))
+    ).slice(0, 8);
+
+    if (!matches.length) {
+      suggestions.classList.remove('open');
+      return;
+    }
+
+    suggestions.innerHTML = matches.map(a => `
+      <li>
+        <a href="${ROOT}${a.path}">
+          <span class="result-title">${escapeHtml(a.title)}</span><br>
+          <span class="result-cat">${escapeHtml(a.category)}</span>
+        </a>
+      </li>
+    `).join('');
+    suggestions.classList.add('open');
+  }
+
+  input.addEventListener('input', () => showSuggestions(input.value));
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { suggestions.classList.remove('open'); input.blur(); }
+  });
+  document.addEventListener('click', e => {
+    if (!form.contains(e.target)) suggestions.classList.remove('open');
+  });
+
   form.addEventListener('submit', e => {
     e.preventDefault();
-    const q = input.value.trim().toLowerCase();
+    const q = input.value.trim();
     if (!q) return;
-    const match = articles.find(a =>
-      a.title.toLowerCase().includes(q) ||
-      (a.tags || []).some(t => t.toLowerCase().includes(q))
-    );
-    if (match) window.location = ROOT + match.path;
-    else alert(`No articles found for "${q}". Try a different search term.`);
+    suggestions.classList.remove('open');
+    window.location = ROOT + 'search.html?q=' + encodeURIComponent(q);
   });
+}
+
+/* ── Search Page ─────────────────────────────────────────────── */
+
+function buildSearchPage(articles, categories) {
+  const form = document.getElementById('search-page-form');
+  const input = document.getElementById('search-page-input');
+  const suggestionsEl = document.getElementById('search-page-suggestions');
+  const resultsEl = document.getElementById('search-page-results');
+  if (!form || !input || !resultsEl) return;
+
+  // Build category label map
+  const catMap = {};
+  (categories || []).forEach(c => { catMap[c.id] = c.label || c.id; });
+
+  function renderResults(query) {
+    query = query.trim().toLowerCase();
+    if (!query) {
+      resultsEl.innerHTML = '';
+      return;
+    }
+
+    const matches = articles.filter(a =>
+      a.title.toLowerCase().includes(query) ||
+      a.summary.toLowerCase().includes(query) ||
+      (a.tags || []).some(t => t.toLowerCase().includes(query))
+    );
+
+    if (!matches.length) {
+      resultsEl.innerHTML = `<p class="search-no-results">No articles found for <strong>"${escapeHtml(query)}"</strong>. Try a different search term.</p>`;
+      return;
+    }
+
+    resultsEl.innerHTML = `
+      <p class="search-result-count">${matches.length} result${matches.length !== 1 ? 's' : ''} for <strong>"${escapeHtml(query)}"</strong></p>
+      <div class="article-grid search-results-grid">
+        ${matches.map(a => `
+          <a class="article-card" href="${ROOT}${a.path}">
+            <span class="card-category">${escapeHtml(catMap[a.category] || a.category)}</span>
+            <span class="card-title">${escapeHtml(a.title)}</span>
+            <span class="card-summary">${escapeHtml(a.summary)}</span>
+          </a>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  function showSuggestions(query) {
+    if (!suggestionsEl) return;
+    query = query.trim().toLowerCase();
+    if (!query) { suggestionsEl.classList.remove('open'); return; }
+
+    const matches = articles.filter(a =>
+      a.title.toLowerCase().includes(query) ||
+      a.summary.toLowerCase().includes(query) ||
+      (a.tags || []).some(t => t.toLowerCase().includes(query))
+    ).slice(0, 8);
+
+    if (!matches.length) { suggestionsEl.classList.remove('open'); return; }
+
+    suggestionsEl.innerHTML = matches.map(a => `
+      <li>
+        <a href="${ROOT}${a.path}">
+          <span class="result-title">${escapeHtml(a.title)}</span><br>
+          <span class="result-cat">${escapeHtml(catMap[a.category] || a.category)}</span>
+        </a>
+      </li>
+    `).join('');
+    suggestionsEl.classList.add('open');
+  }
+
+  // Pre-fill from URL param
+  const params = new URLSearchParams(window.location.search);
+  const q = params.get('q') || '';
+  if (q) {
+    input.value = q;
+    renderResults(q);
+  }
+
+  // Debounce helper for full results rendering and URL updates
+  let debounceTimer;
+  function debounced(fn, delay) {
+    return (...args) => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => fn(...args), delay);
+    };
+  }
+  const debouncedUpdate = debounced(val => {
+    renderResults(val);
+    const newQ = val.trim();
+    const url = new URL(window.location.href);
+    if (newQ) {
+      url.searchParams.set('q', newQ);
+    } else {
+      url.searchParams.delete('q');
+    }
+    history.replaceState(null, '', url.toString());
+  }, 300);
+
+  input.addEventListener('input', () => {
+    showSuggestions(input.value);
+    debouncedUpdate(input.value);
+  });
+  input.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { suggestionsEl && suggestionsEl.classList.remove('open'); input.blur(); }
+  });
+  document.addEventListener('click', e => {
+    if (suggestionsEl && !form.contains(e.target)) suggestionsEl.classList.remove('open');
+  });
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    clearTimeout(debounceTimer);
+    suggestionsEl && suggestionsEl.classList.remove('open');
+    const newQ = input.value.trim();
+    const url = new URL(window.location.href);
+    if (newQ) {
+      url.searchParams.set('q', newQ);
+    } else {
+      url.searchParams.delete('q');
+    }
+    history.replaceState(null, '', url.toString());
+    renderResults(input.value);
+  });
+}
+
+/** Escape HTML special characters to prevent XSS */
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 /* ── Index Page ──────────────────────────────────────────────── */
@@ -458,6 +632,7 @@ async function init() {
     initSearch(articles);
     initHeroSearch(articles);
     buildIndexPage(data);
+    buildSearchPage(articles, categories);
     initDesmosGraphs();
     initCitationLinks();
 

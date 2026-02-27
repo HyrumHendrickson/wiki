@@ -1,0 +1,142 @@
+---
+title: Trigonometry
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: trigonometry, mathematics, sine, cosine, triangles, angles
+featured: false
+---
+
+:::summary
+Trigonometry is the branch of mathematics that studies the relationships between the angles and sides of triangles. Developed by ancient Greek and Islamic mathematicians, it is essential for navigation, physics, engineering, and all higher mathematics. The six trigonometric functions — sine, cosine, tangent, and their reciprocals — form the foundation of wave analysis, Fourier transforms, and the mathematical description of periodic phenomena.
+:::
+
+:::infobox Trigonometry
+| Field | Mathematics |
+| Word origin | Greek: *trigōnon* (triangle) + *metron* (measure) |
+| Key figures | Hipparchus, Ptolemy, Al-Battani, Euler |
+| Core functions | Sine, cosine, tangent (and reciprocals) |
+| Prerequisites | Algebra, Geometry |
+| Applications | Physics, engineering, navigation, music |
+:::
+
+## The Right Triangle
+
+The most basic setting for trigonometry is the right triangle — a triangle containing a 90° angle. The three sides are:
+
+- **Hypotenuse (hyp):** The longest side, opposite the right angle
+- **Opposite (opp):** The side opposite the angle $\theta$ of interest
+- **Adjacent (adj):** The side next to the angle $\theta$ (not the hypotenuse)
+
+## The Six Trigonometric Functions
+
+The six trig functions for an angle $\theta$ in a right triangle are:
+
+| Function | Abbreviation | Definition | Reciprocal |
+|---|---|---|---|
+| Sine | $\sin\theta$ | $\frac{\text{opp}}{\text{hyp}}$ | Cosecant ($\csc\theta$) |
+| Cosine | $\cos\theta$ | $\frac{\text{adj}}{\text{hyp}}$ | Secant ($\sec\theta$) |
+| Tangent | $\tan\theta$ | $\frac{\text{opp}}{\text{adj}}$ | Cotangent ($\cot\theta$) |
+
+**Memory aid (SOH-CAH-TOA):**
+- **S**ine = **O**pposite / **H**ypotenuse
+- **C**osine = **A**djacent / **H**ypotenuse
+- **T**angent = **O**pposite / **A**djacent
+
+:::dropdown Example: Finding Missing Sides
+In a right triangle with angle $\theta = 30°$ and hypotenuse = 10:
+
+$$\text{opposite} = 10 \sin(30°) = 10 \times 0.5 = 5$$
+$$\text{adjacent} = 10 \cos(30°) = 10 \times \frac{\sqrt{3}}{2} \approx 8.66$$
+:::
+
+## Special Angles
+
+| Angle | $\sin\theta$ | $\cos\theta$ | $\tan\theta$ |
+|---|---|---|---|
+| 0° | 0 | 1 | 0 |
+| 30° | $\frac{1}{2}$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{\sqrt{3}}$ |
+| 45° | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{2}}{2}$ | 1 |
+| 60° | $\frac{\sqrt{3}}{2}$ | $\frac{1}{2}$ | $\sqrt{3}$ |
+| 90° | 1 | 0 | undefined |
+
+## The Unit Circle
+
+The **unit circle** — a circle of radius 1 centered at the origin — extends trigonometry beyond right triangles to all angles (including negative angles and angles greater than 360°).
+
+For a point $(x, y)$ on the unit circle at angle $\theta$:
+
+$$\cos\theta = x \qquad \sin\theta = y$$
+
+The unit circle reveals:
+- **Periodicity:** $\sin(\theta + 360°) = \sin\theta$ — trig functions repeat every 360° (or $2\pi$ radians)
+- **Symmetry:** $\sin(-\theta) = -\sin\theta$ (odd function); $\cos(-\theta) = \cos\theta$ (even function)
+
+## Radians
+
+While degrees are familiar, **radians** are the natural unit for angles in mathematics and physics.
+
+$$180° = \pi \text{ radians} \qquad 1 \text{ radian} = \frac{180°}{\pi} \approx 57.3°$$
+
+Common conversions: $90° = \frac{\pi}{2}$, $45° = \frac{\pi}{4}$, $60° = \frac{\pi}{3}$, $30° = \frac{\pi}{6}$.
+
+## Pythagorean Identity
+
+The most fundamental trigonometric identity:
+
+$$\sin^2\theta + \cos^2\theta = 1$$
+
+This is simply the Pythagorean theorem applied to the unit circle: $x^2 + y^2 = 1$.
+
+Dividing by $\cos^2\theta$ gives: $\tan^2\theta + 1 = \sec^2\theta$
+
+Dividing by $\sin^2\theta$ gives: $1 + \cot^2\theta = \csc^2\theta$
+
+## Important Identities
+
+### Angle Addition Formulas
+$$\sin(A + B) = \sin A \cos B + \cos A \sin B$$
+$$\cos(A + B) = \cos A \cos B - \sin A \sin B$$
+
+### Double Angle Formulas
+$$\sin(2\theta) = 2\sin\theta\cos\theta$$
+$$\cos(2\theta) = \cos^2\theta - \sin^2\theta = 1 - 2\sin^2\theta = 2\cos^2\theta - 1$$
+
+## Laws for Non-Right Triangles
+
+:::dropdown Law of Sines
+For any triangle with sides $a, b, c$ opposite angles $A, B, C$:
+
+$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$
+
+Use when you know two angles and one side (AAS or ASA).
+:::
+
+:::dropdown Law of Cosines
+Generalizes the Pythagorean theorem to non-right triangles:
+
+$$c^2 = a^2 + b^2 - 2ab\cos C$$
+
+Use when you know two sides and the included angle (SAS) or all three sides (SSS).
+:::
+
+## Applications
+
+- **Navigation:** Sailors and pilots use trigonometry to calculate course and distance
+- **Physics:** Wave motion (sound, light, water waves) is described by sine and cosine functions
+- **Engineering:** Structural analysis, signal processing, AC circuit analysis
+- **Music:** Sound waves are trigonometric functions; Fourier analysis decomposes any sound into sine waves
+- **Computer Graphics:** Rotations and transformations use trigonometric functions
+
+## See Also
+
+- [Algebra](article.html?id=algebra) — the prerequisite for trigonometry
+- [Introduction to Calculus](article.html?id=calculus) — derivatives and integrals of trig functions
+- [The Pythagorean Theorem](article.html?id=pythagorean-theorem) — the geometric foundation of trigonometry
+- [Physics](article.html?id=physics) — one of the main applications of trigonometry
+
+:::citations
+1. Sullivan, Michael. (2019). *Trigonometry: A Unit Circle Approach.* 11th ed. Pearson.
+2. Larson, Ron. (2017). *Trigonometry.* 10th ed. Cengage.
+3. Van Brummelen, Glen. (2009). *The Mathematics of the Heavens and the Earth: The Early History of Trigonometry.* Princeton University Press.
+:::

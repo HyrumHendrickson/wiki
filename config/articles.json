@@ -207,6 +207,300 @@
       "lastUpdated": "2026-02-27"
     },
     {
+      "id": "philosophy",
+      "title": "Philosophy",
+      "category": "philosophy",
+      "path": "articles/article.html?id=philosophy",
+      "summary": "Philosophy is the disciplined study of fundamental questions about reality, knowledge, morality, and existence using reason and argument. From ancient Greece to the modern world, it has shaped every intellectual tradition in Western civilization.",
+      "tags": [
+        "philosophy",
+        "reason",
+        "metaphysics",
+        "epistemology",
+        "ethics",
+        "logic"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "theology",
+      "title": "Theology",
+      "category": "philosophy",
+      "path": "articles/article.html?id=theology",
+      "summary": "Theology is faith seeking understanding — the disciplined study of God, revelation, and religious doctrine. From classical arguments for God's existence to the distinctive doctrines of the restored gospel, theology explores what God has revealed.",
+      "tags": [
+        "theology",
+        "faith",
+        "revelation",
+        "LDS",
+        "Christian doctrine",
+        "God"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "lds-church",
+      "title": "The Church of Jesus Christ of Latter-Day Saints",
+      "category": "faith",
+      "path": "articles/article.html?id=lds-church",
+      "summary": "The Church of Jesus Christ of Latter-day Saints is a Christian faith founded through the prophet Joseph Smith in 1830, believing in the restoration of Christ's original church, continuing revelation, and the fullness of the gospel.",
+      "tags": [
+        "LDS",
+        "Mormon",
+        "Church",
+        "Latter-day Saints",
+        "restoration",
+        "Joseph Smith"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "christian-history",
+      "title": "Christian History",
+      "category": "history",
+      "path": "articles/article.html?id=christian-history",
+      "summary": "Christian history spans two thousand years, from the ministry of Jesus Christ to the global faith of over 2 billion believers today — including the Great Apostasy, the medieval church, the Reformation, and the Restoration.",
+      "tags": [
+        "Christianity",
+        "church history",
+        "apostasy",
+        "reformation",
+        "early church",
+        "history"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "bible",
+      "title": "The Bible",
+      "category": "faith",
+      "path": "articles/article.html?id=bible",
+      "summary": "The Bible is the foundational scripture of Christianity — a library of books spanning thousands of years of God's dealings with mankind. Latter-day Saints revere the King James Version as the word of God, complemented by additional scripture.",
+      "tags": [
+        "Bible",
+        "scripture",
+        "Old Testament",
+        "New Testament",
+        "Christianity",
+        "LDS"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "doctrine-and-covenants",
+      "title": "Doctrine and Covenants",
+      "category": "faith",
+      "path": "articles/article.html?id=doctrine-and-covenants",
+      "summary": "The Doctrine and Covenants is a collection of divine revelations received primarily by Joseph Smith, addressing the restored Church directly in the modern era — covering church organization, priesthood, cosmic theology, and the afterlife.",
+      "tags": [
+        "Doctrine and Covenants",
+        "D&C",
+        "LDS",
+        "scripture",
+        "Joseph Smith",
+        "revelation"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "pearl-of-great-price",
+      "title": "The Pearl of Great Price",
+      "category": "faith",
+      "path": "articles/article.html?id=pearl-of-great-price",
+      "summary": "The Pearl of Great Price is one of the four standard works of the LDS Church, containing the Book of Moses, the Book of Abraham, Joseph Smith\u2014History, and the Articles of Faith, restoring ancient truths and clarifying LDS doctrine.",
+      "tags": [
+        "Pearl of Great Price",
+        "LDS",
+        "scripture",
+        "Moses",
+        "Abraham",
+        "Joseph Smith",
+        "Articles of Faith"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "probability-theory",
+      "title": "Probability Theory",
+      "category": "mathematics",
+      "path": "articles/article.html?id=probability-theory",
+      "summary": "Probability theory is the branch of mathematics that quantifies uncertainty and studies random phenomena. It underpins statistics, machine learning, physics, finance, and all modern data-driven decision-making.",
+      "tags": [
+        "probability",
+        "mathematics",
+        "statistics",
+        "random variables",
+        "Bayes"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "algebra",
+      "title": "Algebra",
+      "category": "mathematics",
+      "path": "articles/article.html?id=algebra",
+      "summary": "Algebra is the branch of mathematics that uses letters and symbols to represent numbers and quantities, allowing us to write general rules and solve equations. It is the gateway to all higher mathematics.",
+      "tags": [
+        "algebra",
+        "mathematics",
+        "equations",
+        "variables",
+        "polynomials"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "trigonometry",
+      "title": "Trigonometry",
+      "category": "mathematics",
+      "path": "articles/article.html?id=trigonometry",
+      "summary": "Trigonometry is the branch of mathematics studying relationships between angles and sides of triangles. Essential for navigation, physics, and engineering, it provides the mathematical foundation for wave analysis and periodic phenomena.",
+      "tags": [
+        "trigonometry",
+        "mathematics",
+        "sine",
+        "cosine",
+        "triangles",
+        "angles"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "physics",
+      "title": "Physics",
+      "category": "science",
+      "path": "articles/article.html?id=physics",
+      "summary": "Physics is the most fundamental of the natural sciences — the study of matter, energy, space, and time. From Newton's laws to Einstein's relativity and quantum mechanics, it drives every major technological revolution.",
+      "tags": [
+        "physics",
+        "science",
+        "mechanics",
+        "Newton",
+        "Einstein",
+        "gravity",
+        "forces"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "isaac-newton",
+      "title": "Isaac Newton",
+      "category": "science",
+      "path": "articles/article.html?id=isaac-newton",
+      "summary": "Sir Isaac Newton (1643\u20131727) was an English mathematician and physicist who formulated the laws of motion and universal gravitation, co-invented calculus, and laid the foundation for classical mechanics and the scientific worldview.",
+      "tags": [
+        "Isaac Newton",
+        "physics",
+        "calculus",
+        "gravity",
+        "laws of motion",
+        "science",
+        "history"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "euler",
+      "title": "Leonhard Euler",
+      "category": "mathematics",
+      "path": "articles/article.html?id=euler",
+      "summary": "Leonhard Euler (1707\u20131783) was a Swiss mathematician who made foundational contributions to calculus, number theory, graph theory, and physics. The most prolific mathematician in history, his notation still forms the backbone of modern mathematics.",
+      "tags": [
+        "Euler",
+        "mathematics",
+        "calculus",
+        "graph theory",
+        "number theory",
+        "history of math"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "da-vinci",
+      "title": "Leonardo da Vinci",
+      "category": "history",
+      "path": "articles/article.html?id=da-vinci",
+      "summary": "Leonardo da Vinci (1452\u20131519) was an Italian Renaissance polymath \u2014 painter, scientist, engineer, and inventor. Creator of the Mona Lisa and The Last Supper, he is the supreme example of the Renaissance ideal of universal genius.",
+      "tags": [
+        "da Vinci",
+        "Renaissance",
+        "art",
+        "science",
+        "Leonardo",
+        "painting",
+        "invention"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "renaissance",
+      "title": "The Renaissance",
+      "category": "history",
+      "path": "articles/article.html?id=renaissance",
+      "summary": "The Renaissance was a transformative cultural movement that began in 14th-century Italy and spread across Europe, marking the transition from the medieval world to the modern era through humanism, art, science, and the revival of classical learning.",
+      "tags": [
+        "Renaissance",
+        "history",
+        "art",
+        "humanism",
+        "Florence",
+        "Italy",
+        "da Vinci",
+        "Reformation"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "crusades",
+      "title": "The Crusades",
+      "category": "history",
+      "path": "articles/article.html?id=crusades",
+      "summary": "The Crusades were a series of religious wars (1095\u20131291) launched by the papacy to recover the Holy Land from Muslim control. Complex in motivation and devastating in impact, they permanently shaped Christian-Muslim relations and medieval Europe.",
+      "tags": [
+        "Crusades",
+        "medieval history",
+        "Jerusalem",
+        "Christianity",
+        "Islam",
+        "history"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "reformation",
+      "title": "The Reformation",
+      "category": "history",
+      "path": "articles/article.html?id=reformation",
+      "summary": "The Protestant Reformation was a 16th-century religious revolution launched by Martin Luther that permanently split Western Christianity, reshaped European politics, and — from an LDS perspective — providentially prepared the world for the Restoration of the gospel.",
+      "tags": [
+        "Reformation",
+        "Protestant",
+        "Luther",
+        "Calvin",
+        "history",
+        "Christianity",
+        "church history"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
       "id": "jrr-tolkien",
       "title": "J.R.R. Tolkien",
       "category": "literature",

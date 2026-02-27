@@ -1,0 +1,109 @@
+---
+title: Leonhard Euler
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: Euler, mathematics, calculus, graph theory, number theory, history of math
+featured: false
+---
+
+:::summary
+Leonhard Euler (1707–1783) was a Swiss mathematician and physicist who made foundational contributions to virtually every branch of mathematics active in his time — calculus, number theory, graph theory, mechanics, optics, and more. He is the most prolific mathematician in history, and his notation still forms the backbone of modern mathematics: $e$, $i$, $\pi$, $f(x)$, $\Sigma$, and more. His identity $e^{i\pi} + 1 = 0$ has been called the most beautiful equation in mathematics.
+:::
+
+:::infobox Leonhard Euler
+| Born | April 15, 1707, Basel, Switzerland |
+| Died | September 18, 1783, St. Petersburg, Russia |
+| Fields | Mathematics, physics, astronomy, engineering |
+| Key works | *Introductio in analysin infinitorum* (1748), *Mechanica* (1736) |
+| Known for | Euler's identity, graph theory, calculus notation, number theory |
+| Notable | Went blind in one eye (1738), then the other (1766), yet continued to produce prolific mathematics |
+:::
+
+## Life and Career
+
+Leonhard Euler was born in Basel, Switzerland, and studied under Johann Bernoulli, who recognized his extraordinary talent. He spent most of his career at the Saint Petersburg Academy of Sciences in Russia and the Berlin Academy in Prussia.
+
+In 1738 Euler lost sight in his right eye, apparently due to overwork. In 1766 he lost nearly all vision in his remaining eye after a cataract operation. Remarkably, his loss of sight barely slowed him down — he had an extraordinary memory and could perform complex calculations in his head. He reportedly increased his output after going blind, aided by his facility for mental mathematics.
+
+Euler had 13 children and was known for his cheerful, generous personality and devout Protestant faith. He reportedly gave simple mathematical demonstrations to Diderot (who knew no mathematics) at the Russian court, amusing Catherine the Great.
+
+## Contributions to Mathematics
+
+Euler's contributions are so vast that mathematics historians often say the 18th century should simply be called "the age of Euler."
+
+### Notation
+
+Euler standardized much of the notation we use today:
+
+| Symbol | Meaning | Introduced by Euler |
+|---|---|---|
+| $e$ | Base of natural logarithm (~2.718) | Yes |
+| $i$ | $\sqrt{-1}$ (imaginary unit) | Yes |
+| $\pi$ | Ratio of circumference to diameter | Popularized by Euler |
+| $f(x)$ | Function notation | Yes |
+| $\Sigma$ | Summation | Yes |
+| $\Delta$ | Difference/change | Yes |
+
+### Euler's Identity
+
+The most famous equation in mathematics:
+
+$$e^{i\pi} + 1 = 0$$
+
+This single equation connects the five most fundamental constants in mathematics — $e$ (the base of natural logarithms), $i$ (the imaginary unit), $\pi$ (the ratio of a circle's circumference to its diameter), $1$ (the multiplicative identity), and $0$ (the additive identity). It follows from Euler's more general formula:
+
+$$e^{i\theta} = \cos\theta + i\sin\theta$$
+
+This formula is the foundation of Fourier analysis and all of modern signal processing.
+
+### Graph Theory
+
+In 1736, Euler solved the **Königsberg Bridge Problem**: the city of Königsberg had seven bridges connecting its islands, and citizens wondered whether one could walk across all seven bridges without crossing any bridge twice. Euler proved it was impossible, in the process founding **graph theory** — the mathematics of networks.
+
+His insight: such a path (an "Eulerian path") exists only if the graph has exactly zero or two vertices of odd degree.
+
+:::dropdown The Seven Bridges of Königsberg
+Euler represented the landmasses as vertices and the bridges as edges in a graph. He proved that an Eulerian circuit (returning to the start) requires all vertices to have even degree, and an Eulerian path requires exactly two vertices of odd degree. Since all four landmasses of Königsberg had odd degree, no such path was possible.
+
+This 1736 paper is the first paper in graph theory, which today underlies internet routing, social network analysis, and much of computer science.
+:::
+
+### Number Theory
+
+Euler proved many fundamental results in number theory, including:
+
+- **Euler's theorem:** $a^{\phi(n)} \equiv 1 \pmod{n}$ (generalizing Fermat's little theorem)
+- The formula for the sum of reciprocals of squares: $\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}$ (the Basel problem)
+- Introduction of the **Euler totient function** $\phi(n)$
+
+### Calculus and Analysis
+
+Euler transformed calculus from a geometric theory into an algebraic analysis of functions. He introduced the concept of a **function** as the central object of study, defined the natural logarithm and exponential function analytically, and developed the theory of infinite series.
+
+He also introduced and developed:
+- Ordinary and partial differential equations
+- Calculus of variations
+- Complex analysis
+
+## Physics and Engineering
+
+Euler developed the theory of rigid body rotation (Euler's equations of motion), made fundamental contributions to optics and fluid mechanics (the Euler equations for inviscid flow), and laid the mathematical foundations for structural engineering (Euler's column formula for buckling).
+
+## Faith
+
+Euler was a devout Christian throughout his life and reportedly defended Christianity in debates at the court of Frederick the Great. He is sometimes quoted as saying in a debate: "Sir, $(a+b^n)/n = x$, hence God exists; reply!" — though this is likely apocryphal, it captures his reputation for defending faith with wit.
+
+## See Also
+
+- [Introduction to Calculus](article.html?id=calculus) — the subject Euler transformed
+- [Isaac Newton](article.html?id=isaac-newton) — whose work Euler extended and systematized
+- [Algebra](article.html?id=algebra) — the algebraic framework Euler helped create
+- [Physics](article.html?id=physics) — physics benefited enormously from Euler's contributions
+
+:::citations
+1. Dunham, William. (1999). *Euler: The Master of Us All.* Mathematical Association of America.
+2. Calinger, Ronald S. (2016). *Leonhard Euler: Mathematical Genius in the Enlightenment.* Princeton University Press.
+3. Sandifer, C. Edward. (2007). *The Early Mathematics of Leonhard Euler.* Mathematical Association of America.
+4. Euler, Leonhard. (1748). *Introductio in analysin infinitorum.* Lausanne.
+:::

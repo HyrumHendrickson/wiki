@@ -1,0 +1,145 @@
+---
+title: Algebra
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: algebra, mathematics, equations, variables, polynomials
+featured: false
+---
+
+:::summary
+Algebra is the branch of mathematics that uses letters and symbols to represent numbers and quantities, allowing us to write general rules and solve equations. From balancing a budget to encoding information in computers, algebra is the universal language of quantitative reasoning. It is the gateway to all higher mathematics, including trigonometry, calculus, and beyond.
+:::
+
+:::infobox Algebra
+| Field | Mathematics |
+| Word origin | Arabic: *al-jabr* — "reunion of broken parts" |
+| Key figures | Al-Khwarizmi, Diophantus, Viète, Euler |
+| Core topics | Variables, expressions, equations, functions |
+| Next steps | Trigonometry, Calculus, Linear Algebra |
+:::
+
+## What Is Algebra?
+
+The word "algebra" comes from the Arabic *al-jabr*, appearing in the title of a 9th-century text by the Persian mathematician Muhammad ibn Musa al-Khwarizmi: *Kitāb al-mukhtaṣar fī ḥisāb al-jabr waʾl-muqābala* ("The Compendious Book on Calculation by Completion and Balancing"). Al-Khwarizmi is often called the "father of algebra," and the word "algorithm" derives from the Latinization of his name.
+
+Algebra generalizes arithmetic. Instead of asking "what is 3 + 4?", algebra asks "if $x + 4 = 7$, what is $x$?" The use of variables allows us to express relationships that hold for all numbers, not just specific cases.
+
+## Variables and Expressions
+
+A **variable** is a symbol (usually a letter) that represents an unknown or changing quantity. An **algebraic expression** combines variables, numbers, and operations:
+
+$$3x + 2y - 5$$
+
+**Simplifying** means combining like terms:
+
+$$2x + 3x = 5x \qquad 4y - y = 3y$$
+
+## Equations and Inequalities
+
+An **equation** states that two expressions are equal:
+
+$$3x + 5 = 20$$
+
+To solve: isolate the variable using inverse operations.
+
+$$3x = 15 \implies x = 5$$
+
+**Check:** $3(5) + 5 = 20$ ✓
+
+An **inequality** uses $<$, $>$, $\leq$, or $\geq$:
+
+$$2x - 3 > 7 \implies 2x > 10 \implies x > 5$$
+
+:::dropdown Example: Solving a Two-Step Equation
+Solve $\frac{x}{4} - 3 = 5$.
+
+Step 1: Add 3 to both sides: $\frac{x}{4} = 8$
+
+Step 2: Multiply both sides by 4: $x = 32$
+
+**Check:** $\frac{32}{4} - 3 = 8 - 3 = 5$ ✓
+:::
+
+## Linear Equations and Graphs
+
+A **linear equation** in two variables has the form $y = mx + b$:
+
+- $m$ is the **slope** (rate of change; how steep the line is)
+- $b$ is the **y-intercept** (where the line crosses the y-axis)
+
+The slope between two points $(x_1, y_1)$ and $(x_2, y_2)$:
+
+$$m = \frac{y_2 - y_1}{x_2 - x_1}$$
+
+**Parallel lines** have equal slopes; **perpendicular lines** have slopes that are negative reciprocals ($m_1 \cdot m_2 = -1$).
+
+## Systems of Equations
+
+A **system of equations** is two or more equations with the same variables. The solution is the point (or points) that satisfies all equations simultaneously.
+
+**Method 1 — Substitution:**
+
+$$\begin{cases} y = 2x + 1 \\ 3x + y = 16 \end{cases}$$
+
+Substitute $y = 2x + 1$ into the second equation: $3x + (2x + 1) = 16 \implies 5x = 15 \implies x = 3$
+
+Then $y = 2(3) + 1 = 7$. Solution: $(3, 7)$.
+
+**Method 2 — Elimination:** Add or subtract equations to eliminate a variable.
+
+## Polynomials
+
+A **polynomial** is a sum of terms of the form $ax^n$:
+
+$$p(x) = a_n x^n + a_{n-1}x^{n-1} + \cdots + a_1 x + a_0$$
+
+Key operations:
+- **Adding/Subtracting:** Combine like terms
+- **Multiplying:** Use the distributive property (FOIL for two binomials)
+- **Factoring:** Express as a product of simpler polynomials
+
+:::dropdown Factoring Quadratics
+A **quadratic** has the form $ax^2 + bx + c$. To factor $x^2 + 5x + 6$:
+
+Find two numbers that multiply to 6 and add to 5: those are 2 and 3.
+
+$$x^2 + 5x + 6 = (x + 2)(x + 3)$$
+
+The solutions (roots) are $x = -2$ and $x = -3$.
+:::
+
+## The Quadratic Formula
+
+For any quadratic equation $ax^2 + bx + c = 0$, the solutions are:
+
+$$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+
+The expression under the square root, $b^2 - 4ac$, is the **discriminant**:
+- $> 0$: two distinct real roots
+- $= 0$: one repeated real root
+- $< 0$: two complex (imaginary) roots
+
+## Functions
+
+A **function** $f$ assigns exactly one output to each input. Written $f(x)$ (read "f of x"), it describes a rule for transforming $x$ into another value.
+
+| Function type | Form | Example |
+|---|---|---|
+| Linear | $f(x) = mx + b$ | $f(x) = 2x - 1$ |
+| Quadratic | $f(x) = ax^2 + bx + c$ | $f(x) = x^2 - 4$ |
+| Exponential | $f(x) = a \cdot b^x$ | $f(x) = 2^x$ |
+| Absolute value | $f(x) = \|x\|$ | $f(x) = \|x - 3\|$ |
+
+## See Also
+
+- [Trigonometry](article.html?id=trigonometry) — the next step after algebra
+- [Introduction to Calculus](article.html?id=calculus) — builds on algebraic foundations
+- [The Pythagorean Theorem](article.html?id=pythagorean-theorem) — a key geometric result used in algebra
+
+:::citations
+1. Sullivan, Michael. (2019). *Algebra & Trigonometry.* 11th ed. Pearson.
+2. Stewart, James, et al. (2016). *Precalculus: Mathematics for Calculus.* 7th ed. Cengage.
+3. Boyer, Carl B. (1991). *A History of Mathematics.* 2nd ed. Wiley.
+4. Al-Khwarizmi, Muhammad ibn Musa. (c. 820). *Kitāb al-mukhtaṣar fī ḥisāb al-jabr waʾl-muqābala.*
+:::

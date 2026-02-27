@@ -533,6 +533,72 @@ function initDesmosGraphs() {
   });
 }
 
+/* ── Searchable Database ─────────────────────────────────────── */
+
+/**
+ * Initialize all .wiki-database[data-src] components.
+ * Fetches JSON from data-src, renders a table, and wires up live search.
+ * Expected JSON shape:
+ *   { "columns": [{"key":"...", "label":"..."}], "rows": [{...}] }
+ */
+async function initDatabases() {
+  const containers = document.querySelectorAll('.wiki-database[data-src]');
+  if (!containers.length) return;
+
+  for (const container of containers) {
+    const src    = container.dataset.src;
+    const bodyEl = container.querySelector('.wiki-database-body');
+    const searchEl = container.querySelector('.wiki-database-search');
+    if (!bodyEl || !src) continue;
+
+    let dbData;
+    try {
+      const res = await fetch(ROOT + src);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      dbData = await res.json();
+    } catch (err) {
+      bodyEl.innerHTML = `<p class="wiki-database-loading">Could not load database from <code>${escapeHtml(src)}</code>.</p>`;
+      console.warn('wiki-database load error:', err);
+      continue;
+    }
+
+    const { columns, rows } = dbData;
+    if (!columns || !rows) {
+      bodyEl.innerHTML = '<p class="wiki-database-loading">Invalid database format. Expected JSON with "columns" and "rows" properties.</p>';
+      continue;
+    }
+
+    // Pre-compute lowercase searchable values for performance
+    const rowsLower = rows.map(row =>
+      columns.map(c => (row[c.key] || '').toLowerCase())
+    );
+
+    function renderTable(filtered) {
+      if (!filtered.length) {
+        return '<p class="wiki-database-empty">No results found.</p>';
+      }
+      const thead = `<thead><tr>${columns.map(c => `<th>${escapeHtml(c.label)}</th>`).join('')}</tr></thead>`;
+      const tbody = `<tbody>${filtered.map(row =>
+        `<tr>${columns.map(c => `<td>${escapeHtml(row[c.key] || '')}</td>`).join('')}</tr>`
+      ).join('')}</tbody>`;
+      const count = `<div class="wiki-database-count">Showing ${filtered.length} of ${rows.length} ${rows.length === 1 ? 'entry' : 'entries'}</div>`;
+      return `<table>${thead}${tbody}</table>${count}`;
+    }
+
+    bodyEl.innerHTML = renderTable(rows);
+
+    if (searchEl) {
+      searchEl.addEventListener('input', () => {
+        const q = searchEl.value.trim().toLowerCase();
+        const filtered = q
+          ? rows.filter((_, i) => rowsLower[i].some(v => v.includes(q)))
+          : rows;
+        bodyEl.innerHTML = renderTable(filtered);
+      });
+    }
+  }
+}
+
 /* ── Citation Links ──────────────────────────────────────────── */
 
 function initCitationLinks() {
@@ -663,6 +729,7 @@ async function init() {
     buildIndexPage(data, featuredIds);
     buildSearchPage(articles, categories);
     initDesmosGraphs();
+    initDatabases();
     initCitationLinks();
 
   } catch (err) {

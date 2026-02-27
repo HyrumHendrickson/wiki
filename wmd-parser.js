@@ -243,6 +243,22 @@ const WMDParser = (() => {
 </section>`;
   }
 
+  function renderDatabaseBlock(params) {
+    // params: "Title | path/to/data.json"
+    const pipeIdx = params.indexOf('|');
+    const title = pipeIdx !== -1 ? params.slice(0, pipeIdx).trim() : params.trim();
+    const src   = pipeIdx !== -1 ? params.slice(pipeIdx + 1).trim() : '';
+    return `<div class="wiki-database" data-src="${escapeHtml(src)}">
+  <div class="wiki-database-header">
+    <span class="wiki-database-title">${escapeHtml(title)}</span>
+    <input class="wiki-database-search" type="search" placeholder="Search…" aria-label="Search ${escapeHtml(title)}">
+  </div>
+  <div class="wiki-database-body">
+    <p class="wiki-database-loading">Loading…</p>
+  </div>
+</div>`;
+  }
+
   function renderQuoteBlock(params, bodyHtml) {
     const attribution = params.trim();
     return `<blockquote>
@@ -339,6 +355,9 @@ const WMDParser = (() => {
             break;
           case 'citations':
             output.push(renderCitationsBlock(rawBody));
+            break;
+          case 'database':
+            output.push(renderDatabaseBlock(blockParams));
             break;
           case 'quote':
             output.push(renderQuoteBlock(blockParams, parseBlocks(rawBody)));

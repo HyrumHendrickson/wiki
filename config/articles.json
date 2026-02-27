@@ -190,18 +190,223 @@
       "lastUpdated": "2026-02-27"
     },
     {
-      "id": "philosophy-theology",
-      "title": "Philosophy and Theology",
+      "id": "augustine",
+      "title": "Augustine of Hippo",
       "category": "philosophy",
-      "path": "articles/article.html?id=philosophy-theology",
-      "summary": "Philosophy and theology are the twin pillars of reasoned inquiry into existence, truth, and the nature of God \u2014 disciplines that have shaped Latter-day Saint thought and all of Western civilization.",
+      "path": "articles/article.html?id=augustine",
+      "summary": "Augustine of Hippo (354–430 AD) was one of the most influential theologians in Christian history, whose writings on grace, original sin, and the City of God shaped Western Christianity for over a thousand years.",
       "tags": [
-        "philosophy",
+        "Augustine",
         "theology",
-        "reason",
-        "faith",
+        "church father",
+        "original sin",
+        "grace",
+        "City of God"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "aquinas",
+      "title": "Thomas Aquinas",
+      "category": "philosophy",
+      "path": "articles/article.html?id=aquinas",
+      "summary": "Thomas Aquinas (1225–1274) was a Dominican friar and theologian whose Summa Theologica represents the greatest synthesis of Christian faith and Aristotelian philosophy ever attempted. His Five Ways remain among the most discussed arguments for God's existence.",
+      "tags": [
+        "Aquinas",
+        "theology",
+        "scholasticism",
+        "Summa Theologica",
+        "Five Ways",
+        "Aristotle"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "martin-luther",
+      "title": "Martin Luther",
+      "category": "history",
+      "path": "articles/article.html?id=martin-luther",
+      "summary": "Martin Luther (1483–1546) was a German monk and reformer whose Ninety-Five Theses sparked the Protestant Reformation — one of the most consequential events in the history of Christianity.",
+      "tags": [
+        "Luther",
+        "Reformation",
+        "Protestant",
+        "theology",
+        "justification",
+        "faith"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "parley-pratt",
+      "title": "Parley P. Pratt",
+      "category": "faith",
+      "path": "articles/article.html?id=parley-pratt",
+      "summary": "Parley Parker Pratt (1807–1857) was one of the original Twelve Apostles of The Church of Jesus Christ of Latter-day Saints and a prolific writer, missionary, and theologian whose Key to the Science of Theology was the first systematic presentation of LDS theology.",
+      "tags": [
+        "Parley Pratt",
         "LDS",
-        "metaphysics"
+        "apostle",
+        "missionary",
+        "theology",
+        "restoration"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "caesar",
+      "title": "Julius Caesar",
+      "category": "history",
+      "path": "articles/article.html?id=caesar",
+      "summary": "Gaius Julius Caesar (100–44 BC) was a Roman general and statesman whose military genius and political ambition transformed the Roman Republic into what became the Roman Empire — and whose career shaped the world into which Jesus Christ was born.",
+      "tags": [
+        "Caesar",
+        "Rome",
+        "republic",
+        "general",
+        "statesman",
+        "ancient history"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "alexander-the-great",
+      "title": "Alexander the Great",
+      "category": "history",
+      "path": "articles/article.html?id=alexander-the-great",
+      "summary": "Alexander the Great (356–323 BC) was the King of Macedon whose campaigns created one of the largest empires in ancient history, spreading Greek language and culture across the world and creating the Hellenistic environment of the New Testament.",
+      "tags": [
+        "Alexander",
+        "Macedonia",
+        "Greece",
+        "ancient history",
+        "conquest",
+        "Hellenism"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "athens",
+      "title": "Athens",
+      "category": "history",
+      "path": "articles/article.html?id=athens",
+      "summary": "Athens was the cultural and intellectual heart of ancient Greece — birthplace of democracy, philosophy, drama, and the Western intellectual tradition. Home to Socrates, Plato, and the Parthenon, Athens produced ideas that still shape law, science, and thought across the Western world.",
+      "tags": [
+        "Athens",
+        "Greece",
+        "democracy",
+        "philosophy",
+        "ancient history",
+        "Acropolis"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "sparta",
+      "title": "Sparta",
+      "category": "history",
+      "path": "articles/article.html?id=sparta",
+      "summary": "Sparta was a powerful Greek city-state renowned for its extraordinary military culture and discipline, producing the finest soldiers in the ancient world and providing Athens's great rival for the leadership of Greece.",
+      "tags": [
+        "Sparta",
+        "Greece",
+        "ancient history",
+        "military",
+        "Spartans",
+        "Peloponnesian War"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "delphi",
+      "title": "Delphi",
+      "category": "history",
+      "path": "articles/article.html?id=delphi",
+      "summary": "Delphi was the most sacred site in the ancient Greek world — home to the Oracle of Apollo, whose pronouncements guided kings, generals, and city-states for nearly a thousand years, and whose maxims including 'Know thyself' shaped Greek culture and philosophy.",
+      "tags": [
+        "Delphi",
+        "oracle",
+        "Greece",
+        "Apollo",
+        "ancient history",
+        "religion"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "western-history",
+      "title": "Western History",
+      "category": "history",
+      "path": "articles/article.html?id=western-history",
+      "summary": "Western history is the story of civilizations that grew from ancient Greece and Rome, passed through Christian Europe, and produced the modern world — and the providential stage on which the Restoration of the gospel took place.",
+      "tags": [
+        "western history",
+        "civilization",
+        "Europe",
+        "ancient",
+        "medieval",
+        "modern"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "king-arthur",
+      "title": "King Arthur",
+      "category": "literature",
+      "path": "articles/article.html?id=king-arthur",
+      "summary": "King Arthur is the legendary British ruler whose story — with Guinevere, Lancelot, Merlin, and the Knights of the Round Table — is one of the most enduring in Western literature, rich with themes of chivalry, sacrifice, and the quest for the Holy Grail.",
+      "tags": [
+        "King Arthur",
+        "Arthurian legend",
+        "medieval",
+        "Britain",
+        "Camelot",
+        "Grail"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "vikings",
+      "title": "Vikings",
+      "category": "history",
+      "path": "articles/article.html?id=vikings",
+      "summary": "The Vikings were Norse seafarers from Scandinavia who, between roughly 793 and 1100 AD, raided, traded, explored, and settled across an extraordinary range of the world — from Newfoundland to the Volga River — leaving a permanent mark on Western civilization.",
+      "tags": [
+        "Vikings",
+        "Norse",
+        "Scandinavia",
+        "medieval history",
+        "raiders",
+        "explorers",
+        "mythology"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "beowulf",
+      "title": "Beowulf",
+      "category": "literature",
+      "path": "articles/article.html?id=beowulf",
+      "summary": "Beowulf is the oldest surviving epic poem in the English language — a 3,182-line masterpiece of Old English poetry about the hero Beowulf's battles with the monster Grendel, Grendel's mother, and a dragon, and a profound meditation on heroism, loyalty, and mortality.",
+      "tags": [
+        "Beowulf",
+        "Old English",
+        "epic poem",
+        "medieval literature",
+        "Grendel",
+        "Anglo-Saxon"
       ],
       "author": "EduWiki Team",
       "lastUpdated": "2026-02-27"

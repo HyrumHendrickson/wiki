@@ -129,6 +129,10 @@ $$h'(t) = -9.8t + 20 = 0 \implies t = \frac{20}{9.8} \approx 2.04 \text{ s}$$
 Maximum height: $h(2.04) \approx -4.9(2.04)^2 + 20(2.04) \approx 20.4$ m
 :::
 
+## See Also
+
+- [The Pythagorean Theorem](article.html?id=pythagorean-theorem) — a foundational result in geometry that calculus builds upon
+
 :::citations
 1. Stewart, J. (2015). *Calculus: Early Transcendentals*, 8th ed. Cengage Learning.
 2. Apostol, T. M. (1967). *Calculus, Vol. 1*. Wiley.

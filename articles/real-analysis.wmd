@@ -1,0 +1,124 @@
+---
+title: Real Analysis
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: mathematics, real analysis, calculus, limits, continuity, convergence, proofs
+featured: false
+---
+
+:::summary
+Real analysis is the rigorous mathematical study of the real number line and functions defined on it — the formal foundation that underlies calculus. Where calculus teaches you to compute derivatives and integrals, real analysis asks *why* those computations work, providing precise definitions, careful proofs, and the full theoretical apparatus behind limits, continuity, differentiation, and integration.
+:::
+
+:::infobox Real Analysis
+| Field | Mathematics |
+| Also called | Analysis, Mathematical analysis |
+| Core topics | Limits, Continuity, Differentiation, Integration, Sequences, Series |
+| Key figures | Cauchy, Weierstrass, Riemann, Dedekind, Bolzano |
+| Prerequisites | Calculus, Proofs |
+| Leads to | Complex analysis, Functional analysis, Measure theory |
+:::
+
+## What Is Real Analysis?
+
+Calculus was developed in the 17th century by Newton and Leibniz with tremendous power and intuition — but not always with full rigor. What exactly is a limit? What does "infinitely small" mean? Under what conditions can we differentiate or integrate a function?
+
+Real analysis provides the precise answers. It replaces intuitive notions like "infinitely close" with rigorous **epsilon-delta definitions** and proves, from first principles, that the techniques of calculus are valid. It is typically a student's first encounter with the demanding style of proof-based mathematics.
+
+The foundations of real analysis rest on a careful understanding of the **real number system** $\mathbb{R}$ — an ordered complete field whose completeness (the absence of "gaps") is what makes calculus work.
+
+## The Real Number System
+
+The real numbers are characterized (up to isomorphism) by being an **ordered complete field**:
+
+- **Field**: $(\mathbb{R}, +, \times)$ satisfies the field axioms (commutativity, associativity, distributivity, identities, and inverses for both operations except division by zero).
+- **Ordered**: There is a total ordering $<$ on $\mathbb{R}$ compatible with the field operations.
+- **Complete**: Every non-empty subset of $\mathbb{R}$ that is bounded above has a **least upper bound** (*supremum*) in $\mathbb{R}$.
+
+The **Completeness Axiom** (or its equivalents: the Monotone Convergence Theorem, the Bolzano-Weierstrass Theorem, the Cauchy criterion for convergence) is the key property that distinguishes $\mathbb{R}$ from $\mathbb{Q}$. The rational numbers have "gaps" — for example, there is no rational number whose square is exactly 2. The real numbers fill all these gaps.
+
+:::dropdown Suprema and Infima
+The **supremum** (least upper bound) of a set $S \subseteq \mathbb{R}$, written $\sup S$, is the smallest real number that is $\geq$ every element of $S$.
+
+The **infimum** (greatest lower bound), written $\inf S$, is the largest real number that is $\leq$ every element of $S$.
+
+The Completeness Axiom guarantees that $\sup S$ exists in $\mathbb{R}$ whenever $S$ is non-empty and bounded above. This seemingly simple fact is the key to proving virtually every major theorem in real analysis.
+
+Example: $\sup\{x \in \mathbb{Q} : x^2 < 2\} = \sqrt{2} \in \mathbb{R}$, but $\sqrt{2} \notin \mathbb{Q}$ — illustrating the gap in the rationals that the reals fill.
+:::
+
+## Sequences and Their Limits
+
+A **sequence** is a function $a: \mathbb{N} \to \mathbb{R}$, written $(a_n)_{n=1}^{\infty}$ or simply $(a_n)$.
+
+**Definition (Convergence):** A sequence $(a_n)$ **converges** to $L \in \mathbb{R}$ if: for every $\varepsilon > 0$, there exists $N \in \mathbb{N}$ such that for all $n > N$, $|a_n - L| < \varepsilon$.
+
+We write $\lim_{n \to \infty} a_n = L$.
+
+This epsilon-N definition makes precise the intuition that "the terms get arbitrarily close to $L$." The key is that $N$ may depend on $\varepsilon$ — for a smaller error tolerance, we may have to go further out in the sequence.
+
+:::dropdown Cauchy Sequences and Completeness
+A sequence $(a_n)$ is **Cauchy** if its terms become arbitrarily close to each other: for every $\varepsilon > 0$, there exists $N$ such that for all $m, n > N$, $|a_m - a_n| < \varepsilon$.
+
+**Theorem**: In $\mathbb{R}$, a sequence converges if and only if it is Cauchy.
+
+This characterizes completeness: $\mathbb{R}$ is complete because every Cauchy sequence converges. This fails in $\mathbb{Q}$: there are Cauchy sequences of rational numbers whose limit is irrational.
+:::
+
+## Continuity
+
+**Definition (Epsilon-Delta):** A function $f: \mathbb{R} \to \mathbb{R}$ is **continuous at** $c$ if: for every $\varepsilon > 0$, there exists $\delta > 0$ such that whenever $|x - c| < \delta$, we have $|f(x) - f(c)| < \varepsilon$.
+
+Intuitively: $f$ is continuous at $c$ if small changes in input near $c$ produce small changes in output near $f(c)$.
+
+Key theorems about continuous functions:
+
+- **Extreme Value Theorem**: If $f$ is continuous on a closed bounded interval $[a, b]$, then $f$ attains its maximum and minimum values.
+- **Intermediate Value Theorem (IVT)**: If $f$ is continuous on $[a, b]$ and $f(a) < 0 < f(b)$ (or vice versa), then there exists $c \in (a, b)$ with $f(c) = 0$.
+- **Uniform Continuity**: $f$ is uniformly continuous on a set if the same $\delta$ works for all points simultaneously — a stronger condition than pointwise continuity.
+
+## Differentiation
+
+Real analysis provides the rigorous justification for the rules of calculus. The **derivative** of $f$ at $c$ is defined as:
+
+$$f'(c) = \lim_{x \to c} \frac{f(x) - f(c)}{x - c}$$
+
+provided this limit exists. Real analysis proves that the usual rules (product rule, chain rule, etc.) follow from this definition and establishes precisely when these rules apply.
+
+Key theorems:
+
+- **Mean Value Theorem (MVT)**: If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $c \in (a, b)$ with $f'(c) = \frac{f(b) - f(a)}{b - a}$.
+- **Taylor's Theorem**: Generalizes the MVT to provide polynomial approximations of differentiable functions with an explicit error term.
+
+## Integration
+
+Real analysis makes integration rigorous through the **Riemann integral**. The Riemann integral of $f$ over $[a, b]$ is the limit of Riemann sums (sums of areas of approximating rectangles) as the partition of $[a, b]$ is refined. The **Riemann integrability criterion** (Lebesgue's theorem) characterizes exactly which functions are Riemann integrable: $f$ is Riemann integrable on $[a, b]$ if and only if $f$ is bounded and the set of its discontinuities has measure zero.
+
+More advanced study leads to **Lebesgue integration**, which extends Riemann integration and provides the natural setting for modern probability theory and functional analysis.
+
+## Sequences of Functions
+
+One of the subtler topics in real analysis is the convergence of **sequences of functions**. If $f_n \to f$ pointwise, does $\int f_n \to \int f$? Does differentiability of each $f_n$ guarantee differentiability of $f$?
+
+The answer is: not necessarily for pointwise convergence, but **yes** for **uniform convergence**:
+
+- If $f_n \to f$ uniformly on $[a, b]$ and each $f_n$ is continuous, then $f$ is continuous.
+- If $f_n \to f$ uniformly on $[a, b]$, then $\int_a^b f_n \to \int_a^b f$.
+
+These theorems explain why uniform convergence is the natural notion of convergence for analysis.
+
+## See Also
+
+- [Calculus](article.html?id=calculus) — the intuitive foundation that real analysis makes rigorous
+- [Proofs](article.html?id=proofs) — real analysis is developed entirely through rigorous proof
+- [Abstract Algebra](article.html?id=abstract-algebra) — the other major branch of advanced undergraduate mathematics
+- [Mathematics](article.html?id=mathematics) — overview of the mathematical enterprise
+- [Probability Theory](article.html?id=probability-theory) — modern probability uses Lebesgue integration from real analysis
+
+:::citations
+1. Rudin, Walter. *Principles of Mathematical Analysis*. 3rd ed. McGraw-Hill, 1976.
+2. Abbott, Stephen. *Understanding Analysis*. 2nd ed. Springer, 2015.
+3. Bartle, Robert G., and Donald R. Sherbert. *Introduction to Real Analysis*. 4th ed. Wiley, 2011.
+4. Apostol, Tom M. *Mathematical Analysis*. 2nd ed. Addison-Wesley, 1974.
+:::

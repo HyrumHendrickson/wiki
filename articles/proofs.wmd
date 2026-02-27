@@ -1,0 +1,85 @@
+---
+title: Proofs
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: proofs, mathematics, logic, demonstration, Euclid, truth, Christian, axioms, theorems
+featured: false
+---
+
+:::summary
+A mathematical proof is a rigorous, step-by-step argument demonstrating that a given statement is necessarily true, given a set of axioms and previously established theorems. Proof is what distinguishes mathematics from all other disciplines — in no other field can we achieve certainty by reasoning alone. For Christians and theologians, mathematical proof has long served as a model for the certainty we can seek in other domains, and the extraordinary power of human reason to discover necessary truths has pointed many thinkers toward the conviction that mathematics is not invented but discovered — that it reflects the order of a rational Creator.
+:::
+
+:::infobox Mathematical Proofs
+| Definition | Rigorous logical demonstration that a mathematical statement is necessarily true |
+| Oldest proof | Euclid's *Elements*, ~300 BC |
+| Types | Direct, indirect (reductio), induction, exhaustion, construction |
+| Foundational system | Axioms → definitions → theorems |
+| Key figures | Euclid, Archimedes, Euler, Gauss, Cantor, Gödel |
+| Philosophical question | Are mathematical truths discovered or invented? |
+| Theological resonance | Mathematics as the "language of God" |
+:::
+
+## What Is a Mathematical Proof?
+
+Mathematics is unique among human intellectual disciplines in its capacity for *certainty through pure reasoning*. A mathematical proof begins with **axioms** — statements accepted as foundational without further justification — and **definitions**, and derives **theorems** through logical inference, each step following necessarily from what precedes it. Once a theorem is proved, it is true *permanently* and *universally* — not merely very likely, but necessarily the case in any mathematical system where the axioms hold.
+
+The word "proof" comes from the Latin *probare* (to test, to demonstrate). In everyday usage it means strong evidence; in mathematics it means something stronger: a demonstration of necessity. This distinction is crucial. Scientific knowledge is based on evidence and inference — always provisional, subject to revision in light of new observations. Mathematical knowledge is based on proof — once established, it cannot be overturned by new evidence, only by finding an error in the argument or in the axioms.
+
+## Euclid and the Axiomatic Method
+
+The supreme monument of ancient mathematical reasoning is Euclid's *Elements* (~300 BC), a systematic treatise on geometry that begins with five simple axioms ("postulates") and derives 465 theorems in plane and solid geometry. The *Elements* established the axiomatic method — the organization of an entire domain of knowledge into a logical hierarchy — and served as the primary model of rigorous reasoning in the Western intellectual tradition for more than two millennia.
+
+Euclid's proof that the number of prime numbers is infinite is one of the most beautiful arguments in all of mathematics. Assume for contradiction that there are finitely many primes; multiply them all together and add one; this new number is divisible by none of the original primes; therefore it is either prime itself or divisible by a prime not on the list — contradiction. Therefore the assumption was false, and there are infinitely many primes. This is a **proof by contradiction** (*reductio ad absurdum*): assume the opposite of what you want to prove, derive an absurdity, and conclude the original statement is true.
+
+:::dropdown Types of Mathematical Proof
+Mathematics employs several characteristic proof strategies, each elegant in its own way.
+
+**Direct proof** proceeds straightforwardly from premises to conclusion. For example, to prove that the sum of two even integers is even: let *m* = 2a and *n* = 2b (both even by definition); then *m* + *n* = 2a + 2b = 2(a + b), which is divisible by 2, hence even. QED.
+
+**Proof by contradiction** (*reductio ad absurdum*) assumes the negation of the desired conclusion and derives a logical impossibility. Euclid's proof of the infinitude of primes (above) is one example. Another is the ancient proof (attributed to Hippasus of Metapontum) that √2 is irrational: assume √2 = p/q in lowest terms; then 2q² = p², so p² is even, so p is even; write p = 2k; then 2q² = 4k², so q² = 2k², so q is even — contradicting the assumption that p/q was in lowest terms.
+
+**Mathematical induction** proves a statement about all natural numbers by: (1) proving it for the base case (n = 1), and (2) proving that if it holds for n = k, it holds for n = k + 1. Like toppling an infinite row of dominoes — knock the first, and if each always knocks the next, they all fall.
+
+**Proof by exhaustion** considers every possible case separately. Famous example: the Four Color Theorem (1976), which asserts that any map can be colored with at most four colors so adjacent regions are distinct, was proved by checking all possible configurations by computer — a controversial but valid proof.
+
+**Constructive proof** demonstrates existence by actually constructing an example, not merely by showing that the non-existence leads to contradiction. Constructive proofs are generally considered more informative than non-constructive ones.
+:::
+
+:::dropdown Mathematics, Proof, and Christian Thought
+The relationship between mathematical truth and Christian theology has been one of the richest in intellectual history. For Plato, mathematical objects — numbers, perfect circles, geometric forms — were eternal and unchanging realities, more real than physical objects. Augustine absorbed this Platonic mathematics into Christian theology, arguing that mathematical truths (like the truths of logic) are eternal truths subsisting in the mind of God — discovered by the human intellect through divine illumination. "Seven and three are ten — that is not merely true now, it was always true, it will always be true" (*Confessions* I.10).
+
+This Augustinian tradition implies that mathematical activity is a form of encounter with the divine intellect — that when a mathematician proves a theorem, she is reading a line of God's thought. Leibniz famously said that "when God calculates, the world comes to be." Einstein, though not conventionally religious, expressed the same wonder at the rationality of the universe: "The most incomprehensible thing about the world is that it is comprehensible."
+
+The physicist Eugene Wigner's famous essay "The Unreasonable Effectiveness of Mathematics in the Natural Sciences" (1960) noted with astonishment that abstract mathematical structures, developed with no physical application in mind, again and again turn out to describe physical reality with extraordinary precision. Non-Euclidean geometries developed in the nineteenth century became the mathematical language of general relativity. Group theory, developed by pure mathematicians, became indispensable in particle physics. For Christians, this "unreasonable effectiveness" is not surprising: it reflects the fact that the same rational Being who created the universe also created (or is the ground of) the mathematical structures that describe it.
+
+Blaise Pascal — mathematician, physicist, and devout Christian — is one of the most striking examples of the integration of mathematical genius with Christian faith. His *Pensées* contain not only famous philosophical arguments but a profound meditation on the relationship between reason, the heart, and divine grace. Pascal's famous "wager" is itself a proto-decision-theoretic argument — an application of mathematical reasoning to the question of faith.
+:::
+
+## Famous Theorems and Their Proofs
+
+Some of the most celebrated results in mathematics illustrate the beauty and power of proof:
+
+**The Pythagorean Theorem** (*a²* + *b²* = *c²*) has more than 300 known proofs — by algebra, by geometry, by the President of the United States (James Garfield in 1876). Its universality across all right triangles is a striking instance of mathematical necessity.
+
+**Euler's Identity** (*e^(iπ)* + 1 = 0) connects five of the most important constants in mathematics in a single equation of breathtaking elegance. Euler himself was a devout Lutheran who wrote popular treatises defending Christian faith against atheism. His mathematical prolificacy (he produced mathematics even after going blind) is a testimony to the extraordinary capacity of the human mind.
+
+**Fermat's Last Theorem** — that there are no positive integer solutions to *xⁿ* + *yⁿ* = *zⁿ* for *n* > 2 — was conjectured in 1637 and not proved until Andrew Wiles's 100-page proof in 1994, using the deep machinery of elliptic curves and modular forms developed over centuries.
+
+## See Also
+
+- [Formal Logic](article.html?id=formal-logic) — the logical foundations that undergird all mathematical proof
+- [Algebra](article.html?id=algebra) — the language of symbolic mathematics that proofs often employ
+- [Calculus](article.html?id=calculus) — higher analysis whose rigorous foundations were established through proof
+- [Pythagorean Theorem](article.html?id=pythagorean-theorem) — one of the most celebrated theorems in mathematical history
+
+:::citations
+1. Euclid. *Elements*. Translated by Thomas Heath. New York: Dover, 1956.
+2. Hardy, G.H. *A Mathematician's Apology*. Cambridge: Cambridge University Press, 1940.
+3. Polya, George. *How to Solve It*. Princeton: Princeton University Press, 1945.
+4. Wigner, Eugene. "The Unreasonable Effectiveness of Mathematics in the Natural Sciences." *Communications in Pure and Applied Mathematics* 13, no. 1 (1960): 1–14.
+5. Augustine of Hippo. *Confessions*, I.10. Translated by Henry Chadwick. Oxford: Oxford University Press, 1991.
+6. Singh, Simon. *Fermat's Enigma: The Epic Quest to Solve the World's Greatest Mathematical Problem*. New York: Walker, 1997.
+7. Pascal, Blaise. *Pensées*. Translated by A.J. Krailsheimer. London: Penguin, 1966.
+:::

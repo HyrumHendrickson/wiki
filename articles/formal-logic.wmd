@@ -1,0 +1,88 @@
+---
+title: Formal Logic
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: logic, formal logic, deduction, inference, syllogism, natural theology, mathematics, Aristotle
+featured: false
+---
+
+:::summary
+Formal logic is the study of the principles governing correct reasoning — the rules by which conclusions follow necessarily from premises. From Aristotle's syllogistic through the medieval *logica* of the universities to the mathematical logic of Frege and Russell, formal logic has been both a foundational discipline of mathematics and a primary tool of Christian theology. Theologians have used logical inference to argue for the existence of God, to systematize doctrine, and to test the consistency of belief — and the great logical treatises of the Western tradition emerged largely within Christian educational institutions.
+:::
+
+:::infobox Formal Logic
+| Definition | Study of the principles of correct inference and valid reasoning |
+| Key forms | Deductive, inductive, abductive |
+| Classical tool | Aristotelian syllogism |
+| Modern form | Propositional and predicate logic (Frege, Russell, Whitehead) |
+| Key figures | Aristotle, Chrysippus, Peter Abelard, Leibniz, Boole, Frege, Gödel |
+| Theological use | Natural theology; scholastic method; consistency of doctrine |
+| Related fields | Mathematics, philosophy, computer science |
+:::
+
+## What Is Formal Logic?
+
+Logic, from the Greek *logos* (reason, word), is the discipline that studies the forms of correct reasoning — the patterns by which conclusions follow necessarily from premises. *Formal* logic abstracts away from the specific content of arguments to examine their *structure*, asking: is this argument *valid* (does the conclusion follow from the premises regardless of whether the premises are true)? And if the argument is valid and the premises are *true*, then its conclusion is *sound*.
+
+The distinction between **deductive** and **inductive** reasoning is fundamental. Deductive arguments aim at conclusions that follow *necessarily* — if the premises are true, the conclusion *cannot* be false. Inductive arguments move from particular observations to general conclusions — the conclusion is *probable*, not certain. Abductive reasoning infers the *best explanation* for a set of observations. These three forms of inference are the basic tools of both scientific and theological reasoning.
+
+## Aristotle and the Syllogism
+
+Aristotle (384–322 BC) founded formal logic in his *Organon* — a collection of works on inference, categories, and demonstration that remained authoritative for nearly two thousand years. His central contribution was the **syllogism**: a three-proposition argument in which a conclusion follows from two premises sharing a common term.
+
+The classic example:
+- All men are mortal. (Major premise)
+- Socrates is a man. (Minor premise)
+- Therefore, Socrates is mortal. (Conclusion)
+
+Aristotle catalogued the valid forms of syllogism (the *figures* and *moods*) with remarkable completeness — a systematic achievement that astonished later thinkers. Medieval logicians preserved and extended his work, giving the valid syllogistic forms memorable Latin names: *Barbara*, *Celarent*, *Darii*, *Ferio*. Aristotle's logic was adopted wholesale by the medieval universities and became the foundation of the scholastic method — the rigorous question-and-answer format visible in Aquinas's *Summa Theologica*.
+
+:::dropdown Logic and Christian Theology: From Aristotle to Aquinas
+The relationship between logic and Christian theology is long, rich, and sometimes contentious. Tertullian's famous question — "What has Athens to do with Jerusalem?" — expressed skepticism about importing Greek philosophical reasoning into the faith. But the mainstream of Christian intellectual tradition answered: much. Justin Martyr, in the second century, argued that the *Logos* (Word/Reason) of John 1:1 is the same divine Reason that Greek philosophers had partially grasped — that logic is not alien to Christianity but rooted in the very nature of the God who is Reason itself.
+
+Augustine of Hippo was deeply trained in classical rhetoric and logic before his conversion, and he used these tools throughout his theological writings. His *De Magistro* (On the Teacher) argued that human learning ultimately depends on the inner illumination of the divine Logos. Peter Abelard (1079–1142), one of the most brilliant logicians of the medieval period, applied dialectical reasoning to theological questions with controversial boldness — his *Sic et Non* (Yes and No) systematically juxtaposed contradictory statements from Church authorities to demonstrate the need for logical resolution.
+
+Thomas Aquinas brought this tradition to its summit. In the *Summa Theologica*, every article follows the same rigorous logical structure: a question is posed, objections are presented, the objections are answered, and Aquinas's own position is defended with argument. This is formal logic in service of systematic theology — the conviction that faith and reason are not enemies but partners, each illuminating the other.
+
+The scholastic tradition also developed natural theology — the project of proving God's existence and attributes by reason alone, without appeal to scripture or revelation. Anselm of Canterbury's *ontological argument* (the concept of the most perfect being implies existence), and Aquinas's "Five Ways" (cosmological and teleological arguments), are the most celebrated examples. These arguments use the tools of formal logic — specifically, the analysis of necessity, contingency, and causal inference — to reason from observable facts to theological conclusions. Their validity is still debated by philosophers and logicians today.
+:::
+
+:::dropdown Modern Logic: Boole, Frege, Gödel, and the Limits of Reason
+In the nineteenth century, George Boole showed that logical operations could be represented algebraically — that the laws of thought could be expressed as mathematical equations. This insight, published in *The Laws of Thought* (1854), laid the foundation for modern mathematical logic and, ultimately, for digital computing. Boole was a devout Protestant who believed he had uncovered the mathematical structure of the divine Reason.
+
+Gottlob Frege (1848–1925) took the next step, developing **predicate logic** — a far more powerful formal language than Aristotle's syllogistic, capable of expressing "For all x, if x is F, then x is G" and "There exists an x such that x is F." Frege's *Begriffsschrift* (Concept Script, 1879) is the founding document of modern mathematical logic.
+
+Bertrand Russell and Alfred North Whitehead's *Principia Mathematica* (1910–1913) attempted to derive all of mathematics from logical axioms — the program known as **logicism**. This heroic enterprise was famously undermined by Kurt Gödel's incompleteness theorems (1931), which proved that any sufficiently powerful formal system contains true statements that cannot be proved within the system. Gödel's result is one of the most profound intellectual achievements of the twentieth century — and, for many Christian thinkers, a reminder that mathematical and logical truth exceeds any finite formal system, pointing toward a source of truth that transcends human construction.
+
+Gödel himself took philosophical and theological questions seriously, and his friendship with Einstein at Princeton included extended discussions about the nature of time, God, and the afterlife. His incompleteness theorems have been invoked (not without controversy) in arguments that the human mind cannot be reduced to a purely mechanical or computational system — with implications for the debates about the soul, free will, and the uniqueness of human reason.
+:::
+
+## Logic and Everyday Reasoning
+
+Formal logic is not only for mathematicians and theologians — it is a fundamental skill for any educated person. The ability to identify **logical fallacies** (errors in reasoning) is essential for navigating political discourse, scientific debate, and everyday argument. Common fallacies include:
+
+- **Ad hominem**: attacking the person rather than the argument
+- **Straw man**: misrepresenting an opponent's position to attack a weaker version
+- **False dilemma**: presenting only two options when more exist
+- **Appeal to authority**: treating an authority's assertion as conclusive evidence
+- **Post hoc ergo propter hoc**: inferring causation from mere temporal sequence
+
+The ability to reason well is not merely an intellectual virtue — it is a moral one. Sloppy reasoning enables self-deception, manipulation, and injustice. The Christian tradition's emphasis on truth — "the truth shall set you free" (John 8:32) — implies a commitment to reasoning rigorously and honestly.
+
+## See Also
+
+- [Philosophy](article.html?id=philosophy) — the broader discipline of which logic is the foundational tool
+- [Proofs](article.html?id=proofs) — the application of formal logic to mathematical demonstration
+- [Algebra](article.html?id=algebra) — the mathematical language that grew from algebraic logic
+- [Calculus](article.html?id=calculus) — higher mathematics whose rigorous foundations require formal logical justification
+
+:::citations
+1. Aristotle. *Prior Analytics*. Translated by A.J. Jenkinson. In *The Complete Works of Aristotle*, edited by Jonathan Barnes. Princeton: Princeton University Press, 1984.
+2. Boole, George. *An Investigation of the Laws of Thought*. London: Walton and Maberly, 1854.
+3. Frege, Gottlob. *Begriffsschrift*. Halle: Nebert, 1879.
+4. Gödel, Kurt. "Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I." *Monatshefte für Mathematik und Physik* 38 (1931): 173–198.
+5. Copleston, Frederick. *A History of Philosophy*, vol. 2: Medieval Philosophy. Westminster, MD: Newman Press, 1950.
+6. Kreeft, Peter, and Ronald Tacelli. *Handbook of Christian Apologetics*. Downers Grove: InterVarsity Press, 1994.
+7. John 8:32. *Holy Bible*, King James Version.
+:::

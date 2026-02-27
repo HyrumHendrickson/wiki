@@ -108,6 +108,7 @@ See `admin/wmd-reference.html` (or `admin/create-article.html`) for full documen
 - Include a `:::citations` block with at least one reference.
 - Use `:::infobox` for quick-facts panels where appropriate.
 - Use `:::dropdown` for worked examples and extended proofs.
+- Include a `## See Also` section with **at least four** links to related articles.
 
 ### Math
 

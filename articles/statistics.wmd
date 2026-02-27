@@ -1,0 +1,161 @@
+---
+title: Statistics
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: statistics, mathematics, probability, data, inference, mean, variance, hypothesis testing
+featured: false
+---
+
+:::summary
+Statistics is the mathematical science of collecting, organizing, analyzing, interpreting, and presenting data. It provides the tools to make decisions and draw conclusions in the face of uncertainty — from medical research and public policy to economics and everyday life. Statistics divides into two branches: **descriptive statistics** (summarizing what data shows) and **inferential statistics** (drawing conclusions about populations from samples).
+:::
+
+:::infobox Statistics
+| Branch of | Mathematics; applied to nearly every field |
+| Two main branches | Descriptive statistics; Inferential statistics |
+| Key figures | Karl Pearson, Ronald Fisher, Thomas Bayes, Francis Galton |
+| Key tools | Mean, variance, hypothesis testing, regression, confidence intervals |
+| Related fields | Probability theory, data science, econometrics, epidemiology |
+| Key software | R, Python (NumPy, pandas, SciPy), SPSS, STATA |
+:::
+
+## What Is Statistics?
+
+Statistics begins with **data** — measured observations about the world. Data alone, however, tells us little. Statistics provides the methods to:
+- **Summarize** large datasets into a few meaningful numbers
+- **Visualize** distributions, trends, and relationships
+- **Infer** conclusions about large populations from small samples
+- **Test** hypotheses about causal relationships
+- **Quantify uncertainty** so that decisions can be made rationally under incomplete information
+
+The word "statistics" comes from the German *Statistik* (political science of state data) — a reminder that the field originated in government record-keeping and has always been a tool of governance, science, and policy.
+
+## Descriptive Statistics
+
+Descriptive statistics summarizes a dataset numerically or visually. Key measures:
+
+### Measures of Central Tendency
+
+The three most common measures of the "center" of a dataset:
+
+- **Mean (Average):** $\bar{x} = \dfrac{1}{n}\sum_{i=1}^{n} x_i$
+
+  The sum of all values divided by the number of values. Sensitive to outliers.
+
+- **Median:** The middle value when data is sorted. Robust to outliers.
+
+- **Mode:** The most frequently occurring value.
+
+### Measures of Spread
+
+How spread out the data is:
+
+- **Range:** Maximum minus minimum.
+
+- **Variance:** $s^2 = \dfrac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2$
+
+  The average squared deviation from the mean. Uses $n-1$ (Bessel's correction) for sample variance.
+
+- **Standard Deviation:** $s = \sqrt{s^2}$
+
+  The square root of the variance; in the same units as the data.
+
+- **Interquartile Range (IQR):** $Q_3 - Q_1$, the range of the middle 50% of data. Robust to outliers.
+
+:::dropdown The Normal Distribution
+The **normal distribution** (Gaussian distribution) is the most important distribution in statistics. Its bell-shaped curve is characterized entirely by its mean $\mu$ and standard deviation $\sigma$:
+
+$$f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}$$
+
+Key properties:
+- Symmetric about the mean
+- **68-95-99.7 Rule:** Approximately 68% of data falls within $\mu \pm \sigma$, 95% within $\mu \pm 2\sigma$, and 99.7% within $\mu \pm 3\sigma$
+- Many natural phenomena approximately follow a normal distribution (heights, measurement errors, IQ scores)
+- The **Central Limit Theorem** explains why: the mean of a large sample from *any* distribution approaches normality
+
+The **standard normal distribution** (Z-distribution) has $\mu = 0$ and $\sigma = 1$. Any normal variable $X$ can be standardized: $Z = \dfrac{X - \mu}{\sigma}$.
+:::
+
+## Inferential Statistics
+
+Inferential statistics uses data from a **sample** to draw conclusions about a larger **population**. This requires careful attention to how the sample was obtained (sampling methods) and how uncertainty should be quantified.
+
+### Hypothesis Testing
+
+Hypothesis testing provides a formal framework for deciding whether data supports a claim:
+
+1. State the **null hypothesis** $H_0$ (no effect; no difference) and the **alternative hypothesis** $H_1$.
+2. Choose a **significance level** $\alpha$ (commonly 0.05).
+3. Compute a **test statistic** from the data.
+4. Find the **p-value**: the probability of observing a test statistic at least as extreme as the one obtained, *if* $H_0$ is true.
+5. **Decision:** If $p < \alpha$, reject $H_0$; otherwise, fail to reject it.
+
+:::dropdown Common Hypothesis Tests
+| Test | Use Case | Test Statistic |
+|---|---|---|
+| One-sample t-test | Is the population mean equal to a given value? | $t = \dfrac{\bar{x} - \mu_0}{s/\sqrt{n}}$ |
+| Two-sample t-test | Do two populations have the same mean? | Based on pooled or separate variances |
+| Chi-squared test | Is a categorical distribution as expected? | $\chi^2 = \sum \dfrac{(O_i - E_i)^2}{E_i}$ |
+| F-test / ANOVA | Do multiple group means differ? | Ratio of between-group to within-group variance |
+| Z-test | Large samples; known variance | $Z = \dfrac{\bar{x} - \mu_0}{\sigma/\sqrt{n}}$ |
+:::
+
+### Confidence Intervals
+
+A **confidence interval** gives a range of plausible values for a population parameter. A 95% confidence interval for the mean:
+
+$$\bar{x} \pm t_{\alpha/2, n-1} \cdot \frac{s}{\sqrt{n}}$$
+
+Interpretation: If we repeated the sampling procedure many times, 95% of the resulting confidence intervals would contain the true population mean. This is *not* the same as saying the probability is 95% that the true mean is in this specific interval (a common misinterpretation).
+
+### Regression Analysis
+
+**Linear regression** models the relationship between a dependent variable $Y$ and one or more independent variables $X$:
+
+$$Y = \beta_0 + \beta_1 X + \varepsilon$$
+
+The coefficients $\beta_0$ (intercept) and $\beta_1$ (slope) are estimated by **ordinary least squares** (OLS), minimizing $\sum (y_i - \hat{y}_i)^2$.
+
+**Multiple regression** extends this to multiple predictors: $Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_k X_k + \varepsilon$.
+
+## Bayesian Statistics
+
+The framework described above is **frequentist** statistics — probabilities are long-run frequencies of events. **Bayesian statistics** offers an alternative: probability represents **degrees of belief**, updated as new evidence arrives.
+
+Bayes' Theorem:
+
+$$P(H \mid E) = \frac{P(E \mid H) \cdot P(H)}{P(E)}$$
+
+Where:
+- $P(H)$ = prior probability of the hypothesis
+- $P(E \mid H)$ = likelihood of the evidence given the hypothesis
+- $P(H \mid E)$ = posterior probability (updated belief)
+
+Bayesian methods are increasingly used in machine learning, medicine, and social science.
+
+## Misuse of Statistics
+
+Statistics is powerful, but easily misused:
+- **Cherry-picking:** Selecting only supportive data.
+- **P-hacking:** Running many tests until one reaches $p < 0.05$ by chance.
+- **Confounding:** Attributing a relationship to the wrong variable.
+- **Base rate neglect:** Ignoring how common something is when interpreting a positive test result.
+- **Misleading graphs:** Truncated axes that exaggerate differences.
+
+"There are three kinds of lies: lies, damned lies, and statistics" — attributed (perhaps unfairly) to Benjamin Disraeli.
+
+## See Also
+
+- [Probability Theory](article.html?id=probability-theory) — the mathematical foundation of statistics
+- [Economics](article.html?id=economics) — a field that relies heavily on statistical methods
+- [Calculus](article.html?id=calculus) — the mathematical machinery behind many statistical derivations
+- [Formal Logic](article.html?id=formal-logic) — the logical foundations of mathematical reasoning
+
+:::citations
+1. Freedman, David, Robert Pisani, and Roger Purves. (2007). *Statistics.* 4th ed. W.W. Norton.
+2. Wackerly, Dennis, William Mendenhall, and Richard Scheaffer. (2008). *Mathematical Statistics with Applications.* 7th ed. Thomson Brooks/Cole.
+3. Gelman, Andrew, et al. (2013). *Bayesian Data Analysis.* 3rd ed. CRC Press.
+4. Tukey, John W. (1977). *Exploratory Data Analysis.* Addison-Wesley.
+5. Fisher, Ronald A. (1925). *Statistical Methods for Research Workers.* Oliver and Boyd.
+:::

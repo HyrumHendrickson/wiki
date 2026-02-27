@@ -1,0 +1,161 @@
+---
+title: Economics
+category: mathematics
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: economics, microeconomics, macroeconomics, markets, supply, demand, GDP, Adam Smith
+featured: false
+---
+
+:::summary
+Economics is the social science that studies how individuals, businesses, governments, and societies allocate scarce resources to satisfy unlimited wants. It divides into **microeconomics** (the behavior of individual agents — households, firms, markets) and **macroeconomics** (the behavior of entire economies — growth, inflation, unemployment). Modern economics uses mathematical modeling, statistical analysis, and empirical research to understand and predict economic phenomena.
+:::
+
+:::infobox Economics
+| Type | Social science |
+| Two main branches | Microeconomics; Macroeconomics |
+| Key figures | Adam Smith, David Ricardo, John Maynard Keynes, Milton Friedman, Friedrich Hayek |
+| Key concepts | Supply and demand, opportunity cost, GDP, inflation, comparative advantage |
+| Key tools | Mathematical modeling, statistical econometrics, game theory |
+| Related fields | Statistics, political science, sociology, psychology |
+:::
+
+## The Economic Problem
+
+All economics begins with a fundamental fact: **resources are scarce** but human wants are, for practical purposes, unlimited. No society has enough land, labor, capital, and time to satisfy every desire. Therefore every individual, firm, and government must make choices — and every choice involves a **trade-off**.
+
+The concept of **opportunity cost** captures this: the true cost of any choice is the best alternative forgone. If a farmer plants corn on an acre of land, the opportunity cost is whatever she would have produced with that acre instead — perhaps soybeans or wheat.
+
+Economics studies how these choices are made and what their consequences are.
+
+## Microeconomics
+
+Microeconomics analyzes the behavior of individual economic agents and the markets in which they interact.
+
+### Supply and Demand
+
+The foundational model of microeconomics is **supply and demand**:
+- **Demand:** The quantity of a good buyers wish to purchase at each price, *ceteris paribus* (all else equal). Demand curves slope downward — at lower prices, consumers buy more.
+- **Supply:** The quantity sellers wish to sell at each price. Supply curves slope upward — at higher prices, producers supply more.
+- **Equilibrium:** The market clears at the price where quantity demanded equals quantity supplied. At any other price, surpluses (excess supply) or shortages (excess demand) push the price back toward equilibrium.
+
+:::dropdown Shifts in Supply and Demand
+A **change in price** causes movement *along* a supply or demand curve. A **change in other factors** shifts the entire curve:
+
+**Demand shifts right (increases) when:**
+- Consumer incomes rise (for normal goods)
+- The price of a substitute good rises
+- The price of a complementary good falls
+- Consumer preferences shift toward the good
+- Buyers expect future prices to rise
+
+**Supply shifts right (increases) when:**
+- Input costs fall
+- Technology improves
+- More producers enter the market
+- Subsidies are granted
+
+These shifts change both the equilibrium price and quantity.
+:::
+
+### Elasticity
+
+**Price elasticity of demand** measures how responsive quantity demanded is to a price change:
+
+$$E_d = \frac{\% \Delta Q_d}{\% \Delta P}$$
+
+- $|E_d| > 1$: **Elastic** demand — quantity is highly responsive (luxury goods, goods with many substitutes)
+- $|E_d| < 1$: **Inelastic** demand — quantity is little affected (necessities, insulin)
+- $|E_d| = 1$: **Unit elastic**
+
+Elasticity has important implications for tax incidence, revenue, and policy.
+
+### Market Structures
+
+Markets range along a spectrum of competitiveness:
+
+| Structure | Number of Firms | Price Setting | Example |
+|---|---|---|---|
+| Perfect competition | Many | Price-taker | Agricultural commodity markets |
+| Monopolistic competition | Many | Some pricing power | Restaurants, clothing |
+| Oligopoly | Few | Interdependent pricing | Airlines, smartphones |
+| Monopoly | One | Price-maker | Local utility |
+
+### Market Failures
+
+Markets sometimes fail to produce efficient outcomes:
+- **Externalities:** Costs or benefits imposed on third parties not party to the transaction (pollution = negative externality; vaccination = positive externality).
+- **Public goods:** Non-excludable and non-rivalrous goods that private markets undersupply (national defense, lighthouses).
+- **Information asymmetry:** One party knows more than another (George Akerlof's "market for lemons").
+- **Monopoly power:** A single seller can restrict output and raise prices above competitive levels.
+
+## Macroeconomics
+
+Macroeconomics studies the economy as a whole.
+
+### Key Macroeconomic Variables
+
+- **Gross Domestic Product (GDP):** The total market value of all final goods and services produced in a country in a given period.
+  $$\text{GDP} = C + I + G + (X - M)$$
+  where $C$ = consumption, $I$ = investment, $G$ = government spending, $X$ = exports, $M$ = imports.
+- **Inflation:** The rate at which the general price level rises. Measured by the Consumer Price Index (CPI) or the GDP deflator.
+- **Unemployment Rate:** The percentage of the labor force actively seeking but unable to find work.
+- **Interest Rates:** The price of borrowing money; set in part by central banks (the Federal Reserve in the US).
+
+### Keynesian Economics
+
+**John Maynard Keynes** (1883–1946) revolutionized macroeconomics with *The General Theory of Employment, Interest and Money* (1936). Key Keynesian ideas:
+- In the short run, aggregate demand (total spending in the economy) determines output and employment.
+- When aggregate demand falls (as in a recession), government can restore full employment through **fiscal stimulus** — increased government spending or tax cuts.
+- Markets may not automatically return to full employment; the economy can be stuck in a low-employment equilibrium.
+
+### Monetarism and the Quantity Theory
+
+**Milton Friedman** (1912–2006) challenged Keynesianism with **monetarism**:
+- "Inflation is always and everywhere a monetary phenomenon" — sustained inflation results from money supply growing faster than output.
+- The quantity theory of money: $MV = PQ$ (money supply × velocity = price level × output).
+- Friedman favored stable, predictable monetary policy over active fiscal intervention.
+
+### Austrian Economics
+
+The **Austrian School** (Ludwig von Mises, Friedrich Hayek) emphasized:
+- The **price system** as an incomparable information-processing mechanism, aggregating the dispersed knowledge of millions of individuals.
+- The **knowledge problem:** Central planners cannot have the information needed to allocate resources as efficiently as markets.
+- **Business cycle theory:** Credit expansion by banks causes unsustainable booms followed by inevitable busts.
+
+## The History of Economic Thought
+
+:::dropdown Adam Smith and Classical Economics
+**Adam Smith** (1723–1790), often called the father of economics, published *The Wealth of Nations* in 1776 — one of the most influential books ever written. Key ideas:
+- The **division of labor** dramatically increases productivity (his famous pin factory example).
+- The **invisible hand:** Individuals pursuing their own self-interest in competitive markets are led, as if by an invisible hand, to promote the general welfare.
+- **Free trade** benefits all nations through **comparative advantage** (developed more fully by David Ricardo).
+- Mercantilist restrictions (tariffs, monopolies) reduce national wealth.
+
+Smith did not believe markets were perfect or that greed was virtuous — he wrote *The Theory of Moral Sentiments* before *The Wealth of Nations* and argued that sympathy and justice are essential foundations of a good society.
+:::
+
+## Economics and Ethics
+
+Economics is often treated as a value-neutral science, but economic choices inevitably involve ethical judgments:
+- What distribution of income and wealth is just?
+- How should we weigh present consumption against future generations (climate change, debt)?
+- Are all market outcomes acceptable, or are there goods and services that should not be for sale?
+- How should economic growth be weighed against ecological sustainability?
+
+Latter-day Saint teaching emphasizes both free enterprise (as a gift consistent with moral agency) and the law of consecration — the ultimate principle that all things belong to God and should be used to serve others.
+
+## See Also
+
+- [Statistics](article.html?id=statistics) — the mathematical methods economists rely on
+- [Probability Theory](article.html?id=probability-theory) — the foundations of statistical inference
+- [Calculus](article.html?id=calculus) — the mathematics of optimization used in economic models
+- [US History](article.html?id=us-history) — economic policy in American historical context
+
+:::citations
+1. Smith, Adam. (1776). *An Inquiry into the Nature and Causes of the Wealth of Nations.* W. Strahan and T. Cadell.
+2. Keynes, John Maynard. (1936). *The General Theory of Employment, Interest and Money.* Macmillan.
+3. Friedman, Milton. (1962). *Capitalism and Freedom.* University of Chicago Press.
+4. Hayek, Friedrich. (1945). "The Use of Knowledge in Society." *American Economic Review* 35(4): 519–530.
+5. Mankiw, N. Gregory. (2020). *Principles of Economics.* 9th ed. Cengage Learning.
+:::

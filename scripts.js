@@ -573,7 +573,7 @@ async function initDatabases() {
       columns.map(c => (row[c.key] || '').toLowerCase())
     );
 
-    function renderTable(filtered) {
+    const renderTable = (filtered) => {
       if (!filtered.length) {
         return '<p class="wiki-database-empty">No results found.</p>';
       }
@@ -583,7 +583,7 @@ async function initDatabases() {
       ).join('')}</tbody>`;
       const count = `<div class="wiki-database-count">Showing ${filtered.length} of ${rows.length} ${rows.length === 1 ? 'entry' : 'entries'}</div>`;
       return `<table>${thead}${tbody}</table>${count}`;
-    }
+    };
 
     bodyEl.innerHTML = renderTable(rows);
 

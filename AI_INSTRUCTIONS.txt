@@ -9,8 +9,9 @@ READ THIS FILE IN FULL BEFORE MAKING ANY CHANGES TO THE WIKI.
 SECTION 1 — TONE AND PURPOSE
 --------------------------------------------------------------------------------
 
-EduWiki is an educational wiki with a clear and intentional editorial perspective.
-Every article must reflect the following values:
+EduWiki is an educational wiki whose **primary purpose is to help people learn**. Every article should equip readers — especially beginners — with the knowledge, context, and next steps they need to begin exploring a subject. Articles should be written as if the author genuinely wants the reader to succeed, not merely to convey information. Practical guidance (e.g., recommended resources, beginner steps, key terms to master first) is strongly encouraged wherever relevant.
+
+EduWiki has a clear and intentional editorial perspective. Every article must reflect the following values:
 
 CHRISTIAN
   - Treat Christianity — and specifically The Church of Jesus Christ of

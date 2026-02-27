@@ -19,6 +19,38 @@ Latin is the classical language of ancient Rome and one of the most influential 
 | Descended languages | Spanish, French, Italian, Portuguese, Romanian |
 :::
 
+## The Latin Alphabet
+
+The classical Latin alphabet had **23 letters** (no J, U, or W in the classical period — these developed later). Today we use a 26-letter Roman alphabet derived directly from this. Every student of Latin should be comfortable with these letters and their classical pronunciation:
+
+| Letter | Classical Latin Name | Pronunciation Notes |
+|---|---|---|
+| A | a | Like "ah" in *father* |
+| B | be | Like English "b" |
+| C | ce | Always hard "k" sound (never soft "s") |
+| D | de | Like English "d" |
+| E | e | Like "ay" in *they* (long) or "eh" (short) |
+| F | ef | Like English "f" |
+| G | ge | Always hard "g" (as in *get*) |
+| H | ha | Lightly aspirated; often nearly silent |
+| I | i | Like "ee" (long) or "ih" (short); also consonantal "y" |
+| K | ka | Rare; used only in a few words |
+| L | el | Like English "l" |
+| M | em | Like English "m" |
+| N | en | Like English "n" |
+| O | o | Like "oh" (long) or "aw" (short) |
+| P | pe | Like English "p" |
+| Q | qu | Always followed by *u*; "kw" sound |
+| R | er | Rolled or trilled, as in Spanish |
+| S | es | Always a hissing "s" (never "z") |
+| T | te | Like English "t" |
+| V | u | Both vowel ("oo") and consonant ("w") |
+| X | ix | "ks" sound |
+| Y | i Graeca | Used only in Greek loanwords; "ü" sound |
+| Z | zeta | Used only in Greek loanwords |
+
+> **Note:** In medieval and modern usage, I/J and V/U were distinguished as separate letters. Classical inscriptions use I and V for both vowel and consonant functions.
+
 ## History of the Latin Language
 
 Latin began as the language of the Latins — a people living in the region of Latium in central Italy. As Rome grew from a small city-state to a vast empire, Latin spread across the entire Mediterranean world, displacing local languages.
@@ -78,13 +110,43 @@ Latin study sharpens the mind, improves English vocabulary, aids in learning all
 
 Classical education — including Latin — has experienced a strong revival in homeschool and Christian school settings, partly because it trains careful, logical, systematic thinking that benefits all areas of study.
 
+### How to Begin Learning Latin
+
+Latin is one of the most learnable classical languages precisely because so much excellent material has been written to teach it. Here is a suggested path for beginners:
+
+1. **Learn the alphabet and pronunciation.** The letters are the same as English, but sounds differ (hard C, rolled R, no silent letters). Classical pronunciation is preferred for academic and liturgical use.
+2. **Choose a quality textbook.** *Wheelock's Latin* is the standard university-level grammar-translation text. *Lingua Latina per se Illustrata* (Ørberg) is a beloved reading-based immersion course — you read Latin from page one, in Latin, with no translation.
+3. **Master the noun cases.** The six cases (Nominative, Genitive, Dative, Accusative, Ablative, Vocative) are the key to reading Latin sentences. Drill declension tables until they are second nature.
+4. **Learn verb conjugations.** Latin verbs encode person, number, tense, mood, and voice all in a single ending. The four principal parts of each verb are essential to know.
+5. **Read real Latin early.** Cicero's letters, Caesar's *Gallic Wars* (relatively simple prose), and the Vulgate Bible are excellent early reading material.
+6. **Build vocabulary with roots.** Because Latin roots underlie so much English vocabulary, building a Latin vocabulary simultaneously improves English comprehension.
+
+:::dropdown Recommended Resources for Latin Beginners
+| Resource | Type | Best For |
+|---|---|---|
+| *Wheelock's Latin* — Wheelock & LaFleur | Textbook | Grammar-translation beginners |
+| *Lingua Latina per se Illustrata* — Ørberg | Textbook | Immersive reading method |
+| *Cassell's Latin Dictionary* | Reference | General vocabulary |
+| *Latin for the New Millennium* | Textbook | Younger students, school programs |
+| Whitaker's Words (online) | Tool | Free Latin dictionary/parser |
+| LatinPerDiem.com | Website | Free daily Latin lessons |
+| The Latin Library (thelatinlibrary.com) | Website | Free primary texts |
+:::
+
 ## See Also
 
 - [Ancient Rome](article.html?id=rome) — the civilization whose language Latin is and which spread it across the Western world
+- [Ancient Greek](article.html?id=greek) — the sister classical language and direct ancestor of the Latin alphabet
 - [Old English](article.html?id=old-english) — a descendant language that shares Latin's alphabet and many borrowed words
+- [The Bible](article.html?id=bible) — the Vulgate, Jerome's Latin translation, was the standard Western scripture for a millennium
+- [Cicero](article.html?id=cicero) — the greatest master of classical Latin prose
+- [Augustine](article.html?id=augustine) — wrote his landmark Christian works in Latin
+- [Renaissance](article.html?id=renaissance) — the revival of classical Latin learning drove European intellectual renewal
 
 :::citations
 1. Wheelock, F. M., & LaFleur, R. A. (2011). *Wheelock's Latin*, 7th ed. HarperCollins.
 2. Ørberg, H. H. (2003). *Lingua Latina per se Illustrata.* Focus Publishing.
 3. Crystal, D. (2003). *The Cambridge Encyclopedia of the English Language.* Cambridge University Press.
+4. Allen, W. S. (1978). *Vox Latina: A Guide to the Pronunciation of Classical Latin*, 2nd ed. Cambridge University Press.
+5. Cassell's Latin Dictionary. (Various editions.) Cassell & Company.
 :::

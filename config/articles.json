@@ -37,6 +37,11 @@
       "icon": ""
     },
     {
+      "id": "programming",
+      "label": "Programming & Computer Science",
+      "icon": ""
+    },
+    {
       "id": "admin",
       "label": "Admin & Help",
       "icon": ""
@@ -814,6 +819,127 @@
         "interactive"
       ],
       "author": "EduWiki Admin",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "quantum-mechanics",
+      "title": "Quantum Mechanics",
+      "category": "science",
+      "path": "articles/article.html?id=quantum-mechanics",
+      "summary": "Quantum mechanics is the branch of physics that describes the behavior of matter and energy at atomic and subatomic scales, revealing a world of probability, wave-particle duality, and fundamental uncertainty.",
+      "tags": [
+        "quantum mechanics",
+        "physics",
+        "science",
+        "Heisenberg",
+        "Schrödinger",
+        "wave function",
+        "uncertainty principle"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "relativity",
+      "title": "Theory of Relativity",
+      "category": "science",
+      "path": "articles/article.html?id=relativity",
+      "summary": "Einstein's theory of relativity — both special and general — revolutionized our understanding of space, time, gravity, and the universe, replacing Newton's classical mechanics for extreme speeds and massive objects.",
+      "tags": [
+        "relativity",
+        "Einstein",
+        "physics",
+        "space-time",
+        "gravity",
+        "special relativity",
+        "general relativity"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "assembly",
+      "title": "Assembly Language",
+      "category": "programming",
+      "path": "articles/article.html?id=assembly",
+      "summary": "Assembly language is a low-level programming language that provides a direct, human-readable representation of machine code instructions, giving programmers precise control over hardware.",
+      "tags": [
+        "assembly",
+        "programming",
+        "low-level",
+        "machine code",
+        "CPU",
+        "registers"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "linux",
+      "title": "Linux",
+      "category": "programming",
+      "path": "articles/article.html?id=linux",
+      "summary": "Linux is a free, open-source Unix-like operating system kernel created by Linus Torvalds in 1991. It powers the majority of servers, supercomputers, Android devices, and embedded systems worldwide.",
+      "tags": [
+        "Linux",
+        "operating system",
+        "open source",
+        "Unix",
+        "kernel",
+        "Linus Torvalds"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "bash",
+      "title": "Bash (Unix Shell)",
+      "category": "programming",
+      "path": "articles/article.html?id=bash",
+      "summary": "Bash (Bourne Again Shell) is the default command-line shell on most Linux and macOS systems. It provides a powerful scripting language for automating tasks, managing files, and interacting with the operating system.",
+      "tags": [
+        "bash",
+        "shell",
+        "scripting",
+        "Linux",
+        "command line",
+        "Unix"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "c-language",
+      "title": "C Programming Language",
+      "category": "programming",
+      "path": "articles/article.html?id=c-language",
+      "summary": "C is a general-purpose, procedural programming language created by Dennis Ritchie at Bell Labs in the early 1970s. It remains one of the most influential and widely-used languages, powering operating systems, embedded systems, and system software.",
+      "tags": [
+        "C",
+        "programming",
+        "systems programming",
+        "Dennis Ritchie",
+        "Bell Labs",
+        "low-level"
+      ],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27"
+    },
+    {
+      "id": "cpp",
+      "title": "C++ Programming Language",
+      "category": "programming",
+      "path": "articles/article.html?id=cpp",
+      "summary": "C++ is a powerful, general-purpose programming language created by Bjarne Stroustrup as an extension of C. It adds object-oriented programming and is widely used for system software, game engines, and high-performance applications.",
+      "tags": [
+        "C++",
+        "programming",
+        "object-oriented",
+        "Bjarne Stroustrup",
+        "systems programming",
+        "high performance"
+      ],
+      "author": "EduWiki Team",
       "lastUpdated": "2026-02-27"
     },
     {

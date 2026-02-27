@@ -587,10 +587,15 @@ async function loadWMDArticle(config, data) {
 
   const { meta, html } = WMDParser.parse(source);
 
+  // Look up the article title from the JSON registry, falling back to
+  // the frontmatter title and finally the raw id.
+  const articleDef = (data.articles || []).find(a => a.id === id);
+  const title = (articleDef && articleDef.title) || meta.title || id;
+
   // Build category lookup
   const catMap = {};
   data.categories.forEach(c => { catMap[c.id] = c; });
-  const catId = meta.category || '';
+  const catId = meta.category || (articleDef && articleDef.category) || '';
   const cat = catMap[catId] || { label: catId, id: catId };
 
   // Breadcrumb
@@ -600,7 +605,7 @@ async function loadWMDArticle(config, data) {
       <span class="sep" aria-hidden="true">›</span>
       <a href="${ROOT}index.html#cat-${escapeHtml(cat.id)}">${escapeHtml(cat.label)}</a>
       <span class="sep" aria-hidden="true">›</span>
-      <span aria-current="page">${escapeHtml(meta.title || id)}</span>
+      <span aria-current="page">${escapeHtml(title)}</span>
     </nav>`;
 
   // Meta bar (date, author, tags)
@@ -614,12 +619,12 @@ async function loadWMDArticle(config, data) {
 
   root.innerHTML =
     breadcrumb +
-    `<h1 class="wiki-title">${escapeHtml(meta.title || id)}</h1>` +
+    `<h1 class="wiki-title">${escapeHtml(title)}</h1>` +
     metaBar +
     html;
 
   // Update browser tab title
-  document.title = `${meta.title || id} — ${config.name}`;
+  document.title = `${title} — ${config.name}`;
 
   // Re-typeset MathJax on the newly inserted content
   if (typeof MathJax !== 'undefined' && MathJax.typesetPromise) {

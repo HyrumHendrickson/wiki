@@ -1,0 +1,225 @@
+---
+title: C Programming Language
+category: programming
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: C, programming, systems programming, Dennis Ritchie, Bell Labs, low-level
+featured: false
+---
+
+:::summary
+C is a general-purpose, procedural programming language created by Dennis Ritchie at Bell Labs in the early 1970s. Designed to be portable and efficient, C was used to rewrite the Unix operating system and went on to influence virtually every modern programming language. Today, C remains essential for operating systems, embedded systems, compilers, and anywhere performance and low-level hardware control are paramount.
+:::
+
+:::infobox C Programming Language
+| Paradigm | Procedural, structured |
+| Created by | Dennis Ritchie |
+| Year | 1972 (Bell Labs) |
+| Standardized | C89, C99, C11, C17, C23 |
+| Typing | Static, weak |
+| Compiled | Yes (to native machine code) |
+| Influenced | C++, Java, C#, Python, Rust, Go, PHP |
+:::
+
+## History
+
+C was created at Bell Labs by **Dennis Ritchie** between 1969 and 1973, evolving from the earlier B language (itself derived from BCPL). It was designed for a specific purpose: to rewrite the Unix operating system in a portable, high-level language rather than machine-specific assembly.
+
+This was revolutionary. Before C, operating systems were written in assembly language and had to be rewritten for every new processor. With C, Unix could be **ported** to new hardware with minimal changes — the beginning of the portable software era.
+
+Brian Kernighan and Dennis Ritchie published **"The C Programming Language"** in 1978 (known as K&R C), which served as the de facto standard. C was later standardized by ANSI (C89) and ISO.
+
+## Basic Structure of a C Program
+
+```c
+#include <stdio.h>   /* Include the standard I/O library */
+
+int main(void) {
+    printf("Hello, World!\n");
+    return 0;         /* Return 0 to indicate success */
+}
+```
+
+Every C program must have a `main()` function — this is where execution begins. The `#include` directive brings in library declarations.
+
+## Data Types
+
+C is a **statically typed** language — every variable must be declared with a type:
+
+| Type | Size (typical) | Range |
+|---|---|---|
+| `char` | 1 byte | -128 to 127 (or 0–255 unsigned) |
+| `int` | 4 bytes | -2,147,483,648 to 2,147,483,647 |
+| `long` | 8 bytes (64-bit) | Very large integers |
+| `float` | 4 bytes | ~7 decimal digits precision |
+| `double` | 8 bytes | ~15 decimal digits precision |
+| `_Bool` | 1 byte | 0 or 1 |
+
+```c
+int count = 0;
+double pi = 3.14159265358979;
+char letter = 'A';
+unsigned int positive = 42;
+```
+
+## Control Flow
+
+```c
+/* If-else */
+if (x > 0) {
+    printf("Positive\n");
+} else if (x < 0) {
+    printf("Negative\n");
+} else {
+    printf("Zero\n");
+}
+
+/* For loop */
+for (int i = 0; i < 10; i++) {
+    printf("%d\n", i);
+}
+
+/* While loop */
+while (condition) {
+    /* ... */
+}
+
+/* Switch */
+switch (day) {
+    case 1: printf("Monday\n"); break;
+    case 2: printf("Tuesday\n"); break;
+    default: printf("Other\n");
+}
+```
+
+## Functions
+
+```c
+/* Function declaration (prototype) */
+int add(int a, int b);
+
+/* Function definition */
+int add(int a, int b) {
+    return a + b;
+}
+
+/* Usage */
+int result = add(3, 4);   /* result = 7 */
+```
+
+C is a **pass-by-value** language — functions receive copies of their arguments. To modify a variable in the caller, you must pass a pointer.
+
+## Pointers — C's Most Powerful Feature
+
+A **pointer** is a variable that stores a memory address. Pointers enable dynamic memory allocation, efficient array handling, and the ability to modify variables in calling functions.
+
+```c
+int x = 10;
+int *ptr = &x;   /* ptr holds the address of x */
+
+printf("%d\n", x);     /* prints 10 */
+printf("%d\n", *ptr);  /* dereference: also prints 10 */
+
+*ptr = 20;             /* modify x through ptr */
+printf("%d\n", x);     /* prints 20 */
+```
+
+### Pointer Arithmetic
+
+```c
+int arr[5] = {10, 20, 30, 40, 50};
+int *p = arr;    /* p points to arr[0] */
+
+printf("%d\n", *p);       /* 10 */
+printf("%d\n", *(p+1));   /* 20 */
+printf("%d\n", *(p+2));   /* 30 */
+```
+
+## Arrays and Strings
+
+```c
+/* Array declaration */
+int scores[5] = {95, 87, 92, 88, 79};
+
+/* String — array of chars ending with '\0' */
+char name[] = "Alice";   /* {'A','l','i','c','e','\0'} */
+
+/* String functions (from string.h) */
+#include <string.h>
+int len = strlen(name);      /* 5 */
+strcpy(dest, src);           /* copy string */
+strcat(dest, src);           /* concatenate strings */
+strcmp(s1, s2);              /* compare strings */
+```
+
+## Dynamic Memory Allocation
+
+C allows manual memory management using `malloc`, `calloc`, `realloc`, and `free` from `<stdlib.h>`:
+
+```c
+#include <stdlib.h>
+
+/* Allocate memory for 10 integers */
+int *arr = malloc(10 * sizeof(int));
+if (arr == NULL) {
+    /* Handle allocation failure */
+}
+
+arr[0] = 42;
+arr[1] = 17;
+
+/* Always free when done to avoid memory leaks */
+free(arr);
+arr = NULL;
+```
+
+Memory management is the programmer's responsibility in C — forgetting to `free` allocated memory causes **memory leaks**; accessing freed memory causes **undefined behavior**.
+
+## Structures
+
+```c
+struct Point {
+    double x;
+    double y;
+};
+
+struct Point p1 = {3.0, 4.0};
+printf("(%f, %f)\n", p1.x, p1.y);
+
+/* Pointer to struct */
+struct Point *ptr = &p1;
+printf("%f\n", ptr->x);   /* arrow operator for pointer access */
+```
+
+## The C Standard Library
+
+C comes with a small but powerful standard library:
+
+| Header | Contents |
+|---|---|
+| `<stdio.h>` | I/O: printf, scanf, fopen, fclose |
+| `<stdlib.h>` | malloc, free, exit, atoi, qsort |
+| `<string.h>` | strlen, strcpy, strcmp, memcpy |
+| `<math.h>` | sqrt, pow, sin, cos, log |
+| `<time.h>` | time, clock, strftime |
+
+## Why C Matters Today
+
+- The **Linux kernel**, **Windows NT core**, and **macOS XNU** are written primarily in C
+- Nearly every other programming language runtime (Python, Ruby, PHP) is implemented in C
+- All embedded systems and microcontrollers use C
+- C gives you **the closest thing to portable assembly** — full control with relative portability
+
+## See Also
+
+- [C++ Programming Language](article.html?id=cpp) — extends C with object-oriented features
+- [Assembly Language](article.html?id=assembly) — the language below C; C compiles to assembly
+- [Linux](article.html?id=linux) — the OS written predominantly in C
+- [Bash (Unix Shell)](article.html?id=bash) — the shell used to compile and run C programs
+
+:::citations
+1. Kernighan, Brian W. & Ritchie, Dennis M. (1988). *The C Programming Language.* 2nd ed. Prentice Hall.
+2. Harbison, Samuel P. & Steele, Guy L. (2002). *C: A Reference Manual.* 5th ed. Prentice Hall.
+3. King, K. N. (2008). *C Programming: A Modern Approach.* 2nd ed. W. W. Norton.
+4. ISO/IEC 9899:2018. *Programming Languages — C.* International Organization for Standardization.
+:::

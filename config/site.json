@@ -1,0 +1,15 @@
+{
+  "name": "EduWiki",
+  "tagline": "Knowledge Through Exploration",
+  "logo": "media/logo.svg",
+  "logoAlt": "EduWiki Logo",
+  "primaryColor": "#2563eb",
+  "accentColor": "#1d4ed8",
+  "footerText": "© 2026 EduWiki — An open educational resource",
+  "footerLinks": [
+    { "label": "About", "href": "index.html" },
+    { "label": "How to Contribute", "href": "admin/create-article.html" },
+    { "label": "Getting Started", "href": "admin/getting-started.html" }
+  ],
+  "adminNote": "To change the site name, logo, or colors, edit config/site.json"
+}

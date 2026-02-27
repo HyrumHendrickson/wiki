@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pythagorean Theorem — EduWiki</title>
+  <link rel="stylesheet" href="../styles.css">
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] },
+      options: { skipHtmlTags: ['script','noscript','style','textarea','pre'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+  <!-- Desmos API -->
+  <script src="https://www.desmos.com/api/v1.9/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6" async></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="wiki-header" role="banner"></header>
+
+  <div class="wiki-layout">
+    <aside id="wiki-sidebar" aria-label="Table of contents and navigation">
+      <div id="toc"></div>
+    </aside>
+
+    <main id="main-content" class="wiki-content">
+
+      <!-- Breadcrumb -->
+      <nav class="wiki-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <a href="../index.html#cat-mathematics">Mathematics</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <span aria-current="page">The Pythagorean Theorem</span>
+      </nav>
+
+      <!-- Title -->
+      <h1 class="wiki-title">The Pythagorean Theorem</h1>
+      <div class="wiki-meta">
+        <span>📅 Last updated: February 27, 2026</span>
+        <span>✍ EduWiki Team</span>
+        <span class="tag">Mathematics</span>
+        <span class="tag">Geometry</span>
+      </div>
+
+      <!-- Summary -->
+      <div class="wiki-summary" role="note">
+        <strong>Summary</strong>
+        The <strong>Pythagorean Theorem</strong> is one of the most fundamental results in Euclidean geometry.
+        It states that in any <em>right triangle</em>, the square of the length of the hypotenuse equals
+        the sum of the squares of the other two sides. In formula form:
+        $$a^2 + b^2 = c^2$$
+        where $c$ is the length of the hypotenuse and $a$, $b$ are the legs of the triangle.
+      </div>
+
+      <!-- Infobox -->
+      <div class="infobox" aria-label="Quick facts">
+        <div class="infobox-title">Pythagorean Theorem</div>
+        <table>
+          <tr><td>Field</td><td>Geometry, Algebra</td></tr>
+          <tr><td>Named after</td><td>Pythagoras of Samos</td></tr>
+          <tr><td>Formula</td><td>$a^2 + b^2 = c^2$</td></tr>
+          <tr><td>Applies to</td><td>Right triangles</td></tr>
+          <tr><td>Known since</td><td>~570 BC (or earlier)</td></tr>
+        </table>
+      </div>
+
+      <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+
+      <h2>Statement of the Theorem</h2>
+      <p>
+        For any right triangle with legs of length $a$ and $b$ and hypotenuse of length $c$:
+      </p>
+      <div class="math-block">
+        $$a^2 + b^2 = c^2$$
+      </div>
+      <p>
+        The <strong>hypotenuse</strong> is always the side opposite the right angle and is the longest
+        side of the triangle.
+      </p>
+
+      <h2>Proofs</h2>
+      <p>
+        The Pythagorean Theorem has more known proofs than any other theorem in mathematics — over
+        370 distinct proofs have been documented. Below are three of the most instructive.
+      </p>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          📐 Proof 1 — Geometric (Square Rearrangement)
+        </button>
+        <div class="wiki-dropdown-body">
+          <p>
+            Arrange four identical right triangles (legs $a$, $b$; hypotenuse $c$) inside a large
+            square of side $(a + b)$.
+          </p>
+          <p>
+            The large square has area $(a+b)^2 = a^2 + 2ab + b^2$.<br>
+            The four triangles have total area $4 \cdot \frac{1}{2}ab = 2ab$.<br>
+            The inner shape (also a square, with side $c$) has area $c^2$.
+          </p>
+          <p>Therefore:</p>
+          <div class="math-block">
+            $$(a+b)^2 - 2ab = c^2 \implies a^2 + b^2 = c^2 \quad \checkmark$$
+          </div>
+        </div>
+      </div>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          📐 Proof 2 — Algebraic (Similar Triangles)
+        </button>
+        <div class="wiki-dropdown-body">
+          <p>
+            Drop an altitude $h$ from the right angle to the hypotenuse, dividing it into segments
+            $p$ and $q$ where $p + q = c$.
+          </p>
+          <p>
+            The altitude creates two smaller triangles, each similar to the original. From the
+            similarity ratios:
+          </p>
+          <div class="math-block">$$a^2 = c \cdot p \quad \text{and} \quad b^2 = c \cdot q$$</div>
+          <p>Adding:</p>
+          <div class="math-block">$$a^2 + b^2 = c(p + q) = c \cdot c = c^2 \quad \checkmark$$</div>
+        </div>
+      </div>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          📐 Proof 3 — Using the Dot Product (Linear Algebra)
+        </button>
+        <div class="wiki-dropdown-body">
+          <p>
+            Let $\mathbf{u}$ and $\mathbf{v}$ be two perpendicular vectors. Then $\mathbf{u} \cdot \mathbf{v} = 0$.
+          </p>
+          <div class="math-block">
+            $$|\mathbf{u} + \mathbf{v}|^2 = (\mathbf{u}+\mathbf{v}) \cdot (\mathbf{u}+\mathbf{v})
+              = |\mathbf{u}|^2 + 2(\mathbf{u}\cdot\mathbf{v}) + |\mathbf{v}|^2
+              = |\mathbf{u}|^2 + |\mathbf{v}|^2$$
+          </div>
+          <p>This generalizes the Pythagorean Theorem to any number of dimensions.</p>
+        </div>
+      </div>
+
+      <h2>Pythagorean Triples</h2>
+      <p>
+        A <strong>Pythagorean triple</strong> is a set of three positive integers $(a, b, c)$ satisfying
+        $a^2 + b^2 = c^2$. The simplest example is $(3, 4, 5)$:
+      </p>
+      <div class="math-block">$$3^2 + 4^2 = 9 + 16 = 25 = 5^2$$</div>
+
+      <h3>Generating Formula</h3>
+      <p>All primitive Pythagorean triples can be generated by choosing integers $m > n > 0$ with $\gcd(m,n)=1$ and $m - n$ odd:</p>
+      <div class="math-block">
+        $$a = m^2 - n^2, \quad b = 2mn, \quad c = m^2 + n^2$$
+      </div>
+
+      <table>
+        <thead><tr><th>$m$</th><th>$n$</th><th>$a$</th><th>$b$</th><th>$c$</th></tr></thead>
+        <tbody>
+          <tr><td>2</td><td>1</td><td>3</td><td>4</td><td>5</td></tr>
+          <tr><td>3</td><td>2</td><td>5</td><td>12</td><td>13</td></tr>
+          <tr><td>4</td><td>1</td><td>15</td><td>8</td><td>17</td></tr>
+          <tr><td>4</td><td>3</td><td>7</td><td>24</td><td>25</td></tr>
+          <tr><td>5</td><td>2</td><td>21</td><td>20</td><td>29</td></tr>
+        </tbody>
+      </table>
+
+      <!-- Interactive Desmos Graph -->
+      <div
+        class="desmos-container"
+        data-label="Explore Pythagorean triples interactively — drag the slider for leg a"
+        data-height="420"
+        data-expressions='[
+          {"id":"a_val", "latex":"a=3", "sliderBounds":{"min":"1","max":"20","step":"1"}},
+          {"id":"b_val", "latex":"b=4", "sliderBounds":{"min":"1","max":"20","step":"1"}},
+          {"id":"c_val", "latex":"c=\\sqrt{a^2+b^2}", "color":"#dc2626"},
+          {"id":"label", "latex":"a^2+b^2=c^2", "color":"#000000"}
+        ]'
+      ></div>
+
+      <h2>The Converse</h2>
+      <p>
+        The converse of the Pythagorean Theorem is also true: if $a^2 + b^2 = c^2$, then the triangle
+        with sides $a$, $b$, $c$ is a right triangle. This gives a useful test:
+      </p>
+      <ul>
+        <li>If $a^2 + b^2 = c^2$: right triangle</li>
+        <li>If $a^2 + b^2 > c^2$: acute triangle</li>
+        <li>If $a^2 + b^2 < c^2$: obtuse triangle</li>
+      </ul>
+
+      <h2>Extensions and Generalizations</h2>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          🌐 The Law of Cosines (generalization)
+        </button>
+        <div class="wiki-dropdown-body">
+          <p>
+            For a triangle with sides $a$, $b$, $c$ and the angle $C$ opposite side $c$:
+          </p>
+          <div class="math-block">$$c^2 = a^2 + b^2 - 2ab\cos C$$</div>
+          <p>
+            When $C = 90°$, $\cos C = 0$, and this reduces to $c^2 = a^2 + b^2$ — the Pythagorean Theorem.
+          </p>
+        </div>
+      </div>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          🌐 Higher Dimensions — Distance Formula
+        </button>
+        <div class="wiki-dropdown-body">
+          <p>The distance between two points $(x_1, y_1)$ and $(x_2, y_2)$ in 2D is:</p>
+          <div class="math-block">$$d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$$</div>
+          <p>In 3D, between $(x_1,y_1,z_1)$ and $(x_2,y_2,z_2)$:</p>
+          <div class="math-block">$$d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$$</div>
+          <p>Both are direct applications of the Pythagorean Theorem.</p>
+        </div>
+      </div>
+
+      <h2>Historical Background</h2>
+      <p>
+        Although the theorem bears the name of the Greek philosopher <strong>Pythagoras</strong>
+        (c. 570–495 BC), evidence of the relationship was known to Babylonian and Indian mathematicians
+        much earlier. The Babylonian tablet <em>Plimpton 322</em> (c. 1800 BC) lists Pythagorean triples,
+        suggesting knowledge of the theorem over a millennium before Pythagoras. [1][2]
+      </p>
+      <p>
+        The first rigorous proof, however, is attributed to the Pythagorean school of ancient Greece. [3]
+      </p>
+
+      <!-- Citations -->
+      <section class="wiki-citations" aria-labelledby="citations-heading">
+        <h2 id="citations-heading">References</h2>
+        <ol>
+          <li>
+            Robson, E. (2002). "Words and Pictures: New Light on Plimpton 322."
+            <em>American Mathematical Monthly</em>, 109(2), 105–120.
+          </li>
+          <li>
+            Maor, E. (2007). <em>The Pythagorean Theorem: A 4,000-Year History</em>. Princeton University Press.
+          </li>
+          <li>
+            Heath, T. L. (1908). <em>The Thirteen Books of Euclid's Elements</em>. Cambridge University Press.
+          </li>
+          <li>
+            Loomis, E. S. (1940). <em>The Pythagorean Proposition</em>. National Council of Teachers of Mathematics.
+          </li>
+        </ol>
+      </section>
+
+    </main>
+  </div>
+
+  <footer id="wiki-footer" role="contentinfo"></footer>
+  <script src="../scripts.js"></script>
+</body>
+</html>

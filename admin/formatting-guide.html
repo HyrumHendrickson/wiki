@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formatting Guide — EduWiki</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="wiki-header" role="banner"></header>
+
+  <div class="wiki-layout">
+    <aside id="wiki-sidebar" aria-label="Table of contents and navigation">
+      <div id="toc"></div>
+    </aside>
+
+    <main id="main-content" class="wiki-content">
+
+      <nav class="wiki-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <span>Admin &amp; Help</span>
+        <span class="sep" aria-hidden="true">›</span>
+        <span aria-current="page">Formatting Guide</span>
+      </nav>
+
+      <h1 class="wiki-title">Formatting Guide</h1>
+      <div class="wiki-meta">
+        <span>📅 Last updated: February 27, 2026</span>
+        <span>✍ EduWiki Admin</span>
+        <span class="tag">Admin</span>
+        <span class="tag">Formatting</span>
+      </div>
+
+      <div class="admin-notice" role="note">
+        <strong>Admin Article</strong> — This reference covers all the HTML formatting elements
+        available in EduWiki articles. Each section shows the HTML code and its rendered output.
+      </div>
+
+      <div class="wiki-summary" role="note">
+        <strong>Summary</strong>
+        EduWiki articles are written in standard HTML using a set of CSS classes provided by
+        <code>styles.css</code>. This guide covers headings, lists, tables, code blocks,
+        blockquotes, infoboxes, and all other formatting elements.
+      </div>
+
+      <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+
+      <h2>Headings</h2>
+      <p>
+        Use heading tags to create the section structure. The Table of Contents is automatically
+        generated from <code>&lt;h2&gt;</code> and <code>&lt;h3&gt;</code> headings.
+      </p>
+      <pre><code>&lt;h2&gt;Main Section&lt;/h2&gt;
+&lt;h3&gt;Sub-section&lt;/h3&gt;
+&lt;h4&gt;Minor sub-section&lt;/h4&gt;</code></pre>
+      <p><strong>Rules:</strong></p>
+      <ul>
+        <li>Only one <code>&lt;h1&gt;</code> per page — the article title.</li>
+        <li>Use <code>&lt;h2&gt;</code> for major sections, <code>&lt;h3&gt;</code> for sub-sections.</li>
+        <li>Give headings descriptive text (not just "Section 1").</li>
+      </ul>
+
+      <h2>Text Formatting</h2>
+      <p>Standard HTML inline elements:</p>
+      <table>
+        <thead><tr><th>HTML</th><th>Result</th><th>Use for</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;strong&gt;text&lt;/strong&gt;</code></td><td><strong>bold</strong></td><td>Key terms, emphasis</td></tr>
+          <tr><td><code>&lt;em&gt;text&lt;/em&gt;</code></td><td><em>italic</em></td><td>Titles, foreign words</td></tr>
+          <tr><td><code>&lt;code&gt;text&lt;/code&gt;</code></td><td><code>monospace</code></td><td>Code, filenames, commands</td></tr>
+          <tr><td><code>&lt;sup&gt;text&lt;/sup&gt;</code></td><td>x<sup>2</sup></td><td>Superscripts, footnotes</td></tr>
+          <tr><td><code>&lt;sub&gt;text&lt;/sub&gt;</code></td><td>H<sub>2</sub>O</td><td>Subscripts, chemical formulas</td></tr>
+          <tr><td><code>&lt;mark&gt;text&lt;/mark&gt;</code></td><td><mark>highlighted</mark></td><td>Important highlights</td></tr>
+          <tr><td><code>&lt;kbd&gt;key&lt;/kbd&gt;</code></td><td><kbd>Enter</kbd></td><td>Keyboard keys</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Paragraphs and Line Breaks</h2>
+      <p>Wrap each paragraph in <code>&lt;p&gt;&lt;/p&gt;</code> tags. Avoid using <code>&lt;br&gt;</code>
+      for spacing — use new paragraphs instead.</p>
+
+      <h2>Lists</h2>
+      <p>Unordered list (bullets):</p>
+      <pre><code>&lt;ul&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      <p>Ordered list (numbered):</p>
+      <pre><code>&lt;ol&gt;
+  &lt;li&gt;Step one&lt;/li&gt;
+  &lt;li&gt;Step two&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+      <h2>Tables</h2>
+      <p>Always include a <code>&lt;thead&gt;</code> row for column headers:</p>
+      <pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;Column 1&lt;/th&gt;&lt;th&gt;Column 2&lt;/th&gt;&lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;Value 1&lt;/td&gt;&lt;td&gt;Value 2&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Value 3&lt;/td&gt;&lt;td&gt;Value 4&lt;/td&gt;&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+      <p>Result:</p>
+      <table>
+        <thead><tr><th>Column 1</th><th>Column 2</th></tr></thead>
+        <tbody>
+          <tr><td>Value 1</td><td>Value 2</td></tr>
+          <tr><td>Value 3</td><td>Value 4</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Code Blocks</h2>
+      <p>
+        For multi-line code, wrap in <code>&lt;pre&gt;&lt;code&gt;</code>. For inline code, use
+        just <code>&lt;code&gt;</code>.
+      </p>
+      <pre><code>&lt;pre&gt;&lt;code&gt;function hello() {
+    return "world";
+}&lt;/code&gt;&lt;/pre&gt;</code></pre>
+
+      <h2>Blockquotes</h2>
+      <p>Use <code>&lt;blockquote&gt;</code> for notable quotes or callouts:</p>
+      <pre><code>&lt;blockquote&gt;
+  Mathematics is the language with which God has written the universe.
+  — Galileo Galilei
+&lt;/blockquote&gt;</code></pre>
+      <p>Result:</p>
+      <blockquote>
+        Mathematics is the language with which God has written the universe.
+        — Galileo Galilei
+      </blockquote>
+
+      <h2>Summary Box</h2>
+      <p>Every article should have a summary box right after the title metadata:</p>
+      <pre><code>&lt;div class="wiki-summary" role="note"&gt;
+  &lt;strong&gt;Summary&lt;/strong&gt;
+  Your 2–4 sentence summary here.
+&lt;/div&gt;</code></pre>
+
+      <h2>Info Box</h2>
+      <p>
+        The info box floats on the right side of the content. Use it for quick facts:
+      </p>
+      <pre><code>&lt;div class="infobox" aria-label="Quick facts"&gt;
+  &lt;div class="infobox-title"&gt;Topic at a Glance&lt;/div&gt;
+  &lt;table&gt;
+    &lt;tr&gt;&lt;td&gt;Field&lt;/td&gt;&lt;td&gt;Mathematics&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Difficulty&lt;/td&gt;&lt;td&gt;Intermediate&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+
+      <h2>Images</h2>
+      <p>
+        Store images in the <code>media/</code> folder. Use the <code>wiki-figure</code> class
+        for proper styling:
+      </p>
+      <pre><code>&lt;figure class="wiki-figure"&gt;
+  &lt;img src="../media/my-image.png" alt="Descriptive alt text"&gt;
+  &lt;figcaption&gt;Caption explaining the image.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+
+      <h2>Links</h2>
+      <p>Internal links (to other articles):</p>
+      <pre><code>&lt;a href="../articles/calculus.html"&gt;Introduction to Calculus&lt;/a&gt;</code></pre>
+      <p>External links (always include <code>target="_blank" rel="noopener noreferrer"</code>):</p>
+      <pre><code>&lt;a href="https://example.com" target="_blank" rel="noopener noreferrer"&gt;
+  External Link
+&lt;/a&gt;</code></pre>
+
+      <section class="wiki-citations" aria-labelledby="citations-heading">
+        <h2 id="citations-heading">References</h2>
+        <ol>
+          <li>EduWiki internal documentation.</li>
+          <li>HTML Living Standard, WHATWG. <a href="https://html.spec.whatwg.org/" target="_blank" rel="noopener noreferrer">html.spec.whatwg.org</a></li>
+        </ol>
+      </section>
+
+    </main>
+  </div>
+
+  <footer id="wiki-footer" role="contentinfo"></footer>
+  <script src="../scripts.js"></script>
+</body>
+</html>

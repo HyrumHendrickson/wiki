@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting Started — EduWiki</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="wiki-header" role="banner"></header>
+
+  <div class="wiki-layout">
+    <aside id="wiki-sidebar" aria-label="Table of contents and navigation">
+      <div id="toc"></div>
+    </aside>
+
+    <main id="main-content" class="wiki-content">
+
+      <nav class="wiki-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <span>Admin &amp; Help</span>
+        <span class="sep" aria-hidden="true">›</span>
+        <span aria-current="page">Getting Started</span>
+      </nav>
+
+      <h1 class="wiki-title">Getting Started with EduWiki</h1>
+      <div class="wiki-meta">
+        <span>📅 Last updated: February 27, 2026</span>
+        <span>✍ EduWiki Admin</span>
+        <span class="tag">Admin</span>
+        <span class="tag">Help</span>
+      </div>
+
+      <div class="admin-notice" role="note">
+        <strong>Admin Article</strong> — This article is part of the EduWiki help system.
+        It explains how to use and navigate the wiki.
+      </div>
+
+      <div class="wiki-summary" role="note">
+        <strong>Summary</strong>
+        EduWiki is an interactive educational resource built to make learning engaging and accessible.
+        This guide will help you navigate the site, find articles, and make the most of its
+        interactive features like Desmos graphs, dropdown sections, and LaTeX math.
+      </div>
+
+      <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+
+      <h2>What is EduWiki?</h2>
+      <p>
+        EduWiki is a modular, Wikipedia-style educational wiki. Unlike traditional references that
+        just list facts, EduWiki is designed to <em>teach</em>. Articles feature:
+      </p>
+      <ul>
+        <li><strong>Summaries</strong> — a quick overview at the top of every page.</li>
+        <li><strong>Structured sections</strong> — concepts built up step by step.</li>
+        <li><strong>Interactive Desmos graphs</strong> — explore math visually.</li>
+        <li><strong>LaTeX math</strong> — beautifully typeset equations.</li>
+        <li><strong>Expandable examples</strong> — click to reveal worked problems.</li>
+        <li><strong>Citations</strong> — sources and further reading at the bottom.</li>
+      </ul>
+
+      <h2>Navigating the Site</h2>
+
+      <h3>The Header</h3>
+      <p>
+        The header at the top of every page contains:
+      </p>
+      <ul>
+        <li>The <strong>EduWiki logo</strong> — clicking it always takes you to the home page.</li>
+        <li>The <strong>search bar</strong> — type to find articles instantly.</li>
+        <li>Quick links to <strong>Home</strong> and <strong>Help</strong>.</li>
+      </ul>
+
+      <h3>The Sidebar</h3>
+      <p>
+        On article pages, the left sidebar shows:
+      </p>
+      <ul>
+        <li>The <strong>Table of Contents</strong> — click any heading to jump to it. The current
+            section is highlighted as you scroll.</li>
+        <li>The <strong>article navigation</strong> — all articles grouped by category.</li>
+      </ul>
+
+      <h3>Search</h3>
+      <p>
+        Use the search bar in the header (or the large search box on the home page) to find articles.
+        Results appear as you type. Press <kbd>Enter</kbd> to go to the best match, or click any
+        result in the dropdown.
+      </p>
+
+      <h2>Reading an Article</h2>
+      <p>Each article follows the same structure:</p>
+      <ol>
+        <li><strong>Breadcrumb navigation</strong> — shows where you are.</li>
+        <li><strong>Title &amp; metadata</strong> — article name, author, last updated date, tags.</li>
+        <li><strong>Summary box</strong> (blue) — a brief overview of the topic.</li>
+        <li><strong>Info box</strong> (right column) — key facts at a glance.</li>
+        <li><strong>Main sections</strong> — the teaching content.</li>
+        <li><strong>Interactive components</strong> — graphs, examples, dropdowns.</li>
+        <li><strong>References</strong> — citations and further reading.</li>
+      </ol>
+
+      <h2>Interactive Features</h2>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          📈 Desmos Graphs
+        </button>
+        <div class="wiki-dropdown-body">
+          <p>
+            Many math articles embed live <strong>Desmos graphing calculators</strong>. You can:
+          </p>
+          <ul>
+            <li>Click and drag to pan the graph.</li>
+            <li>Scroll to zoom in and out.</li>
+            <li>Click the expression list icon (top-left of the graph) to see and edit equations.</li>
+            <li>Interact with sliders to explore how changing a value affects the graph.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          ➕ LaTeX Math
+        </button>
+        <div class="wiki-dropdown-body">
+          <p>
+            Equations are rendered using <strong>MathJax</strong>, which supports full LaTeX syntax.
+            Inline math like $E = mc^2$ appears in the flow of text.
+            Display math appears centered on its own line:
+          </p>
+          <p style="text-align:center;font-size:1.2em;">$$\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}$$</p>
+          <script>
+            window.MathJax = {
+              tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']] }
+            };
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+        </div>
+      </div>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          📘 Expandable Examples
+        </button>
+        <div class="wiki-dropdown-body">
+          <p>
+            Blue dropdown sections (like this one!) contain worked examples, proofs, or extra detail.
+            Click the button to expand or collapse them. This keeps the main article clean while
+            providing depth for those who want it.
+          </p>
+        </div>
+      </div>
+
+      <h2>Where to Go Next</h2>
+      <p>
+        Now that you know how to navigate EduWiki, explore the articles! Here are some good starting points:
+      </p>
+      <ul>
+        <li><a href="../articles/calculus.html">Introduction to Calculus</a></li>
+        <li><a href="../articles/pythagorean-theorem.html">The Pythagorean Theorem</a></li>
+      </ul>
+      <p>
+        If you want to contribute by creating a new article, read
+        <a href="create-article.html">How to Create a New Article</a>.
+      </p>
+
+      <section class="wiki-citations" aria-labelledby="citations-heading">
+        <h2 id="citations-heading">References</h2>
+        <ol>
+          <li>EduWiki internal documentation.</li>
+        </ol>
+      </section>
+
+    </main>
+  </div>
+
+  <footer id="wiki-footer" role="contentinfo"></footer>
+  <script src="../scripts.js"></script>
+</body>
+</html>

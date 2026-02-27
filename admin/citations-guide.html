@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citations Guide — EduWiki</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="wiki-header" role="banner"></header>
+
+  <div class="wiki-layout">
+    <aside id="wiki-sidebar" aria-label="Table of contents and navigation">
+      <div id="toc"></div>
+    </aside>
+
+    <main id="main-content" class="wiki-content">
+
+      <nav class="wiki-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <span>Admin &amp; Help</span>
+        <span class="sep" aria-hidden="true">›</span>
+        <span aria-current="page">Citations Guide</span>
+      </nav>
+
+      <h1 class="wiki-title">Citations Guide</h1>
+      <div class="wiki-meta">
+        <span>📅 Last updated: February 27, 2026</span>
+        <span>✍ EduWiki Admin</span>
+        <span class="tag">Admin</span>
+        <span class="tag">Citations</span>
+        <span class="tag">References</span>
+      </div>
+
+      <div class="admin-notice" role="note">
+        <strong>Admin Article</strong> — This guide explains how to add citations and references
+        to EduWiki articles.
+      </div>
+
+      <div class="wiki-summary" role="note">
+        <strong>Summary</strong>
+        Every EduWiki article should cite its sources. Citations are added in a numbered list
+        at the bottom of the article, and inline references in the body text (like <code>[1]</code>)
+        automatically become clickable superscript links that jump to the citation.
+      </div>
+
+      <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+
+      <h2>Why Citations Matter</h2>
+      <p>
+        EduWiki is designed for teaching, and academic integrity is important. Citations:
+      </p>
+      <ul>
+        <li><strong>Give credit</strong> to the original authors of ideas and content.</li>
+        <li><strong>Allow readers to verify</strong> facts and explore further.</li>
+        <li><strong>Build trust</strong> in the accuracy of the article.</li>
+        <li><strong>Provide deeper reading</strong> for students who want to learn more.</li>
+      </ul>
+
+      <h2>The Citations Section</h2>
+      <p>
+        Every article must end with a <code>wiki-citations</code> section, just before the closing
+        <code>&lt;/main&gt;</code> tag:
+      </p>
+      <pre><code>&lt;section class="wiki-citations" aria-labelledby="citations-heading"&gt;
+  &lt;h2 id="citations-heading"&gt;References&lt;/h2&gt;
+  &lt;ol&gt;
+    &lt;li&gt;Author, A. (Year). &lt;em&gt;Title of Book&lt;/em&gt;. Publisher.&lt;/li&gt;
+    &lt;li&gt;Author, B. (Year). "Article Title." &lt;em&gt;Journal Name&lt;/em&gt;, Vol(Issue), pages.&lt;/li&gt;
+    &lt;li&gt;Website Name. &lt;a href="https://..." target="_blank" rel="noopener noreferrer"&gt;url&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/section&gt;</code></pre>
+
+      <h2>Inline Citation References</h2>
+      <p>
+        To link a claim in the body text to a specific citation, write <code>[1]</code>, <code>[2]</code>, etc.
+        EduWiki's JavaScript automatically converts these to clickable superscript links:
+      </p>
+      <pre><code>&lt;p&gt;
+  The Pythagorean theorem was known to Babylonian mathematicians as early as 1800 BC. [1]
+  The Greek philosopher Pythagoras is credited with the first formal proof. [2]
+&lt;/p&gt;</code></pre>
+      <p>
+        The numbers link to the corresponding entry in the references list at the bottom of the page.
+        The numbers must match the order of items in your <code>&lt;ol&gt;</code>.
+      </p>
+
+      <h2>Citation Formats</h2>
+      <p>EduWiki loosely follows APA style. Here are templates for common source types:</p>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          📗 Book
+        </button>
+        <div class="wiki-dropdown-body">
+          <pre><code>Author, A. A., &amp; Author, B. B. (Year).
+&lt;em&gt;Title of book: Subtitle if any&lt;/em&gt; (Edition ed.).
+Publisher.</code></pre>
+          <p><strong>Example:</strong></p>
+          <pre><code>Stewart, J. (2015). &lt;em&gt;Calculus: Early Transcendentals&lt;/em&gt; (8th ed.). Cengage Learning.</code></pre>
+        </div>
+      </div>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          📘 Journal Article
+        </button>
+        <div class="wiki-dropdown-body">
+          <pre><code>Author, A. A. (Year). "Article title."
+&lt;em&gt;Journal Name&lt;/em&gt;, Volume(Issue), page–page.
+https://doi.org/xxxxx (if available)</code></pre>
+          <p><strong>Example:</strong></p>
+          <pre><code>Robson, E. (2002). "Words and Pictures: New Light on Plimpton 322."
+&lt;em&gt;American Mathematical Monthly&lt;/em&gt;, 109(2), 105–120.</code></pre>
+        </div>
+      </div>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          🌐 Website / Online Resource
+        </button>
+        <div class="wiki-dropdown-body">
+          <pre><code>Author or Organization. (Year, Month Day). &lt;em&gt;Page title&lt;/em&gt;.
+Website Name. &lt;a href="URL" target="_blank" rel="noopener noreferrer"&gt;URL&lt;/a&gt;</code></pre>
+          <p><strong>Example:</strong></p>
+          <pre><code>Khan Academy. (2024). &lt;em&gt;Calculus&lt;/em&gt;.
+&lt;a href="https://www.khanacademy.org/math/calculus-1" target="_blank" rel="noopener noreferrer"&gt;
+  khanacademy.org/math/calculus-1
+&lt;/a&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          🎥 Video
+        </button>
+        <div class="wiki-dropdown-body">
+          <pre><code>Creator. (Year, Month Day). &lt;em&gt;Video title&lt;/em&gt; [Video].
+Platform. &lt;a href="URL" target="_blank" rel="noopener noreferrer"&gt;URL&lt;/a&gt;</code></pre>
+          <p><strong>Example:</strong></p>
+          <pre><code>3Blue1Brown. (2017, April 28). &lt;em&gt;The Essence of Calculus&lt;/em&gt; [Video].
+YouTube. &lt;a href="https://www.youtube.com/watch?v=WUvTyaaNkzM" target="_blank" rel="noopener noreferrer"&gt;
+  youtube.com/watch?v=WUvTyaaNkzM
+&lt;/a&gt;</code></pre>
+        </div>
+      </div>
+
+      <h2>Minimal Citation Requirements</h2>
+      <p>Every article must include:</p>
+      <ul>
+        <li>At least <strong>one citation</strong> in the references section.</li>
+        <li>An inline reference <code>[1]</code> wherever a major factual claim is made.</li>
+        <li>A link (with <code>target="_blank" rel="noopener noreferrer"</code>) for all online sources.</li>
+      </ul>
+      <p>
+        For admin/help articles, a single citation like "EduWiki internal documentation." is acceptable.
+      </p>
+
+      <h2>Complete Example</h2>
+      <pre><code>&lt;!-- In the body text: --&gt;
+&lt;p&gt;
+  Isaac Newton and Gottfried Leibniz independently developed calculus
+  in the 17th century. [1] The notation we use today is primarily
+  due to Leibniz. [2]
+&lt;/p&gt;
+
+&lt;!-- At the bottom of the article: --&gt;
+&lt;section class="wiki-citations" aria-labelledby="citations-heading"&gt;
+  &lt;h2 id="citations-heading"&gt;References&lt;/h2&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      Boyer, C. B. (1959). &lt;em&gt;The History of the Calculus and Its
+      Conceptual Development&lt;/em&gt;. Dover.
+    &lt;/li&gt;
+    &lt;li&gt;
+      Cajori, F. (1929). &lt;em&gt;A History of Mathematical Notations&lt;/em&gt;.
+      Open Court Publishing.
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/section&gt;</code></pre>
+
+      <section class="wiki-citations" aria-labelledby="citations-heading">
+        <h2 id="citations-heading">References</h2>
+        <ol>
+          <li>EduWiki internal documentation.</li>
+          <li>
+            American Psychological Association. (2020). <em>Publication Manual of the APA</em>
+            (7th ed.). APA.
+          </li>
+        </ol>
+      </section>
+
+    </main>
+  </div>
+
+  <footer id="wiki-footer" role="contentinfo"></footer>
+  <script src="../scripts.js"></script>
+</body>
+</html>

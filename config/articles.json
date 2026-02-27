@@ -17,6 +17,26 @@
       "icon": "📜"
     },
     {
+      "id": "faith",
+      "label": "Faith & Religion",
+      "icon": "✝"
+    },
+    {
+      "id": "languages",
+      "label": "Languages",
+      "icon": "🗣"
+    },
+    {
+      "id": "literature",
+      "label": "Literature & Authors",
+      "icon": "📖"
+    },
+    {
+      "id": "philosophy",
+      "label": "Philosophy & Theology",
+      "icon": "💭"
+    },
+    {
       "id": "admin",
       "label": "Admin & Help",
       "icon": "⚙"
@@ -44,6 +64,116 @@
       "author": "EduWiki Team",
       "lastUpdated": "2026-02-27",
       "featured": true
+    },
+    {
+      "id": "jesus-christ",
+      "title": "Jesus Christ",
+      "category": "faith",
+      "path": "articles/jesus-christ.html",
+      "summary": "Jesus Christ is the central figure of Christianity and of Latter-day Saint faith — the Son of God, Savior, and Redeemer of all mankind.",
+      "tags": ["Jesus", "Christ", "Savior", "Redeemer", "Atonement", "LDS", "Christianity"],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": true
+    },
+    {
+      "id": "book-of-mormon",
+      "title": "The Book of Mormon",
+      "category": "faith",
+      "path": "articles/book-of-mormon.html",
+      "summary": "The Book of Mormon is a sacred scripture of The Church of Jesus Christ of Latter-day Saints, translated by Joseph Smith from golden plates and serving as another testament of Jesus Christ.",
+      "tags": ["Book of Mormon", "LDS", "scripture", "Joseph Smith", "Nephi", "Moroni"],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": true
+    },
+    {
+      "id": "joseph-smith",
+      "title": "Joseph Smith",
+      "category": "faith",
+      "path": "articles/joseph-smith.html",
+      "summary": "Joseph Smith Jr. (1805–1844) was the founding prophet of The Church of Jesus Christ of Latter-day Saints, translator of the Book of Mormon, and restorer of Christ's gospel.",
+      "tags": ["Joseph Smith", "LDS", "prophet", "restoration", "Mormonism"],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "rome",
+      "title": "Ancient Rome",
+      "category": "history",
+      "path": "articles/rome.html",
+      "summary": "Ancient Rome was one of the most powerful civilizations in world history, whose legal, political, and cultural legacy continues to shape the modern world — and provided the setting for the early Christian church.",
+      "tags": ["Rome", "Roman Empire", "history", "ancient", "Latin", "republic"],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "latin",
+      "title": "Latin",
+      "category": "languages",
+      "path": "articles/latin.html",
+      "summary": "Latin is the classical language of Rome, the foundation of the Romance languages, the language of early Christian scripture, and a cornerstone of Western learning.",
+      "tags": ["Latin", "language", "Rome", "classical", "Romance languages"],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "greek",
+      "title": "Ancient Greek",
+      "category": "languages",
+      "path": "articles/greek.html",
+      "summary": "Ancient Greek is the language of Homer, Plato, and the New Testament — one of history's most influential languages and a key tool for scriptural study.",
+      "tags": ["Greek", "language", "New Testament", "classical", "Koine", "philosophy"],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "old-english",
+      "title": "Old English",
+      "category": "languages",
+      "path": "articles/old-english.html",
+      "summary": "Old English (Anglo-Saxon) is the earliest form of the English language, spoken in England from roughly 450–1150 AD, and the mother tongue of Beowulf and early Christian writings.",
+      "tags": ["Old English", "Anglo-Saxon", "language", "Beowulf", "medieval"],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "philosophy-theology",
+      "title": "Philosophy and Theology",
+      "category": "philosophy",
+      "path": "articles/philosophy-theology.html",
+      "summary": "Philosophy and theology are the twin pillars of reasoned inquiry into existence, truth, and the nature of God — disciplines that have shaped Latter-day Saint thought and all of Western civilization.",
+      "tags": ["philosophy", "theology", "reason", "faith", "LDS", "metaphysics"],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "jrr-tolkien",
+      "title": "J.R.R. Tolkien",
+      "category": "literature",
+      "path": "articles/jrr-tolkien.html",
+      "summary": "J.R.R. Tolkien (1892–1973) was an English author, poet, and Oxford professor whose devout Catholic faith and love of mythology gave the world Middle-earth — The Hobbit and The Lord of the Rings.",
+      "tags": ["Tolkien", "LOTR", "Hobbit", "literature", "mythology", "Catholic", "fantasy"],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "cs-lewis",
+      "title": "C.S. Lewis",
+      "category": "literature",
+      "path": "articles/cs-lewis.html",
+      "summary": "C.S. Lewis (1898–1963) was a British author and Christian apologist whose works — from Mere Christianity to The Chronicles of Narnia — have profoundly influenced millions, including many Latter-day Saints.",
+      "tags": ["CS Lewis", "Lewis", "Narnia", "Mere Christianity", "apologetics", "literature", "Christian"],
+      "author": "EduWiki Team",
+      "lastUpdated": "2026-02-27",
+      "featured": false
     },
     {
       "id": "getting-started",

@@ -21,7 +21,9 @@
  *      from index.html             → "./"
  */
 function getRootPath() {
-  const depth = window.location.pathname.split('/').length - 2;
+  const dirs = window.location.pathname.split('/').slice(1, -1);
+  const wikiSubDirs = ['articles', 'admin'];
+  const depth = dirs.filter(d => wikiSubDirs.includes(d)).length;
   return depth > 0 ? '../'.repeat(depth) : './';
 }
 
@@ -70,7 +72,6 @@ function buildHeader(config) {
         <img src="${ROOT}${config.logo}" alt="${config.logoAlt}" onerror="this.style.display='none'">
       </a>
       <div class="header-search" role="search">
-        <span class="search-icon" aria-hidden="true">🔍</span>
         <input type="search" id="search-input" placeholder="Search articles…" aria-label="Search articles" autocomplete="off">
         <ul id="search-results" role="listbox" aria-label="Search suggestions"></ul>
       </div>
@@ -120,7 +121,7 @@ function buildSidebarNav(articles, categories) {
   let html = '<nav class="sidebar-nav" aria-label="Article navigation">';
   for (const cat of Object.values(byCategory)) {
     if (!cat.articles.length) continue;
-    html += `<h3>${cat.icon} ${cat.label}</h3><ul>`;
+    html += `<h3>${cat.icon ? cat.icon + ' ' : ''}${cat.label}</h3><ul>`;
     for (const art of cat.articles) {
       const href = ROOT + art.path;
       const isActive = currentPath.endsWith(art.path.replace(/^.*\//, '/'));
@@ -346,7 +347,7 @@ function buildIndexPage(data) {
       const arts = grouped[cat.id];
       if (!arts.length) continue;
       html += `<div id="cat-${cat.id}" class="mb-2">
-        <h2 class="section-title">${cat.icon} ${cat.label}</h2>
+        <h2 class="section-title">${cat.icon ? cat.icon + ' ' : ''}${cat.label}</h2>
         <div class="article-grid">
           ${arts.map(a => `
             <a class="article-card" href="${ROOT}${a.path}">

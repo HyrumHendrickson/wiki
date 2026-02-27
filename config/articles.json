@@ -4,42 +4,42 @@
     {
       "id": "mathematics",
       "label": "Mathematics",
-      "icon": "∑"
+      "icon": ""
     },
     {
       "id": "science",
       "label": "Science",
-      "icon": "⚗"
+      "icon": ""
     },
     {
       "id": "history",
       "label": "History",
-      "icon": "📜"
+      "icon": ""
     },
     {
       "id": "faith",
       "label": "Faith & Religion",
-      "icon": "✝"
+      "icon": ""
     },
     {
       "id": "languages",
       "label": "Languages",
-      "icon": "🗣"
+      "icon": ""
     },
     {
       "id": "literature",
       "label": "Literature & Authors",
-      "icon": "📖"
+      "icon": ""
     },
     {
       "id": "philosophy",
       "label": "Philosophy & Theology",
-      "icon": "💭"
+      "icon": ""
     },
     {
       "id": "admin",
       "label": "Admin & Help",
-      "icon": "⚙"
+      "icon": ""
     }
   ],
   "articles": [

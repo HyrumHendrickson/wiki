@@ -1,0 +1,190 @@
+---
+title: Assembly Language
+category: programming
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: assembly, programming, low-level, machine code, CPU, registers
+featured: false
+---
+
+:::summary
+Assembly language is a low-level programming language that provides a direct, human-readable representation of a computer's machine code instructions. Each assembly instruction corresponds closely to a single CPU operation. Assembly gives programmers precise control over hardware, making it essential for operating systems, embedded systems, device drivers, and performance-critical code. Though mostly replaced by high-level languages for everyday programming, assembly remains fundamental to understanding how computers actually work.
+:::
+
+:::infobox Assembly Language
+| Type | Low-level programming language |
+| Abstraction | One step above machine code |
+| Translated by | Assembler (to machine code) |
+| Key concepts | Registers, opcodes, memory addressing, stack |
+| Common variants | x86, x86-64, ARM, RISC-V, MIPS |
+| Typical uses | OS kernels, device drivers, embedded systems, reverse engineering |
+:::
+
+## What Is Assembly Language?
+
+Every computer processor understands only **machine code** — binary instructions like `10110000 01100001`. Assembly language replaces these cryptic bit patterns with **mnemonics** — short, memorable abbreviations for each instruction.
+
+For example, on x86:
+- Machine code: `B8 01 00 00 00`
+- Assembly:     `MOV EAX, 1`   (move the value 1 into register EAX)
+
+An **assembler** translates assembly mnemonics into machine code. Unlike a compiler, the translation is nearly one-to-one — there is very little abstraction.
+
+## CPU Architecture Basics
+
+To understand assembly, you must understand the CPU:
+
+### Registers
+
+Registers are small, ultra-fast storage locations inside the CPU. x86-64 has general-purpose registers including:
+
+| Register | Size | Typical use |
+|---|---|---|
+| RAX | 64-bit | Accumulator; holds return values |
+| RBX | 64-bit | Base register |
+| RCX | 64-bit | Counter (loops) |
+| RDX | 64-bit | Data; used in division/multiplication |
+| RSP | 64-bit | Stack pointer |
+| RBP | 64-bit | Base pointer (stack frames) |
+| RSI, RDI | 64-bit | Source/destination for memory ops |
+
+### The Stack
+
+The **stack** is a region of memory that grows downward. It stores function call information, local variables, and return addresses. The `RSP` register always points to the top of the stack.
+
+- `PUSH value` — decrements RSP and writes value to the stack
+- `POP dest` — reads from the stack and increments RSP
+
+### Flags Register
+
+The **RFLAGS** register contains status bits set by arithmetic operations:
+- **ZF** (Zero Flag) — set if result is zero
+- **CF** (Carry Flag) — set on unsigned overflow
+- **SF** (Sign Flag) — set if result is negative
+- **OF** (Overflow Flag) — set on signed overflow
+
+## Core Instruction Set (x86-64)
+
+### Data Movement
+
+```asm
+MOV dest, src       ; Copy src into dest
+LEA dest, [addr]    ; Load effective address (pointer arithmetic)
+XCHG dest, src      ; Exchange values
+```
+
+### Arithmetic
+
+```asm
+ADD dest, src       ; dest = dest + src
+SUB dest, src       ; dest = dest - src
+MUL src             ; Unsigned multiply: RDX:RAX = RAX * src
+IMUL dest, src      ; Signed multiply
+DIV src             ; Unsigned divide: RAX = RDX:RAX / src
+INC dest            ; dest = dest + 1
+DEC dest            ; dest = dest - 1
+NEG dest            ; dest = -dest
+```
+
+### Logic and Bitwise Operations
+
+```asm
+AND dest, src       ; Bitwise AND
+OR  dest, src       ; Bitwise OR
+XOR dest, src       ; Bitwise XOR  (XOR reg, reg zeroes reg efficiently)
+NOT dest            ; Bitwise NOT
+SHL dest, count     ; Shift left (multiply by 2^count)
+SHR dest, count     ; Shift right logical (divide by 2^count)
+SAR dest, count     ; Shift right arithmetic (preserves sign)
+```
+
+### Control Flow
+
+```asm
+JMP label           ; Unconditional jump
+CMP dest, src       ; Compare (sets flags, no result stored)
+JE  label           ; Jump if equal (ZF=1)
+JNE label           ; Jump if not equal
+JL  label           ; Jump if less (signed)
+JG  label           ; Jump if greater (signed)
+JB  label           ; Jump if below (unsigned)
+JA  label           ; Jump if above (unsigned)
+```
+
+### Function Calls
+
+```asm
+CALL label          ; Push return address, jump to label
+RET                 ; Pop return address, jump to it
+```
+
+## A Simple Example: Hello World (Linux x86-64)
+
+```asm
+section .data
+    msg db "Hello, World!", 10   ; 10 = newline
+    len equ $ - msg
+
+section .text
+    global _start
+
+_start:
+    ; write(1, msg, len)
+    mov rax, 1          ; syscall: write
+    mov rdi, 1          ; file descriptor: stdout
+    mov rsi, msg        ; pointer to message
+    mov rdx, len        ; message length
+    syscall
+
+    ; exit(0)
+    mov rax, 60         ; syscall: exit
+    xor rdi, rdi        ; exit code: 0
+    syscall
+```
+
+## Memory Addressing Modes
+
+Assembly allows flexible ways to reference memory:
+
+| Mode | Syntax | Meaning |
+|---|---|---|
+| Immediate | `MOV EAX, 5` | Load constant 5 |
+| Register | `MOV EAX, EBX` | Copy register |
+| Direct | `MOV EAX, [0x1000]` | Load from address 0x1000 |
+| Register indirect | `MOV EAX, [RBX]` | Load from address in RBX |
+| Base + offset | `MOV EAX, [RBX + 8]` | Load from RBX + 8 |
+| Scaled index | `MOV EAX, [RBX + RCX*4]` | Array indexing |
+
+## The Calling Convention
+
+When assembly code calls or is called by C functions, both sides must agree on a **calling convention** — how arguments are passed and values are returned.
+
+On Linux x86-64 (System V AMD64 ABI):
+- First 6 integer arguments: RDI, RSI, RDX, RCX, R8, R9
+- Return value: RAX
+- Caller saves: RAX, RCX, RDX, RSI, RDI, R8–R11
+- Callee saves: RBX, RBP, R12–R15
+
+## Why Learn Assembly Today?
+
+Even though few programs are written in pure assembly, understanding it is valuable for:
+
+- **Reverse engineering and security:** Malware analysis, exploit development, CTF challenges
+- **Compiler writing:** Understanding what high-level languages compile to
+- **Embedded systems:** Microcontrollers with limited resources
+- **Performance optimization:** Hand-tuning critical inner loops
+- **Operating systems:** Boot loaders and interrupt handlers require assembly
+
+## See Also
+
+- [C Programming Language](article.html?id=c-language) — the closest high-level language to assembly
+- [C++ Programming Language](article.html?id=cpp) — extends C with higher-level features
+- [Linux](article.html?id=linux) — the OS environment where most assembly programming occurs
+- [Bash (Unix Shell)](article.html?id=bash) — the command-line interface used to build and run assembly programs
+
+:::citations
+1. Hyde, Randall. (2010). *The Art of Assembly Language.* 2nd ed. No Starch Press.
+2. Duntemann, Jeff. (2011). *Assembly Language Step-by-Step.* 3rd ed. Wiley.
+3. Intel Corporation. (2023). *Intel 64 and IA-32 Architectures Software Developer's Manual.*
+4. Patterson, David A. & Hennessy, John L. (2020). *Computer Organization and Design.* 5th ed. Morgan Kaufmann.
+:::

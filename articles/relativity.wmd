@@ -1,0 +1,137 @@
+---
+title: Theory of Relativity
+category: science
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: relativity, Einstein, physics, space-time, gravity, special relativity, general relativity
+featured: false
+---
+
+:::summary
+Einstein's theory of relativity — encompassing both special relativity (1905) and general relativity (1915) — fundamentally transformed our understanding of space, time, mass, energy, and gravity. Special relativity showed that the speed of light is constant for all observers and that space and time are interwoven into a single fabric. General relativity extended these ideas to gravity, describing it as the curvature of space-time caused by mass and energy. Together they form the bedrock of modern cosmology and astrophysics.
+:::
+
+:::infobox Theory of Relativity
+| Field | Physics |
+| Author | Albert Einstein |
+| Special Relativity | 1905 |
+| General Relativity | 1915 |
+| Key concepts | Space-time, time dilation, length contraction, mass-energy equivalence, gravitational curvature |
+| Applications | GPS satellites, black holes, cosmology, nuclear energy |
+:::
+
+## Background: The Problem with Classical Physics
+
+By the late 19th century, physicists had discovered a problem. Maxwell's equations predicted that light travels at a fixed speed $c \approx 3 \times 10^8$ m/s. But according to Newtonian mechanics, speeds should add: if you run toward a light beam, you should measure it going faster.
+
+Experiments — most famously the Michelson-Morley experiment (1887) — found no variation in the speed of light regardless of direction or motion. This contradiction demanded a new theory.
+
+## Special Relativity (1905)
+
+Einstein resolved the contradiction with two postulates:
+
+1. **The Principle of Relativity:** The laws of physics are the same in all inertial (non-accelerating) reference frames.
+2. **The Constancy of Light Speed:** The speed of light in a vacuum, $c$, is the same for all observers, regardless of the motion of the source or observer.
+
+These simple postulates have profound consequences.
+
+### Time Dilation
+
+A moving clock runs slower than a stationary one. If a clock moves at speed $v$ relative to an observer, it ticks at rate:
+
+$$t' = \frac{t}{\sqrt{1 - v^2/c^2}} = \gamma t$$
+
+where $\gamma = \frac{1}{\sqrt{1 - v^2/c^2}} \geq 1$ is the **Lorentz factor**. At $v = 0.9c$, time passes roughly 2.3 times slower for the moving observer.
+
+:::dropdown The Twin Paradox
+One twin travels on a rocket to a nearby star at near light-speed, while the other stays on Earth. When the traveler returns, they are younger than the twin who stayed home.
+
+This is not a paradox at all — the traveling twin has genuinely aged less because they experienced less proper time. This effect has been confirmed experimentally with atomic clocks on aircraft and satellites.
+:::
+
+### Length Contraction
+
+Objects moving at high speed appear shorter in the direction of motion:
+
+$$L' = \frac{L}{\gamma} = L\sqrt{1 - \frac{v^2}{c^2}}$$
+
+An object moving at $0.9c$ appears only 44% of its rest length in the direction of motion.
+
+### Mass-Energy Equivalence
+
+The most famous equation in physics:
+
+$$E = mc^2$$
+
+Mass and energy are equivalent and interconvertible. A small amount of mass corresponds to an enormous amount of energy (since $c^2 \approx 9 \times 10^{16}$ J/kg). This is the basis of nuclear fission and fusion.
+
+The full relativistic energy-momentum relation is:
+
+$$E^2 = (pc)^2 + (mc^2)^2$$
+
+For a particle at rest ($p = 0$), this reduces to $E = mc^2$.
+
+### Space-Time
+
+Hermann Minkowski showed that Einstein's special relativity is naturally described in a four-dimensional **space-time**, combining three spatial dimensions with one time dimension. Events in space-time are separated by the **space-time interval**:
+
+$$s^2 = c^2 t^2 - x^2 - y^2 - z^2$$
+
+This interval is the same for all inertial observers — it is the invariant quantity of special relativity.
+
+## General Relativity (1915)
+
+Special relativity applies only to inertial frames (no acceleration, no gravity). Einstein spent a decade extending it to include gravity. His insight: **gravity is not a force but the curvature of space-time**.
+
+### The Equivalence Principle
+
+Einstein's key insight: a person in a closed elevator cannot distinguish between being stationary in a gravitational field and accelerating through free space. **Gravity and acceleration are locally indistinguishable.**
+
+This means that gravity must affect light — since light is affected by acceleration (it curves in a rocket), it must also curve in a gravitational field.
+
+### Space-Time Curvature
+
+Mass and energy curve the fabric of space-time. Objects (including light) follow the straightest possible paths — called **geodesics** — through this curved space-time. What we experience as gravitational attraction is really objects following geodesics in curved space-time.
+
+Einstein's field equations (1915) relate space-time curvature to the distribution of mass and energy:
+
+$$G_{\mu\nu} + \Lambda g_{\mu\nu} = \frac{8\pi G}{c^4} T_{\mu\nu}$$
+
+### Predictions and Confirmations
+
+General relativity made bold predictions, all confirmed:
+
+- **Gravitational lensing:** Light bends around massive objects (confirmed by Eddington's 1919 solar eclipse observation)
+- **Gravitational time dilation:** Clocks run slower in stronger gravity (confirmed; GPS satellites must account for this)
+- **Mercury's orbit:** Unexplained precession of Mercury's perihelion matched by GR exactly
+- **Gravitational waves:** Ripples in space-time (detected by LIGO in 2015)
+- **Black holes:** Regions of space-time where curvature is so extreme nothing can escape (confirmed by Event Horizon Telescope, 2019)
+
+## Black Holes
+
+A **black hole** forms when mass is compressed into such a small region that escape velocity exceeds the speed of light. The **Schwarzschild radius** — the radius of the event horizon — is:
+
+$$r_s = \frac{2GM}{c^2}$$
+
+For Earth, this would be about 9 mm. For the Sun, about 3 km.
+
+Beyond the event horizon, nothing — not even light — can escape. At the center is a **singularity** where current physics breaks down.
+
+## Cosmological Implications
+
+General relativity predicts that the universe must be either expanding or contracting — not static. Edwin Hubble's 1929 observation that galaxies are receding confirmed this. The Big Bang theory, dark matter, dark energy, and cosmic inflation all emerge from GR applied to the universe as a whole.
+
+## See Also
+
+- [Physics](article.html?id=physics) — the broader study of matter, energy, space, and time
+- [Quantum Mechanics](article.html?id=quantum-mechanics) — the other pillar of modern physics
+- [Isaac Newton](article.html?id=isaac-newton) — the classical mechanics that relativity extended and replaced
+- [Introduction to Calculus](article.html?id=calculus) — the mathematical language of relativity
+- [Probability Theory](article.html?id=probability-theory) — statistical methods used in relativistic physics
+
+:::citations
+1. Einstein, Albert. (1905). "Zur Elektrodynamik bewegter Körper." *Annalen der Physik*, 17, 891–921.
+2. Einstein, Albert. (1916). "Die Grundlage der allgemeinen Relativitätstheorie." *Annalen der Physik*, 49, 769–822.
+3. Hartle, James B. (2003). *Gravity: An Introduction to Einstein's General Relativity.* Addison-Wesley.
+4. Schutz, Bernard. (2009). *A First Course in General Relativity.* 2nd ed. Cambridge University Press.
+:::

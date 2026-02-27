@@ -1,0 +1,142 @@
+---
+title: Linux
+category: programming
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: Linux, operating system, open source, Unix, kernel, Linus Torvalds
+featured: false
+---
+
+:::summary
+Linux is a free, open-source Unix-like operating system kernel first released by Linus Torvalds in 1991. Combined with the GNU userland tools, it forms a complete operating system used on the vast majority of the world's servers, supercomputers, Android smartphones, embedded systems, and cloud infrastructure. Linux is the crowning achievement of the open-source software movement — built collaboratively by thousands of contributors worldwide.
+:::
+
+:::infobox Linux
+| Type | Operating system kernel |
+| Created by | Linus Torvalds |
+| Initial release | 1991 |
+| License | GNU General Public License (GPLv2) |
+| Written in | C and Assembly |
+| Kernel type | Monolithic |
+| Market share | ~96% of top web servers, ~74% of smartphones (Android) |
+:::
+
+## What Is Linux?
+
+Strictly speaking, **Linux** refers to the **kernel** — the core of the operating system that manages hardware, processes, memory, and system calls. In practice, "Linux" usually refers to a complete **Linux distribution** (distro): the kernel plus GNU utilities, a package manager, and desktop or server software.
+
+Common distributions include:
+- **Ubuntu** — beginner-friendly, widely used on desktops and servers
+- **Debian** — stable, widely used base for other distros
+- **Fedora / Red Hat Enterprise Linux (RHEL)** — popular in enterprise environments
+- **Arch Linux** — minimal, highly customizable, rolling release
+- **Alpine Linux** — tiny, security-focused, used in Docker containers
+- **Android** — mobile Linux distribution used on billions of smartphones
+
+## History
+
+### Unix Origins
+
+Linux traces its intellectual ancestry to **Unix**, developed at Bell Labs by Ken Thompson, Dennis Ritchie, and others starting in 1969. Unix introduced the ideas of a portable, multi-user, multi-tasking operating system with a hierarchical file system and a clean programming interface (the C language and POSIX API).
+
+### GNU and the Free Software Movement
+
+In 1983, Richard Stallman launched the **GNU Project** to build a free Unix-compatible operating system. By the early 1990s, GNU had most of the necessary tools — compilers (GCC), shell (bash), utilities — but lacked a kernel.
+
+### Linus Torvalds and Linux (1991)
+
+On August 25, 1991, a Finnish computer science student named **Linus Torvalds** posted to a Usenet newsgroup:
+
+> "I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu)..."
+
+Version 0.01 of the Linux kernel was released in September 1991. By combining the Linux kernel with GNU tools, a complete free operating system became available. The result — GNU/Linux — became the engine of the internet.
+
+## The Linux Kernel Architecture
+
+The Linux kernel is **monolithic** — most OS services run in kernel space (ring 0) for performance. It is, however, highly modular — features can be compiled as loadable kernel modules.
+
+Key kernel subsystems:
+
+| Subsystem | Function |
+|---|---|
+| Process scheduler | Decides which process runs when |
+| Memory manager | Virtual memory, paging, allocation |
+| Virtual file system (VFS) | Unified interface to all file systems |
+| Network stack | TCP/IP, sockets, protocols |
+| Device drivers | Interface to hardware |
+| System call interface | API for user programs |
+
+## The Linux File System
+
+Linux uses a hierarchical file system with a single root `/`:
+
+| Directory | Purpose |
+|---|---|
+| `/` | Root of the file system |
+| `/bin` | Essential user binaries (ls, cp, cat) |
+| `/etc` | System configuration files |
+| `/home` | User home directories |
+| `/var` | Variable data (logs, databases) |
+| `/tmp` | Temporary files |
+| `/proc` | Virtual filesystem: kernel/process info |
+| `/dev` | Device files (disks, terminals, etc.) |
+| `/usr` | User-installed software |
+
+Everything in Linux is a file — devices, network connections, and kernel data structures are all accessed through the file system interface.
+
+## Processes and Permissions
+
+Linux is a multi-user system. Every process runs as a **user** with specific permissions. Files and directories have:
+
+- **Owner** and **group**
+- **Permissions:** read (`r`), write (`w`), execute (`x`) for owner, group, and others
+
+```
+-rwxr-xr-- 1 alice developers 4096 Jan 1 12:00 myscript.sh
+```
+
+Here: owner (alice) can read/write/execute; group (developers) can read/execute; others can only read.
+
+The **root** user (UID 0) has unrestricted access to the entire system.
+
+## The Boot Process
+
+1. **BIOS/UEFI** initializes hardware and loads the bootloader
+2. **Bootloader** (GRUB) loads the kernel image into memory
+3. **Kernel** initializes hardware, mounts the root filesystem
+4. **Init system** (systemd or SysV init) starts system services
+5. **Login** shell or display manager appears
+
+## Package Management
+
+Linux distributions use **package managers** to install, update, and remove software:
+
+| Distribution | Package manager | Format |
+|---|---|---|
+| Debian/Ubuntu | apt | .deb |
+| Fedora/RHEL | dnf/yum | .rpm |
+| Arch Linux | pacman | .pkg.tar.zst |
+| Any distro | Flatpak, Snap | universal |
+
+## Linux in the Modern World
+
+Linux is ubiquitous:
+- Powers **96%** of the world's top web servers
+- Runs on all **500 of the world's top 500 supercomputers**
+- Underpins **Android** (74%+ of smartphones)
+- Powers nearly all **cloud infrastructure** (AWS, GCP, Azure VMs run Linux)
+- Used in routers, smart TVs, cars, space stations
+
+## See Also
+
+- [Bash (Unix Shell)](article.html?id=bash) — the primary command-line interface on Linux
+- [C Programming Language](article.html?id=c-language) — Linux is written primarily in C
+- [Assembly Language](article.html?id=assembly) — low-level code used in the Linux kernel
+- [C++ Programming Language](article.html?id=cpp) — many Linux applications are written in C++
+
+:::citations
+1. Love, Robert. (2010). *Linux Kernel Development.* 3rd ed. Addison-Wesley.
+2. Torvalds, Linus & Diamond, David. (2001). *Just for Fun: The Story of an Accidental Revolutionary.* HarperCollins.
+3. Negus, Christopher. (2020). *Linux Bible.* 10th ed. Wiley.
+4. Tanenbaum, Andrew S. & Bos, Herbert. (2014). *Modern Operating Systems.* 4th ed. Pearson.
+:::

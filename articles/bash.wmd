@@ -1,0 +1,249 @@
+---
+title: Bash (Unix Shell)
+category: programming
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: bash, shell, scripting, Linux, command line, Unix
+featured: false
+---
+
+:::summary
+Bash (Bourne Again Shell) is the default command-line shell on most Linux distributions and macOS. Created by Brian Fox in 1989 as a free replacement for the Bourne shell, Bash provides both an interactive command-line interface and a powerful scripting language for automating system tasks. It is an essential tool for system administrators, developers, and anyone working with Linux or Unix-like systems.
+:::
+
+:::infobox Bash
+| Full name | Bourne Again Shell |
+| Created by | Brian Fox (GNU Project) |
+| First release | 1989 |
+| License | GNU GPL |
+| Default shell | Most Linux distros, macOS (until Catalina) |
+| File extension | .sh or .bash |
+| POSIX compatible | Yes |
+:::
+
+## What Is a Shell?
+
+A **shell** is a program that provides a command-line interface to an operating system. It reads commands from the user (or a script), interprets them, and executes the appropriate programs.
+
+Bash is a **Unix shell** — one of several (others include `sh`, `zsh`, `ksh`, `fish`, `dash`). The name "Bourne Again Shell" is a pun on the original **Bourne shell** (`sh`) written by Stephen Bourne at Bell Labs in 1979.
+
+When you open a terminal in Linux, you are typically interacting with Bash.
+
+## Basic Commands
+
+Bash interprets commands you type. Many commands are external programs; some are **shell builtins**:
+
+| Command | Description |
+|---|---|
+| `pwd` | Print working directory |
+| `ls` | List directory contents |
+| `cd dir` | Change directory |
+| `mkdir dir` | Create a directory |
+| `rm file` | Remove a file |
+| `cp src dst` | Copy a file |
+| `mv src dst` | Move or rename a file |
+| `cat file` | Display file contents |
+| `echo text` | Print text to the terminal |
+| `man cmd` | Show the manual for a command |
+
+## Variables
+
+```bash
+# Assign a variable (no spaces around =)
+name="Alice"
+count=42
+
+# Access a variable with $
+echo "Hello, $name"
+echo "Count is: ${count}"
+
+# Command substitution
+today=$(date +%F)
+echo "Today is $today"
+```
+
+## Control Flow
+
+### If Statements
+
+```bash
+if [ "$count" -gt 10 ]; then
+    echo "Count is greater than 10"
+elif [ "$count" -eq 10 ]; then
+    echo "Count is exactly 10"
+else
+    echo "Count is less than 10"
+fi
+```
+
+Common test operators:
+- `-eq`, `-ne`, `-lt`, `-le`, `-gt`, `-ge` — numeric comparison
+- `=`, `!=` — string comparison
+- `-f file` — file exists and is regular
+- `-d dir` — directory exists
+- `-z str` — string is empty
+
+### Loops
+
+```bash
+# For loop
+for i in 1 2 3 4 5; do
+    echo "Number: $i"
+done
+
+# For loop over a range
+for i in {1..10}; do
+    echo "$i"
+done
+
+# While loop
+counter=0
+while [ $counter -lt 5 ]; do
+    echo "Counter: $counter"
+    ((counter++))
+done
+```
+
+## Functions
+
+```bash
+greet() {
+    local person="$1"   # $1 is the first argument
+    echo "Hello, $person!"
+}
+
+greet "World"
+greet "Alice"
+```
+
+## Input and Output Redirection
+
+Bash uses **file descriptors**: 0 (stdin), 1 (stdout), 2 (stderr).
+
+```bash
+# Redirect stdout to a file
+ls > files.txt
+
+# Append stdout to a file
+echo "new line" >> files.txt
+
+# Redirect stderr to a file
+cmd 2> errors.txt
+
+# Redirect both stdout and stderr
+cmd > output.txt 2>&1
+
+# Read from a file
+while read line; do
+    echo "$line"
+done < input.txt
+```
+
+## Pipelines
+
+The **pipe** `|` connects the output of one command to the input of another:
+
+```bash
+# Count the number of lines in a file
+cat file.txt | wc -l
+
+# Find running processes matching a pattern
+ps aux | grep nginx
+
+# Sort and remove duplicates
+cat names.txt | sort | uniq
+
+# Most-used commands in history
+history | awk '{print $2}' | sort | uniq -c | sort -rn | head -10
+```
+
+## Shell Scripting
+
+A shell script is a file containing Bash commands. The first line is a **shebang** telling the OS which interpreter to use:
+
+```bash
+#!/bin/bash
+
+# A simple backup script
+BACKUP_DIR="/backup"
+SOURCE_DIR="/home/alice/documents"
+DATE=$(date +%Y-%m-%d)
+
+mkdir -p "$BACKUP_DIR"
+tar -czf "$BACKUP_DIR/docs-$DATE.tar.gz" "$SOURCE_DIR"
+echo "Backup complete: docs-$DATE.tar.gz"
+```
+
+Make it executable and run it:
+```bash
+chmod +x backup.sh
+./backup.sh
+```
+
+## Special Variables
+
+| Variable | Meaning |
+|---|---|
+| `$0` | Name of the script |
+| `$1`, `$2`, ... | Positional arguments |
+| `$#` | Number of arguments |
+| `$@` | All arguments as separate words |
+| `$?` | Exit status of last command |
+| `$$` | PID of current shell |
+| `$!` | PID of last background process |
+
+## Exit Codes
+
+Every command returns an **exit code**: 0 means success, non-zero means failure.
+
+```bash
+ls /nonexistent
+echo "Exit code: $?"    # prints a non-zero number
+
+if grep -q "pattern" file.txt; then
+    echo "Found pattern"
+else
+    echo "Pattern not found"
+fi
+```
+
+## Useful Built-in Features
+
+:::dropdown Command History
+Bash records command history in `~/.bash_history`.
+
+- Press `↑` / `↓` to navigate history
+- `Ctrl+R` — reverse search through history
+- `!!` — repeat the last command
+- `!cmd` — repeat the last command starting with "cmd"
+:::
+
+:::dropdown Tab Completion
+Press `Tab` to auto-complete file names, commands, and arguments. Press `Tab` twice to see all options when multiple completions exist.
+:::
+
+:::dropdown Aliases
+Create shortcuts for common commands:
+
+```bash
+alias ll='ls -la'
+alias gs='git status'
+alias ..='cd ..'
+
+# Add to ~/.bashrc for persistence
+```
+:::
+
+## See Also
+
+- [Linux](article.html?id=linux) — the operating system where Bash is primarily used
+- [C Programming Language](article.html?id=c-language) — Bash and many Linux tools are written in C
+- [Assembly Language](article.html?id=assembly) — the lowest-level language that bash scripts ultimately invoke
+- [C++ Programming Language](article.html?id=cpp) — many advanced Linux tools are written in C++
+
+:::citations
+1. Newham, Cameron & Rosenblatt, Bill. (2005). *Learning the bash Shell.* 3rd ed. O'Reilly Media.
+2. Robbins, Arnold & Beebe, Nelson H.F. (2005). *Classic Shell Scripting.* O'Reilly Media.
+3. Cooper, Mendel. (2014). *Advanced Bash-Scripting Guide.* The Linux Documentation Project. [tldp.org](https://tldp.org/LDP/abs/html/)
+4. Barrett, Daniel J. (2022). *Linux Pocket Guide.* 4th ed. O'Reilly Media.
+:::

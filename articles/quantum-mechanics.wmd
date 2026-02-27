@@ -1,0 +1,125 @@
+---
+title: Quantum Mechanics
+category: science
+author: EduWiki Team
+lastUpdated: 2026-02-27
+tags: quantum mechanics, physics, science, Heisenberg, Schrödinger, wave function, uncertainty principle
+featured: false
+---
+
+:::summary
+Quantum mechanics is the branch of physics that describes the behavior of matter and energy at the atomic and subatomic scale. Developed in the early 20th century by Niels Bohr, Werner Heisenberg, Erwin Schrödinger, and others, it replaced classical physics at small scales and revealed a world governed by probability, wave-particle duality, and fundamental uncertainty. Quantum mechanics underlies chemistry, modern electronics, lasers, and our deepest understanding of nature.
+:::
+
+:::infobox Quantum Mechanics
+| Field | Physics |
+| Developed | 1900–1930s |
+| Key figures | Planck, Bohr, Heisenberg, Schrödinger, Dirac, Einstein |
+| Core concepts | Wave-particle duality, uncertainty principle, quantization, superposition, entanglement |
+| Applications | Semiconductors, lasers, MRI, atomic clocks, quantum computers |
+:::
+
+## What Is Quantum Mechanics?
+
+Classical physics — Newton's laws, Maxwell's electromagnetism — works superbly for everyday objects. But at the scale of atoms and subatomic particles, it fails completely. Quantum mechanics provides the correct description.
+
+The word "quantum" comes from the Latin for "how much" — it refers to the discrete packets in which energy exists at the atomic scale. This was the first great surprise of the quantum revolution: energy is not continuous but comes in chunks called **quanta**.
+
+## The Origins: Blackbody Radiation and Planck's Constant
+
+In 1900, Max Planck solved the **blackbody radiation problem** by proposing that energy is emitted in discrete packets:
+
+$$E = hf$$
+
+where $E$ is energy, $f$ is frequency, and $h = 6.626 \times 10^{-34}$ J·s is **Planck's constant** — one of the fundamental constants of nature.
+
+In 1905, Albert Einstein extended this idea to explain the **photoelectric effect**: light itself consists of discrete particles called **photons**, each carrying energy $E = hf$.
+
+## Wave-Particle Duality
+
+One of the strangest discoveries of quantum mechanics is that matter and light behave as both waves and particles, depending on how you observe them.
+
+- **Light:** behaves as a wave in diffraction and interference experiments, but as a particle (photon) in the photoelectric effect
+- **Electrons:** produce interference patterns (wave behavior) when sent through a double slit, yet hit the detector at a single point (particle behavior)
+
+Louis de Broglie (1924) proposed that every particle has an associated wavelength:
+
+$$\lambda = \frac{h}{p}$$
+
+where $p = mv$ is the particle's momentum. This **de Broglie wavelength** becomes significant only for very small particles like electrons.
+
+## The Schrödinger Equation
+
+In 1926, Erwin Schrödinger formulated the fundamental equation of quantum mechanics. The **time-dependent Schrödinger equation** describes how the quantum state of a system evolves:
+
+$$i\hbar \frac{\partial \Psi}{\partial t} = \hat{H}\Psi$$
+
+where $\Psi$ (the **wave function**) encodes all information about the quantum system, $\hbar = h/2\pi$ is the reduced Planck constant, and $\hat{H}$ is the Hamiltonian operator (total energy).
+
+The **wave function** does not tell us exactly where a particle is. Instead, $|\Psi|^2$ gives the **probability density** — the probability of finding the particle at a given location.
+
+:::dropdown Schrödinger's Cat
+Schrödinger devised a famous thought experiment to illustrate the strangeness of quantum superposition. A cat in a sealed box with a radioactive atom is — according to quantum mechanics — in a superposition of alive and dead states until the box is opened and the system is observed.
+
+This is not really about cats: it illustrates the **measurement problem** in quantum mechanics. How does the definite world of our experience arise from the indefinite quantum world?
+:::
+
+## The Heisenberg Uncertainty Principle
+
+Werner Heisenberg (1927) proved a fundamental limit on how precisely we can know certain pairs of physical properties simultaneously. For position $x$ and momentum $p$:
+
+$$\Delta x \cdot \Delta p \geq \frac{\hbar}{2}$$
+
+The more precisely you know a particle's position, the less precisely you can know its momentum, and vice versa. This is not a limitation of measurement instruments — it is a fundamental feature of nature.
+
+A similar relation holds for energy and time:
+
+$$\Delta E \cdot \Delta t \geq \frac{\hbar}{2}$$
+
+## Quantization and Energy Levels
+
+In a hydrogen atom, the electron can only occupy specific energy levels — it cannot have just any energy. These **discrete energy levels** are a direct consequence of the wave nature of the electron.
+
+The allowed energies of the hydrogen atom are:
+
+$$E_n = -\frac{13.6 \text{ eV}}{n^2}, \quad n = 1, 2, 3, \ldots$$
+
+When an electron transitions between levels, it emits or absorbs a photon with exactly the right energy. This explains atomic spectra — the characteristic colors emitted by each element.
+
+## Superposition and Measurement
+
+A quantum system can exist in a **superposition** of multiple states simultaneously. For example, an electron's spin can be in a superposition of "up" and "down." When measured, the superposition collapses to a definite value — but which value is determined by probability.
+
+This is described by the **Born rule**: the probability of finding a system in a particular state is the square of the amplitude of that state in the wave function.
+
+## Quantum Entanglement
+
+When two particles interact, they can become **entangled** — their quantum states are correlated regardless of the distance between them. Measuring one particle instantly determines aspects of its partner.
+
+Einstein called this "spooky action at a distance" and found it deeply troubling. Experiments by John Bell (1964) and Alain Aspect (1982) confirmed that quantum entanglement is real and cannot be explained by classical hidden variables.
+
+## Applications of Quantum Mechanics
+
+Quantum mechanics is not just philosophical curiosity — it underlies much of modern technology:
+
+- **Semiconductors and transistors:** the basis of all modern electronics
+- **Lasers:** stimulated emission of photons (quantum process)
+- **MRI scanners:** nuclear magnetic resonance (quantum spin)
+- **LED lighting:** quantum transitions in semiconductors
+- **Atomic clocks:** quantum transitions define the second
+- **Quantum computing:** uses superposition and entanglement for computation
+
+## See Also
+
+- [Physics](article.html?id=physics) — classical mechanics and the broader study of physics
+- [Theory of Relativity](article.html?id=relativity) — Einstein's other great contribution to 20th-century physics
+- [Introduction to Calculus](article.html?id=calculus) — the mathematical framework underlying quantum equations
+- [Probability Theory](article.html?id=probability-theory) — quantum mechanics is fundamentally probabilistic
+- [Isaac Newton](article.html?id=isaac-newton) — the classical physics that quantum mechanics replaced at small scales
+
+:::citations
+1. Griffiths, David J. (2017). *Introduction to Quantum Mechanics.* 3rd ed. Cambridge University Press.
+2. Feynman, Richard P. (1985). *QED: The Strange Theory of Light and Matter.* Princeton University Press.
+3. Heisenberg, Werner. (1927). "Über den anschaulichen Inhalt der quantentheoretischen Kinematik und Mechanik." *Zeitschrift für Physik*, 43, 172–198.
+4. Schrödinger, Erwin. (1926). "Quantisierung als Eigenwertproblem." *Annalen der Physik*, 79, 361–376.
+:::

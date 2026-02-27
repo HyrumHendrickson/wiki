@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search — EduWiki</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Header injected by scripts.js -->
+  <header id="wiki-header" role="banner"></header>
+
+  <main id="main-content" class="index-layout">
+
+    <section aria-labelledby="search-page-heading">
+      <h1 id="search-page-heading" class="wiki-title" style="font-family:var(--font-serif);margin-bottom:1.5rem;">Search Articles</h1>
+
+      <form class="search-page-form" id="search-page-form" role="search">
+        <div class="search-page-input-wrap">
+          <input
+            type="search"
+            id="search-page-input"
+            class="search-page-input"
+            placeholder="Search for an article…"
+            aria-label="Search for an article"
+            autocomplete="off"
+          >
+          <button type="submit" class="search-page-btn">Search</button>
+        </div>
+        <ul id="search-page-suggestions" class="search-page-suggestions" role="listbox" aria-label="Search suggestions"></ul>
+      </form>
+
+      <div id="search-page-results" aria-live="polite">
+        <!-- Populated by scripts.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer injected by scripts.js -->
+  <footer id="wiki-footer" role="contentinfo"></footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

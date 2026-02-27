@@ -83,7 +83,7 @@ function buildHeader(config) {
       </div>
       <nav class="header-nav" aria-label="Main navigation">
         <a href="${ROOT}index.html">Home</a>
-        <a href="${ROOT}admin/getting-started.html">Help</a>
+        <a href="${ROOT}admin/admin-article.html?id=getting-started">Help</a>
       </nav>
     </div>
   `;

@@ -1,0 +1,333 @@
+---
+title: WMD Format Reference
+category: admin
+author: EduWiki Admin
+lastUpdated: 2026-02-27
+tags: admin, help, wmd, markdown, authoring
+---
+
+:::notice
+**Admin Article** — This is the complete reference for the
+`.wmd` (Wiki Markdown) format used to write all EduWiki articles.
+:::
+
+:::summary
+WMD (Wiki Markdown) is EduWiki's custom lightweight markup language. Write your article
+as a plain-text `.wmd` file; the browser converts it to a fully formatted
+wiki page automatically. No HTML required.
+:::
+
+## File Structure
+
+A `.wmd` file has two parts: a **frontmatter** block (metadata)
+and a **body** (content). Both are plain text.
+
+```
+---
+title:       My Article Title
+category:    mathematics
+author:      Your Name
+lastUpdated: 2026-02-27
+tags:        math, algebra, equations
+featured:    false
+---
+
+:::summary
+One-paragraph summary shown at the top of the article.
+:::
+
+## First Section
+
+Content goes here…
+```
+
+## Frontmatter Fields
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `title` | Yes | Article display name |
+| `category` | Yes | Must match a category `id` in `articles.json` |
+| `author` | Recommended | Article author(s) |
+| `lastUpdated` | Recommended | ISO date (YYYY-MM-DD) |
+| `tags` | Recommended | Comma-separated search keywords |
+| `featured` | No | `true` to show on the home page |
+
+## Headings
+
+Use `##` for major sections and `###` for subsections. Do not use `#` — the article title is always the `<h1>`.
+
+```
+## Major Section
+
+### Subsection
+
+#### Sub-subsection
+```
+
+## Inline Formatting
+
+| Syntax | Result |
+|--------|--------|
+| `**bold text**` | **bold text** |
+| `*italic text*` | *italic text* |
+| `***bold italic***` | ***bold italic*** |
+| `~~strikethrough~~` | ~~strikethrough~~ |
+| `` `inline code` `` | `inline code` |
+| `$E = mc^2$` | Inline LaTeX math (rendered by MathJax) |
+| `[link text](https://url)` | Hyperlink (external links open in new tab) |
+
+## Paragraphs and Lists
+
+Separate paragraphs with a blank line. Bullet and numbered lists end at the next blank line
+or non-list line.
+
+```
+This is a paragraph.
+
+This is a second paragraph.
+
+- Bullet item one
+- Bullet item two
+- Bullet item three
+
+1. First ordered item
+2. Second ordered item
+3. Third ordered item
+```
+
+## Tables
+
+Use GFM (GitHub Flavored Markdown) table syntax. The separator row (`|---|---|`) is required.
+
+```
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Row 1    | Data     | Data     |
+| Row 2    | Data     | Data     |
+```
+
+Inline formatting (bold, italic, math) works inside table cells.
+
+## Blockquotes
+
+```
+> "The glory of God is intelligence."
+> — Doctrine & Covenants 93:36
+```
+
+## Code Blocks
+
+Wrap code with triple backticks. Optionally specify a language for syntax highlighting.
+
+````
+```python
+def hello():
+    print("Hello, world!")
+```
+````
+
+## Math — LaTeX
+
+EduWiki uses MathJax to render LaTeX. Inline and display math are both supported.
+
+```
+Inline: $a^2 + b^2 = c^2$
+
+Single-line display:
+$$\int_a^b f(x)\,dx = F(b) - F(a)$$
+
+Multi-line display:
+$$
+\frac{d}{dx}\left[\int_a^x f(t)\,dt\right] = f(x)
+$$
+```
+
+## Horizontal Rule
+
+Use three or more dashes on their own line:
+
+```
+---
+```
+
+## Fenced Blocks — Summary Box
+
+The blue summary box at the top of every article. Supports inline formatting and
+LaTeX math. Place it at the top of your content, before any headings.
+
+```
+:::summary
+Calculus is the branch of mathematics studying **continuous change**.
+It was developed by Newton and Leibniz in the 17th century.
+:::
+```
+
+## Fenced Blocks — Infobox
+
+A right-floating box of key facts. The block parameter is the infobox title.
+Each row is a `| Key | Value |` pair.
+Inline formatting and math work in both columns.
+
+```
+:::infobox Calculus at a Glance
+| Field        | Mathematics             |
+| Key figures  | Newton, Leibniz, Euler  |
+| Developed    | 17th century            |
+| Prerequisite | Algebra, Trigonometry   |
+:::
+```
+
+## Fenced Blocks — Dropdown
+
+An expandable accordion section. The block parameter is the button label.
+The body supports full WMD content (paragraphs, math, lists, tables, etc.).
+
+```
+:::dropdown Example: Computing a Limit
+Find $\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$.
+
+Direct substitution gives $\frac{0}{0}$, so we factor:
+
+$$\frac{x^2 - 4}{x - 2} = x + 2$$
+
+Now substitute: $\lim_{x \to 2}(x + 2) = 4$.
+:::
+```
+
+## Fenced Blocks — Desmos Graph
+
+Embeds an interactive Desmos graphing calculator.
+The parameter is `height | Label`.
+The first body line is the expressions JSON array.
+The optional second body line is the viewport bounds JSON object.
+
+```
+:::desmos 400 | Explore the parabola y = x²
+[
+  {"id":"f","latex":"y=x^2","color":"#2563eb"},
+  {"id":"a","latex":"a=1","sliderBounds":{"min":"-3","max":"3"}}
+]
+{"left":-5,"right":5,"bottom":-2,"top":10}
+:::
+```
+
+The expressions JSON follows the [Desmos API format](https://www.desmos.com/api/v1.9/docs/index.html).
+Common expression properties:
+
+| Property | Description |
+|----------|-------------|
+| `id` | Unique identifier string |
+| `latex` | LaTeX expression (e.g., `"y=x^2"`) |
+| `color` | Hex color string (e.g., `"#2563eb"`) |
+| `sliderBounds` | `{"min":"...","max":"...","step":"..."}` for sliders |
+| `pointStyle` | `"OPEN"`, `"CROSS"`, or `"POINT"` |
+
+## Fenced Blocks — Figure
+
+Displays a centered image with an optional caption.
+The parameter is `path/to/image | Caption text`.
+
+```
+:::figure ../media/diagram.png | Diagram showing a right triangle with sides a, b, and c
+:::
+```
+
+## Fenced Blocks — Citations
+
+Renders the References section at the bottom of an article.
+Each line must start with a number followed by a period.
+Inline formatting (italic for titles, links for URLs) is supported.
+
+```
+:::citations
+1. Stewart, J. (2015). *Calculus: Early Transcendentals*, 8th ed. Cengage.
+2. Apostol, T. M. (1967). *Calculus, Vol. 1*. Wiley.
+3. Khan Academy. *Calculus*. [khanacademy.org](https://www.khanacademy.org/math/calculus-1)
+:::
+```
+
+In-text citation references like `[1]`, `[2]` in your article body are
+automatically converted to superscript links pointing to the corresponding numbered citation.
+
+## Fenced Blocks — Notice
+
+A yellow notice box, typically used in admin/help articles.
+
+```
+:::notice
+**Admin Article** — This guide is for contributors adding content to EduWiki.
+:::
+```
+
+## Fenced Blocks — Quote
+
+A styled blockquote with an optional attribution line. The parameter is the attribution.
+
+```
+:::quote Joseph Smith, History 1:17
+"I saw two Personages, whose brightness and glory defy all description."
+:::
+```
+
+## Complete Article Template
+
+```
+---
+title:       Your Article Title
+category:    mathematics
+author:      Your Name
+lastUpdated: 2026-02-27
+tags:        keyword1, keyword2, keyword3
+featured:    false
+---
+
+:::summary
+Write a 2–4 sentence summary here. Use **bold** and *italic* freely.
+This appears in the blue box at the top of every article.
+:::
+
+:::infobox Quick Facts
+| Field 1 | Value 1 |
+| Field 2 | Value 2 |
+| Field 3 | Value 3 |
+:::
+
+## First Major Section
+
+Paragraph text with **bold**, *italic*, `code`, $inline math$,
+and [links](https://example.com).
+
+$$
+\text{Display math block}
+$$
+
+### Subsection
+
+- Bullet item
+- Another item
+
+| Column A | Column B |
+|----------|----------|
+| Data     | Data     |
+
+:::dropdown Example Title
+Worked example or extra detail here.
+
+$$formula = here$$
+:::
+
+## Second Major Section
+
+More content…
+
+:::citations
+1. Author, A. (Year). *Title*. Publisher.
+2. Author, B. (Year). *Title*. [URL Text](https://url)
+:::
+```
+
+:::citations
+1. EduWiki internal documentation.
+2. Desmos API Documentation. [desmos.com](https://www.desmos.com/api/v1.9/docs/index.html)
+3. MathJax Documentation. [docs.mathjax.org](https://docs.mathjax.org/)
+:::

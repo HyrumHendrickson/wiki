@@ -1,0 +1,147 @@
+---
+title: Interactive Components Guide
+category: admin
+author: EduWiki Admin
+lastUpdated: 2026-02-27
+tags: admin, help, desmos, latex, interactive
+---
+
+:::notice
+**Admin Article** — This guide explains the interactive components available in EduWiki.
+For the `.wmd` syntax that generates these components automatically, see the
+[WMD Format Reference](admin-article.html?id=wmd-reference).
+:::
+
+:::summary
+EduWiki supports several interactive components that make articles more engaging for learners:
+live **Desmos graphing calculators**, beautifully rendered **LaTeX mathematics**
+via MathJax, **collapsible dropdown sections** for worked examples, embedded
+**videos**, and more.
+:::
+
+## LaTeX Mathematics
+
+EduWiki uses [MathJax 3](https://www.mathjax.org/) to render LaTeX. The MathJax
+script is automatically included in the article viewer — no setup required when
+writing `.wmd` articles.
+
+### Inline Math
+
+Wrap inline math in single dollar signs: `$E = mc^2$` renders as $E = mc^2$.
+
+### Display Math
+
+Wrap display (block) math in double dollar signs:
+
+```
+$$\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}$$
+```
+
+Renders as:
+
+$$\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}$$
+
+### Common LaTeX Examples
+
+:::dropdown LaTeX Quick Reference
+| LaTeX | Result |
+|-------|--------|
+| `x^2` | $x^2$ |
+| `x_n` | $x_n$ |
+| `\frac{a}{b}` | $\frac{a}{b}$ |
+| `\sqrt{x}` | $\sqrt{x}$ |
+| `\sum_{i=1}^{n} i` | $\sum_{i=1}^{n} i$ |
+| `\int_a^b f(x)\,dx` | $\int_a^b f(x)\,dx$ |
+| `\lim_{x \to 0}` | $\lim_{x \to 0}$ |
+| `\alpha, \beta, \gamma` | $\alpha, \beta, \gamma$ |
+| `\pi, \theta, \phi` | $\pi, \theta, \phi$ |
+| `\infty` | $\infty$ |
+| `\pm, \times, \div` | $\pm, \times, \div$ |
+| `\leq, \geq, \neq` | $\leq, \geq, \neq$ |
+| `\vec{v}` | $\vec{v}$ |
+| `\hat{u}` | $\hat{u}$ |
+| `\mathbf{A}` | $\mathbf{A}$ |
+:::
+
+## Desmos Interactive Graphs
+
+EduWiki supports embedded [Desmos Graphing Calculator](https://www.desmos.com/api/v1.9/docs/index.html)
+instances. Use the `:::desmos` fenced block in your `.wmd` file:
+
+```
+:::desmos 400 | My Interactive Graph
+[
+  {"id":"f", "latex":"y = x^2", "color":"#2563eb"},
+  {"id":"g", "latex":"y = 2x + 1", "color":"#dc2626"}
+]
+:::
+```
+
+### Data Attributes
+
+| Attribute | Required | Description |
+|-----------|----------|-------------|
+| Height (first param) | No | Height in pixels (default: 400) |
+| Label (after `\|`) | No | Caption shown above the graph |
+| Expressions (first body line) | Yes | JSON array of Desmos expression objects |
+| Bounds (second body line) | No | JSON object: `{"left":-5,"right":5,"bottom":-5,"top":5}` |
+
+### Expression Object Fields
+
+| Field | Description |
+|-------|-------------|
+| `id` | Unique identifier (string) |
+| `latex` | The LaTeX expression to graph |
+| `color` | CSS color string (optional) |
+| `sliderBounds` | Object `{"min":"0","max":"10","step":"0.1"}` to create a slider |
+| `hidden` | `true` to hide the expression from the list |
+
+### Live Example
+
+:::desmos 380 | Drag the slider to change the value of 'a' in y = ax²
+[{"id":"a","latex":"a=1","sliderBounds":{"min":"-5","max":"5","step":"0.1"}},{"id":"f","latex":"y=a*x^2","color":"#2563eb"}]
+:::
+
+## Dropdown / Accordion Sections
+
+Use the `:::dropdown` block to hide content behind a click-to-reveal button.
+Great for worked examples, proofs, or optional details.
+
+```
+:::dropdown Click to reveal the example
+Hidden content here. Can include anything: math, tables, code…
+:::
+```
+
+Result:
+
+:::dropdown Click to reveal the example
+Hidden content here. Can include anything: math, tables, code, even Desmos graphs!
+
+You can nest math inside dropdowns: $a^2 + b^2 = c^2$.
+:::
+
+## Embedding Videos
+
+To embed a YouTube video, use a raw HTML `<iframe>` inside a `.wmd` code block with
+a note, or link directly to the video. In article `.wmd` files you can describe the
+video with a link:
+
+```
+[Watch: The Essence of Calculus](https://www.youtube.com/watch?v=WUvTyaaNkzM)
+```
+
+## The Admin Notice Box
+
+Admin and help articles should include a notice at the top using the `:::notice` block:
+
+```
+:::notice
+**Admin Article** — Brief description of what this article is.
+:::
+```
+
+:::citations
+1. Desmos API documentation. [desmos.com](https://www.desmos.com/api/v1.9/docs/index.html)
+2. MathJax documentation. [docs.mathjax.org](https://docs.mathjax.org/)
+:::

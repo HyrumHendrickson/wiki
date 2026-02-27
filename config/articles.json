@@ -246,7 +246,7 @@
       "id": "getting-started",
       "title": "Getting Started with EduWiki",
       "category": "admin",
-      "path": "admin/getting-started.html",
+      "path": "admin/admin-article.html?id=getting-started",
       "summary": "An introduction to using and navigating EduWiki.",
       "tags": [
         "admin",
@@ -260,7 +260,7 @@
       "id": "create-article",
       "title": "How to Create a New Article",
       "category": "admin",
-      "path": "admin/create-article.html",
+      "path": "admin/admin-article.html?id=create-article",
       "summary": "Step-by-step guide to adding a new article to EduWiki using the .wmd format.",
       "tags": [
         "admin",
@@ -275,7 +275,7 @@
       "id": "wmd-reference",
       "title": "WMD Format Reference",
       "category": "admin",
-      "path": "admin/wmd-reference.html",
+      "path": "admin/admin-article.html?id=wmd-reference",
       "summary": "Complete reference for the .wmd (Wiki Markdown) format used to write EduWiki articles.",
       "tags": [
         "admin",
@@ -291,7 +291,7 @@
       "id": "formatting-guide",
       "title": "Formatting Guide",
       "category": "admin",
-      "path": "admin/formatting-guide.html",
+      "path": "admin/admin-article.html?id=formatting-guide",
       "summary": "Learn how to use headings, lists, tables, and other text formatting in EduWiki articles.",
       "tags": [
         "admin",
@@ -305,7 +305,7 @@
       "id": "components-guide",
       "title": "Interactive Components Guide",
       "category": "admin",
-      "path": "admin/components-guide.html",
+      "path": "admin/admin-article.html?id=components-guide",
       "summary": "Learn how to embed Desmos graphs, dropdowns, LaTeX math, and other interactive components.",
       "tags": [
         "admin",
@@ -321,7 +321,7 @@
       "id": "citations-guide",
       "title": "Citations Guide",
       "category": "admin",
-      "path": "admin/citations-guide.html",
+      "path": "admin/admin-article.html?id=citations-guide",
       "summary": "How to properly add and format citations and references in EduWiki articles.",
       "tags": [
         "admin",

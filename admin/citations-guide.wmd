@@ -1,0 +1,147 @@
+---
+title: Citations Guide
+category: admin
+author: EduWiki Admin
+lastUpdated: 2026-02-27
+tags: admin, help, citations, references
+---
+
+:::notice
+**Admin Article** — This guide explains how to add citations and references
+to EduWiki articles.
+:::
+
+:::summary
+Every EduWiki article should cite its sources. Citations are added in a numbered list
+at the bottom of the article, and inline references in the body text (like `[1]`)
+automatically become clickable superscript links that jump to the citation.
+:::
+
+## Why Citations Matter
+
+EduWiki is designed for teaching, and academic integrity is important. Citations:
+
+- **Give credit** to the original authors of ideas and content.
+- **Allow readers to verify** facts and explore further.
+- **Build trust** in the accuracy of the article.
+- **Provide deeper reading** for students who want to learn more.
+
+## The Citations Section
+
+Every article must end with a `:::citations` block:
+
+```
+:::citations
+1. Author, A. (Year). *Title of Book*. Publisher.
+2. Author, B. (Year). "Article Title." *Journal Name*, Vol(Issue), pages.
+3. Website Name. [url](https://...)
+:::
+```
+
+## Inline Citation References
+
+To link a claim in the body text to a specific citation, write `[1]`, `[2]`, etc.
+EduWiki's JavaScript automatically converts these to clickable superscript links:
+
+```
+The Pythagorean theorem was known to Babylonian mathematicians as early as 1800 BC. [1]
+The Greek philosopher Pythagoras is credited with the first formal proof. [2]
+```
+
+The numbers link to the corresponding entry in the references list at the bottom of the page.
+The numbers must match the order of items in your citations block.
+
+## Citation Formats
+
+EduWiki loosely follows APA style. Here are templates for common source types:
+
+:::dropdown Book
+```
+Author, A. A., & Author, B. B. (Year).
+*Title of book: Subtitle if any* (Edition ed.).
+Publisher.
+```
+
+**Example:**
+
+```
+Stewart, J. (2015). *Calculus: Early Transcendentals* (8th ed.). Cengage Learning.
+```
+:::
+
+:::dropdown Journal Article
+```
+Author, A. A. (Year). "Article title."
+*Journal Name*, Volume(Issue), page–page.
+https://doi.org/xxxxx (if available)
+```
+
+**Example:**
+
+```
+Robson, E. (2002). "Words and Pictures: New Light on Plimpton 322."
+*American Mathematical Monthly*, 109(2), 105–120.
+```
+:::
+
+:::dropdown Website / Online Resource
+```
+Author or Organization. (Year, Month Day). *Page title*.
+Website Name. [URL](https://url)
+```
+
+**Example:**
+
+```
+Khan Academy. (2024). *Calculus*.
+[khanacademy.org/math/calculus-1](https://www.khanacademy.org/math/calculus-1)
+```
+:::
+
+:::dropdown Video
+```
+Creator. (Year, Month Day). *Video title* [Video].
+Platform. [URL](https://url)
+```
+
+**Example:**
+
+```
+3Blue1Brown. (2017, April 28). *The Essence of Calculus* [Video].
+YouTube. [youtube.com/watch?v=WUvTyaaNkzM](https://www.youtube.com/watch?v=WUvTyaaNkzM)
+```
+:::
+
+## Minimal Citation Requirements
+
+Every article must include:
+
+- At least **one citation** in the references section.
+- An inline reference `[1]` wherever a major factual claim is made.
+- A link for all online sources.
+
+For admin/help articles, a single citation like "EduWiki internal documentation." is acceptable.
+
+## Complete Example
+
+```
+In the body text:
+
+Isaac Newton and Gottfried Leibniz independently developed calculus
+in the 17th century. [1] The notation we use today is primarily
+due to Leibniz. [2]
+
+At the bottom of the article:
+
+:::citations
+1. Boyer, C. B. (1959). *The History of the Calculus and Its
+   Conceptual Development*. Dover.
+2. Cajori, F. (1929). *A History of Mathematical Notations*.
+   Open Court Publishing.
+:::
+```
+
+:::citations
+1. EduWiki internal documentation.
+2. American Psychological Association. (2020). *Publication Manual of the APA* (7th ed.). APA.
+:::

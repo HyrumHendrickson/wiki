@@ -1,0 +1,201 @@
+---
+title: How to Create a New Article
+category: admin
+author: EduWiki Admin
+lastUpdated: 2026-02-27
+tags: admin, help, authoring, wmd
+---
+
+:::notice
+**Admin Article** — This guide is for contributors adding new articles to EduWiki.
+No HTML or programming knowledge required — just write plain text in the
+`.wmd` (Wiki Markdown) format.
+:::
+
+:::summary
+Adding a new article requires two steps: (1) create a `.wmd` file in the
+`articles/` folder, and (2) register it in `config/articles.json`.
+The browser automatically converts your markdown to a fully formatted wiki page.
+Navigation, search, and the table of contents are all generated automatically.
+:::
+
+## Overview of the File Structure
+
+EduWiki's file structure:
+
+```
+wiki/
+├── index.html              ← Home page (auto-populated)
+├── styles.css              ← All styles
+├── scripts.js              ← All JavaScript
+├── wmd-parser.js           ← WMD → HTML converter
+├── config/
+│   ├── site.json           ← Site name, logo, colors
+│   └── articles.json       ← Article registry (YOU EDIT THIS)
+├── media/                  ← Images, videos, etc.
+├── articles/
+│   ├── article.html        ← Universal article viewer (one file for all articles)
+│   ├── calculus.wmd        ← Article source files (YOU ADD HERE)
+│   ├── pythagorean-theorem.wmd
+│   └── ...
+└── admin/                  ← Help/admin pages (WMD + viewer)
+```
+
+## Step 1 — Create the .wmd File
+
+Create a new file at `articles/your-article-name.wmd`.
+Use lowercase letters and hyphens for the filename (e.g., `quadratic-formula.wmd`).
+
+Copy the template below and fill in your content:
+
+```
+---
+title:       Your Article Title
+category:    mathematics
+author:      Your Name
+lastUpdated: 2026-02-27
+tags:        keyword1, keyword2, keyword3
+featured:    false
+---
+
+:::summary
+Write a 2–4 sentence summary here. It appears in the blue box at the top of
+the article and also in search results and on the home page.
+:::
+
+:::infobox Quick Facts
+| Field 1 | Value 1 |
+| Field 2 | Value 2 |
+| Field 3 | Value 3 |
+:::
+
+## First Section
+
+Your content here. Use **bold**, *italic*, `code`, $inline math$,
+and [links](https://example.com).
+
+$$\text{Display math block}$$
+
+### Subsection
+
+- Bullet item
+- Another item
+
+| Column A | Column B |
+|----------|----------|
+| Data     | Data     |
+
+:::dropdown Example Title
+Expandable worked example or extra detail.
+:::
+
+## Second Section
+
+More content…
+
+:::citations
+1. Author, A. (Year). *Title*. Publisher.
+2. Author, B. (Year). *Title*. [URL](https://url)
+:::
+```
+
+## Step 2 — Register in articles.json
+
+Open `config/articles.json` and add a new entry to the
+`"articles"` array. The `path` always points to
+`articles/article.html?id=your-article-id` — the universal viewer.
+
+```
+{
+  "id": "your-article-id",
+  "title": "Your Article Title",
+  "category": "mathematics",
+  "path": "articles/article.html?id=your-article-id",
+  "summary": "A one-sentence summary for search and the home page.",
+  "tags": ["keyword1", "keyword2"],
+  "author": "Your Name",
+  "lastUpdated": "2026-02-27",
+  "featured": false
+}
+```
+
+### Field Reference
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `id` | Yes | Unique identifier matching the .wmd filename (without extension) |
+| `title` | Yes | Display name of the article |
+| `category` | Yes | Must match a category `id` in the categories list |
+| `path` | Yes | `articles/article.html?id=<your-id>` |
+| `summary` | Yes | Short description for cards and search results |
+| `tags` | Recommended | Search keywords |
+| `author` | Recommended | Article author(s) |
+| `lastUpdated` | Recommended | ISO date (YYYY-MM-DD) |
+| `featured` | No | Set to `true` to show on the home page hero |
+
+## How It Works
+
+When a reader clicks an article link, the browser loads
+`articles/article.html` — a single universal template.
+That page reads the `?id=` parameter, fetches the corresponding
+`.wmd` file, runs it through `wmd-parser.js`, and renders
+the resulting HTML. Everything — breadcrumbs, title, meta bar, table of contents,
+dropdowns, Desmos graphs, and MathJax — is built automatically.
+
+This means you never write HTML for article content. The only files you create are:
+
+- The `.wmd` source file (your article content)
+- An entry in `articles.json` (registration)
+
+## WMD Syntax Quick Reference
+
+See the full [WMD Format Reference](admin-article.html?id=wmd-reference) for complete documentation.
+Here is a quick summary of the most common elements:
+
+| Element | Syntax |
+|---------|--------|
+| Section heading | `## Heading` |
+| Subsection | `### Sub-heading` |
+| Bold | `**text**` |
+| Italic | `*text*` |
+| Inline code | `` `code` `` |
+| Inline math | `$E=mc^2$` |
+| Display math | `$$formula$$` |
+| Link | `[text](url)` |
+| Bullet list | `- item` |
+| Numbered list | `1. item` |
+| Summary box | `:::summary ... :::` |
+| Infobox | `:::infobox Title ... :::` |
+| Dropdown | `:::dropdown Title ... :::` |
+| Desmos graph | `:::desmos 400 | Label ... :::` |
+| Figure/image | `:::figure path/img.png | Caption :::` |
+| Citations | `:::citations ... :::` |
+
+## Adding a New Category
+
+To add a new category, add an entry to the `"categories"` array in
+`articles.json`:
+
+```
+{
+  "id": "physics",
+  "label": "Physics",
+  "icon": ""
+}
+```
+
+Then use `"category": "physics"` in your article entries. The category
+will appear automatically in the sidebar and on the home page.
+
+## Checklist for a New Article
+
+- Create `articles/your-article.wmd` from the template above
+- Add an entry to `config/articles.json` with `path: "articles/article.html?id=your-article"`
+- Write the `:::summary` block (2–4 sentences)
+- Add at least 2 `##` sections (required for the Table of Contents)
+- Add a `:::citations` block with at least one reference
+- Preview the article in a browser at `articles/article.html?id=your-article`
+
+:::citations
+1. EduWiki internal documentation.
+:::

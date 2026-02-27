@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading… — EduWiki</title>
+  <link rel="stylesheet" href="../styles.css">
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'] }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+  <!-- Desmos graphing API -->
+  <script src="https://www.desmos.com/api/v1.9/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6" async></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="wiki-header" role="banner"></header>
+
+  <div class="wiki-layout">
+    <!-- Sidebar: TOC + nav injected by scripts.js -->
+    <aside id="wiki-sidebar" aria-label="Table of contents and navigation">
+      <div id="toc"></div>
+    </aside>
+
+    <main id="main-content" class="wiki-content">
+      <!-- Article content injected by scripts.js loadWMDArticle() -->
+      <div id="wmd-article-root">
+        <p class="text-muted">Loading article…</p>
+      </div>
+    </main>
+  </div>
+
+  <footer id="wiki-footer" role="contentinfo"></footer>
+
+  <!-- WMD parser must load before scripts.js -->
+  <script src="../wmd-parser.js"></script>
+  <script src="../scripts.js"></script>
+</body>
+</html>

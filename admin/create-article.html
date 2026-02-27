@@ -28,149 +28,124 @@
 
       <h1 class="wiki-title">How to Create a New Article</h1>
       <div class="wiki-meta">
-        <span> Last updated: February 27, 2026</span>
-        <span> EduWiki Admin</span>
+        <span>Last updated: February 27, 2026</span>
+        <span>EduWiki Admin</span>
         <span class="tag">Admin</span>
         <span class="tag">Authoring</span>
+        <span class="tag">WMD</span>
       </div>
 
       <div class="admin-notice" role="note">
         <strong>Admin Article</strong> — This guide is for contributors adding new articles to EduWiki.
-        No programming knowledge is required — just copy the template and fill it in.
+        No HTML or programming knowledge required — just write plain text in the
+        <code>.wmd</code> (Wiki Markdown) format.
       </div>
 
       <div class="wiki-summary" role="note">
         <strong>Summary</strong>
-        Adding a new article to EduWiki requires two steps: (1) create an HTML file in the
+        Adding a new article requires two steps: (1) create a <code>.wmd</code> file in the
         <code>articles/</code> folder, and (2) register it in <code>config/articles.json</code>.
-        That's it — the navigation, search, and table of contents are all automatic.
+        The browser automatically converts your markdown to a fully formatted wiki page.
+        Navigation, search, and the table of contents are all generated automatically.
       </div>
 
       <!-- ── MAIN CONTENT ─────────────────────────────────── -->
 
       <h2>Overview of the File Structure</h2>
-      <p>EduWiki's file structure is:</p>
+      <p>EduWiki's file structure:</p>
       <pre><code>wiki/
-├── index.html          ← Home page (auto-populated)
-├── styles.css          ← All styles
-├── scripts.js          ← All JavaScript
+├── index.html              ← Home page (auto-populated)
+├── styles.css              ← All styles
+├── scripts.js              ← All JavaScript
+├── wmd-parser.js           ← WMD → HTML converter
 ├── config/
-│   ├── site.json       ← Site name, logo, colors
-│   └── articles.json   ← Article registry (YOU EDIT THIS)
-├── media/              ← Images, videos, etc.
-├── articles/           ← Real article HTML files (YOU ADD HERE)
-└── admin/              ← Help/admin articles</code></pre>
+│   ├── site.json           ← Site name, logo, colors
+│   └── articles.json       ← Article registry (YOU EDIT THIS)
+├── media/                  ← Images, videos, etc.
+├── articles/
+│   ├── article.html        ← Universal article viewer (one file for all articles)
+│   ├── calculus.wmd        ← Article source files (YOU ADD HERE)
+│   ├── pythagorean-theorem.wmd
+│   └── ...
+└── admin/                  ← Help/admin pages (HTML)</code></pre>
 
-      <h2>Step 1 — Create the HTML File</h2>
+      <h2>Step 1 — Create the .wmd File</h2>
       <p>
-        Copy the template below and save it as <code>articles/your-article-name.html</code>.
-        Use lowercase letters and hyphens for the filename (e.g., <code>quadratic-formula.html</code>).
+        Create a new file at <code>articles/your-article-name.wmd</code>.
+        Use lowercase letters and hyphens for the filename (e.g., <code>quadratic-formula.wmd</code>).
+      </p>
+      <p>
+        Copy the template below and fill in your content:
       </p>
 
       <div class="wiki-dropdown">
         <button class="wiki-dropdown-trigger" type="button">
-           Article HTML Template (click to expand)
+          WMD Article Template (click to expand)
         </button>
         <div class="wiki-dropdown-body">
-          <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-  &lt;meta charset="UTF-8"&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-  &lt;title&gt;Your Article Title — EduWiki&lt;/title&gt;
-  &lt;link rel="stylesheet" href="../styles.css"&gt;
+          <pre><code>---
+title:       Your Article Title
+category:    mathematics
+author:      Your Name
+lastUpdated: 2026-02-27
+tags:        keyword1, keyword2, keyword3
+featured:    false
+---
 
-  &lt;!-- Include MathJax if you use LaTeX --&gt;
-  &lt;script&gt;
-    window.MathJax = {
-      tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']] }
-    };
-  &lt;/script&gt;
-  &lt;script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async&gt;&lt;/script&gt;
+:::summary
+Write a 2–4 sentence summary here. It appears in the blue box at the top of
+the article and also in search results and on the home page.
+:::
 
-  &lt;!-- Include Desmos if you use interactive graphs --&gt;
-  &lt;script src="https://www.desmos.com/api/v1.9/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6" async&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
+:::infobox Quick Facts
+| Field 1 | Value 1 |
+| Field 2 | Value 2 |
+| Field 3 | Value 3 |
+:::
 
-  &lt;a class="skip-link" href="#main-content"&gt;Skip to content&lt;/a&gt;
-  &lt;header id="wiki-header" role="banner"&gt;&lt;/header&gt;
+## First Section
 
-  &lt;div class="wiki-layout"&gt;
-    &lt;aside id="wiki-sidebar" aria-label="Table of contents and navigation"&gt;
-      &lt;div id="toc"&gt;&lt;/div&gt;
-    &lt;/aside&gt;
+Your content here. Use **bold**, *italic*, `code`, $inline math$,
+and [links](https://example.com).
 
-    &lt;main id="main-content" class="wiki-content"&gt;
+$$\text{Display math block}$$
 
-      &lt;!-- Breadcrumb --&gt;
-      &lt;nav class="wiki-breadcrumb" aria-label="Breadcrumb"&gt;
-        &lt;a href="../index.html"&gt;Home&lt;/a&gt;
-        &lt;span class="sep" aria-hidden="true"&gt;›&lt;/span&gt;
-        &lt;a href="../index.html#cat-CATEGORY_ID"&gt;Category Name&lt;/a&gt;
-        &lt;span class="sep" aria-hidden="true"&gt;›&lt;/span&gt;
-        &lt;span aria-current="page"&gt;Your Article Title&lt;/span&gt;
-      &lt;/nav&gt;
+### Subsection
 
-      &lt;!-- Title --&gt;
-      &lt;h1 class="wiki-title"&gt;Your Article Title&lt;/h1&gt;
-      &lt;div class="wiki-meta"&gt;
-        &lt;span&gt; Last updated: YYYY-MM-DD&lt;/span&gt;
-        &lt;span&gt; Your Name&lt;/span&gt;
-        &lt;span class="tag"&gt;Category&lt;/span&gt;
-      &lt;/div&gt;
+- Bullet item
+- Another item
 
-      &lt;!-- Summary --&gt;
-      &lt;div class="wiki-summary" role="note"&gt;
-        &lt;strong&gt;Summary&lt;/strong&gt;
-        Write a 2–4 sentence summary of the article here.
-      &lt;/div&gt;
+| Column A | Column B |
+|----------|----------|
+| Data     | Data     |
 
-      &lt;!-- Optional: Info Box --&gt;
-      &lt;div class="infobox" aria-label="Quick facts"&gt;
-        &lt;div class="infobox-title"&gt;Quick Facts&lt;/div&gt;
-        &lt;table&gt;
-          &lt;tr&gt;&lt;td&gt;Key 1&lt;/td&gt;&lt;td&gt;Value 1&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;&lt;td&gt;Key 2&lt;/td&gt;&lt;td&gt;Value 2&lt;/td&gt;&lt;/tr&gt;
-        &lt;/table&gt;
-      &lt;/div&gt;
+:::dropdown Example Title
+Expandable worked example or extra detail.
+:::
 
-      &lt;!-- Main Content --&gt;
-      &lt;h2&gt;First Section&lt;/h2&gt;
-      &lt;p&gt;Your content here...&lt;/p&gt;
+## Second Section
 
-      &lt;h2&gt;Second Section&lt;/h2&gt;
-      &lt;p&gt;More content...&lt;/p&gt;
+More content…
 
-      &lt;!-- Citations --&gt;
-      &lt;section class="wiki-citations" aria-labelledby="citations-heading"&gt;
-        &lt;h2 id="citations-heading"&gt;References&lt;/h2&gt;
-        &lt;ol&gt;
-          &lt;li&gt;Author, A. (Year). &lt;em&gt;Title&lt;/em&gt;. Publisher.&lt;/li&gt;
-        &lt;/ol&gt;
-      &lt;/section&gt;
-
-    &lt;/main&gt;
-  &lt;/div&gt;
-
-  &lt;footer id="wiki-footer" role="contentinfo"&gt;&lt;/footer&gt;
-  &lt;script src="../scripts.js"&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
+:::citations
+1. Author, A. (Year). *Title*. Publisher.
+2. Author, B. (Year). *Title*. [URL](https://url)
+:::</code></pre>
         </div>
       </div>
 
       <h2>Step 2 — Register in articles.json</h2>
       <p>
-        Open <code>config/articles.json</code> and add a new entry to the <code>"articles"</code> array.
-        Copy this template:
+        Open <code>config/articles.json</code> and add a new entry to the
+        <code>"articles"</code> array. The <code>path</code> always points to
+        <code>articles/article.html?id=your-article-id</code> — the universal viewer.
       </p>
       <pre><code>{
   "id": "your-article-id",
   "title": "Your Article Title",
   "category": "mathematics",
-  "path": "articles/your-article-name.html",
-  "summary": "A one-sentence summary that appears in search and on the home page.",
+  "path": "articles/article.html?id=your-article-id",
+  "summary": "A one-sentence summary for search and the home page.",
   "tags": ["keyword1", "keyword2"],
   "author": "Your Name",
   "lastUpdated": "2026-02-27",
@@ -181,21 +156,66 @@
       <table>
         <thead><tr><th>Field</th><th>Required</th><th>Description</th></tr></thead>
         <tbody>
-          <tr><td><code>id</code></td><td>Yes</td><td>Unique identifier (lowercase, no spaces)</td></tr>
+          <tr><td><code>id</code></td><td>Yes</td><td>Unique identifier matching the .wmd filename (without extension)</td></tr>
           <tr><td><code>title</code></td><td>Yes</td><td>Display name of the article</td></tr>
           <tr><td><code>category</code></td><td>Yes</td><td>Must match a category <code>id</code> in the categories list</td></tr>
-          <tr><td><code>path</code></td><td>Yes</td><td>Path from wiki root to the HTML file</td></tr>
+          <tr><td><code>path</code></td><td>Yes</td><td><code>articles/article.html?id=&lt;your-id&gt;</code></td></tr>
           <tr><td><code>summary</code></td><td>Yes</td><td>Short description for cards and search results</td></tr>
           <tr><td><code>tags</code></td><td>Recommended</td><td>Search keywords</td></tr>
           <tr><td><code>author</code></td><td>Recommended</td><td>Article author(s)</td></tr>
           <tr><td><code>lastUpdated</code></td><td>Recommended</td><td>ISO date (YYYY-MM-DD)</td></tr>
-          <tr><td><code>featured</code></td><td>No</td><td>Set to <code>true</code> to show on the home page</td></tr>
+          <tr><td><code>featured</code></td><td>No</td><td>Set to <code>true</code> to show on the home page hero</td></tr>
+        </tbody>
+      </table>
+
+      <h2>How It Works</h2>
+      <p>
+        When a reader clicks an article link, the browser loads
+        <code>articles/article.html</code> — a single universal template.
+        That page reads the <code>?id=</code> parameter, fetches the corresponding
+        <code>.wmd</code> file, runs it through <code>wmd-parser.js</code>, and renders
+        the resulting HTML. Everything — breadcrumbs, title, meta bar, table of contents,
+        dropdowns, Desmos graphs, and MathJax — is built automatically.
+      </p>
+      <p>
+        This means you never write HTML for article content. The only files you create are:
+      </p>
+      <ul>
+        <li>The <code>.wmd</code> source file (your article content)</li>
+        <li>An entry in <code>articles.json</code> (registration)</li>
+      </ul>
+
+      <h2>WMD Syntax Quick Reference</h2>
+      <p>
+        See the full <a href="wmd-reference.html">WMD Format Reference</a> for complete documentation.
+        Here is a quick summary of the most common elements:
+      </p>
+      <table>
+        <thead><tr><th>Element</th><th>Syntax</th></tr></thead>
+        <tbody>
+          <tr><td>Section heading</td><td><code>## Heading</code></td></tr>
+          <tr><td>Subsection</td><td><code>### Sub-heading</code></td></tr>
+          <tr><td>Bold</td><td><code>**text**</code></td></tr>
+          <tr><td>Italic</td><td><code>*text*</code></td></tr>
+          <tr><td>Inline code</td><td><code>`code`</code></td></tr>
+          <tr><td>Inline math</td><td><code>$E=mc^2$</code></td></tr>
+          <tr><td>Display math</td><td><code>$$formula$$</code></td></tr>
+          <tr><td>Link</td><td><code>[text](url)</code></td></tr>
+          <tr><td>Bullet list</td><td><code>- item</code></td></tr>
+          <tr><td>Numbered list</td><td><code>1. item</code></td></tr>
+          <tr><td>Summary box</td><td><code>:::summary ... :::</code></td></tr>
+          <tr><td>Infobox</td><td><code>:::infobox Title ... :::</code></td></tr>
+          <tr><td>Dropdown</td><td><code>:::dropdown Title ... :::</code></td></tr>
+          <tr><td>Desmos graph</td><td><code>:::desmos 400 | Label ... :::</code></td></tr>
+          <tr><td>Figure/image</td><td><code>:::figure path/img.png | Caption :::</code></td></tr>
+          <tr><td>Citations</td><td><code>:::citations ... :::</code></td></tr>
         </tbody>
       </table>
 
       <h2>Adding a New Category</h2>
       <p>
-        To add a new category, add an entry to the <code>"categories"</code> array in <code>articles.json</code>:
+        To add a new category, add an entry to the <code>"categories"</code> array in
+        <code>articles.json</code>:
       </p>
       <pre><code>{
   "id": "physics",
@@ -203,34 +223,18 @@
   "icon": ""
 }</code></pre>
       <p>
-        Then use <code>"category": "physics"</code> in your article entries. The new category
+        Then use <code>"category": "physics"</code> in your article entries. The category
         will appear automatically in the sidebar and on the home page.
-      </p>
-
-      <h2>Customizing the Site</h2>
-      <p>
-        To change the site name, logo, colors, or footer text, edit <code>config/site.json</code>:
-      </p>
-      <pre><code>{
-  "name": "MyWiki",
-  "tagline": "Learning Made Simple",
-  "logo": "media/my-logo.svg",
-  "primaryColor": "#16a34a",
-  "footerText": "© 2026 MyWiki"
-}</code></pre>
-      <p>
-        The <code>primaryColor</code> accepts any valid CSS color value. All buttons, links, and
-        accents will update automatically.
       </p>
 
       <h2>Checklist for a New Article</h2>
       <ul>
-        <li> Create <code>articles/your-article.html</code> from the template</li>
-        <li> Add an entry to <code>config/articles.json</code></li>
-        <li> Write the summary box</li>
-        <li> Add at least 2 <code>&lt;h2&gt;</code> sections (for the Table of Contents)</li>
-        <li> Add citations in the <code>.wiki-citations</code> section</li>
-        <li> Preview the article in a browser</li>
+        <li>Create <code>articles/your-article.wmd</code> from the template above</li>
+        <li>Add an entry to <code>config/articles.json</code> with <code>path: "articles/article.html?id=your-article"</code></li>
+        <li>Write the <code>:::summary</code> block (2–4 sentences)</li>
+        <li>Add at least 2 <code>##</code> sections (required for the Table of Contents)</li>
+        <li>Add a <code>:::citations</code> block with at least one reference</li>
+        <li>Preview the article in a browser at <code>articles/article.html?id=your-article</code></li>
       </ul>
 
       <section class="wiki-citations" aria-labelledby="citations-heading">

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WMD Format Reference — EduWiki</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header id="wiki-header" role="banner"></header>
+
+  <div class="wiki-layout">
+    <aside id="wiki-sidebar" aria-label="Table of contents and navigation">
+      <div id="toc"></div>
+    </aside>
+
+    <main id="main-content" class="wiki-content">
+
+      <nav class="wiki-breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="sep" aria-hidden="true">›</span>
+        <span>Admin &amp; Help</span>
+        <span class="sep" aria-hidden="true">›</span>
+        <span aria-current="page">WMD Format Reference</span>
+      </nav>
+
+      <h1 class="wiki-title">WMD Format Reference</h1>
+      <div class="wiki-meta">
+        <span>Last updated: February 27, 2026</span>
+        <span>EduWiki Admin</span>
+        <span class="tag">Admin</span>
+        <span class="tag">WMD</span>
+        <span class="tag">Authoring</span>
+      </div>
+
+      <div class="admin-notice" role="note">
+        <strong>Admin Article</strong> — This is the complete reference for the
+        <code>.wmd</code> (Wiki Markdown) format used to write all EduWiki articles.
+      </div>
+
+      <div class="wiki-summary" role="note">
+        <strong>Summary</strong>
+        WMD (Wiki Markdown) is EduWiki's custom lightweight markup language. Write your article
+        as a plain-text <code>.wmd</code> file; the browser converts it to a fully formatted
+        wiki page automatically. No HTML required.
+      </div>
+
+      <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+
+      <h2>File Structure</h2>
+      <p>
+        A <code>.wmd</code> file has two parts: a <strong>frontmatter</strong> block (metadata)
+        and a <strong>body</strong> (content). Both are plain text.
+      </p>
+      <pre><code>---
+title:       My Article Title
+category:    mathematics
+author:      Your Name
+lastUpdated: 2026-02-27
+tags:        math, algebra, equations
+featured:    false
+---
+
+:::summary
+One-paragraph summary shown at the top of the article.
+:::
+
+## First Section
+
+Content goes here…</code></pre>
+
+      <h2>Frontmatter Fields</h2>
+      <table>
+        <thead><tr><th>Field</th><th>Required</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>title</code></td><td>Yes</td><td>Article display name</td></tr>
+          <tr><td><code>category</code></td><td>Yes</td><td>Must match a category <code>id</code> in <code>articles.json</code></td></tr>
+          <tr><td><code>author</code></td><td>Recommended</td><td>Article author(s)</td></tr>
+          <tr><td><code>lastUpdated</code></td><td>Recommended</td><td>ISO date (YYYY-MM-DD)</td></tr>
+          <tr><td><code>tags</code></td><td>Recommended</td><td>Comma-separated search keywords</td></tr>
+          <tr><td><code>featured</code></td><td>No</td><td><code>true</code> to show on the home page</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Headings</h2>
+      <p>Use <code>##</code> for major sections and <code>###</code> for subsections. Do not use <code>#</code> — the article title is always the <code>&lt;h1&gt;</code>.</p>
+      <pre><code>## Major Section
+
+### Subsection
+
+#### Sub-subsection</code></pre>
+
+      <h2>Inline Formatting</h2>
+      <table>
+        <thead><tr><th>Syntax</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td><code>**bold text**</code></td><td><strong>bold text</strong></td></tr>
+          <tr><td><code>*italic text*</code></td><td><em>italic text</em></td></tr>
+          <tr><td><code>***bold italic***</code></td><td><strong><em>bold italic</em></strong></td></tr>
+          <tr><td><code>~~strikethrough~~</code></td><td><del>strikethrough</del></td></tr>
+          <tr><td><code>`inline code`</code></td><td><code>inline code</code></td></tr>
+          <tr><td><code>$E = mc^2$</code></td><td>Inline LaTeX math (rendered by MathJax)</td></tr>
+          <tr><td><code>[link text](https://url)</code></td><td>Hyperlink (external links open in new tab)</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Paragraphs and Lists</h2>
+      <p>
+        Separate paragraphs with a blank line. Bullet and numbered lists end at the next blank line
+        or non-list line.
+      </p>
+      <pre><code>This is a paragraph.
+
+This is a second paragraph.
+
+- Bullet item one
+- Bullet item two
+- Bullet item three
+
+1. First ordered item
+2. Second ordered item
+3. Third ordered item</code></pre>
+
+      <h2>Tables</h2>
+      <p>Use GFM (GitHub Flavored Markdown) table syntax. The separator row (<code>|---|---|</code>) is required.</p>
+      <pre><code>| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Row 1    | Data     | Data     |
+| Row 2    | Data     | Data     |</code></pre>
+      <p>Inline formatting (bold, italic, math) works inside table cells.</p>
+
+      <h2>Blockquotes</h2>
+      <pre><code>&gt; "The glory of God is intelligence."
+&gt; — Doctrine &amp; Covenants 93:36</code></pre>
+
+      <h2>Code Blocks</h2>
+      <p>Wrap code with triple backticks. Optionally specify a language for syntax highlighting.</p>
+      <pre><code>```python
+def hello():
+    print("Hello, world!")
+```</code></pre>
+
+      <h2>Math — LaTeX</h2>
+      <p>EduWiki uses MathJax to render LaTeX. Inline and display math are both supported.</p>
+      <pre><code>Inline: $a^2 + b^2 = c^2$
+
+Single-line display:
+$$\int_a^b f(x)\,dx = F(b) - F(a)$$
+
+Multi-line display:
+$$
+\frac{d}{dx}\left[\int_a^x f(t)\,dt\right] = f(x)
+$$</code></pre>
+
+      <h2>Horizontal Rule</h2>
+      <p>Use three or more dashes on their own line:</p>
+      <pre><code>---</code></pre>
+
+      <h2>Fenced Blocks — Summary Box</h2>
+      <p>
+        The blue summary box at the top of every article. Supports inline formatting and
+        LaTeX math. Place it at the top of your content, before any headings.
+      </p>
+      <pre><code>:::summary
+Calculus is the branch of mathematics studying **continuous change**.
+It was developed by Newton and Leibniz in the 17th century.
+:::</code></pre>
+
+      <h2>Fenced Blocks — Infobox</h2>
+      <p>
+        A right-floating box of key facts. The block parameter is the infobox title.
+        Each row is a <code>| Key | Value |</code> pair.
+        Inline formatting and math work in both columns.
+      </p>
+      <pre><code>:::infobox Calculus at a Glance
+| Field      | Mathematics              |
+| Key figures| Newton, Leibniz, Euler   |
+| Developed  | 17th century             |
+| Prerequisite | Algebra, Trigonometry  |
+:::</code></pre>
+
+      <h2>Fenced Blocks — Dropdown</h2>
+      <p>
+        An expandable accordion section. The block parameter is the button label.
+        The body supports full WMD content (paragraphs, math, lists, tables, etc.).
+      </p>
+      <pre><code>:::dropdown Example: Computing a Limit
+Find $\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$.
+
+Direct substitution gives $\frac{0}{0}$, so we factor:
+
+$$\frac{x^2 - 4}{x - 2} = x + 2$$
+
+Now substitute: $\lim_{x \to 2}(x + 2) = 4$.
+:::</code></pre>
+
+      <h2>Fenced Blocks — Desmos Graph</h2>
+      <p>
+        Embeds an interactive Desmos graphing calculator.
+        The parameter is <code>height | Label</code>.
+        The first body line is the expressions JSON array.
+        The optional second body line is the viewport bounds JSON object.
+      </p>
+      <pre><code>:::desmos 400 | Explore the parabola y = x²
+[
+  {"id":"f","latex":"y=x^2","color":"#2563eb"},
+  {"id":"a","latex":"a=1","sliderBounds":{"min":"-3","max":"3"}}
+]
+{"left":-5,"right":5,"bottom":-2,"top":10}
+:::</code></pre>
+      <p>
+        The expressions JSON follows the
+        <a href="https://www.desmos.com/api/v1.9/docs/index.html" target="_blank" rel="noopener noreferrer">Desmos API format</a>.
+        Common expression properties:
+      </p>
+      <table>
+        <thead><tr><th>Property</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>id</code></td><td>Unique identifier string</td></tr>
+          <tr><td><code>latex</code></td><td>LaTeX expression (e.g., <code>"y=x^2"</code>)</td></tr>
+          <tr><td><code>color</code></td><td>Hex color string (e.g., <code>"#2563eb"</code>)</td></tr>
+          <tr><td><code>sliderBounds</code></td><td><code>{"min":"...","max":"...","step":"..."}</code> for sliders</td></tr>
+          <tr><td><code>pointStyle</code></td><td><code>"OPEN"</code>, <code>"CROSS"</code>, or <code>"POINT"</code></td></tr>
+        </tbody>
+      </table>
+
+      <h2>Fenced Blocks — Figure</h2>
+      <p>
+        Displays a centered image with an optional caption.
+        The parameter is <code>path/to/image | Caption text</code>.
+      </p>
+      <pre><code>:::figure ../media/diagram.png | Diagram showing a right triangle with sides a, b, and c
+:::</code></pre>
+
+      <h2>Fenced Blocks — Citations</h2>
+      <p>
+        Renders the References section at the bottom of an article.
+        Each line must start with a number followed by a period.
+        Inline formatting (italic for titles, links for URLs) is supported.
+      </p>
+      <pre><code>:::citations
+1. Stewart, J. (2015). *Calculus: Early Transcendentals*, 8th ed. Cengage.
+2. Apostol, T. M. (1967). *Calculus, Vol. 1*. Wiley.
+3. Khan Academy. *Calculus*. [khanacademy.org](https://www.khanacademy.org/math/calculus-1)
+:::</code></pre>
+      <p>
+        In-text citation references like <code>[1]</code>, <code>[2]</code> in your article body are
+        automatically converted to superscript links pointing to the corresponding numbered citation.
+      </p>
+
+      <h2>Fenced Blocks — Notice</h2>
+      <p>A yellow notice box, typically used in admin/help articles.</p>
+      <pre><code>:::notice
+**Admin Article** — This guide is for contributors adding content to EduWiki.
+:::</code></pre>
+
+      <h2>Fenced Blocks — Quote</h2>
+      <p>A styled blockquote with an optional attribution line. The parameter is the attribution.</p>
+      <pre><code>:::quote Joseph Smith, History 1:17
+"I saw two Personages, whose brightness and glory defy all description."
+:::</code></pre>
+
+      <h2>Complete Article Template</h2>
+      <div class="wiki-dropdown">
+        <button class="wiki-dropdown-trigger" type="button">
+          Full .wmd Template (click to expand)
+        </button>
+        <div class="wiki-dropdown-body">
+          <pre><code>---
+title:       Your Article Title
+category:    mathematics
+author:      Your Name
+lastUpdated: 2026-02-27
+tags:        keyword1, keyword2, keyword3
+featured:    false
+---
+
+:::summary
+Write a 2–4 sentence summary here. Use **bold** and *italic* freely.
+This appears in the blue box at the top of every article.
+:::
+
+:::infobox Quick Facts
+| Field 1 | Value 1 |
+| Field 2 | Value 2 |
+| Field 3 | Value 3 |
+:::
+
+## First Major Section
+
+Paragraph text with **bold**, *italic*, `code`, $inline math$,
+and [links](https://example.com).
+
+$$
+\text{Display math block}
+$$
+
+### Subsection
+
+- Bullet item
+- Another item
+
+| Column A | Column B |
+|----------|----------|
+| Data     | Data     |
+
+:::dropdown Example Title
+Worked example or extra detail here.
+
+$$formula = here$$
+:::
+
+## Second Major Section
+
+More content…
+
+:::citations
+1. Author, A. (Year). *Title*. Publisher.
+2. Author, B. (Year). *Title*. [URL Text](https://url)
+:::</code></pre>
+        </div>
+      </div>
+
+      <section class="wiki-citations" aria-labelledby="citations-heading">
+        <h2 id="citations-heading">References</h2>
+        <ol>
+          <li>EduWiki internal documentation.</li>
+          <li>
+            Desmos API Documentation.
+            <a href="https://www.desmos.com/api/v1.9/docs/index.html" target="_blank" rel="noopener noreferrer">
+              desmos.com
+            </a>
+          </li>
+          <li>
+            MathJax Documentation.
+            <a href="https://docs.mathjax.org/" target="_blank" rel="noopener noreferrer">
+              docs.mathjax.org
+            </a>
+          </li>
+        </ol>
+      </section>
+
+    </main>
+  </div>
+
+  <footer id="wiki-footer" role="contentinfo"></footer>
+  <script src="../scripts.js"></script>
+</body>
+</html>

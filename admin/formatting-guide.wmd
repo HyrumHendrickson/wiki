@@ -1,0 +1,164 @@
+---
+title: Formatting Guide
+category: admin
+author: EduWiki Admin
+lastUpdated: 2026-02-27
+tags: admin, help, formatting
+---
+
+:::notice
+**Admin Article** — This reference covers the WMD formatting elements
+available in EduWiki articles. For the complete WMD syntax reference, see the
+[WMD Format Reference](admin-article.html?id=wmd-reference).
+:::
+
+:::summary
+EduWiki articles are written in WMD (Wiki Markdown), a plain-text format that is
+automatically converted to HTML. This guide covers headings, lists, tables, code blocks,
+blockquotes, and all other formatting elements available in `.wmd` files.
+:::
+
+## Headings
+
+Use `##` for major sections and `###` for subsections. The Table of Contents is
+automatically generated from `##` and `###` headings.
+
+```
+## Main Section
+### Sub-section
+#### Minor sub-section
+```
+
+**Rules:**
+
+- Do not use `#` — the article title is always the `<h1>`.
+- Use `##` for major sections, `###` for sub-sections.
+- Give headings descriptive text (not just "Section 1").
+
+## Text Formatting
+
+Standard inline formatting:
+
+| Syntax | Result | Use for |
+|--------|--------|---------|
+| `**text**` | **bold** | Key terms, emphasis |
+| `*text*` | *italic* | Titles, foreign words |
+| `` `text` `` | `monospace` | Code, filenames, commands |
+| `~~text~~` | ~~strikethrough~~ | Deleted or corrected text |
+| `$E=mc^2$` | inline math | Mathematical expressions |
+| `[text](url)` | hyperlink | Links to pages or sites |
+
+## Paragraphs and Line Breaks
+
+Separate paragraphs with a blank line. Avoid using forced line breaks —
+use new paragraphs instead.
+
+## Lists
+
+Unordered list (bullets):
+
+```
+- First item
+- Second item
+- Third item
+```
+
+Ordered list (numbered):
+
+```
+1. Step one
+2. Step two
+3. Step three
+```
+
+## Tables
+
+Use GFM (GitHub Flavored Markdown) table syntax. The separator row is required:
+
+```
+| Column 1 | Column 2 |
+|----------|----------|
+| Value 1  | Value 2  |
+| Value 3  | Value 4  |
+```
+
+Result:
+
+| Column 1 | Column 2 |
+|----------|----------|
+| Value 1  | Value 2  |
+| Value 3  | Value 4  |
+
+## Code Blocks
+
+For multi-line code, wrap in triple backticks. For inline code, use a single backtick.
+
+````
+```python
+def hello():
+    return "world"
+```
+````
+
+## Blockquotes
+
+Use `>` for notable quotes or callouts:
+
+```
+> Mathematics is the language with which God has written the universe.
+> — Galileo Galilei
+```
+
+Result:
+
+> Mathematics is the language with which God has written the universe.
+> — Galileo Galilei
+
+## Summary Box
+
+Every article should have a summary box at the top of the content:
+
+```
+:::summary
+Your 2–4 sentence summary here.
+:::
+```
+
+## Info Box
+
+The infobox floats on the right side of the content. Use it for quick facts:
+
+```
+:::infobox Topic at a Glance
+| Field      | Mathematics  |
+| Difficulty | Intermediate |
+:::
+```
+
+## Images
+
+Store images in the `media/` folder. Use the `:::figure` block for proper styling:
+
+```
+:::figure ../media/my-image.png | Caption explaining the image.
+:::
+```
+
+## Links
+
+Internal links (to other articles):
+
+```
+[Introduction to Calculus](../articles/article.html?id=calculus)
+```
+
+External links (automatically open in a new tab):
+
+```
+[Example](https://example.com)
+```
+
+:::citations
+1. EduWiki internal documentation.
+2. HTML Living Standard, WHATWG. [html.spec.whatwg.org](https://html.spec.whatwg.org/)
+:::

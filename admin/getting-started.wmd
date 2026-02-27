@@ -1,0 +1,105 @@
+---
+title: Getting Started with EduWiki
+category: admin
+author: EduWiki Admin
+lastUpdated: 2026-02-27
+tags: admin, help, navigation
+---
+
+:::notice
+**Admin Article** — This article is part of the EduWiki help system.
+It explains how to use and navigate the wiki.
+:::
+
+:::summary
+EduWiki is an interactive educational resource built to make learning engaging and accessible.
+This guide will help you navigate the site, find articles, and make the most of its
+interactive features like Desmos graphs, dropdown sections, and LaTeX math.
+:::
+
+## What is EduWiki?
+
+EduWiki is a modular, Wikipedia-style educational wiki. Unlike traditional references that
+just list facts, EduWiki is designed to *teach*. Articles feature:
+
+- **Summaries** — a quick overview at the top of every page.
+- **Structured sections** — concepts built up step by step.
+- **Interactive Desmos graphs** — explore math visually.
+- **LaTeX math** — beautifully typeset equations.
+- **Expandable examples** — click to reveal worked problems.
+- **Citations** — sources and further reading at the bottom.
+
+## Navigating the Site
+
+### The Header
+
+The header at the top of every page contains:
+
+- The **EduWiki logo** — clicking it always takes you to the home page.
+- The **search bar** — type to find articles instantly.
+- Quick links to **Home** and **Help**.
+
+### The Sidebar
+
+On article pages, the left sidebar shows:
+
+- The **Table of Contents** — click any heading to jump to it. The current
+  section is highlighted as you scroll.
+- The **article navigation** — all articles grouped by category.
+
+### Search
+
+Use the search bar in the header (or the large search box on the home page) to find articles.
+Results appear as you type. Press `Enter` to go to the best match, or click any
+result in the dropdown.
+
+## Reading an Article
+
+Each article follows the same structure:
+
+1. **Breadcrumb navigation** — shows where you are.
+2. **Title & metadata** — article name, author, last updated date, tags.
+3. **Summary box** (blue) — a brief overview of the topic.
+4. **Info box** (right column) — key facts at a glance.
+5. **Main sections** — the teaching content.
+6. **Interactive components** — graphs, examples, dropdowns.
+7. **References** — citations and further reading.
+
+## Interactive Features
+
+:::dropdown Desmos Graphs
+Many math articles embed live **Desmos graphing calculators**. You can:
+
+- Click and drag to pan the graph.
+- Scroll to zoom in and out.
+- Click the expression list icon (top-left of the graph) to see and edit equations.
+- Interact with sliders to explore how changing a value affects the graph.
+:::
+
+:::dropdown LaTeX Math
+Equations are rendered using **MathJax**, which supports full LaTeX syntax.
+Inline math like $E = mc^2$ appears in the flow of text.
+Display math appears centered on its own line:
+
+$$\int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}$$
+:::
+
+:::dropdown Expandable Examples
+Blue dropdown sections (like this one!) contain worked examples, proofs, or extra detail.
+Click the button to expand or collapse them. This keeps the main article clean while
+providing depth for those who want it.
+:::
+
+## Where to Go Next
+
+Now that you know how to navigate EduWiki, explore the articles! Here are some good starting points:
+
+- [Introduction to Calculus](../articles/article.html?id=calculus)
+- [The Pythagorean Theorem](../articles/article.html?id=pythagorean-theorem)
+
+If you want to contribute by creating a new article, read
+[How to Create a New Article](admin-article.html?id=create-article).
+
+:::citations
+1. EduWiki internal documentation.
+:::

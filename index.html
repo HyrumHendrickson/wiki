@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduWiki — Knowledge Through Exploration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Header injected by scripts.js -->
+  <header id="wiki-header" role="banner"></header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-label="Welcome">
+    <h1>EduWiki</h1>
+    <p>An interactive educational resource — explore, learn, and discover.</p>
+    <form class="hero-search" id="hero-search-form" role="search">
+      <input
+        type="search"
+        id="hero-search-input"
+        placeholder="Search for an article…"
+        aria-label="Search for an article"
+        autocomplete="off"
+      >
+      <button type="submit">Search</button>
+    </form>
+  </section>
+
+  <main id="main-content" class="index-layout">
+
+    <!-- Featured Articles -->
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading" class="section-title">⭐ Featured Articles</h2>
+      <div class="article-grid" id="featured-articles">
+        <!-- Populated by scripts.js from articles.json -->
+      </div>
+    </section>
+
+    <!-- Browse by Category -->
+    <section aria-labelledby="categories-heading">
+      <h2 id="categories-heading" class="section-title">Browse by Category</h2>
+      <div class="categories-grid" id="categories-grid">
+        <!-- Populated by scripts.js from articles.json -->
+      </div>
+    </section>
+
+    <!-- All Articles -->
+    <section aria-labelledby="all-heading">
+      <h2 id="all-heading" class="section-title">📚 All Articles</h2>
+      <div id="all-articles">
+        <!-- Populated by scripts.js from articles.json -->
+      </div>
+    </section>
+
+    <!-- Help / Admin Links -->
+    <section aria-labelledby="admin-heading">
+      <h2 id="admin-heading" class="section-title">⚙ Help &amp; Admin</h2>
+      <div class="article-grid">
+        <a class="article-card" href="admin/getting-started.html">
+          <span class="card-category">Admin</span>
+          <span class="card-title">Getting Started</span>
+          <span class="card-summary">Learn how to navigate and use EduWiki.</span>
+        </a>
+        <a class="article-card" href="admin/create-article.html">
+          <span class="card-category">Admin</span>
+          <span class="card-title">Create a New Article</span>
+          <span class="card-summary">Step-by-step guide to adding articles.</span>
+        </a>
+        <a class="article-card" href="admin/formatting-guide.html">
+          <span class="card-category">Admin</span>
+          <span class="card-title">Formatting Guide</span>
+          <span class="card-summary">Headings, lists, tables, and more.</span>
+        </a>
+        <a class="article-card" href="admin/components-guide.html">
+          <span class="card-category">Admin</span>
+          <span class="card-title">Interactive Components</span>
+          <span class="card-summary">Desmos, LaTeX, dropdowns, and embeds.</span>
+        </a>
+        <a class="article-card" href="admin/citations-guide.html">
+          <span class="card-category">Admin</span>
+          <span class="card-title">Citations Guide</span>
+          <span class="card-summary">How to properly cite sources.</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer injected by scripts.js -->
+  <footer id="wiki-footer" role="contentinfo"></footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

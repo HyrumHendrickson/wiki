@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="26" fill="#2563eb"/>
+  <!-- Book icon -->
+  <rect x="16" y="18" width="11" height="22" rx="2" fill="white"/>
+  <rect x="29" y="18" width="11" height="22" rx="2" fill="white" opacity="0.85"/>
+  <line x1="27" y1="18" x2="27" y2="40" stroke="#2563eb" stroke-width="1.5"/>
+  <!-- Omega/Sum symbol on right page -->
+  <text x="32" y="33" font-family="serif" font-size="10" fill="#2563eb">∑</text>
+  <!-- Site name -->
+  <text x="64" y="24" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#1e293b">Edu</text>
+  <text x="100" y="24" font-family="Georgia, serif" font-size="18" fill="#2563eb">Wiki</text>
+  <!-- Tagline -->
+  <text x="64" y="41" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Knowledge Through Exploration</text>
+</svg>

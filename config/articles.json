@@ -1745,6 +1745,61 @@
             "author": "EduWiki Team",
             "lastUpdated": "2026-02-27",
             "featured": false
+        },
+        {
+            "id": "silmarillion",
+            "title": "The Silmarillion",
+            "category": "literature",
+            "path": "articles/article.html?id=silmarillion",
+            "summary": "J.R.R. Tolkien's posthumously published mythological history of Middle-earth, spanning the creation of the world, the war against Morgoth, and the tragic tales of the Elves — including Beren and Lúthien. Saturated with Christian themes of creation, fall, and redemption.",
+            "tags": ["Tolkien", "Silmarillion", "Middle-earth", "mythology", "fantasy", "elves", "creation"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-27",
+            "featured": false
+        },
+        {
+            "id": "the-hobbit",
+            "title": "The Hobbit",
+            "category": "literature",
+            "path": "articles/article.html?id=the-hobbit",
+            "summary": "J.R.R. Tolkien's beloved adventure story of Bilbo Baggins, who is swept off on a quest with thirteen dwarves to reclaim a mountain kingdom from the dragon Smaug. The tale that introduced Middle-earth and led to The Lord of the Rings.",
+            "tags": ["Tolkien", "Hobbit", "Bilbo Baggins", "Middle-earth", "fantasy", "adventure", "dragon"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-27",
+            "featured": false
+        },
+        {
+            "id": "lord-of-the-rings",
+            "title": "The Lord of the Rings",
+            "category": "literature",
+            "path": "articles/article.html?id=lord-of-the-rings",
+            "summary": "J.R.R. Tolkien's monumental fantasy epic following Frodo Baggins on a quest to destroy the One Ring of Power. Widely regarded as the greatest fantasy novel ever written, it is suffused with Christian themes of providence, mercy, and redemption.",
+            "tags": ["Tolkien", "Lord of the Rings", "Middle-earth", "Frodo", "One Ring", "fantasy", "epic"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-27",
+            "featured": true
+        },
+        {
+            "id": "chronicles-of-narnia",
+            "title": "The Chronicles of Narnia",
+            "category": "literature",
+            "path": "articles/article.html?id=chronicles-of-narnia",
+            "summary": "C.S. Lewis's seven-volume fantasy series set in the magical world of Narnia, featuring the great Lion Aslan as a figure of Christ. Written to help children (and adults) encounter Christian truth through the imagination, these books remain among the most beloved works of children's literature.",
+            "tags": ["C.S. Lewis", "Narnia", "Aslan", "fantasy", "Christian allegory", "children's literature"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-27",
+            "featured": false
+        },
+        {
+            "id": "mere-christianity",
+            "title": "Mere Christianity",
+            "category": "literature",
+            "path": "articles/article.html?id=mere-christianity",
+            "summary": "C.S. Lewis's landmark work of Christian apologetics, originally delivered as BBC radio broadcasts during World War II. It presents Lewis's famous argument from morality for God's existence and the Liar-Lunatic-Lord trilemma for Christ's divinity — one of the most influential Christian books of the twentieth century.",
+            "tags": ["C.S. Lewis", "apologetics", "Christianity", "faith", "reason", "morality", "theology"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-27",
+            "featured": true
         }
     ]
 }

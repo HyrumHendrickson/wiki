@@ -53,7 +53,7 @@ SECTION 2 — ADDING A NEW ARTICLE (COMPLETE STEP-BY-STEP)
 
 Adding a new article requires changes in EXACTLY TWO places:
   1. Create a new .wmd file in the articles/ folder
-  2. Add a registration entry in config/articles.json
+  2. Add a registration entry in the appropriate file inside config/articles/
 
 Follow every step below precisely.
 
@@ -90,8 +90,8 @@ Follow every step below precisely.
   │  Valid category IDs (from config/articles.json):                           │
   │    mathematics, science, history, faith, languages, literature,            │
   │    philosophy, computing, civics                                            │
-  │  (If adding a new category, also add it to config/articles.json —          │
-  │   see Step 3 below.)                                                        │
+  │  (If adding a new category, add it to the "categories" array in            │
+  │   config/articles.json — see Step 3 below.)                                │
   │                                                                             │
   │  Set featured: true only for especially important flagship articles.       │
   └─────────────────────────────────────────────────────────────────────────────┘
@@ -134,10 +134,18 @@ Follow every step below precisely.
   │     - In-text references [1], [2] are automatically superscripted.        │
   └─────────────────────────────────────────────────────────────────────────────┘
 
-── STEP 3: Add Entry to config/articles.json ────────────────────────────────────
+── STEP 3: Add Entry to config/articles/ ────────────────────────────────────────
 
-  Open config/articles.json and add a new object to the "articles" array.
+  Articles are registered across multiple JSON files inside the config/articles/
+  folder. Each file is a JSON array of article objects and MUST NOT exceed 600 lines.
+
+  Open the LAST numbered file in config/articles/ (e.g. articles-5.json) and
+  append a new object to its array.
   NEVER remove or modify existing entries — only append new ones.
+
+  If that file is already at or near 600 lines, create a new file named
+  articles-N.json (where N is the next sequential number) and also add its path
+  to the "files" list inside config/articles.json.
 
   Required fields:
 
@@ -156,16 +164,19 @@ Follow every step below precisely.
   Important:
     - The "path" field MUST follow the pattern above exactly.
     - The "id" in the JSON entry MUST match the .wmd filename exactly.
-    - The "category" MUST match an existing category id in the same file.
-    - If you need a new category, also add it to the "categories" array:
-        { "id": "civics", "label": "Civics", "icon": "" }
+    - The "category" MUST match an existing category id in config/articles.json.
+    - If you need a new category, add it to the "categories" array in
+      config/articles.json: { "id": "civics", "label": "Civics", "icon": "" }
+    - Each file in config/articles/ must stay at or below 600 lines.
+    - The "files" list in config/articles.json controls which files are loaded;
+      if you create a new split file, add its path to that list.
 
 ── STEP 4: Verify ───────────────────────────────────────────────────────────────
 
   After creating both files, mentally verify:
 
     [ ] articles/<id>.wmd exists and contains valid frontmatter
-    [ ] config/articles.json has the new entry with correct "id" and "path"
+    [ ] An entry with correct "id" and "path" was appended to a file in config/articles/
     [ ] The article has a :::summary block
     [ ] The article has at least 2 ## sections
     [ ] The ## See Also section lists at least 5 links to other articles
@@ -514,7 +525,8 @@ SECTION 7 — QUICK REFERENCE CHECKLIST
 
 NEW ARTICLE checklist:
   [ ] Created articles/<id>.wmd with valid frontmatter
-  [ ] Added entry to config/articles.json with correct id and path
+  [ ] Appended entry to a file in config/articles/ with correct id and path
+  [ ] That file (and all files in config/articles/) remains at or under 600 lines
   [ ] :::summary block present (2–4 sentences)
   [ ] :::infobox block present (key facts)
   [ ] At least 2 ## sections in the body

@@ -1,0 +1,500 @@
+[
+    {
+        "id": "about-eduwiki",
+        "title": "About EduWiki",
+        "category": "admin",
+        "path": "articles/article.html?id=about-eduwiki",
+        "summary": "Learn about EduWiki — what it is, what it covers, and how to navigate and use the site.",
+        "tags": [
+            "help",
+            "about",
+            "getting started",
+            "navigation"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28"
+    },
+    {
+        "id": "calculus",
+        "title": "Introduction to Calculus",
+        "category": "mathematics",
+        "path": "articles/article.html?id=calculus",
+        "summary": "Calculus is the mathematical study of continuous change. It has two major branches: differential calculus and integral calculus.",
+        "tags": [
+            "math",
+            "calculus",
+            "derivatives",
+            "integrals"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "abstract-algebra",
+        "title": "Abstract Algebra",
+        "category": "mathematics",
+        "path": "articles/article.html?id=abstract-algebra",
+        "summary": "Abstract algebra studies algebraic structures — groups, rings, and fields — by identifying the abstract axioms they satisfy, rather than working with specific numbers.",
+        "tags": [
+            "mathematics",
+            "abstract algebra",
+            "groups",
+            "rings",
+            "fields"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "real-analysis",
+        "title": "Real Analysis",
+        "category": "mathematics",
+        "path": "articles/article.html?id=real-analysis",
+        "summary": "Real analysis is the rigorous mathematical study of the real number line and the functions defined on it — the formal foundation underlying calculus.",
+        "tags": [
+            "mathematics",
+            "real analysis",
+            "calculus",
+            "limits",
+            "continuity"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "mathematics",
+        "title": "Mathematics",
+        "category": "mathematics",
+        "path": "articles/article.html?id=mathematics",
+        "summary": "Mathematics is the science of pattern, structure, quantity, and logical deduction — humanity's most powerful tool for understanding the physical world with precision and rigor.",
+        "tags": [
+            "mathematics",
+            "math",
+            "overview",
+            "number theory",
+            "geometry",
+            "algebra"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "geometry",
+        "title": "Geometry",
+        "category": "mathematics",
+        "path": "articles/article.html?id=geometry",
+        "summary": "Geometry is the mathematical study of shape, size, and the properties of space — from Euclid's five postulates and Euclidean geometry to the curved spacetime of general relativity.",
+        "tags": [
+            "mathematics",
+            "geometry",
+            "shapes",
+            "Euclid",
+            "space",
+            "triangles"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "pythagorean-theorem",
+        "title": "The Pythagorean Theorem",
+        "category": "mathematics",
+        "path": "articles/article.html?id=pythagorean-theorem",
+        "summary": "The Pythagorean theorem describes the relationship between the three sides of a right triangle: a² + b² = c².",
+        "tags": [
+            "math",
+            "geometry",
+            "triangles"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "jesus-christ",
+        "title": "Jesus Christ",
+        "category": "faith",
+        "path": "articles/article.html?id=jesus-christ",
+        "summary": "Jesus Christ is the central figure of Christianity and of Latter-day Saint faith — the Son of God, Savior, and Redeemer of all mankind.",
+        "tags": [
+            "Jesus",
+            "Christ",
+            "Savior",
+            "Redeemer",
+            "Atonement",
+            "LDS",
+            "Christianity"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "book-of-mormon",
+        "title": "The Book of Mormon",
+        "category": "faith",
+        "path": "articles/article.html?id=book-of-mormon",
+        "summary": "The Book of Mormon is a sacred scripture of The Church of Jesus Christ of Latter-day Saints, translated by Joseph Smith from golden plates and serving as another testament of Jesus Christ.",
+        "tags": [
+            "Book of Mormon",
+            "LDS",
+            "scripture",
+            "Joseph Smith",
+            "Nephi",
+            "Moroni"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "joseph-smith",
+        "title": "Joseph Smith",
+        "category": "faith",
+        "path": "articles/article.html?id=joseph-smith",
+        "summary": "Joseph Smith Jr. (1805–1844) was the founding prophet of The Church of Jesus Christ of Latter-day Saints, translator of the Book of Mormon, and restorer of Christ's gospel.",
+        "tags": [
+            "Joseph Smith",
+            "LDS",
+            "prophet",
+            "restoration",
+            "Mormonism"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "rome",
+        "title": "Ancient Rome",
+        "category": "history",
+        "path": "articles/article.html?id=rome",
+        "summary": "Ancient Rome was one of the most powerful civilizations in world history, whose legal, political, and cultural legacy continues to shape the modern world — and provided the setting for the early Christian church.",
+        "tags": [
+            "Rome",
+            "Roman Empire",
+            "history",
+            "ancient",
+            "Latin",
+            "republic"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "latin",
+        "title": "Latin",
+        "category": "languages",
+        "path": "articles/article.html?id=latin",
+        "summary": "Latin is the classical language of Rome, the foundation of the Romance languages, the language of early Christian scripture, and a cornerstone of Western learning.",
+        "tags": [
+            "Latin",
+            "language",
+            "Rome",
+            "classical",
+            "Romance languages"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "greek",
+        "title": "Ancient Greek",
+        "category": "languages",
+        "path": "articles/article.html?id=greek",
+        "summary": "Ancient Greek is the language of Homer, Plato, and the New Testament — one of history's most influential languages and a key tool for scriptural study.",
+        "tags": [
+            "Greek",
+            "language",
+            "New Testament",
+            "classical",
+            "Koine",
+            "philosophy"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "old-english",
+        "title": "Old English",
+        "category": "languages",
+        "path": "articles/article.html?id=old-english",
+        "summary": "Old English (Anglo-Saxon) is the earliest form of the English language, spoken in England from roughly 450–1150 AD, and the mother tongue of Beowulf and early Christian writings.",
+        "tags": [
+            "Old English",
+            "Anglo-Saxon",
+            "language",
+            "Beowulf",
+            "medieval"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "augustine",
+        "title": "Augustine of Hippo",
+        "category": "philosophy",
+        "path": "articles/article.html?id=augustine",
+        "summary": "Augustine of Hippo (354–430 AD) was one of the most influential theologians in Christian history, whose writings on grace, original sin, and the City of God shaped Western Christianity for over a thousand years.",
+        "tags": [
+            "Augustine",
+            "theology",
+            "church father",
+            "original sin",
+            "grace",
+            "City of God"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "aquinas",
+        "title": "Thomas Aquinas",
+        "category": "philosophy",
+        "path": "articles/article.html?id=aquinas",
+        "summary": "Thomas Aquinas (1225–1274) was a Dominican friar and theologian whose Summa Theologica represents the greatest synthesis of Christian faith and Aristotelian philosophy ever attempted. His Five Ways remain among the most discussed arguments for God's existence.",
+        "tags": [
+            "Aquinas",
+            "theology",
+            "scholasticism",
+            "Summa Theologica",
+            "Five Ways",
+            "Aristotle"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "martin-luther",
+        "title": "Martin Luther",
+        "category": "history",
+        "path": "articles/article.html?id=martin-luther",
+        "summary": "Martin Luther (1483–1546) was a German monk and reformer whose Ninety-Five Theses sparked the Protestant Reformation — one of the most consequential events in the history of Christianity.",
+        "tags": [
+            "Luther",
+            "Reformation",
+            "Protestant",
+            "theology",
+            "justification",
+            "faith"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "parley-pratt",
+        "title": "Parley P. Pratt",
+        "category": "faith",
+        "path": "articles/article.html?id=parley-pratt",
+        "summary": "Parley Parker Pratt (1807–1857) was one of the original Twelve Apostles of The Church of Jesus Christ of Latter-day Saints and a prolific writer, missionary, and theologian whose Key to the Science of Theology was the first systematic presentation of LDS theology.",
+        "tags": [
+            "Parley Pratt",
+            "LDS",
+            "apostle",
+            "missionary",
+            "theology",
+            "restoration"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "caesar",
+        "title": "Julius Caesar",
+        "category": "history",
+        "path": "articles/article.html?id=caesar",
+        "summary": "Gaius Julius Caesar (100–44 BC) was a Roman general and statesman whose military genius and political ambition transformed the Roman Republic into what became the Roman Empire — and whose career shaped the world into which Jesus Christ was born.",
+        "tags": [
+            "Caesar",
+            "Rome",
+            "republic",
+            "general",
+            "statesman",
+            "ancient history"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "alexander-the-great",
+        "title": "Alexander the Great",
+        "category": "history",
+        "path": "articles/article.html?id=alexander-the-great",
+        "summary": "Alexander the Great (356–323 BC) was the King of Macedon whose campaigns created one of the largest empires in ancient history, spreading Greek language and culture across the world and creating the Hellenistic environment of the New Testament.",
+        "tags": [
+            "Alexander",
+            "Macedonia",
+            "Greece",
+            "ancient history",
+            "conquest",
+            "Hellenism"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "athens",
+        "title": "Athens",
+        "category": "history",
+        "path": "articles/article.html?id=athens",
+        "summary": "Athens was the cultural and intellectual heart of ancient Greece — birthplace of democracy, philosophy, drama, and the Western intellectual tradition. Home to Socrates, Plato, and the Parthenon, Athens produced ideas that still shape law, science, and thought across the Western world.",
+        "tags": [
+            "Athens",
+            "Greece",
+            "democracy",
+            "philosophy",
+            "ancient history",
+            "Acropolis"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "sparta",
+        "title": "Sparta",
+        "category": "history",
+        "path": "articles/article.html?id=sparta",
+        "summary": "Sparta was a powerful Greek city-state renowned for its extraordinary military culture and discipline, producing the finest soldiers in the ancient world and providing Athens's great rival for the leadership of Greece.",
+        "tags": [
+            "Sparta",
+            "Greece",
+            "ancient history",
+            "military",
+            "Spartans",
+            "Peloponnesian War"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "delphi",
+        "title": "Delphi",
+        "category": "history",
+        "path": "articles/article.html?id=delphi",
+        "summary": "Delphi was the most sacred site in the ancient Greek world — home to the Oracle of Apollo, whose pronouncements guided kings, generals, and city-states for nearly a thousand years, and whose maxims including 'Know thyself' shaped Greek culture and philosophy.",
+        "tags": [
+            "Delphi",
+            "oracle",
+            "Greece",
+            "Apollo",
+            "ancient history",
+            "religion"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "western-history",
+        "title": "Western History",
+        "category": "history",
+        "path": "articles/article.html?id=western-history",
+        "summary": "Western history is the story of civilizations that grew from ancient Greece and Rome, passed through Christian Europe, and produced the modern world — and the providential stage on which the Restoration of the gospel took place.",
+        "tags": [
+            "western history",
+            "civilization",
+            "Europe",
+            "ancient",
+            "medieval",
+            "modern"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "king-arthur",
+        "title": "King Arthur",
+        "category": "literature",
+        "path": "articles/article.html?id=king-arthur",
+        "summary": "King Arthur is the legendary British ruler whose story — with Guinevere, Lancelot, Merlin, and the Knights of the Round Table — is one of the most enduring in Western literature, rich with themes of chivalry, sacrifice, and the quest for the Holy Grail.",
+        "tags": [
+            "King Arthur",
+            "Arthurian legend",
+            "medieval",
+            "Britain",
+            "Camelot",
+            "Grail"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "vikings",
+        "title": "Vikings",
+        "category": "history",
+        "path": "articles/article.html?id=vikings",
+        "summary": "The Vikings were Norse seafarers from Scandinavia who, between roughly 793 and 1100 AD, raided, traded, explored, and settled across an extraordinary range of the world — from Newfoundland to the Volga River — leaving a permanent mark on Western civilization.",
+        "tags": [
+            "Vikings",
+            "Norse",
+            "Scandinavia",
+            "medieval history",
+            "raiders",
+            "explorers",
+            "mythology"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "beowulf",
+        "title": "Beowulf",
+        "category": "literature",
+        "path": "articles/article.html?id=beowulf",
+        "summary": "Beowulf is the oldest surviving epic poem in the English language — a 3,182-line masterpiece of Old English poetry about the hero Beowulf's battles with the monster Grendel, Grendel's mother, and a dragon, and a profound meditation on heroism, loyalty, and mortality.",
+        "tags": [
+            "Beowulf",
+            "Old English",
+            "epic poem",
+            "medieval literature",
+            "Grendel",
+            "Anglo-Saxon"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "philosophy",
+        "title": "Philosophy",
+        "category": "philosophy",
+        "path": "articles/article.html?id=philosophy",
+        "summary": "Philosophy is the disciplined study of fundamental questions about reality, knowledge, morality, and existence using reason and argument. From ancient Greece to the modern world, it has shaped every intellectual tradition in Western civilization.",
+        "tags": [
+            "philosophy",
+            "reason",
+            "metaphysics",
+            "epistemology",
+            "ethics",
+            "logic"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "metaphysics",
+        "title": "Metaphysics",
+        "category": "philosophy",
+        "path": "articles/article.html?id=metaphysics",
+        "summary": "Metaphysics is the branch of philosophy that investigates the fundamental nature of reality — what exists, what kinds of things exist, and how they relate to one another.",
+        "tags": [
+            "philosophy",
+            "metaphysics",
+            "reality",
+            "existence",
+            "ontology"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    },
+    {
+        "id": "epistemology",
+        "title": "Epistemology",
+        "category": "philosophy",
+        "path": "articles/article.html?id=epistemology",
+        "summary": "Epistemology is the branch of philosophy that investigates the nature, sources, and limits of human knowledge.",
+        "tags": [
+            "philosophy",
+            "epistemology",
+            "knowledge",
+            "belief",
+            "justification"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27"
+    }
+]

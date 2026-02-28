@@ -2,7 +2,7 @@
 title: How to Create a New Article
 category: admin
 author: EduWiki Admin
-lastUpdated: 2026-02-27
+lastUpdated: 2026-02-28
 tags: admin, help, authoring, wmd
 ---
 
@@ -14,7 +14,8 @@ No HTML or programming knowledge required — just write plain text in the
 
 :::summary
 Adding a new article requires two steps: (1) create a `.wmd` file in the
-`articles/` folder, and (2) register it in `config/articles.json`.
+`articles/` folder, and (2) register it in the appropriate file inside
+`config/articles/`.
 The browser automatically converts your markdown to a fully formatted wiki page.
 Navigation, search, and the table of contents are all generated automatically.
 :::
@@ -27,11 +28,17 @@ EduWiki's file structure:
 wiki/
 ├── index.html              ← Home page (auto-populated)
 ├── styles.css              ← All styles
-├── scripts.js              ← All JavaScript
+├── js/
+│   ├── article-registry.js ← Loads and merges split article files
+│   └── scripts.js          ← All JavaScript
 ├── wmd-parser.js           ← WMD → HTML converter
 ├── config/
 │   ├── site.json           ← Site name, logo, colors
-│   └── articles.json       ← Article registry (YOU EDIT THIS)
+│   ├── articles.json       ← Categories + list of split files
+│   └── articles/           ← Split article registries (≤600 lines each)
+│       ├── articles-1.json ← Article entries (YOU APPEND HERE)
+│       ├── articles-2.json
+│       └── ...
 ├── media/                  ← Images, videos, etc.
 ├── articles/
 │   ├── article.html        ← Universal article viewer (one file for all articles)
@@ -107,10 +114,13 @@ More content…
 :::
 ```
 
-## Step 2 — Register in articles.json
+## Step 2 — Register in config/articles/
 
-Open `config/articles.json` and add a new entry to the
-`"articles"` array. The `path` always points to
+Articles are stored across multiple JSON files inside the `config/articles/` folder.
+Each file is a JSON array of article objects and **must not exceed 600 lines**.
+
+Open the **last numbered file** (e.g. `config/articles/articles-5.json`) and append
+a new entry to its array. The `path` always points to
 `articles/article.html?id=your-article-id` — the universal viewer.
 
 ```
@@ -126,6 +136,10 @@ Open `config/articles.json` and add a new entry to the
   "featured": false
 }
 ```
+
+If the last file is already near 600 lines, create a new file
+`config/articles/articles-N.json` and add its path to the `"files"` list in
+`config/articles.json`.
 
 ### Field Reference
 
@@ -150,10 +164,14 @@ That page reads the `?id=` parameter, fetches the corresponding
 the resulting HTML. Everything — breadcrumbs, title, meta bar, table of contents,
 dropdowns, Desmos graphs, and MathJax — is built automatically.
 
+The `article-registry.js` file loads `config/articles.json` (for categories) and
+all split files in `config/articles/`, merging them into one data object that the
+rest of the site uses transparently.
+
 This means you never write HTML for article content. The only files you create are:
 
 - The `.wmd` source file (your article content)
-- An entry in `articles.json` (registration)
+- An entry in the appropriate `config/articles/articles-N.json` file
 
 ## WMD Syntax Quick Reference
 
@@ -182,7 +200,7 @@ Here is a quick summary of the most common elements:
 ## Adding a New Category
 
 To add a new category, add an entry to the `"categories"` array in
-`articles.json`:
+`config/articles.json`:
 
 ```
 {
@@ -198,7 +216,8 @@ will appear automatically in the sidebar and on the home page.
 ## Checklist for a New Article
 
 - Create `articles/your-article.wmd` from the template above
-- Add an entry to `config/articles.json` with `path: "articles/article.html?id=your-article"`
+- Append an entry to the last file in `config/articles/` with `path: "articles/article.html?id=your-article"`
+- Ensure the file you edited stays at or under 600 lines
 - Write the `:::summary` block (2–4 sentences)
 - Add an `:::infobox` block with key facts
 - Add at least 2 `##` sections (required for the Table of Contents)

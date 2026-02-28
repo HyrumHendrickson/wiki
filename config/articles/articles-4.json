@@ -1,0 +1,569 @@
+[
+    {
+        "id": "faith",
+        "title": "Faith",
+        "category": "faith",
+        "path": "articles/article.html?id=faith",
+        "summary": "Faith is the foundational principle of action in religious life — a confident trust in God and His promises that moves people to act before they have perfect knowledge. In Latter-day Saint theology, faith in Jesus Christ is the first principle of the gospel.",
+        "tags": [
+            "faith",
+            "religion",
+            "belief",
+            "theology",
+            "Latter-day Saint",
+            "Christianity",
+            "trust"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "repentance",
+        "title": "Repentance",
+        "category": "faith",
+        "path": "articles/article.html?id=repentance",
+        "summary": "Repentance is the process of turning from sin toward God — a complete change of mind, heart, and conduct made possible by the Atonement of Jesus Christ. It is the second principle of the gospel and the essential response to sin for those who wish to receive God's forgiveness.",
+        "tags": [
+            "repentance",
+            "gospel",
+            "Latter-day Saint",
+            "sin",
+            "forgiveness",
+            "atonement",
+            "Christianity"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "baptism",
+        "title": "Baptism",
+        "category": "faith",
+        "path": "articles/article.html?id=baptism",
+        "summary": "Baptism is the first saving ordinance of the gospel — an outward covenant act of immersion in water that signifies the remission of sins, entrance into the Church of Jesus Christ, and commitment to follow Him. It is performed by proper priesthood authority.",
+        "tags": [
+            "baptism",
+            "ordinance",
+            "gospel",
+            "Latter-day Saint",
+            "Christianity",
+            "covenant",
+            "immersion"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "lds-doctrine",
+        "title": "Latter-day Saint Doctrine",
+        "category": "faith",
+        "path": "articles/article.html?id=lds-doctrine",
+        "summary": "Latter-day Saint doctrine is a restored form of ancient Christianity revealed through Joseph Smith, with distinctive teachings on the Godhead, the plan of salvation, priesthood authority, and eternal progression that differ significantly from traditional Christian theology.",
+        "tags": [
+            "Latter-day Saint",
+            "LDS",
+            "doctrine",
+            "theology",
+            "restoration",
+            "plan of salvation",
+            "Godhead"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "lds-temples",
+        "title": "Latter-day Saint Temples",
+        "category": "faith",
+        "path": "articles/article.html?id=lds-temples",
+        "summary": "Latter-day Saint temples are the most sacred buildings in the Church — dedicated houses of the Lord where members receive essential ordinances including the endowment, eternal marriage sealings, and proxy baptism for deceased ancestors.",
+        "tags": [
+            "temples",
+            "Latter-day Saint",
+            "LDS",
+            "ordinances",
+            "endowment",
+            "sealing",
+            "eternal marriage"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "roman-catholic-church",
+        "title": "The Roman Catholic Church",
+        "category": "faith",
+        "path": "articles/article.html?id=roman-catholic-church",
+        "summary": "The Roman Catholic Church is the world's largest Christian denomination with approximately 1.4 billion members. It traces its origins to Jesus and the Apostles, claims apostolic succession from Peter, and has shaped Western civilization more deeply than any other single institution.",
+        "tags": [
+            "Roman Catholic",
+            "Catholic Church",
+            "Christianity",
+            "papacy",
+            "theology",
+            "history",
+            "sacraments"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "eastern-orthodox",
+        "title": "Eastern Orthodox Churches",
+        "category": "faith",
+        "path": "articles/article.html?id=eastern-orthodox",
+        "summary": "The Eastern Orthodox Church is the second-largest Christian denomination, with approximately 260 million members. Separated from Rome in 1054, it preserves a distinctive theology centered on theosis (deification) and has shaped the cultures of Greece, Russia, and the broader Eastern world.",
+        "tags": [
+            "Eastern Orthodox",
+            "Orthodox Christianity",
+            "theology",
+            "Byzantine",
+            "theosis",
+            "Great Schism"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "statistics",
+        "title": "Statistics",
+        "category": "mathematics",
+        "path": "articles/article.html?id=statistics",
+        "summary": "Statistics is the mathematical science of collecting, analyzing, and interpreting data. It divides into descriptive statistics (summarizing data) and inferential statistics (drawing conclusions from samples), and is essential to science, economics, and policy.",
+        "tags": [
+            "statistics",
+            "mathematics",
+            "probability",
+            "data",
+            "inference",
+            "hypothesis testing"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "economics",
+        "title": "Economics",
+        "category": "mathematics",
+        "path": "articles/article.html?id=economics",
+        "summary": "Economics is the social science studying how individuals, businesses, and societies allocate scarce resources. It encompasses microeconomics (supply and demand, market structures) and macroeconomics (GDP, inflation, monetary policy), drawing on mathematical modeling and statistical analysis.",
+        "tags": [
+            "economics",
+            "microeconomics",
+            "macroeconomics",
+            "markets",
+            "supply",
+            "demand",
+            "GDP",
+            "Adam Smith"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "silmarillion",
+        "title": "The Silmarillion",
+        "category": "literature",
+        "path": "articles/article.html?id=silmarillion",
+        "summary": "J.R.R. Tolkien's posthumously published mythological history of Middle-earth, spanning the creation of the world, the war against Morgoth, and the tragic tales of the Elves — including Beren and Lúthien. Saturated with Christian themes of creation, fall, and redemption.",
+        "tags": [
+            "Tolkien",
+            "Silmarillion",
+            "Middle-earth",
+            "mythology",
+            "fantasy",
+            "elves",
+            "creation"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "the-hobbit",
+        "title": "The Hobbit",
+        "category": "literature",
+        "path": "articles/article.html?id=the-hobbit",
+        "summary": "J.R.R. Tolkien's beloved adventure story of Bilbo Baggins, who is swept off on a quest with thirteen dwarves to reclaim a mountain kingdom from the dragon Smaug. The tale that introduced Middle-earth and led to The Lord of the Rings.",
+        "tags": [
+            "Tolkien",
+            "Hobbit",
+            "Bilbo Baggins",
+            "Middle-earth",
+            "fantasy",
+            "adventure",
+            "dragon"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "lord-of-the-rings",
+        "title": "The Lord of the Rings",
+        "category": "literature",
+        "path": "articles/article.html?id=lord-of-the-rings",
+        "summary": "J.R.R. Tolkien's monumental fantasy epic following Frodo Baggins on a quest to destroy the One Ring of Power. Widely regarded as the greatest fantasy novel ever written, it is suffused with Christian themes of providence, mercy, and redemption.",
+        "tags": [
+            "Tolkien",
+            "Lord of the Rings",
+            "Middle-earth",
+            "Frodo",
+            "One Ring",
+            "fantasy",
+            "epic"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": true
+    },
+    {
+        "id": "chronicles-of-narnia",
+        "title": "The Chronicles of Narnia",
+        "category": "literature",
+        "path": "articles/article.html?id=chronicles-of-narnia",
+        "summary": "C.S. Lewis's seven-volume fantasy series set in the magical world of Narnia, featuring the great Lion Aslan as a figure of Christ. Written to help children (and adults) encounter Christian truth through the imagination, these books remain among the most beloved works of children's literature.",
+        "tags": [
+            "C.S. Lewis",
+            "Narnia",
+            "Aslan",
+            "fantasy",
+            "Christian allegory",
+            "children's literature"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": false
+    },
+    {
+        "id": "mere-christianity",
+        "title": "Mere Christianity",
+        "category": "literature",
+        "path": "articles/article.html?id=mere-christianity",
+        "summary": "C.S. Lewis's landmark work of Christian apologetics, originally delivered as BBC radio broadcasts during World War II. It presents Lewis's famous argument from morality for God's existence and the Liar-Lunatic-Lord trilemma for Christ's divinity — one of the most influential Christian books of the twentieth century.",
+        "tags": [
+            "C.S. Lewis",
+            "apologetics",
+            "Christianity",
+            "faith",
+            "reason",
+            "morality",
+            "theology"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-27",
+        "featured": true
+    },
+    {
+        "id": "music-theory",
+        "title": "Music Theory",
+        "category": "literature",
+        "path": "articles/article.html?id=music-theory",
+        "summary": "Music theory is the study of the language and grammar of music — pitch, rhythm, harmony, counterpoint, and form — tracing its roots from Pythagorean mathematics through medieval Church modes to the masterworks of J.S. Bach and beyond.",
+        "tags": [
+            "music",
+            "theory",
+            "harmony",
+            "rhythm",
+            "counterpoint",
+            "notation",
+            "scales"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "art-history",
+        "title": "Art History",
+        "category": "history",
+        "path": "articles/article.html?id=art-history",
+        "summary": "Art history surveys the visual arts from ancient Greece and Rome through the medieval cathedrals, the Renaissance masters, and into the modern era — tracing how each civilization expressed its deepest beliefs, values, and spiritual aspirations in enduring works of beauty.",
+        "tags": [
+            "art",
+            "history",
+            "painting",
+            "sculpture",
+            "architecture",
+            "Renaissance",
+            "Baroque"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "gardening",
+        "title": "Gardening",
+        "category": "science",
+        "path": "articles/article.html?id=gardening",
+        "summary": "Gardening is the practice of cultivating plants for food, beauty, and spiritual renewal — a vocation honored in Scripture from the Garden of Eden to the present day, and one of the finest expressions of human stewardship over God's creation.",
+        "tags": [
+            "gardening",
+            "horticulture",
+            "plants",
+            "soil",
+            "cultivation",
+            "botany",
+            "agriculture"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "general-conference",
+        "title": "General Conference (LDS Church)",
+        "category": "faith",
+        "path": "articles/article.html?id=general-conference",
+        "summary": "General Conference is the twice-yearly worldwide gathering of The Church of Jesus Christ of Latter-day Saints in which prophets, apostles, and other General Authorities deliver inspired messages of doctrine, counsel, and testimony — a living manifestation of the Restoration's claim that God continues to speak through living prophets.",
+        "tags": [
+            "general conference",
+            "LDS",
+            "prophets",
+            "apostles",
+            "revelation",
+            "latter-day saints"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "weather",
+        "title": "Weather and Meteorology",
+        "category": "science",
+        "path": "articles/article.html?id=weather",
+        "summary": "Weather is the state of the atmosphere at a given time and place, driven by uneven solar heating of the Earth's surface. Meteorology — the science of weather — draws on physics, chemistry, and mathematics to understand and forecast the perpetual motion of air, moisture, and energy through the atmosphere.",
+        "tags": [
+            "weather",
+            "meteorology",
+            "atmosphere",
+            "climate",
+            "storms",
+            "precipitation",
+            "forecast"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "steam-engines",
+        "title": "Steam Engines",
+        "category": "history",
+        "path": "articles/article.html?id=steam-engines",
+        "summary": "The steam engine is the invention that made the Industrial Revolution possible — converting the heat of burning coal into mechanical work on a scale that transformed manufacturing, transportation, and daily life across the world in the 18th and 19th centuries.",
+        "tags": [
+            "steam engine",
+            "industrial revolution",
+            "Watt",
+            "thermodynamics",
+            "engineering",
+            "history"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "telegrams",
+        "title": "Telegrams and the Telegraph",
+        "category": "history",
+        "path": "articles/article.html?id=telegrams",
+        "summary": "The electric telegraph was the first technology to separate communication from physical transportation, allowing messages to cross continents in seconds. Invented in the 1830s–1840s by Samuel Morse and others, it shrank the world, transformed commerce and warfare, and laid the groundwork for every modern communication technology.",
+        "tags": [
+            "telegraph",
+            "telegram",
+            "Morse",
+            "communication",
+            "history",
+            "electricity"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "trades",
+        "title": "Trades and Skilled Craftsmanship",
+        "category": "history",
+        "path": "articles/article.html?id=trades",
+        "summary": "The skilled trades — carpentry, masonry, plumbing, electrical work, welding, and dozens of others — are among the most essential and dignified forms of human work, honored in Scripture and celebrated through the medieval guild system that trained the craftsmen who built Western civilization.",
+        "tags": [
+            "trades",
+            "craftsmanship",
+            "apprenticeship",
+            "guilds",
+            "carpentry",
+            "masonry",
+            "vocational"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "cars",
+        "title": "Cars and Automotive Mechanics",
+        "category": "science",
+        "path": "articles/article.html?id=cars",
+        "summary": "The automobile transformed American life and gave ordinary people unprecedented freedom of movement. This article covers the mechanical fundamentals of how cars work — the internal combustion engine, transmission, brakes, suspension, and lubrication — giving readers the knowledge to understand, maintain, and repair their own vehicles.",
+        "tags": [
+            "cars",
+            "automotive",
+            "mechanics",
+            "engine",
+            "transmission",
+            "brakes",
+            "internal combustion"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "electricity",
+        "title": "Electricity: Physics and Electrical Work",
+        "category": "science",
+        "path": "articles/article.html?id=electricity",
+        "summary": "Electricity is one of the most fundamental forces in nature and one of the most transformative technologies in human history. This article covers both the physics of electricity — charge, voltage, current, resistance, and electromagnetic induction — and the practical knowledge of the electrical trade.",
+        "tags": [
+            "electricity",
+            "electrician",
+            "circuits",
+            "voltage",
+            "current",
+            "resistance",
+            "wiring",
+            "physics"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "computer-architecture",
+        "title": "Computer Architecture",
+        "category": "programming",
+        "path": "articles/article.html?id=computer-architecture",
+        "summary": "Computer architecture studies how computers are organized — from transistors and logic gates through the ALU, CPU, memory hierarchy, and instruction set architecture — revealing how the astonishing capabilities of modern processors emerge from extraordinarily simple underlying operations.",
+        "tags": [
+            "computer architecture",
+            "CPU",
+            "memory",
+            "instruction set",
+            "ALU",
+            "registers",
+            "binary",
+            "digital logic"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "machine-learning",
+        "title": "Machine Learning",
+        "category": "programming",
+        "path": "articles/article.html?id=machine-learning",
+        "summary": "Machine learning is the branch of computer science and mathematics concerned with building systems that learn patterns from data. It draws on linear algebra, calculus, probability, and optimization to construct models capable of image recognition, language translation, and tasks once thought to require human intelligence.",
+        "tags": [
+            "machine learning",
+            "neural networks",
+            "gradient descent",
+            "linear algebra",
+            "statistics",
+            "AI",
+            "deep learning"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "greek-philosophy",
+        "title": "Greek Philosophy",
+        "category": "philosophy",
+        "path": "articles/article.html?id=greek-philosophy",
+        "summary": "Greek philosophy is the foundation of Western intellectual life — born in ancient Greece around 600 BC, it gave the world formal logic, virtue ethics, natural law, and the great tradition of rational inquiry into reality, knowledge, and the good life that has shaped every intellectual tradition in the Western world.",
+        "tags": [
+            "greek philosophy",
+            "ancient greece",
+            "socrates",
+            "plato",
+            "aristotle",
+            "stoicism",
+            "epicureanism"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "sun",
+        "title": "The Sun",
+        "category": "science",
+        "path": "articles/article.html?id=sun",
+        "summary": "The Sun is the star at the center of our solar system — a blazing sphere of hot plasma that provides the light, heat, and energy upon which virtually all life on Earth depends, created by God on the fourth day of creation as a magnificent witness to His power and design.",
+        "tags": [
+            "sun",
+            "solar system",
+            "star",
+            "astronomy",
+            "astrophysics",
+            "light",
+            "energy"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "roman-philosophy",
+        "title": "Roman Philosophy",
+        "category": "philosophy",
+        "path": "articles/article.html?id=roman-philosophy",
+        "summary": "Roman philosophy adapted the schools of ancient Greece — especially Stoicism — for a civilization obsessed with practical virtue and public duty, producing in Cicero, Seneca, and Marcus Aurelius some of the most enduring moral writings in any language and the classical doctrine of natural law that shaped Western jurisprudence and the American founding.",
+        "tags": [
+            "roman philosophy",
+            "stoicism",
+            "cicero",
+            "seneca",
+            "marcus aurelius",
+            "natural law",
+            "rome"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "stars",
+        "title": "Stars",
+        "category": "science",
+        "path": "articles/article.html?id=stars",
+        "summary": "Stars are the great luminous engines of the universe — massive spheres of hot plasma powered by nuclear fusion that have guided sailors, marked seasons, and inspired awe since the beginning of human history, celebrated in Scripture as declarations of God's glory.",
+        "tags": [
+            "stars",
+            "astronomy",
+            "astrophysics",
+            "stellar",
+            "nuclear fusion",
+            "constellations",
+            "galaxies"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    }
+]

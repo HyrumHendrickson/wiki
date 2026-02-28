@@ -70,7 +70,7 @@ More content…
 | Quote | `:::quote Attribution ... :::` | Styled blockquote |
 | Database | `:::database Title \| path/to/data.json :::` | Client-side searchable table from a JSON file |
 
-See `admin/wmd-reference.html` (or `admin/create-article.html`) for full documentation.
+See `admin/admin-article.html?id=wmd-reference` (or `admin/admin-article.html?id=create-article`) for full documentation.
 
 ### Adding a New Article
 
@@ -130,8 +130,6 @@ See `admin/wmd-reference.html` (or `admin/create-article.html`) for full documen
 wiki/
 ├── index.html              # Home page (auto-populated from articles.json)
 ├── styles.css              # All styles
-├── scripts.js              # All JavaScript (includes WMD article loader)
-├── wmd-parser.js           # WMD → HTML parser
 ├── config/
 │   ├── site.json           # Site name, logo, colors
 │   ├── articles.json       # Categories + list of split article files
@@ -142,15 +140,18 @@ wiki/
 ├── js/
 │   ├── article-registry.js # Loads and merges all split article files
 │   ├── scripts.js          # Main site JavaScript
-│   └── ...
+│   ├── wmd-parser.js       # WMD → HTML parser
+│   └── cookies.js          # Theme/cookie helpers
 ├── media/                  # Images, logos, etc.
 ├── articles/
 │   ├── article.html        # Universal article viewer (single HTML file)
 │   ├── calculus.wmd        # Article source files
 │   └── ...
-└── admin/                  # Help and admin guide pages (HTML)
-    ├── create-article.html
-    ├── wmd-reference.html
+├── pages/                  # Search and settings pages
+└── admin/                  # Help and admin guide pages
+    ├── admin-article.html  # Admin article viewer
+    ├── create-article.wmd
+    ├── wmd-reference.wmd
     └── ...
 ```
 

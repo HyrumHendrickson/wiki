@@ -89,7 +89,7 @@ Follow every step below precisely.
   │                                                                             │
   │  Valid category IDs (from article-data/articles.json):                    │
   │    mathematics, science, history, faith, languages, literature,            │
-  │    philosophy, programming, admin                                           │
+  │    philosophy, programming, civics, geography, economics, arts, admin      │
   │  (If adding a new category, add it to the "categories" array in            │
   │   article-data/articles.json — see Step 3 below.)                          │
   │                                                                             │

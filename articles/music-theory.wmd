@@ -1,0 +1,214 @@
+---
+title:       Music Theory
+category:    literature
+author:      EduWiki Team
+lastUpdated: 2026-02-28
+tags:        music, theory, harmony, rhythm, counterpoint, notation, scales
+featured:    false
+---
+
+:::summary
+Music theory is the study of the language and grammar of music — the principles that explain how pitches, rhythms, harmonies, and forms combine to create meaningful sound. Rooted in ancient Greek philosophy and refined through centuries of Christian sacred music, music theory gives students the tools to understand, analyze, compose, and perform music with intelligence and intention. Learning music theory is one of the finest exercises of the classical mind, training both the ear and the intellect simultaneously.
+:::
+
+:::infobox Music Theory at a Glance
+| Origins       | Ancient Greece; medieval Church modes |
+| Key figures   | Pythagoras, Guido d'Arezzo, J.S. Bach, Rameau |
+| Core concepts | Pitch, rhythm, harmony, counterpoint, form |
+| Notation      | Western staff notation (c. 900 AD onward) |
+| LDS connection | Music is called "prayer twice" — integral to worship |
+:::
+
+## What Is Music Theory?
+
+Music theory is the systematic study of the elements of music and the principles that govern their combination. Just as grammar describes how words form sentences, music theory describes how notes form melodies, harmonies, and larger musical structures.
+
+A student of music theory learns to:
+- **Read and write music notation** — the universal written language of Western music
+- **Understand scales and keys** — the pitch collections from which melodies are drawn
+- **Build and analyze chords** — the vertical stacking of pitches into harmonies
+- **Perceive rhythm and meter** — how music moves through time
+- **Recognize form** — how musical sections are organized into wholes
+
+The ancient Greeks were the first to treat music as a mathematical and philosophical discipline. **Pythagoras** (c. 570–495 BC) discovered that musical intervals correspond to simple mathematical ratios: the octave is a 2:1 ratio of string length, the perfect fifth is 3:2, and the perfect fourth is 4:3. This link between number and beauty was no accident to Pythagoras — it was evidence that the cosmos itself was ordered by mathematical harmony. [1]
+
+## Pitch, Scales, and Keys
+
+### The Staff and Clefs
+
+Western music is written on a **staff** — five horizontal lines on which note heads are placed. The **treble clef** (𝄞) indicates higher pitches; the **bass clef** (𝄢) indicates lower pitches. Each line and space corresponds to a specific pitch name: A, B, C, D, E, F, G — repeating in cycles called **octaves**.
+
+### Scales
+
+A **scale** is an ordered sequence of pitches within an octave. The two most fundamental scales in Western music are:
+
+- **Major scale** — bright, stable, and triumphant in character. The pattern of whole (W) and half (H) steps is: W-W-H-W-W-W-H. For example, C major: C–D–E–F–G–A–B–C.
+- **Natural minor scale** — darker and more plaintive. Pattern: W-H-W-W-H-W-W. For example, A minor: A–B–C–D–E–F–G–A.
+
+$$\text{C Major scale: } C-D-E-F-G-A-B-C$$
+
+Mathematically, the frequency of each successive half step (semitone) is multiplied by $2^{1/12}$, the twelfth root of two — the basis of **equal temperament**, the tuning system used in modern Western music.
+
+### Keys and Key Signatures
+
+A **key** defines which scale (and therefore which set of pitches) a piece is primarily organized around. The **key signature** at the beginning of each staff line shows sharps (♯) or flats (♭) that apply throughout the piece.
+
+:::dropdown The Circle of Fifths
+The **circle of fifths** is one of the most important tools in music theory. It arranges all 12 major keys (and their relative minor keys) in a circle, with each adjacent key differing by one sharp or flat.
+
+Moving clockwise around the circle, each key adds one sharp: C (no sharps), G (1 sharp), D (2 sharps), A (3 sharps), E (4 sharps), B (5 sharps), F♯ (6 sharps).
+
+Moving counterclockwise, each key adds one flat: C (no flats), F (1 flat), B♭ (2 flats), E♭ (3 flats), A♭ (4 flats), D♭ (5 flats), G♭ (6 flats).
+
+Opposite keys on the circle (e.g., C and F♯/G♭) are **tritones** apart — the most dissonant interval.
+:::
+
+## Rhythm and Meter
+
+**Rhythm** refers to the pattern of durations of notes in time. **Meter** is the recurring grouping of beats into measures, indicated by a **time signature** at the beginning of a piece.
+
+Common time signatures:
+| Signature | Meaning |
+|-----------|---------|
+| 4/4 | 4 quarter-note beats per measure (most common) |
+| 3/4 | 3 quarter-note beats per measure (waltz) |
+| 6/8 | 6 eighth-note beats, grouped in 2 groups of 3 |
+| 2/2 | 2 half-note beats per measure (march, cut time) |
+
+Note durations (in 4/4 time):
+- **Whole note** — 4 beats
+- **Half note** — 2 beats
+- **Quarter note** — 1 beat
+- **Eighth note** — ½ beat
+- **Sixteenth note** — ¼ beat
+
+## Intervals
+
+An **interval** is the distance in pitch between two notes. Intervals are named by number (how many staff positions apart) and quality (major, minor, perfect, augmented, diminished).
+
+| Interval | Semitones | Example | Character |
+|----------|-----------|---------|-----------|
+| Unison | 0 | C–C | Identity |
+| Major 2nd | 2 | C–D | Stepwise motion |
+| Major 3rd | 4 | C–E | Bright, consonant |
+| Perfect 4th | 5 | C–F | Open, stable |
+| Perfect 5th | 7 | C–G | Most consonant after octave |
+| Major 6th | 9 | C–A | Warm, lyrical |
+| Major 7th | 11 | C–B | Tense, leading |
+| Octave | 12 | C–C | Consonant, completion |
+
+The **tritone** (6 semitones, e.g., C–F♯) was called *diabolus in musica* ("the devil in music") by medieval theorists because of its extreme dissonance. Its resolution is a key driver of harmonic tension in Western music.
+
+## Harmony and Chords
+
+A **chord** is three or more pitches sounded simultaneously. The most fundamental chord is the **triad**, built by stacking two intervals of a third above a **root** note.
+
+### Triads
+
+| Chord Type | Intervals | Example (C root) | Sound |
+|------------|-----------|------------------|-------|
+| Major | Major 3rd + Minor 3rd | C–E–G | Bright |
+| Minor | Minor 3rd + Major 3rd | C–E♭–G | Dark |
+| Diminished | Minor 3rd + Minor 3rd | C–E♭–G♭ | Tense |
+| Augmented | Major 3rd + Major 3rd | C–E–G♯ | Unsettled |
+
+### Roman Numeral Analysis
+
+In **tonal harmony**, chords are labeled with Roman numerals according to their position within a key. In C major:
+
+| Numeral | Chord | Notes |
+|---------|-------|-------|
+| I | C major | C–E–G |
+| ii | D minor | D–F–A |
+| iii | E minor | E–G–B |
+| IV | F major | F–A–C |
+| V | G major | G–B–D |
+| vi | A minor | A–C–E |
+| vii° | B diminished | B–D–F |
+
+The **V–I** (dominant-to-tonic) progression is the most powerful harmonic motion in Western music, providing a sense of resolution and arrival. Nearly all tonal music — from hymns to symphonies — is driven by this gravitational pull.
+
+## Counterpoint and Voice Leading
+
+**Counterpoint** is the art of combining two or more independent melodic lines that sound simultaneously. Developed to perfection in Renaissance polyphony and the works of J.S. Bach, counterpoint operates by strict rules about which intervals are consonant, how dissonances must be prepared and resolved, and how lines should move in relation to each other.
+
+**Voice leading** refers to the smooth, logical progression of each individual voice (soprano, alto, tenor, bass) through a harmonic progression. Good voice leading minimizes leaps, keeps common tones where possible, and resolves tendency tones (like the leading tone) correctly.
+
+:::dropdown Species Counterpoint
+The Renaissance theorist Johannes Tinctoris and later Johann Joseph Fux (in his 1725 treatise *Gradus ad Parnassum*) systematized counterpoint into "species":
+
+1. **First species (1:1)** — one note in the counterpoint against each note in the cantus firmus (given melody). Only consonances allowed.
+2. **Second species (2:1)** — two notes against each one. Passing tones on weak beats introduce brief dissonance.
+3. **Third species (4:1)** — four notes against each one. More elaborate passing and neighbor tones.
+4. **Fourth species (suspension)** — notes are tied across barlines, creating prepared dissonances that resolve downward by step.
+5. **Fifth species (florid)** — combines all previous species freely.
+
+Even today, studying Fux's counterpoint is the foundation of serious compositional training.
+:::
+
+## Musical Form
+
+**Form** describes the large-scale organization of a musical work. Common forms include:
+
+- **Binary (AB)** — two contrasting sections; common in Baroque dances
+- **Ternary (ABA)** — a middle contrasting section returns to the opening; basis of the da capo aria
+- **Rondo (ABACA…)** — a recurring refrain alternates with contrasting episodes
+- **Sonata form** — the dominant form of the Classical era: Exposition (two themes), Development (fragmentation and modulation), Recapitulation (return of themes in tonic)
+- **Fugue** — a contrapuntal form in which a subject is stated and then imitated across all voices; perfected by J.S. Bach
+
+## A Brief History of Western Music Theory
+
+### Ancient Greece
+
+The Greeks laid the philosophical foundation. Pythagoras identified the mathematical ratios of intervals. **Plato** in *The Republic* argued that music has moral power — certain modes strengthen the soul, others weaken it. **Aristotle** treated music as an imitative art with emotional and ethical effects.
+
+### The Medieval Church
+
+The Church was the great preserver of musical knowledge. **Guido d'Arezzo** (c. 991–1033) invented staff notation and the **solfège** system (ut-re-mi-fa-sol-la), giving singers tools to read music they had never heard before. Church modes — Dorian, Phrygian, Lydian, Mixolydian, and others — governed Gregorian chant and shaped the sound of medieval sacred music. [2]
+
+### The Renaissance and Baroque
+
+Polyphony flourished in the Renaissance, with composers like Palestrina crafting luminous, interweaving vocal lines that became the model for counterpoint. The Baroque era (1600–1750) saw the rise of **tonality** — the major-minor key system that dominates Western music to this day. **J.S. Bach** synthesized all elements of Baroque music into works of incomparable intellectual and spiritual depth, especially the *Well-Tempered Clavier* and the *Art of Fugue*.
+
+### The Classical and Romantic Eras
+
+**Haydn, Mozart, and Beethoven** refined sonata form and the symphony. **Jean-Philippe Rameau's** *Treatise on Harmony* (1722) provided the first comprehensive theoretical account of tonal harmony, introducing the concept of chord inversion and the **fundamental bass**. The Romantic era expanded harmony further, with Wagner and Liszt pushing toward **chromaticism** and eventually the dissolution of tonality.
+
+### The Twentieth Century and Beyond
+
+**Arnold Schoenberg** developed **twelve-tone technique** (serialism), abandoning tonal hierarchy in favor of strict ordering of all twelve chromatic pitches. Others retained tonality: **Stravinsky**, **Bartók**, and countless film and jazz composers extended it in new directions.
+
+:::quote Pythagoras, as reported by Iamblichus
+"There is geometry in the humming of the strings. There is music in the spacing of the spheres."
+:::
+
+## Getting Started with Music Theory
+
+For the beginner, the most important first steps are:
+
+1. **Learn to read music** — study the staff, note names, and rhythm values.
+2. **Master major scales** — learn all 12 major scales and their key signatures.
+3. **Build triads** — learn to construct and identify major, minor, diminished, and augmented triads in every key.
+4. **Study basic harmony** — understand I, IV, V progressions and the ii–V–I.
+5. **Sing** — ear training (recognizing intervals, chords, and rhythms by sound) is inseparable from written theory.
+
+Recommended resources: *The Complete Musician* by Steven Laitz; *Tonal Harmony* by Kostka, Payne & Almén; *Gradus ad Parnassum* by Johann Fux (for counterpoint).
+
+## See Also
+
+- [Mathematics](article.html?id=mathematics) — the mathematical foundations underlying musical intervals and tuning
+- [Philosophy](article.html?id=philosophy) — ancient Greek philosophy's treatment of music as a moral and cosmic force
+- [Ancient Hebrew](article.html?id=ancient-hebrew) — the scriptural context of music in Hebrew worship
+- [Aesthetics](article.html?id=aesthetics) — the philosophical study of beauty and art, including music
+- [Geometry](article.html?id=geometry) — the geometric and proportional thinking Pythagoras applied to musical ratios
+- [Theology](article.html?id=theology) — the role of music in Christian worship and theology
+- [Trigonometry](article.html?id=trigonometry) — the mathematics of waves and sound frequencies
+
+:::citations
+1. Pythagoras and the Harmony of the Spheres. (2020). *Stanford Encyclopedia of Philosophy*. [plato.stanford.edu](https://plato.stanford.edu)
+2. Guido d'Arezzo. (2001). *Grove Music Online*. Oxford University Press.
+3. Laitz, Steven G. (2015). *The Complete Musician: An Integrated Approach to Theory, Analysis, and Listening.* 4th ed. Oxford University Press.
+4. Kostka, Stefan, Payne, Dorothy & Almén, Byron. (2018). *Tonal Harmony.* 8th ed. McGraw-Hill.
+5. Fux, Johann Joseph. (1725/1965). *Gradus ad Parnassum.* Trans. Alfred Mann. Norton.
+6. Palisca, Claude V. & Bent, Ian. (2001). "Theory." *Grove Music Online.* Oxford University Press.
+:::

@@ -1,0 +1,222 @@
+---
+title:       Electricity: Physics and Electrical Work
+category:    science
+author:      EduWiki Team
+lastUpdated: 2026-02-28
+tags:        electricity, electrician, circuits, voltage, current, resistance, wiring, physics, electromagnetism
+featured:    false
+---
+
+:::summary
+Electricity is one of the most fundamental forces in nature and one of the most transformative technologies in human history. From the lightning bolt that awed ancient peoples as an act of God to the alternating current that powers modern civilization, electricity underlies almost every aspect of contemporary life. This article covers both the physics of electricity — the behavior of electric charge, fields, circuits, and electromagnetic induction — and the practical knowledge of the electrical trade, which channels this invisible force safely through the walls of our homes, schools, and businesses.
+:::
+
+:::infobox Electricity at a Glance
+| Core concepts | Charge, voltage, current, resistance, power |
+| Key physicists | Benjamin Franklin, Coulomb, Volta, Ampère, Faraday, Maxwell, Tesla, Edison |
+| Key law | Ohm's Law: V = IR |
+| Practical trade | Licensed electricians install and maintain electrical systems |
+| US standard | 120/240 V AC, 60 Hz |
+| Safety | Electrical work requires permits and inspections; always turn off breakers |
+:::
+
+## The Physics of Electricity
+
+### Electric Charge and Coulomb's Law
+
+All electrical phenomena arise from **electric charge** — a fundamental property of matter. The elementary charge is carried by protons (+) and electrons (−). Like charges repel; unlike charges attract.
+
+The **electrostatic force** between two charges is given by **Coulomb's Law**:
+
+$$F = k_e \frac{q_1 q_2}{r^2}$$
+
+where $k_e = 8.99 \times 10^9$ N·m²/C² is Coulomb's constant, $q_1$ and $q_2$ are the charges in coulombs, and $r$ is the distance between them. This force law has the same mathematical form as Newton's law of gravitation — hinting at a deep unity in the structure of physical law. [1]
+
+### Electric Fields
+
+An **electric field** $\vec{E}$ at a point in space is the force per unit positive charge that would be experienced at that point:
+
+$$\vec{E} = \frac{\vec{F}}{q}$$
+
+Field lines point from positive charges toward negative charges. The electric potential energy between charges, and the work done moving charges through electric fields, are fundamental to understanding how circuits and electrical devices work.
+
+### Voltage, Current, and Resistance
+
+The three most important quantities in practical electrical work are:
+
+- **Voltage (V)** — the electric potential difference between two points, measured in **volts (V)**. Voltage is analogous to water pressure — it is the "push" that drives current through a circuit. The voltage at a wall outlet in the US is 120 V (rms).
+
+- **Current (I)** — the flow of electric charge, measured in **amperes (A)**. One ampere equals one coulomb of charge passing a point per second: $I = Q/t$. Current is analogous to the flow rate of water.
+
+- **Resistance (R)** — the opposition a material offers to current flow, measured in **ohms (Ω)**. All conductors have some resistance; the higher the resistance, the more voltage is required to drive a given current.
+
+### Ohm's Law
+
+**Ohm's Law** is the cornerstone of circuit analysis:
+
+$$V = IR$$
+
+Equivalently:
+$$I = \frac{V}{R} \qquad R = \frac{V}{I}$$
+
+**Example:** A 100 W light bulb connected to 120 V has a resistance of:
+$$R = \frac{V^2}{P} = \frac{(120)^2}{100} = 144 \, \Omega$$
+
+The current drawn is:
+$$I = \frac{V}{R} = \frac{120}{144} \approx 0.833 \text{ A}$$
+
+### Power
+
+**Electrical power** — the rate at which energy is consumed or delivered — is:
+
+$$P = IV = I^2 R = \frac{V^2}{R}$$
+
+Power is measured in **watts (W)**. A kilowatt-hour (kWh) — the unit on your electric bill — is 1,000 watts consumed for one hour, or equivalently, 3.6 million joules of energy.
+
+### Series and Parallel Circuits
+
+**Series circuits** — components connected end-to-end:
+- Same current flows through all components
+- Total resistance: $R_{total} = R_1 + R_2 + R_3 + \ldots$
+- Total voltage divides across components
+
+**Parallel circuits** — components connected across the same two nodes:
+- Same voltage across all components
+- Total resistance: $\frac{1}{R_{total}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \ldots$
+- Total current divides among components
+
+Home wiring is almost entirely in **parallel**: each outlet, light fixture, and appliance receives the full 120 V (or 240 V) and draws current independently of every other load.
+
+### Kirchhoff's Laws
+
+**Kirchhoff's Current Law (KCL):** The sum of currents entering any node equals the sum of currents leaving it.
+
+$$\sum I_{in} = \sum I_{out}$$
+
+**Kirchhoff's Voltage Law (KVL):** The sum of voltage drops around any closed loop equals zero.
+
+$$\sum V = 0$$
+
+These two laws, combined with Ohm's Law, allow the complete analysis of any resistive circuit.
+
+## Electromagnetism
+
+### Faraday's Law of Induction
+
+**Michael Faraday** (1791–1867) discovered in 1831 that a **changing magnetic field** induces an electric current in a nearby conductor — the principle of **electromagnetic induction**. Mathematically:
+
+$$\mathcal{E} = -\frac{d\Phi_B}{dt}$$
+
+where $\mathcal{E}$ is the induced electromotive force (voltage) and $\Phi_B$ is the magnetic flux through the circuit. The negative sign (Lenz's Law) means the induced current opposes the change that created it.
+
+Electromagnetic induction is the basis of:
+- **Electric generators** — rotating a coil in a magnetic field induces AC voltage
+- **Transformers** — changing the voltage level of AC power
+- **Induction motors** — powering virtually every industrial machine and appliance
+
+### Maxwell's Equations
+
+**James Clerk Maxwell** (1831–1879) unified electricity, magnetism, and optics into four equations that remain among the greatest intellectual achievements in the history of physics:
+
+$$\nabla \cdot \vec{E} = \frac{\rho}{\varepsilon_0} \quad \text{(Gauss's Law)}$$
+$$\nabla \cdot \vec{B} = 0 \quad \text{(No magnetic monopoles)}$$
+$$\nabla \times \vec{E} = -\frac{\partial \vec{B}}{\partial t} \quad \text{(Faraday's Law)}$$
+$$\nabla \times \vec{B} = \mu_0 \vec{J} + \mu_0 \varepsilon_0 \frac{\partial \vec{E}}{\partial t} \quad \text{(Ampère-Maxwell Law)}$$
+
+From these equations, Maxwell predicted the existence of **electromagnetic waves** traveling at the speed of light — and realized that light itself *is* an electromagnetic wave. This was one of the most stunning theoretical predictions in the history of science. [2]
+
+### AC vs. DC
+
+- **Direct Current (DC)** — current flows in one direction; produced by batteries and rectifiers
+- **Alternating Current (AC)** — current reverses direction periodically; in the US, 60 times per second (60 Hz)
+
+The **War of Currents** (1880s–1890s) pitted **Thomas Edison** (DC champion) against **Nikola Tesla** and **George Westinghouse** (AC advocates). AC won because it can be transmitted at high voltage over long distances with low losses, then stepped down by transformers to safer voltages for use — something DC of the era could not do.
+
+The power delivered by AC varies sinusoidally. The **root mean square (rms)** voltage is what meters read and what matters for power calculations:
+
+$$V_{rms} = \frac{V_{peak}}{\sqrt{2}}$$
+
+The US standard of 120 V rms corresponds to a peak voltage of approximately 170 V.
+
+## Practical Electrical Work
+
+### The Electrical Trade
+
+**Electricians** are licensed tradespeople who design, install, maintain, and repair electrical systems in homes, commercial buildings, and industrial facilities. The trade is divided into:
+
+- **Residential electricians** — house wiring, service upgrades, outlets, lighting
+- **Commercial electricians** — larger buildings with more complex distribution systems, three-phase power
+- **Industrial electricians** — high-voltage systems, motors, PLCs, instrumentation
+- **Linemen** — high-voltage transmission and distribution lines (utility work)
+
+Electricians complete a **4–5 year apprenticeship** combining paid on-the-job training with classroom instruction in electrical theory, the National Electrical Code (NEC), and local codes. After apprenticeship, they become **journeyman electricians**; with additional experience, they can test for a **master electrician** license.
+
+### The National Electrical Code (NEC)
+
+The **NEC** (NFPA 70) is the standard for safe electrical installation in the United States. Published by the National Fire Protection Association and updated every three years, it specifies:
+
+- Wire sizing (based on ampacity — current-carrying capacity)
+- Overcurrent protection requirements
+- Grounding and bonding requirements
+- Box fill calculations
+- Requirements for special locations (bathrooms, kitchens, outdoors, garages)
+
+All electrical work permitted by a local authority having jurisdiction (AHJ) must comply with the NEC. Most electrical fires are caused by code violations — undersized wire, missing ground fault protection, improper splices, or overloaded circuits. [3]
+
+### Home Electrical System Fundamentals
+
+A typical American home electrical system:
+
+1. **Service entrance** — power arrives from the utility at 240 V (two 120 V legs) via the service drop or underground lateral
+2. **Electric meter** — the utility's meter measures consumption in kWh
+3. **Main panel (load center)** — contains the main breaker and individual branch circuit breakers
+4. **Branch circuits** — individual circuits protected by 15 A or 20 A breakers, wired with 14 AWG or 12 AWG cable respectively
+5. **Outlets and fixtures** — the end devices on each branch circuit
+
+### Wire Sizing and Ampacity
+
+Wire is sized by **AWG (American Wire Gauge)** — counterintuitively, lower numbers are thicker:
+
+| AWG | Ampacity (copper, NM cable) | Common Use |
+|-----|----------------------------|------------|
+| 14 | 15 A | Lighting circuits |
+| 12 | 20 A | General receptacles, kitchen |
+| 10 | 30 A | Dryer, water heater, A/C |
+| 8 | 40 A | Range, large A/C |
+| 6 | 55 A | Sub-panels, large loads |
+
+**Always match the wire to the breaker, and the breaker to the load.** A 15 A breaker on 14 AWG wire protects the wire from overheating. If you put a 20 A breaker on 14 AWG wire, you have removed the protection — the wire can overheat and start a fire before the breaker trips.
+
+### Ground Fault Circuit Interrupters (GFCI) and Arc Fault Circuit Interrupters (AFCI)
+
+- **GFCI outlets** detect very small differences between current on the hot wire and current returning on the neutral wire (indicating current is flowing through a person to ground) and trip in ~1/40th of a second. Required by code in bathrooms, kitchens, garages, outdoors, and near water.
+- **AFCI breakers** detect the electrical signature of an arc fault (the kind of fault that causes electrical fires when insulation is damaged) and trip before a fire starts. Required by code on bedroom circuits and increasingly throughout homes.
+
+### Safety Principles
+
+:::dropdown Electrical Safety Rules Every Homeowner Should Know
+1. **Always turn off the breaker** before working on any outlet, switch, or fixture. Use a non-contact voltage tester to verify power is off — breakers can be mislabeled.
+2. **Never work on the main panel** with the service entrance energized — this requires a licensed electrician with proper PPE.
+3. **Use the correct wire gauge** for the circuit's breaker rating.
+4. **Never bypass or tape over a breaker** — a tripping breaker is protecting you from a fault.
+5. **Install GFCI protection** anywhere moisture is present.
+6. **Pull permits and have work inspected** — inspections protect you, your family, and future buyers of your home.
+:::
+
+## See Also
+
+- [Physics](article.html?id=physics) — the broader physical science of which electricity is a central branch
+- [Trades](article.html?id=trades) — the skilled trades context in which electricians work
+- [Cars](article.html?id=cars) — the electrical systems increasingly central to modern vehicles
+- [Computer Architecture](article.html?id=computer-architecture) — how electrical signals are used to perform computation
+- [Telegrams](article.html?id=telegrams) — the first practical application of electrical signals for communication
+- [Steam Engines](article.html?id=steam-engines) — the technology that electricity eventually supplemented and replaced in many applications
+- [Isaac Newton](article.html?id=isaac-newton) — whose mathematical methods underlie the analysis of electric forces
+
+:::citations
+1. Griffiths, David J. (2017). *Introduction to Electrodynamics.* 4th ed. Cambridge University Press.
+2. Maxwell, James Clerk. (1873). *A Treatise on Electricity and Magnetism.* Clarendon Press.
+3. NFPA. (2023). *NFPA 70: National Electrical Code.* National Fire Protection Association.
+4. Hayt, William H. & Kemmerly, Jack E. (2019). *Engineering Circuit Analysis.* 9th ed. McGraw-Hill.
+5. Mullin, Ray C. & Simmons, Phil. (2020). *Electrical Wiring Residential.* 19th ed. Cengage.
+:::

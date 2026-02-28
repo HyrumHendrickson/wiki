@@ -1815,6 +1815,138 @@
             "author": "EduWiki Team",
             "lastUpdated": "2026-02-27",
             "featured": true
+        },
+        {
+            "id": "music-theory",
+            "title": "Music Theory",
+            "category": "literature",
+            "path": "articles/article.html?id=music-theory",
+            "summary": "Music theory is the study of the language and grammar of music — pitch, rhythm, harmony, counterpoint, and form — tracing its roots from Pythagorean mathematics through medieval Church modes to the masterworks of J.S. Bach and beyond.",
+            "tags": ["music", "theory", "harmony", "rhythm", "counterpoint", "notation", "scales"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "art-history",
+            "title": "Art History",
+            "category": "history",
+            "path": "articles/article.html?id=art-history",
+            "summary": "Art history surveys the visual arts from ancient Greece and Rome through the medieval cathedrals, the Renaissance masters, and into the modern era — tracing how each civilization expressed its deepest beliefs, values, and spiritual aspirations in enduring works of beauty.",
+            "tags": ["art", "history", "painting", "sculpture", "architecture", "Renaissance", "Baroque"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "gardening",
+            "title": "Gardening",
+            "category": "science",
+            "path": "articles/article.html?id=gardening",
+            "summary": "Gardening is the practice of cultivating plants for food, beauty, and spiritual renewal — a vocation honored in Scripture from the Garden of Eden to the present day, and one of the finest expressions of human stewardship over God's creation.",
+            "tags": ["gardening", "horticulture", "plants", "soil", "cultivation", "botany", "agriculture"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "general-conference",
+            "title": "General Conference (LDS Church)",
+            "category": "faith",
+            "path": "articles/article.html?id=general-conference",
+            "summary": "General Conference is the twice-yearly worldwide gathering of The Church of Jesus Christ of Latter-day Saints in which prophets, apostles, and other General Authorities deliver inspired messages of doctrine, counsel, and testimony — a living manifestation of the Restoration's claim that God continues to speak through living prophets.",
+            "tags": ["general conference", "LDS", "prophets", "apostles", "revelation", "latter-day saints"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "weather",
+            "title": "Weather and Meteorology",
+            "category": "science",
+            "path": "articles/article.html?id=weather",
+            "summary": "Weather is the state of the atmosphere at a given time and place, driven by uneven solar heating of the Earth's surface. Meteorology — the science of weather — draws on physics, chemistry, and mathematics to understand and forecast the perpetual motion of air, moisture, and energy through the atmosphere.",
+            "tags": ["weather", "meteorology", "atmosphere", "climate", "storms", "precipitation", "forecast"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "steam-engines",
+            "title": "Steam Engines",
+            "category": "history",
+            "path": "articles/article.html?id=steam-engines",
+            "summary": "The steam engine is the invention that made the Industrial Revolution possible — converting the heat of burning coal into mechanical work on a scale that transformed manufacturing, transportation, and daily life across the world in the 18th and 19th centuries.",
+            "tags": ["steam engine", "industrial revolution", "Watt", "thermodynamics", "engineering", "history"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "telegrams",
+            "title": "Telegrams and the Telegraph",
+            "category": "history",
+            "path": "articles/article.html?id=telegrams",
+            "summary": "The electric telegraph was the first technology to separate communication from physical transportation, allowing messages to cross continents in seconds. Invented in the 1830s–1840s by Samuel Morse and others, it shrank the world, transformed commerce and warfare, and laid the groundwork for every modern communication technology.",
+            "tags": ["telegraph", "telegram", "Morse", "communication", "history", "electricity"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "trades",
+            "title": "Trades and Skilled Craftsmanship",
+            "category": "history",
+            "path": "articles/article.html?id=trades",
+            "summary": "The skilled trades — carpentry, masonry, plumbing, electrical work, welding, and dozens of others — are among the most essential and dignified forms of human work, honored in Scripture and celebrated through the medieval guild system that trained the craftsmen who built Western civilization.",
+            "tags": ["trades", "craftsmanship", "apprenticeship", "guilds", "carpentry", "masonry", "vocational"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "cars",
+            "title": "Cars and Automotive Mechanics",
+            "category": "science",
+            "path": "articles/article.html?id=cars",
+            "summary": "The automobile transformed American life and gave ordinary people unprecedented freedom of movement. This article covers the mechanical fundamentals of how cars work — the internal combustion engine, transmission, brakes, suspension, and lubrication — giving readers the knowledge to understand, maintain, and repair their own vehicles.",
+            "tags": ["cars", "automotive", "mechanics", "engine", "transmission", "brakes", "internal combustion"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "electricity",
+            "title": "Electricity: Physics and Electrical Work",
+            "category": "science",
+            "path": "articles/article.html?id=electricity",
+            "summary": "Electricity is one of the most fundamental forces in nature and one of the most transformative technologies in human history. This article covers both the physics of electricity — charge, voltage, current, resistance, and electromagnetic induction — and the practical knowledge of the electrical trade.",
+            "tags": ["electricity", "electrician", "circuits", "voltage", "current", "resistance", "wiring", "physics"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "computer-architecture",
+            "title": "Computer Architecture",
+            "category": "programming",
+            "path": "articles/article.html?id=computer-architecture",
+            "summary": "Computer architecture studies how computers are organized — from transistors and logic gates through the ALU, CPU, memory hierarchy, and instruction set architecture — revealing how the astonishing capabilities of modern processors emerge from extraordinarily simple underlying operations.",
+            "tags": ["computer architecture", "CPU", "memory", "instruction set", "ALU", "registers", "binary", "digital logic"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "machine-learning",
+            "title": "Machine Learning",
+            "category": "programming",
+            "path": "articles/article.html?id=machine-learning",
+            "summary": "Machine learning is the branch of computer science and mathematics concerned with building systems that learn patterns from data. It draws on linear algebra, calculus, probability, and optimization to construct models capable of image recognition, language translation, and tasks once thought to require human intelligence.",
+            "tags": ["machine learning", "neural networks", "gradient descent", "linear algebra", "statistics", "AI", "deep learning"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
         }
     ]
 }

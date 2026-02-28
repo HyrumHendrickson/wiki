@@ -1,0 +1,184 @@
+---
+title:       Cars and Automotive Mechanics
+category:    science
+author:      EduWiki Team
+lastUpdated: 2026-02-28
+tags:        cars, automotive, mechanics, engine, transmission, brakes, maintenance, internal combustion
+featured:    false
+---
+
+:::summary
+The automobile is one of the defining technologies of the modern world — a machine that gave ordinary people unprecedented freedom of movement and transformed how Americans live, work, and build communities. Understanding how cars work mechanically is both practically valuable and intellectually rewarding, touching on thermodynamics, fluid dynamics, materials science, and electronics. A person who understands their own vehicle is less dependent, more capable, and better equipped to exercise the kind of practical self-reliance that has always been a hallmark of American character.
+:::
+
+:::infobox Cars and Automotive Mechanics at a Glance
+| Invention | Karl Benz, 1885 (gasoline-powered automobile) |
+| Revolutionized by | Henry Ford's assembly line, 1913 |
+| Primary engine type | Four-stroke internal combustion engine (gasoline or diesel) |
+| Key systems | Engine, transmission, brakes, suspension, electrical, cooling, fuel |
+| Tools | Socket sets, torque wrench, OBD-II scanner, hydraulic jack |
+:::
+
+## The Internal Combustion Engine
+
+The heart of almost every car built in the last 130 years is the **internal combustion engine (ICE)** — a machine that converts the chemical energy in fuel (gasoline or diesel) into mechanical energy through controlled explosions inside cylinders.
+
+### The Four-Stroke Cycle (Otto Cycle)
+
+The gasoline engine operates on the **four-stroke cycle** (also called the **Otto cycle**, after Nikolaus Otto who developed it in 1876):
+
+1. **Intake stroke** — the piston moves down, the intake valve opens, and a mixture of air and fuel is drawn into the cylinder
+2. **Compression stroke** — the intake valve closes, the piston moves up, compressing the air-fuel mixture to 8–12 times its original volume
+3. **Power stroke (combustion)** — the spark plug fires, igniting the compressed mixture; the rapid expansion of gases drives the piston down with great force
+4. **Exhaust stroke** — the exhaust valve opens, the piston moves up, and burned gases are pushed out of the cylinder
+
+$$\text{Thermal efficiency of Otto cycle} = 1 - \frac{1}{r^{\gamma-1}}$$
+
+where $r$ is the compression ratio and $\gamma$ is the heat capacity ratio (approximately 1.4 for air). A compression ratio of 9:1 gives a theoretical efficiency of about 58%; real engines achieve 25–35% due to heat losses, friction, and pumping losses. [1]
+
+### Engine Components
+
+| Component | Function |
+|-----------|----------|
+| **Block** | The main casting housing cylinders, coolant passages, and oil passages |
+| **Cylinder head** | Seals the top of cylinders; houses valves, spark plugs, camshaft(s) |
+| **Pistons** | Reciprocating members that convert gas pressure to linear force |
+| **Connecting rods** | Link pistons to the crankshaft |
+| **Crankshaft** | Converts reciprocating piston motion into rotary motion |
+| **Camshaft** | Controls valve opening and closing via lobes; driven by timing belt or chain |
+| **Valves** | Open and close intake and exhaust ports; typically 2–4 per cylinder |
+| **Gaskets** | Seals between engine components; the head gasket is most critical |
+| **Oil pan** | Reservoir for engine oil at the bottom of the block |
+
+### Engine Configurations
+
+| Configuration | Description | Common Applications |
+|---------------|-------------|---------------------|
+| Inline-4 (I4) | 4 cylinders in a row | Economy cars, small trucks |
+| V6 | 6 cylinders in V-arrangement | Mid-size cars, crossovers |
+| V8 | 8 cylinders in V-arrangement | Full-size trucks, performance cars |
+| Inline-6 (I6) | 6 cylinders in a row | BMW, Jeep, classic American trucks |
+| Flat-4 (H4, Boxer) | 4 cylinders horizontal, opposing pairs | Subaru, Porsche 911 |
+
+### The Diesel Engine
+
+**Diesel engines** use a higher compression ratio (16:1 to 23:1) and ignite fuel not with a spark but through the **heat of compression** alone — a process called **compression ignition**. Because diesel fuel ignites when compressed air reaches approximately 400°C, no spark plug is needed (though **glow plugs** pre-heat the combustion chamber in cold weather).
+
+Advantages of diesel: higher thermal efficiency (30–45%), more torque at low RPM, better fuel economy. Disadvantages: heavier, more expensive to manufacture, higher particulate emissions without sophisticated aftertreatment.
+
+## The Transmission
+
+The engine produces power most efficiently at a relatively narrow range of RPM. The **transmission** multiplies torque and matches the engine's output to the wide range of speeds and load conditions the vehicle encounters.
+
+### Manual Transmission
+
+A **manual (stick shift)** transmission uses a **clutch** (a friction disc that disconnects the engine from the transmission when the driver presses the clutch pedal) and a **gearbox** with selectable gear ratios. The driver selects gears manually to keep the engine in its optimal RPM range.
+
+Key components:
+- **Clutch disc** — friction material that wears with use; replacement at 60,000–100,000 miles is common
+- **Pressure plate** — clamps the clutch disc against the flywheel
+- **Release bearing (throw-out bearing)** — disengages the clutch when the pedal is pressed
+- **Gearbox** — contains synchronized gear pairs; the driver selects ratio via shift lever
+
+### Automatic Transmission
+
+An **automatic transmission** uses a **torque converter** (instead of a clutch) and automatically selects gear ratios. The torque converter is a fluid coupling that transmits engine torque to the transmission via hydraulic fluid — it allows the engine to keep running when the vehicle stops and provides some additional torque multiplication at launch.
+
+Modern automatics have 6–10 speeds; some use **continuously variable transmission (CVT)** technology, which offers infinite gear ratios within a range using a belt-and-pulley system.
+
+### Drivetrain Configurations
+
+| Configuration | Description |
+|---------------|-------------|
+| FWD (front-wheel drive) | Engine and transmission at front; front wheels drive and steer |
+| RWD (rear-wheel drive) | Rear wheels drive; front wheels steer; better weight distribution for performance |
+| AWD/4WD | All four wheels driven; better traction in poor conditions |
+
+## The Braking System
+
+Brakes convert the kinetic energy of the moving vehicle into heat through friction.
+
+### Disc Brakes
+
+**Disc brakes** are used on virtually all modern vehicles (front axles universally; rear axles increasingly). A **rotor** (disc) is bolted to the wheel hub. A **caliper** — actuated by hydraulic pressure from the master cylinder when the driver presses the brake pedal — squeezes **brake pads** against both faces of the rotor. The friction decelerates the rotor and wheel.
+
+Key maintenance:
+- **Pad thickness** — minimum approximately 2–3 mm before replacement (new pads are typically 10–12 mm)
+- **Rotor inspection** — check for minimum thickness, grooves, heat cracks, and lateral runout (warping)
+- **Brake fluid** — hygroscopic; should be flushed every 2–3 years; low fluid level indicates pad wear
+
+### Drum Brakes
+
+**Drum brakes** are still used on rear axles of many economy cars and trucks. A drum rotates with the wheel; **brake shoes** expand outward to press against the inner surface of the drum when hydraulic pressure is applied. They are self-energizing (the rotation helps apply the shoes) but prone to fade under heavy use.
+
+### Anti-Lock Braking System (ABS)
+
+**ABS** prevents wheel lockup during hard braking. Wheel speed sensors detect if a wheel is decelerating faster than the others (indicating impending lock-up) and modulate brake pressure up to 15 times per second — allowing the wheel to maintain traction and the driver to steer during emergency braking.
+
+## The Suspension System
+
+The suspension keeps the tires in contact with the road, absorbs shocks, and controls handling. Key components:
+
+- **Springs** — coil springs (most common), leaf springs (trucks), or torsion bars absorb road energy
+- **Shock absorbers / struts** — dampen spring oscillation; a worn shock allows the car to bounce repeatedly after a bump
+- **Control arms** — link suspension components to the body and allow the wheel to move vertically while maintaining alignment
+- **Wheel alignment** — three key angles: **camber** (tire lean), **toe** (pointing in/out), **caster** (steering axis tilt); misalignment causes tire wear and handling problems
+
+## The Lubrication System
+
+Engine oil is the lifeblood of an internal combustion engine. It lubricates moving metal surfaces, reduces friction, carries heat away from critical components, holds contaminants in suspension, and prevents corrosion.
+
+The **oil pump** draws oil from the pan and circulates it through passages in the block and head, under pressure (40–80 PSI at normal operating temperature), to all friction surfaces. An **oil filter** removes particulates.
+
+**Oil degradation** — from heat, combustion byproducts, and oxidation — eventually makes oil unable to do its job. Regular **oil changes** (every 5,000–7,500 miles for conventional oil; 10,000–15,000 miles for full synthetic) are the most important preventive maintenance a vehicle owner can perform.
+
+:::dropdown Reading an Oil Viscosity Rating
+Engine oil viscosity is rated by the SAE (Society of Automotive Engineers). A rating like **5W-30** has two parts:
+- **5W** — the "winter" (cold-start) viscosity; lower number = flows easier when cold
+- **30** — the operating viscosity at 100°C; higher number = thicker when hot
+
+Modern multi-weight oils (e.g., 0W-20, 5W-30, 10W-40) use polymer additives that maintain viscosity across temperature ranges. Always consult the owner's manual for the correct specification — using the wrong viscosity can reduce fuel economy or damage the engine.
+:::
+
+## Basic Diagnostics and the OBD-II System
+
+Since **1996**, all vehicles sold in the United States are required to have an **On-Board Diagnostics II (OBD-II)** port — a standardized connector (usually under the dashboard on the driver's side) that provides access to the vehicle's computer system.
+
+When a malfunction is detected, the computer stores a **Diagnostic Trouble Code (DTC)** and illuminates the **Check Engine Light (CEL)**. A basic OBD-II scanner (available for $20–$50) can read these codes and give a starting point for diagnosis. Common codes:
+
+| Code | Common Cause |
+|------|-------------|
+| P0300 | Random/multiple cylinder misfire |
+| P0420 | Catalyst efficiency below threshold (Bank 1) |
+| P0171 | System too lean (Bank 1) |
+| P0442 | Evaporative emission system small leak |
+| P0128 | Coolant temperature below thermostat regulating temperature |
+
+A code is a starting point, not a definitive diagnosis — skilled mechanics use codes alongside their knowledge of how systems interact to correctly identify root causes.
+
+## Getting Started as a Home Mechanic
+
+For the aspiring home mechanic, start with these investments:
+1. **A quality socket set** (metric and SAE) — 3/8" and 1/2" drives cover most jobs
+2. **A floor jack and jack stands** — never work under a car supported only by a scissor jack
+3. **An OBD-II scanner**
+4. **The factory service manual** for your vehicle (or an aftermarket equivalent like Mitchell or AllData)
+
+Begin with oil changes, air filter replacement, and brake pad replacement — jobs that are simple, require few tools, and teach the fundamentals of disassembly and reassembly.
+
+## See Also
+
+- [Physics](article.html?id=physics) — the thermodynamic and mechanical principles underlying the internal combustion engine
+- [Electricity](article.html?id=electricity) — the electrical systems increasingly central to modern vehicles
+- [Trades](article.html?id=trades) — the skilled trades context in which professional automotive mechanics work
+- [Steam Engines](article.html?id=steam-engines) — the predecessor technology to the internal combustion engine
+- [US History](article.html?id=us-history) — the American history shaped by the automobile and Henry Ford's assembly line
+- [Calculus](article.html?id=calculus) — the mathematics of motion and force underlying automotive engineering
+
+:::citations
+1. Pulkrabek, Willard W. (2003). *Engineering Fundamentals of the Internal Combustion Engine.* 2nd ed. Prentice Hall.
+2. Sweeting, A.C. (2011). *Automotive Technology: A Systems Approach.* 5th ed. Delmar Cengage.
+3. Chek, Jack. (2008). *Auto Fundamentals.* Goodheart-Willcox.
+4. Ofria, Charles. (2000). *A Short Course on Brakes.* Family Car Facts.
+5. Bosch Automotive Handbook. (2022). *Bosch Automotive Handbook.* 10th ed. Wiley.
+:::

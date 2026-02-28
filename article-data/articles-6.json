@@ -98,5 +98,222 @@
         "author": "EduWiki Team",
         "lastUpdated": "2026-02-28",
         "featured": false
+    },
+    {
+        "id": "thomas-jefferson",
+        "title": "Thomas Jefferson",
+        "category": "history",
+        "path": "articles/article.html?id=thomas-jefferson",
+        "summary": "Thomas Jefferson (1743–1826) was the principal author of the Declaration of Independence, the third President of the United States, and one of the most intellectually gifted statesmen in the history of Western civilization, who articulated the God-given rights of man with a clarity that still echoes through every free nation on earth.",
+        "tags": [
+            "Thomas Jefferson",
+            "Founding Fathers",
+            "Declaration of Independence",
+            "American Revolution",
+            "Virginia",
+            "liberty",
+            "natural rights"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "french-revolution",
+        "title": "The French Revolution",
+        "category": "history",
+        "path": "articles/article.html?id=french-revolution",
+        "summary": "The French Revolution (1789–1799) was the violent upheaval that toppled the French monarchy, executed thousands in the Reign of Terror, and gave rise to Napoleon Bonaparte — a decade that transformed Europe and demonstrated, with terrible clarity, what happens when a civilization abandons its Christian roots in the name of abstract ideology.",
+        "tags": [
+            "French Revolution",
+            "France",
+            "Enlightenment",
+            "Reign of Terror",
+            "Napoleon",
+            "Western history",
+            "liberty",
+            "republic"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "sermon-on-the-mount",
+        "title": "The Sermon on the Mount",
+        "category": "faith",
+        "path": "articles/article.html?id=sermon-on-the-mount",
+        "summary": "The Sermon on the Mount (Matthew 5–7) is the greatest single discourse in human history — the extended teaching in which Jesus Christ laid out the ethics and vision of the Kingdom of God that define Christian discipleship, containing the Beatitudes, the Lord's Prayer, and the most demanding and beautiful moral teaching ever recorded.",
+        "tags": [
+            "Sermon on the Mount",
+            "Jesus Christ",
+            "Beatitudes",
+            "Matthew",
+            "New Testament",
+            "Christian ethics",
+            "discipleship"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "homer",
+        "title": "Homer",
+        "category": "literature",
+        "path": "articles/article.html?id=homer",
+        "summary": "Homer is the name given to the poet responsible for the Iliad and the Odyssey — the two foundational epics of Western literature — composed in ancient Greece around the 8th century BC and exploring war, homecoming, heroism, mortality, and the human heart with a depth and beauty that has never been surpassed.",
+        "tags": [
+            "Homer",
+            "Iliad",
+            "Odyssey",
+            "ancient Greece",
+            "epic poetry",
+            "Western literature",
+            "Troy"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "dante",
+        "title": "Dante Alighieri",
+        "category": "literature",
+        "path": "articles/article.html?id=dante",
+        "summary": "Dante Alighieri (1265–1321) was the greatest poet of medieval Christendom and the author of the Divine Comedy — a visionary journey through Hell, Purgatory, and Paradise that synthesizes medieval Christian theology, classical philosophy, and vernacular poetry into a transcendent masterwork that maps the spiritual life with unmatched precision and beauty.",
+        "tags": [
+            "Dante",
+            "Divine Comedy",
+            "Inferno",
+            "Paradiso",
+            "medieval literature",
+            "Christian poetry",
+            "Italy"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "john-locke",
+        "title": "John Locke",
+        "category": "philosophy",
+        "path": "articles/article.html?id=john-locke",
+        "summary": "John Locke (1632–1704) was the English philosopher whose ideas about natural rights, consent of the governed, and limited government became the philosophical foundation of the American founding — his Two Treatises of Government arguing that legitimate government derives from consent and exists solely to protect God-given rights to life, liberty, and property.",
+        "tags": [
+            "John Locke",
+            "natural rights",
+            "social contract",
+            "Enlightenment",
+            "political philosophy",
+            "liberty",
+            "empiricism"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "natural-law",
+        "title": "Natural Law",
+        "category": "philosophy",
+        "path": "articles/article.html?id=natural-law",
+        "summary": "Natural law is the philosophical and theological doctrine that there exists a universal moral order — discoverable by human reason — that stands above all human law and provides the standard by which all positive law is to be judged, and which forms the philosophical backbone of Western jurisprudence, Christian moral theology, and the American founding.",
+        "tags": [
+            "natural law",
+            "ethics",
+            "Aquinas",
+            "Cicero",
+            "justice",
+            "moral philosophy",
+            "jurisprudence",
+            "natural rights"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "rhetoric",
+        "title": "Rhetoric",
+        "category": "languages",
+        "path": "articles/article.html?id=rhetoric",
+        "summary": "Rhetoric — the art of persuasion through language — is one of the three foundational disciplines of the classical liberal arts (the trivium: grammar, logic, and rhetoric) and has been studied and practiced since ancient Greece, providing the indispensable tools for anyone who wishes to teach, lead, preach, or persuade with the power of well-ordered words.",
+        "tags": [
+            "rhetoric",
+            "persuasion",
+            "Aristotle",
+            "Cicero",
+            "classical education",
+            "oratory",
+            "liberal arts",
+            "trivium",
+            "communication"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "astronomy",
+        "title": "Astronomy",
+        "category": "science",
+        "path": "articles/article.html?id=astronomy",
+        "summary": "Astronomy is the oldest science — the study of celestial objects, space, and the physical universe — practiced by every civilization in history and cherished by the Christian tradition as the discipline that reveals the glory of God written in the heavens, from the ancient Babylonians to Copernicus, Galileo, Newton, and the modern discovery of billions of galaxies.",
+        "tags": [
+            "astronomy",
+            "stars",
+            "planets",
+            "galaxies",
+            "universe",
+            "telescope",
+            "cosmology",
+            "science"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "medieval-europe",
+        "title": "Medieval Europe",
+        "category": "history",
+        "path": "articles/article.html?id=medieval-europe",
+        "summary": "Medieval Europe — roughly the thousand years between the fall of Rome and the Renaissance — was not the 'Dark Ages' of secular myth but the age in which Christianity transformed the ruins of Rome into the civilization of Christendom, building the great cathedrals, founding the universities, and establishing the foundations on which the modern West stands.",
+        "tags": [
+            "medieval",
+            "Middle Ages",
+            "Christendom",
+            "feudalism",
+            "Catholic Church",
+            "Crusades",
+            "scholasticism",
+            "cathedrals"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "poetry",
+        "title": "Poetry",
+        "category": "literature",
+        "path": "articles/article.html?id=poetry",
+        "summary": "Poetry is the oldest and most elevated form of literary art — language shaped by rhythm, sound, image, and compression into something that reaches places plain prose cannot — and from the Psalms of David to Homer, Dante, Shakespeare, and Milton, it has been the medium through which human beings express their deepest experiences of beauty, grief, love, and encounter with God.",
+        "tags": [
+            "poetry",
+            "literature",
+            "meter",
+            "verse",
+            "psalms",
+            "Milton",
+            "Shakespeare",
+            "lyric",
+            "epic"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
     }
 ]

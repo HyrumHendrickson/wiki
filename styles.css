@@ -621,6 +621,7 @@ body {
 }
 .wiki-database-body th {
   background: var(--color-code-bg);
+  color: var(--color-text);
   padding: .5rem .9rem;
   text-align: left;
   font-weight: 600;

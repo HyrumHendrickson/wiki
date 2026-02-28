@@ -315,5 +315,196 @@
         "author": "EduWiki Team",
         "lastUpdated": "2026-02-28",
         "featured": false
+    },
+    {
+        "id": "george-washington",
+        "title": "George Washington",
+        "category": "history",
+        "path": "articles/article.html?id=george-washington",
+        "summary": "George Washington (1732–1799) was the commanding general of the Continental Army, the presiding officer of the Constitutional Convention, and the first President of the United States — a man of extraordinary character whose self-discipline, courage, and selfless devotion to republican ideals made the American experiment possible.",
+        "tags": [
+            "George Washington",
+            "Founding Fathers",
+            "American Revolution",
+            "first President",
+            "Virginia",
+            "liberty",
+            "Continental Army"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "benjamin-franklin",
+        "title": "Benjamin Franklin",
+        "category": "history",
+        "path": "articles/article.html?id=benjamin-franklin",
+        "summary": "Benjamin Franklin (1706–1790) was printer, scientist, diplomat, philosopher, and Founding Father — perhaps the most versatile genius in American history, who harnessed lightning from the sky and persuaded France to save the Revolution, and whose self-made life became the archetypal American story of industry, wit, and practical wisdom.",
+        "tags": [
+            "Benjamin Franklin",
+            "Founding Fathers",
+            "American Revolution",
+            "inventor",
+            "statesman",
+            "Philadelphia",
+            "Enlightenment"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "abraham-lincoln",
+        "title": "Abraham Lincoln",
+        "category": "history",
+        "path": "articles/article.html?id=abraham-lincoln",
+        "summary": "Abraham Lincoln (1809–1865) was the sixteenth President of the United States, the commander-in-chief who preserved the Union through the agony of the Civil War, and the statesman who ended slavery in America — a self-educated man of the frontier whose biblical faith, moral clarity, and literary genius lifted the American experiment to a new and more complete understanding of its own founding promise.",
+        "tags": [
+            "Abraham Lincoln",
+            "Civil War",
+            "Emancipation Proclamation",
+            "sixteenth President",
+            "Union",
+            "liberty",
+            "Gettysburg Address"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "edmund-burke",
+        "title": "Edmund Burke",
+        "category": "philosophy",
+        "path": "articles/article.html?id=edmund-burke",
+        "summary": "Edmund Burke (1729–1797) was the Irish-born British statesman and philosopher regarded as the father of modern conservatism — whose profound critique of the French Revolution in his *Reflections on the Revolution in France* (1790) articulated the enduring case for ordered liberty, inherited institutions, and the accumulated wisdom of tradition over abstract ideological radicalism.",
+        "tags": [
+            "Edmund Burke",
+            "conservatism",
+            "political philosophy",
+            "French Revolution",
+            "British Parliament",
+            "tradition",
+            "ordered liberty"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "gk-chesterton",
+        "title": "G.K. Chesterton",
+        "category": "literature",
+        "path": "articles/article.html?id=gk-chesterton",
+        "summary": "G.K. Chesterton (1874–1936) was the English writer, journalist, and Christian apologist whose dazzling wit, paradoxical brilliance, and deep Catholic faith produced some of the most quotable and persuasive writing in defense of Christianity ever penned — a man of letters who C.S. Lewis credited with first moving him toward Christian faith.",
+        "tags": [
+            "G.K. Chesterton",
+            "apologetics",
+            "Catholic",
+            "literature",
+            "philosophy",
+            "Orthodoxy",
+            "paradox",
+            "Father Brown"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "john-milton",
+        "title": "John Milton",
+        "category": "literature",
+        "path": "articles/article.html?id=john-milton",
+        "summary": "John Milton (1608–1674) was the greatest English poet after Shakespeare — a classically trained Puritan scholar whose epic *Paradise Lost* (1667) retells the story of the Fall of Man with such theological depth, psychological insight, and sublime poetic power that it stands as the supreme achievement of English letters and one of the most important works of Christian literature ever written.",
+        "tags": [
+            "John Milton",
+            "Paradise Lost",
+            "epic poetry",
+            "English literature",
+            "Puritanism",
+            "blindness",
+            "Areopagitica"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "frederick-douglass",
+        "title": "Frederick Douglass",
+        "category": "history",
+        "path": "articles/article.html?id=frederick-douglass",
+        "summary": "Frederick Douglass (c. 1818–1895) was the most important African American leader of the nineteenth century — a man who escaped slavery, taught himself to read, and became the most powerful orator and writer in the abolitionist cause, whose life was the most eloquent possible argument that slavery was incompatible with the founding ideals of the American republic.",
+        "tags": [
+            "Frederick Douglass",
+            "abolitionism",
+            "slavery",
+            "Civil War",
+            "rhetoric",
+            "African American history",
+            "liberty"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "william-wilberforce",
+        "title": "William Wilberforce",
+        "category": "history",
+        "path": "articles/article.html?id=william-wilberforce",
+        "summary": "William Wilberforce (1759–1833) was the British Member of Parliament and Evangelical Christian whose twenty-six-year parliamentary campaign to abolish the slave trade in the British Empire stands as one of the greatest moral achievements in the history of democratic government — proof that a single person of faith, conviction, and tireless persistence can change the world.",
+        "tags": [
+            "William Wilberforce",
+            "abolitionism",
+            "slavery",
+            "British Parliament",
+            "Evangelical Christianity",
+            "moral reform",
+            "Clapham Sect"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "immanuel-kant",
+        "title": "Immanuel Kant",
+        "category": "philosophy",
+        "path": "articles/article.html?id=immanuel-kant",
+        "summary": "Immanuel Kant (1724–1804) was the German philosopher whose *Critique of Pure Reason* (1781) fundamentally reoriented Western philosophy by distinguishing what the human mind can know from what transcends its reach — and whose moral philosophy, centered on the categorical imperative, provided the most rigorous account of duty and human dignity in the modern philosophical tradition.",
+        "tags": [
+            "Immanuel Kant",
+            "philosophy",
+            "ethics",
+            "Enlightenment",
+            "epistemology",
+            "categorical imperative",
+            "metaphysics"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "adam-smith",
+        "title": "Adam Smith",
+        "category": "economics",
+        "path": "articles/article.html?id=adam-smith",
+        "summary": "Adam Smith (1723–1790) was the Scottish moral philosopher and economist whose *The Wealth of Nations* (1776) founded the discipline of modern economics — demonstrating how free exchange, division of labor, and price signals coordinate the activity of millions to produce prosperity, within a moral framework grounded in sympathy, virtue, and providential social order.",
+        "tags": [
+            "Adam Smith",
+            "economics",
+            "The Wealth of Nations",
+            "free market",
+            "moral philosophy",
+            "Scottish Enlightenment",
+            "invisible hand"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
     }
 ]

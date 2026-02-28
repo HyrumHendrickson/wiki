@@ -42,6 +42,26 @@
             "icon": ""
         },
         {
+            "id": "civics",
+            "label": "Civics & Government",
+            "icon": ""
+        },
+        {
+            "id": "geography",
+            "label": "Geography",
+            "icon": ""
+        },
+        {
+            "id": "economics",
+            "label": "Economics",
+            "icon": ""
+        },
+        {
+            "id": "arts",
+            "label": "Arts & Music",
+            "icon": ""
+        },
+        {
             "id": "admin",
             "label": "Admin & Help",
             "icon": ""

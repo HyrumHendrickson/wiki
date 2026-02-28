@@ -1,0 +1,207 @@
+[
+    {
+        "id": "virgil",
+        "title": "Virgil",
+        "category": "literature",
+        "path": "articles/article.html?id=virgil",
+        "summary": "Publius Vergilius Maro (70–19 BC), known as Virgil, was the greatest poet of ancient Rome — author of the *Aeneid*, the Roman national epic, the *Eclogues*, and the *Georgics*. His *Aeneid* became the central text of Latin education for two thousand years, and his influence on Western literature — from Dante to Milton — is second only to Homer.",
+        "tags": [
+            "Virgil",
+            "Aeneid",
+            "Eclogues",
+            "Georgics",
+            "Roman poetry",
+            "epic poetry",
+            "ancient Rome",
+            "Latin literature"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "michelangelo",
+        "title": "Michelangelo",
+        "category": "arts",
+        "path": "articles/article.html?id=michelangelo",
+        "summary": "Michelangelo di Lodovico Buonarroti Simoni (1475–1564) was the supreme genius of the Italian Renaissance — sculptor, painter, architect, and poet — whose works *David*, the *Pietà*, and the Sistine Chapel ceiling stand among the greatest achievements in the history of human art.",
+        "tags": [
+            "Michelangelo",
+            "Renaissance",
+            "sculpture",
+            "painting",
+            "Sistine Chapel",
+            "David",
+            "Pietà",
+            "Florence",
+            "Rome",
+            "Italian art"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "petrarch",
+        "title": "Petrarch",
+        "category": "literature",
+        "path": "articles/article.html?id=petrarch",
+        "summary": "Francesco Petrarca (1304–1374), known as Petrarch, is celebrated as the \"Father of Humanism\" — the Italian poet and scholar who first articulated the Renaissance ideal of recovering classical wisdom. His *Canzoniere* established the Petrarchan sonnet as the dominant lyric form in European poetry for three centuries.",
+        "tags": [
+            "Petrarch",
+            "humanism",
+            "Renaissance",
+            "Italian poetry",
+            "sonnets",
+            "Laura",
+            "Canzoniere",
+            "Latin",
+            "Florence"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "chaucer",
+        "title": "Geoffrey Chaucer",
+        "category": "literature",
+        "path": "articles/article.html?id=chaucer",
+        "summary": "Geoffrey Chaucer (c. 1343–1400) was the greatest English poet of the Middle Ages and the \"Father of English Literature\" — the first major writer to use the English vernacular for serious literary art. His masterpiece, *The Canterbury Tales*, creates a panoramic portrait of medieval English society in all its variety, humor, pathos, and moral complexity.",
+        "tags": [
+            "Chaucer",
+            "Canterbury Tales",
+            "medieval literature",
+            "English poetry",
+            "Middle English",
+            "Troilus and Criseyde",
+            "pilgrimage"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "cervantes",
+        "title": "Miguel de Cervantes",
+        "category": "literature",
+        "path": "articles/article.html?id=cervantes",
+        "summary": "Miguel de Cervantes Saavedra (1547–1616) was the greatest writer in the Spanish language and the author of *Don Quixote* (1605/1615) — widely considered the first modern novel and one of the greatest works of literature ever written. His story of the idealistic knight-errant Don Quixote founded the tradition of the novel itself.",
+        "tags": [
+            "Cervantes",
+            "Don Quixote",
+            "Spanish literature",
+            "novel",
+            "Renaissance",
+            "Baroque",
+            "chivalry",
+            "Spain"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "erasmus",
+        "title": "Erasmus",
+        "category": "philosophy",
+        "path": "articles/article.html?id=erasmus",
+        "summary": "Desiderius Erasmus of Rotterdam (c. 1466–1536) was the greatest Christian humanist of the Renaissance — a Dutch scholar, theologian, and satirist whose *In Praise of Folly*, Greek New Testament, and educational writings shaped the intellectual landscape of 16th-century Europe and helped prepare the way for the Protestant Reformation.",
+        "tags": [
+            "Erasmus",
+            "humanism",
+            "Renaissance",
+            "Reformation",
+            "In Praise of Folly",
+            "Bible",
+            "Greek",
+            "education",
+            "satire"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "raphael",
+        "title": "Raphael",
+        "category": "arts",
+        "path": "articles/article.html?id=raphael",
+        "summary": "Raffaello Sanzio da Urbino (1483–1520), known as Raphael, was one of the three supreme masters of the Italian High Renaissance, celebrated for the serene beauty and compositional clarity of his paintings. His *School of Athens* — depicting the great philosophers of antiquity — is one of the defining images of Western intellectual culture.",
+        "tags": [
+            "Raphael",
+            "Renaissance",
+            "painting",
+            "School of Athens",
+            "Vatican",
+            "fresco",
+            "Italian art",
+            "High Renaissance"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "rembrandt",
+        "title": "Rembrandt",
+        "category": "arts",
+        "path": "articles/article.html?id=rembrandt",
+        "summary": "Rembrandt Harmenszoon van Rijn (1606–1669) was the greatest master of the Dutch Golden Age and one of the supreme painters in Western history. Celebrated for his extraordinary command of light and shadow and his psychological depth, his works — including *The Night Watch* and *The Return of the Prodigal Son* — have never been surpassed.",
+        "tags": [
+            "Rembrandt",
+            "Dutch Golden Age",
+            "painting",
+            "etching",
+            "light and shadow",
+            "self-portraits",
+            "Netherlands",
+            "Baroque"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "bach",
+        "title": "Johann Sebastian Bach",
+        "category": "arts",
+        "path": "articles/article.html?id=bach",
+        "summary": "Johann Sebastian Bach (1685–1750) was the supreme master of Baroque music and, by the judgment of most musicians, the greatest composer who ever lived. His *Brandenburg Concertos*, *St. Matthew Passion*, *Well-Tempered Clavier*, and *Mass in B Minor* represent the summit of contrapuntal technique and the deepest musical expression of Christian faith.",
+        "tags": [
+            "Bach",
+            "Baroque music",
+            "composer",
+            "counterpoint",
+            "fugue",
+            "Lutheran",
+            "organ",
+            "Brandenburg Concertos",
+            "St. Matthew Passion"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "mozart",
+        "title": "Wolfgang Amadeus Mozart",
+        "category": "arts",
+        "path": "articles/article.html?id=mozart",
+        "summary": "Wolfgang Amadeus Mozart (1756–1791) was the supreme genius of the Classical era in music — a prodigy who produced in his brief 35 years an unsurpassed body of operas (*Don Giovanni*, *The Marriage of Figaro*, *The Magic Flute*), symphonies, concertos, and sacred works that represent one of the highest peaks of Western civilization.",
+        "tags": [
+            "Mozart",
+            "classical music",
+            "composer",
+            "opera",
+            "symphony",
+            "piano",
+            "prodigy",
+            "Vienna",
+            "Austrian"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    }
+]

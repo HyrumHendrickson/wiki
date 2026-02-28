@@ -1,5 +1,5 @@
 {
-    "_comment": "Article registry. Categories are defined here. Articles are split across files in config/articles/. Each file must not exceed 600 lines. To add a new article, append an entry to the appropriate file in config/articles/ (or create a new one if the last file is near 600 lines), then create the corresponding .wmd file in articles/.",
+    "_comment": "Article registry. Categories are defined here. Articles are split across files in article-data/. Each file must not exceed 600 lines. To add a new article, append an entry to the appropriate file in article-data/ (or create a new one if the last file is near 600 lines), then create the corresponding .wmd file in articles/.",
     "categories": [
         {
             "id": "mathematics",
@@ -48,10 +48,10 @@
         }
     ],
     "files": [
-        "config/articles/articles-1.json",
-        "config/articles/articles-2.json",
-        "config/articles/articles-3.json",
-        "config/articles/articles-4.json",
-        "config/articles/articles-5.json"
+        "article-data/articles-1.json",
+        "article-data/articles-2.json",
+        "article-data/articles-3.json",
+        "article-data/articles-4.json",
+        "article-data/articles-5.json"
     ]
 }

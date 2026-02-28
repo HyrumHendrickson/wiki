@@ -53,7 +53,7 @@ SECTION 2 — ADDING A NEW ARTICLE (COMPLETE STEP-BY-STEP)
 
 Adding a new article requires changes in EXACTLY TWO places:
   1. Create a new .wmd file in the articles/ folder
-  2. Add a registration entry in the appropriate file inside config/articles/
+  2. Add a registration entry in the appropriate file inside article-data/
 
 Follow every step below precisely.
 
@@ -87,11 +87,11 @@ Follow every step below precisely.
   │  featured:    false                                                         │
   │  ---                                                                        │
   │                                                                             │
-  │  Valid category IDs (from config/articles.json):                           │
+  │  Valid category IDs (from article-data/articles.json):                    │
   │    mathematics, science, history, faith, languages, literature,            │
   │    philosophy, programming, admin                                           │
   │  (If adding a new category, add it to the "categories" array in            │
-  │   config/articles.json — see Step 3 below.)                                │
+  │   article-data/articles.json — see Step 3 below.)                          │
   │                                                                             │
   │  Set featured: true only for especially important flagship articles.       │
   └─────────────────────────────────────────────────────────────────────────────┘
@@ -134,18 +134,18 @@ Follow every step below precisely.
   │     - In-text references [1], [2] are automatically superscripted.        │
   └─────────────────────────────────────────────────────────────────────────────┘
 
-── STEP 3: Add Entry to config/articles/ ────────────────────────────────────────
+── STEP 3: Add Entry to article-data/ ────────────────────────────────────────
 
-  Articles are registered across multiple JSON files inside the config/articles/
+  Articles are registered across multiple JSON files inside the article-data/
   folder. Each file is a JSON array of article objects and MUST NOT exceed 600 lines.
 
-  Open the LAST numbered file in config/articles/ (e.g. articles-5.json) and
+  Open the LAST numbered file in article-data/ (e.g. articles-5.json) and
   append a new object to its array.
   NEVER remove or modify existing entries — only append new ones.
 
   If that file is already at or near 600 lines, create a new file named
   articles-N.json (where N is the next sequential number) and also add its path
-  to the "files" list inside config/articles.json.
+  to the "files" list inside article-data/articles.json.
 
   Required fields:
 
@@ -164,11 +164,11 @@ Follow every step below precisely.
   Important:
     - The "path" field MUST follow the pattern above exactly.
     - The "id" in the JSON entry MUST match the .wmd filename exactly.
-    - The "category" MUST match an existing category id in config/articles.json.
+    - The "category" MUST match an existing category id in article-data/articles.json.
     - If you need a new category, add it to the "categories" array in
-      config/articles.json: { "id": "civics", "label": "Civics", "icon": "" }
-    - Each file in config/articles/ must stay at or below 600 lines.
-    - The "files" list in config/articles.json controls which files are loaded;
+      article-data/articles.json: { "id": "civics", "label": "Civics", "icon": "" }
+    - Each file in article-data/ must stay at or below 600 lines.
+    - The "files" list in article-data/articles.json controls which files are loaded;
       if you create a new split file, add its path to that list.
 
 ── STEP 4: Verify ───────────────────────────────────────────────────────────────
@@ -176,7 +176,7 @@ Follow every step below precisely.
   After creating both files, mentally verify:
 
     [ ] articles/<id>.wmd exists and contains valid frontmatter
-    [ ] An entry with correct "id" and "path" was appended to a file in config/articles/
+    [ ] An entry with correct "id" and "path" was appended to a file in article-data/
     [ ] The article has a :::summary block
     [ ] The article has at least 2 ## sections
     [ ] The ## See Also section lists at least 5 links to other articles
@@ -193,7 +193,7 @@ SECTION 3 — EDITING AN EXISTING ARTICLE
 When editing an existing article:
 
   1. EDIT ONLY the articles/<id>.wmd file.
-     Do not touch config/articles.json unless you are updating metadata like
+     Do not touch article-data/articles.json unless you are updating metadata like
      lastUpdated, tags, or summary that truly needs updating.
 
   2. Update the lastUpdated date in the frontmatter to today's date (YYYY-MM-DD).
@@ -525,8 +525,8 @@ SECTION 7 — QUICK REFERENCE CHECKLIST
 
 NEW ARTICLE checklist:
   [ ] Created articles/<id>.wmd with valid frontmatter
-  [ ] Appended entry to a file in config/articles/ with correct id and path
-  [ ] That file (and all files in config/articles/) remains at or under 600 lines
+  [ ] Appended entry to a file in article-data/ with correct id and path
+  [ ] That file (and all files in article-data/) remains at or under 600 lines
   [ ] :::summary block present (2–4 sentences)
   [ ] :::infobox block present (key facts)
   [ ] At least 2 ## sections in the body

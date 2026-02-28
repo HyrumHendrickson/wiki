@@ -75,7 +75,7 @@ See `admin/admin-article.html?id=wmd-reference` (or `admin/admin-article.html?id
 ### Adding a New Article
 
 1. Create `articles/your-article-id.wmd` using the template above.
-2. Add an entry to the last file in `config/articles/` (e.g. `config/articles/articles-5.json`). Each file in that folder is a JSON array of article objects and must not exceed 600 lines. If the last file is near the limit, create a new `articles-N.json` and add it to the `"files"` list in `config/articles.json`:
+2. Add an entry to the last file in `article-data/` (e.g. `article-data/articles-5.json`). Each file in that folder is a JSON array of article objects and must not exceed 600 lines. If the last file is near the limit, create a new `articles-N.json` and add it to the `"files"` list in `article-data/articles.json`:
    ```json
    {
      "id": "your-article-id",
@@ -130,13 +130,14 @@ See `admin/admin-article.html?id=wmd-reference` (or `admin/admin-article.html?id
 wiki/
 ├── index.html              # Home page (auto-populated from articles.json)
 ├── styles.css              # All styles
+├── article-data/
+│   ├── articles.json       # Categories + list of split article files
+│   ├── articles-1.json
+│   ├── articles-2.json
+│   └── ...
 ├── config/
 │   ├── site.json           # Site name, logo, colors
-│   ├── articles.json       # Categories + list of split article files
-│   └── articles/           # Split article registry files (≤600 lines each)
-│       ├── articles-1.json
-│       ├── articles-2.json
-│       └── ...
+│   └── featured.json       # Featured article IDs
 ├── js/
 │   ├── article-registry.js # Loads and merges all split article files
 │   ├── scripts.js          # Main site JavaScript

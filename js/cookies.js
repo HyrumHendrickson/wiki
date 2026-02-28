@@ -25,6 +25,8 @@ const WIKI_THEMES = {
       '--color-code-bg':        '#f1f5f9',
       '--color-toc-bg':         '#f8fafc',
       '--color-toc-border':     '#cbd5e1',
+      '--color-footer-bg':      '#1e293b',
+      '--color-footer-text':    '#f8fafc',
     }
   },
   dark: {
@@ -45,6 +47,8 @@ const WIKI_THEMES = {
       '--color-code-bg':        '#0f172a',
       '--color-toc-bg':         '#0f172a',
       '--color-toc-border':     '#334155',
+      '--color-footer-bg':      '#020617',
+      '--color-footer-text':    '#f1f5f9',
     }
   },
   warm: {
@@ -65,6 +69,8 @@ const WIKI_THEMES = {
       '--color-code-bg':        '#fde8cc',
       '--color-toc-bg':         '#fde8cc',
       '--color-toc-border':     '#fed7aa',
+      '--color-footer-bg':      '#431407',
+      '--color-footer-text':    '#fff7ed',
     }
   },
   nature: {
@@ -85,6 +91,8 @@ const WIKI_THEMES = {
       '--color-code-bg':        '#d1fae5',
       '--color-toc-bg':         '#d1fae5',
       '--color-toc-border':     '#bbf7d0',
+      '--color-footer-bg':      '#14532d',
+      '--color-footer-text':    '#f0fdf4',
     }
   },
   purple: {
@@ -105,6 +113,8 @@ const WIKI_THEMES = {
       '--color-code-bg':        '#ede9fe',
       '--color-toc-bg':         '#ede9fe',
       '--color-toc-border':     '#e9d5ff',
+      '--color-footer-bg':      '#3b0764',
+      '--color-footer-text':    '#faf5ff',
     }
   }
 };

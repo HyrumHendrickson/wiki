@@ -126,6 +126,13 @@ Learning Greek is a rewarding journey. Here is a suggested path for beginners:
 | BibleHub.com | Website | Free interlinear Greek New Testament |
 :::
 
+## Greek Vocabulary Reference
+
+Use the search box below to look up Greek words by their English meaning or transliteration, or search for a Greek word to see its translation, part of speech, and grammatical notes. The database covers common verbs, nouns, adjectives, and function words drawn from standard Koine Greek and New Testament curricula.
+
+:::database Greek Vocabulary | data/greek-vocab.json
+:::
+
 ## See Also
 
 - [Latin](article.html?id=latin) — the sister classical language that shares the Greek alphabet's heritage and shaped Western Christianity

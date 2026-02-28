@@ -43,6 +43,14 @@ Expandable worked example with full markdown support.
 
 More content…
 
+## See Also
+
+- [Related Article 1](article.html?id=related-article-1)
+- [Related Article 2](article.html?id=related-article-2)
+- [Related Article 3](article.html?id=related-article-3)
+- [Related Article 4](article.html?id=related-article-4)
+- [Related Article 5](article.html?id=related-article-5)
+
 :::citations
 1. Author, A. (Year). *Title*. Publisher.
 :::
@@ -60,6 +68,7 @@ More content…
 | Citations | `:::citations ... :::` | Numbered references section |
 | Notice | `:::notice ... :::` | Yellow admin notice box |
 | Quote | `:::quote Attribution ... :::` | Styled blockquote |
+| Database | `:::database Title \| path/to/data.json :::` | Client-side searchable table from a JSON file |
 
 See `admin/wmd-reference.html` (or `admin/create-article.html`) for full documentation.
 
@@ -108,7 +117,7 @@ See `admin/wmd-reference.html` (or `admin/create-article.html`) for full documen
 - Include a `:::citations` block with at least one reference.
 - Use `:::infobox` for quick-facts panels where appropriate.
 - Use `:::dropdown` for worked examples and extended proofs.
-- Include a `## See Also` section with **at least four** links to related articles.
+- Include a `## See Also` section with **at least five** links to related articles.
 
 ### Math
 

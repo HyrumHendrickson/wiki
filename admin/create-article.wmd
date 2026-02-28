@@ -93,6 +93,14 @@ Expandable worked example or extra detail.
 
 More content…
 
+## See Also
+
+- [Related Article 1](article.html?id=related-article-1)
+- [Related Article 2](article.html?id=related-article-2)
+- [Related Article 3](article.html?id=related-article-3)
+- [Related Article 4](article.html?id=related-article-4)
+- [Related Article 5](article.html?id=related-article-5)
+
 :::citations
 1. Author, A. (Year). *Title*. Publisher.
 2. Author, B. (Year). *Title*. [URL](https://url)
@@ -192,7 +200,9 @@ will appear automatically in the sidebar and on the home page.
 - Create `articles/your-article.wmd` from the template above
 - Add an entry to `config/articles.json` with `path: "articles/article.html?id=your-article"`
 - Write the `:::summary` block (2–4 sentences)
+- Add an `:::infobox` block with key facts
 - Add at least 2 `##` sections (required for the Table of Contents)
+- Add a `## See Also` section with at least 5 links to related articles
 - Add a `:::citations` block with at least one reference
 - Preview the article in a browser at `articles/article.html?id=your-article`
 

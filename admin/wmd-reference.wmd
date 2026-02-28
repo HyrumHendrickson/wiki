@@ -269,6 +269,32 @@ A styled blockquote with an optional attribution line. The parameter is the attr
 :::
 ```
 
+## Fenced Blocks — Database
+
+Embeds a fully client-side searchable table loaded from a JSON file in the `data/` folder.
+The parameter is `Title | path/to/data.json` (path relative to the wiki root).
+
+```
+:::database Latin Vocabulary | data/latin-vocab.json
+:::
+```
+
+Data file format (store in the `data/` folder):
+
+```
+{
+  "columns": [
+    { "key": "latin",   "label": "Latin"         },
+    { "key": "english", "label": "English"        },
+    { "key": "pos",     "label": "Part of Speech" },
+    { "key": "notes",   "label": "Notes"          }
+  ],
+  "rows": [
+    { "latin": "amare", "english": "to love", "pos": "verb (1st conj.)", "notes": "amo, amare, amavi, amatum" }
+  ]
+}
+```
+
 ## Complete Article Template
 
 ```
@@ -319,6 +345,14 @@ $$formula = here$$
 ## Second Major Section
 
 More content…
+
+## See Also
+
+- [Related Article 1](article.html?id=related-article-1)
+- [Related Article 2](article.html?id=related-article-2)
+- [Related Article 3](article.html?id=related-article-3)
+- [Related Article 4](article.html?id=related-article-4)
+- [Related Article 5](article.html?id=related-article-5)
 
 :::citations
 1. Author, A. (Year). *Title*. Publisher.

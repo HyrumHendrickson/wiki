@@ -1947,6 +1947,116 @@
             "author": "EduWiki Team",
             "lastUpdated": "2026-02-28",
             "featured": false
+        },
+        {
+            "id": "sun",
+            "title": "The Sun",
+            "category": "science",
+            "path": "articles/article.html?id=sun",
+            "summary": "The Sun is the star at the center of our solar system — a blazing sphere of hot plasma that provides the light, heat, and energy upon which virtually all life on Earth depends, created by God on the fourth day of creation as a magnificent witness to His power and design.",
+            "tags": ["sun", "solar system", "star", "astronomy", "astrophysics", "light", "energy"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "stars",
+            "title": "Stars",
+            "category": "science",
+            "path": "articles/article.html?id=stars",
+            "summary": "Stars are the great luminous engines of the universe — massive spheres of hot plasma powered by nuclear fusion that have guided sailors, marked seasons, and inspired awe since the beginning of human history, celebrated in Scripture as declarations of God's glory.",
+            "tags": ["stars", "astronomy", "astrophysics", "stellar", "nuclear fusion", "constellations", "galaxies"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "fire",
+            "title": "Fire",
+            "category": "science",
+            "path": "articles/article.html?id=fire",
+            "summary": "Fire is the rapid chemical reaction between fuel and oxygen that releases heat and light, and the mastery of fire is what first separated humanity from every other creature on Earth. In the Bible, fire appears as a profound symbol of God's presence, holiness, and purifying work.",
+            "tags": ["fire", "combustion", "chemistry", "heat", "light", "energy", "flame"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "oceans",
+            "title": "Oceans",
+            "category": "science",
+            "path": "articles/article.html?id=oceans",
+            "summary": "The oceans cover more than 70 percent of Earth's surface and contain over 97 percent of all the water on our planet, regulating climate, supporting extraordinary biodiversity, and shaping human civilization from the ancient seafarers to the Age of Exploration.",
+            "tags": ["oceans", "marine biology", "oceanography", "seas", "water", "earth science", "ecology"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "forests",
+            "title": "Forests",
+            "category": "science",
+            "path": "articles/article.html?id=forests",
+            "summary": "Forests are complex, multi-layered communities of trees and organisms that cover about 31 percent of Earth's land surface, performing essential ecological services, sheltering extraordinary biodiversity, and sustaining human civilizations since the beginning of recorded history.",
+            "tags": ["forests", "trees", "ecology", "biome", "woodland", "nature", "environment", "botany"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "moon",
+            "title": "The Moon",
+            "category": "science",
+            "path": "articles/article.html?id=moon",
+            "summary": "The Moon is Earth's only natural satellite — created by God as the 'lesser light to rule the night' — governing tides, measuring time, inspiring poets and theologians for millennia, and serving as the destination of the Apollo missions, one of humanity's greatest achievements.",
+            "tags": ["moon", "lunar", "astronomy", "tides", "earth", "space", "apollo"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "planets",
+            "title": "Planets",
+            "category": "science",
+            "path": "articles/article.html?id=planets",
+            "summary": "Planets are large celestial bodies orbiting a star, and our solar system's eight worlds — from scorched Mercury to icy Neptune — testify to the extraordinary variety of God's creative work and have fascinated astronomers and philosophers for thousands of years.",
+            "tags": ["planets", "solar system", "astronomy", "earth", "Jupiter", "Mars", "Saturn", "space"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "galaxies",
+            "title": "Galaxies",
+            "category": "science",
+            "path": "articles/article.html?id=galaxies",
+            "summary": "Galaxies are vast systems of billions of stars bound together by gravity — the fundamental building blocks of the universe's large-scale structure. Our Milky Way is one of hundreds of billions of galaxies, making the heavens' declaration of God's glory more staggering than any ancient stargazer could have imagined.",
+            "tags": ["galaxies", "astronomy", "milky way", "cosmos", "universe", "astrophysics", "cosmology"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "astrophysics",
+            "title": "Astrophysics",
+            "category": "science",
+            "path": "articles/article.html?id=astrophysics",
+            "summary": "Astrophysics applies the laws of physics and chemistry to understand stars, galaxies, and the universe itself — from the Big Bang to black holes, from gravitational waves to dark matter — a field of inquiry that has deepened both scientific knowledge and wonder at the Creator's handiwork.",
+            "tags": ["astrophysics", "astronomy", "cosmology", "physics", "universe", "stars", "relativity", "black holes"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
+        },
+        {
+            "id": "rivers",
+            "title": "Rivers",
+            "category": "science",
+            "path": "articles/article.html?id=rivers",
+            "summary": "Rivers are the arteries of the earth — flowing channels of fresh water that have nourished every great civilization in history, shaped the landscapes we inhabit, and served as powerful symbols of life, purification, and divine provision from the rivers of Eden to the Jordan where Christ was baptized.",
+            "tags": ["rivers", "hydrology", "water", "ecology", "geography", "earth science", "civilization"],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28",
+            "featured": false
         }
     ]
 }

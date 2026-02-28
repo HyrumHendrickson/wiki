@@ -2,7 +2,7 @@
 title: Old English
 category: languages
 author: EduWiki Team
-lastUpdated: 2026-02-27
+lastUpdated: 2026-02-28
 tags: Old English, Anglo-Saxon, language, Beowulf, medieval
 featured: false
 ---
@@ -146,6 +146,13 @@ Old English is challenging but deeply rewarding, and students with a love of lit
 | *Beowulf* (Tolkien translation) | Translation | The best literary translation |
 | Old English Aerobics (online) | Website | Free exercises and texts |
 | Bosworth-Toller Online Dictionary | Reference | Free comprehensive OE dictionary |
+:::
+
+## Old English Vocabulary Reference
+
+Use the search box below to look up Old English words by their modern English meaning, or search for an Old English word to see its translation, part of speech, and grammatical notes. The dictionary covers common nouns, verbs, adjectives, and function words drawn from the core vocabulary of Old English prose and poetry, including the language of *Beowulf* and the Anglo-Saxon Gospels.
+
+:::database Old English Vocabulary | data/old-english-vocab.json
 :::
 
 ## See Also

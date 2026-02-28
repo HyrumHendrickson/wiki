@@ -549,6 +549,7 @@ async function initDatabases() {
     const src    = container.dataset.src;
     const bodyEl = container.querySelector('.wiki-database-body');
     const searchEl = container.querySelector('.wiki-database-search');
+    const limitEl  = container.querySelector('.wiki-database-limit');
     if (!bodyEl || !src) continue;
 
     let dbData;
@@ -573,28 +574,40 @@ async function initDatabases() {
       columns.map(c => (row[c.key] || '').toLowerCase())
     );
 
+    const getLimit = () => {
+      const val = limitEl ? parseInt(limitEl.value, 10) : 5;
+      return (isNaN(val) || val < 1) ? 5 : val;
+    };
+
     const renderTable = (filtered) => {
       if (!filtered.length) {
         return '<p class="wiki-database-empty">No results found.</p>';
       }
+      const limit = getLimit();
+      const visible = filtered.slice(0, limit);
       const thead = `<thead><tr>${columns.map(c => `<th>${escapeHtml(c.label)}</th>`).join('')}</tr></thead>`;
-      const tbody = `<tbody>${filtered.map(row =>
+      const tbody = `<tbody>${visible.map(row =>
         `<tr>${columns.map(c => `<td>${escapeHtml(row[c.key] || '')}</td>`).join('')}</tr>`
       ).join('')}</tbody>`;
-      const count = `<div class="wiki-database-count">Showing ${filtered.length} of ${rows.length} ${rows.length === 1 ? 'entry' : 'entries'}</div>`;
+      const count = `<div class="wiki-database-count">Showing ${visible.length} of ${rows.length} ${rows.length === 1 ? 'entry' : 'entries'}</div>`;
       return `<table>${thead}${tbody}</table>${count}`;
     };
 
-    bodyEl.innerHTML = renderTable(rows);
+    const update = () => {
+      const q = searchEl ? searchEl.value.trim().toLowerCase() : '';
+      const filtered = q
+        ? rows.filter((_, i) => rowsLower[i].some(v => v.includes(q)))
+        : rows;
+      bodyEl.innerHTML = renderTable(filtered);
+    };
+
+    update();
 
     if (searchEl) {
-      searchEl.addEventListener('input', () => {
-        const q = searchEl.value.trim().toLowerCase();
-        const filtered = q
-          ? rows.filter((_, i) => rowsLower[i].some(v => v.includes(q)))
-          : rows;
-        bodyEl.innerHTML = renderTable(filtered);
-      });
+      searchEl.addEventListener('input', update);
+    }
+    if (limitEl) {
+      limitEl.addEventListener('input', update);
     }
   }
 }

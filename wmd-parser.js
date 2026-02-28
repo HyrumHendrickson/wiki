@@ -252,6 +252,7 @@ const WMDParser = (() => {
   <div class="wiki-database-header">
     <span class="wiki-database-title">${escapeHtml(title)}</span>
     <input class="wiki-database-search" type="search" placeholder="Search…" aria-label="Search ${escapeHtml(title)}">
+    <label class="wiki-database-limit-label">Show <input class="wiki-database-limit" type="number" min="1" value="5" aria-label="Maximum results to show"> results</label>
   </div>
   <div class="wiki-database-body">
     <p class="wiki-database-loading">Loading…</p>

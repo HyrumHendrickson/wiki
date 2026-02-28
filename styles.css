@@ -23,6 +23,8 @@
   --color-code-bg:       #f1f5f9;
   --color-toc-bg:        #f8fafc;
   --color-toc-border:    #cbd5e1;
+  --color-footer-bg:     #1e293b;
+  --color-footer-text:   #f8fafc;
 
   --font-sans:  system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
@@ -101,8 +103,10 @@ body {
   border-radius: 20px;
   font-size: .9rem;
   background: var(--color-bg);
+  color: var(--color-text);
   transition: border-color .15s, box-shadow .15s;
 }
+.header-search input::placeholder { color: var(--color-text-muted); }
 .header-search input:focus {
   outline: none;
   border-color: var(--color-primary);
@@ -672,14 +676,14 @@ body {
 
 /* ── Footer ─────────────────────────────────────────────────── */
 #wiki-footer {
-  background: var(--color-text);
-  color: var(--color-bg);
+  background: var(--color-footer-bg, #1e293b);
+  color: var(--color-footer-text, #f8fafc);
   text-align: center;
   padding: 1.5rem 1rem;
   font-size: .85rem;
   margin-top: auto;
 }
-#wiki-footer a { color: var(--color-surface); text-decoration: none; }
+#wiki-footer a { color: var(--color-footer-text, #f8fafc); text-decoration: none; }
 #wiki-footer a:hover { text-decoration: underline; }
 #wiki-footer .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: .5rem; flex-wrap: wrap; }
 
@@ -705,6 +709,10 @@ body {
   border: none;
   border-radius: var(--radius);
   font-size: 1rem;
+  /* Always white bg + dark text: the hero uses a colorful gradient and needs
+     a high-contrast input regardless of the active color theme */
+  color: #1e293b;
+  background: #ffffff;
   outline: none;
 }
 .hero-search button {
@@ -851,8 +859,10 @@ body {
   border-radius: var(--radius);
   font-size: 1rem;
   background: var(--color-surface);
+  color: var(--color-text);
   transition: border-color .15s, box-shadow .15s;
 }
+.search-page-input::placeholder { color: var(--color-text-muted); }
 .search-page-input:focus {
   outline: none;
   border-color: var(--color-primary);

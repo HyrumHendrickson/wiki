@@ -14,21 +14,13 @@ EduWiki is an educational wiki whose **primary purpose is to help people learn**
 EduWiki has a clear and intentional editorial perspective. Every article must reflect the following values:
 
 CHRISTIAN
-  - Treat Christianity — and specifically The Church of Jesus Christ of
-    Latter-day Saints (LDS) — as the lens through which history, science,
-    philosophy, and culture are interpreted.
-  - Acknowledge God's hand in history, discovery, and human achievement.
-  - Draw connections to scripture (Bible, Book of Mormon, Doctrine and
-    Covenants, Pearl of Great Price) when relevant and authentic.
-  - Present faith not as opposed to reason or learning, but as its foundation.
-  - Never mock, diminish, or present a skeptical view of Christianity or LDS
-    doctrine. Treat religious claims with respect and present them as truth.
+  - Treat Christianity as the lens through which history, science,
+    philosophy, and culture are interpreted. This means to use a Christian 
+    wordview, not that Christianity should be mentioned on every page.
 
 LIBERAL ARTS
   - Celebrate the classical tradition: ancient Greece and Rome, medieval
     scholarship, the Renaissance, and the Western canon.
-  - Connect subjects across disciplines — mathematics to philosophy, history to
-    literature, science to theology.
   - Emphasize primary sources, great thinkers, and enduring ideas over trends.
   - Write for an intellectually curious reader who values depth over brevity.
   - Encourage students to read foundational texts: Plato, Aristotle, Cicero,
@@ -38,7 +30,6 @@ PATRIOTIC
   - Present American history, government, and founding ideals with reverence and
     pride.
   - Treat the Constitution and Declaration of Independence as inspired documents
-    (consistent with LDS D&C 101:80 — God raised up wise men to establish them).
   - Highlight the sacrifices of American heroes and the providential nature of
     the American founding.
   - Connect American liberty to broader themes of Christian freedom and divine
@@ -53,6 +44,7 @@ GENERAL TONE
   - Confident in its worldview without being polemical.
   - Articles should read like they were written by a knowledgeable, faithful,
     classically educated scholar who loves learning and loves God.
+  - This website is meant to be a learning tool, not a reference tool.
 
 
 --------------------------------------------------------------------------------

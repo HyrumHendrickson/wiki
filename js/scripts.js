@@ -22,7 +22,7 @@
  */
 function getRootPath() {
   const dirs = window.location.pathname.split('/').slice(1, -1);
-  const wikiSubDirs = ['articles', 'admin'];
+  const wikiSubDirs = ['articles', 'admin', 'pages'];
   const depth = dirs.filter(d => wikiSubDirs.includes(d)).length;
   return depth > 0 ? '../'.repeat(depth) : './';
 }
@@ -88,7 +88,7 @@ function buildHeader(config) {
       <nav class="header-nav" aria-label="Main navigation">
         <a href="${ROOT}index.html">Home</a>
         <a href="${ROOT}articles/article.html?id=about-eduwiki">Help</a>
-        <a href="${ROOT}settings.html">Settings</a>
+        <a href="${ROOT}pages/settings.html">Settings</a>
       </nav>
     </div>
   `;
@@ -258,7 +258,7 @@ function initSearch(articles) {
     if (e.key === 'Enter') {
       e.preventDefault();
       const q = input.value.trim();
-      if (q) window.location = ROOT + 'search.html?q=' + encodeURIComponent(q);
+      if (q) window.location = ROOT + 'pages/search.html?q=' + encodeURIComponent(q);
     }
   });
 
@@ -324,7 +324,7 @@ function initHeroSearch(articles) {
     const q = input.value.trim();
     if (!q) return;
     suggestions.classList.remove('open');
-    window.location = ROOT + 'search.html?q=' + encodeURIComponent(q);
+    window.location = ROOT + 'pages/search.html?q=' + encodeURIComponent(q);
   });
 }
 

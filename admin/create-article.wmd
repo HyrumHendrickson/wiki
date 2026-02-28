@@ -15,7 +15,7 @@ No HTML or programming knowledge required — just write plain text in the
 :::summary
 Adding a new article requires two steps: (1) create a `.wmd` file in the
 `articles/` folder, and (2) register it in the appropriate file inside
-`config/articles/`.
+`article-data/`.
 The browser automatically converts your markdown to a fully formatted wiki page.
 Navigation, search, and the table of contents are all generated automatically.
 :::
@@ -35,11 +35,12 @@ wiki/
 │   └── cookies.js          ← Theme/cookie helpers
 ├── config/
 │   ├── site.json           ← Site name, logo, colors
+│   └── featured.json       ← Featured article IDs
+├── article-data/
 │   ├── articles.json       ← Categories + list of split files
-│   └── articles/           ← Split article registries (≤600 lines each)
-│       ├── articles-1.json ← Article entries (YOU APPEND HERE)
-│       ├── articles-2.json
-│       └── ...
+│   ├── articles-1.json     ← Article entries (YOU APPEND HERE)
+│   ├── articles-2.json
+│   └── ...
 ├── media/                  ← Images, videos, etc.
 ├── articles/
 │   ├── article.html        ← Universal article viewer (one file for all articles)
@@ -115,12 +116,12 @@ More content…
 :::
 ```
 
-## Step 2 — Register in config/articles/
+## Step 2 — Register in article-data/
 
-Articles are stored across multiple JSON files inside the `config/articles/` folder.
+Articles are stored across multiple JSON files inside the `article-data/` folder.
 Each file is a JSON array of article objects and **must not exceed 600 lines**.
 
-Open the **last numbered file** (e.g. `config/articles/articles-5.json`) and append
+Open the **last numbered file** (e.g. `article-data/articles-5.json`) and append
 a new entry to its array. The `path` always points to
 `articles/article.html?id=your-article-id` — the universal viewer.
 
@@ -139,8 +140,8 @@ a new entry to its array. The `path` always points to
 ```
 
 If the last file is already near 600 lines, create a new file
-`config/articles/articles-N.json` and add its path to the `"files"` list in
-`config/articles.json`.
+`article-data/articles-N.json` and add its path to the `"files"` list in
+`article-data/articles.json`.
 
 ### Field Reference
 
@@ -165,14 +166,14 @@ That page reads the `?id=` parameter, fetches the corresponding
 the resulting HTML. Everything — breadcrumbs, title, meta bar, table of contents,
 dropdowns, Desmos graphs, and MathJax — is built automatically.
 
-The `article-registry.js` file loads `config/articles.json` (for categories) and
-all split files in `config/articles/`, merging them into one data object that the
+The `article-registry.js` file loads `article-data/articles.json` (for categories) and
+all split files in `article-data/`, merging them into one data object that the
 rest of the site uses transparently.
 
 This means you never write HTML for article content. The only files you create are:
 
 - The `.wmd` source file (your article content)
-- An entry in the appropriate `config/articles/articles-N.json` file
+- An entry in the appropriate `article-data/articles-N.json` file
 
 ## WMD Syntax Quick Reference
 
@@ -201,7 +202,7 @@ Here is a quick summary of the most common elements:
 ## Adding a New Category
 
 To add a new category, add an entry to the `"categories"` array in
-`config/articles.json`:
+`article-data/articles.json`:
 
 ```
 {
@@ -217,7 +218,7 @@ will appear automatically in the sidebar and on the home page.
 ## Checklist for a New Article
 
 - Create `articles/your-article.wmd` from the template above
-- Append an entry to the last file in `config/articles/` with `path: "articles/article.html?id=your-article"`
+- Append an entry to the last file in `article-data/` with `path: "articles/article.html?id=your-article"`
 - Ensure the file you edited stays at or under 600 lines
 - Write the `:::summary` block (2–4 sentences)
 - Add an `:::infobox` block with key facts

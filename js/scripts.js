@@ -4,7 +4,7 @@
  *
  * Features:
  *  - Load site config (config/site.json) and apply branding
- *  - Load article registry (config/articles.json) and build navigation
+ *  - Load article registry (article-data/articles.json) and build navigation
  *  - Auto-generate Table of Contents from h2/h3 headings
  *  - Dropdown / accordion components
  *  - Header search with live results

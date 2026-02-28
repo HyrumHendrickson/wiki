@@ -46,7 +46,7 @@ Content goes here…
 | Field | Required | Description |
 |-------|----------|-------------|
 | `title` | Yes | Article display name |
-| `category` | Yes | Must match a category `id` in `config/articles.json` |
+| `category` | Yes | Must match a category `id` in `article-data/articles.json` |
 | `author` | Recommended | Article author(s) |
 | `lastUpdated` | Recommended | ISO date (YYYY-MM-DD) |
 | `tags` | Recommended | Comma-separated search keywords |

@@ -145,6 +145,13 @@ Hebrew looks daunting at first — it reads right to left, uses a completely unf
 | BibleHub.com (Hebrew Interlinear) | Website | Free interlinear Hebrew Bible |
 :::
 
+## Hebrew Vocabulary Reference
+
+Use the search box below to look up Hebrew words by their English meaning or transliteration, or search for a Hebrew word to see its translation, part of speech, and grammatical notes. The database covers common verbs, nouns, adjectives, and particles drawn from standard biblical Hebrew curricula and the most frequently occurring words in the Hebrew Bible.
+
+:::database Hebrew Vocabulary | data/hebrew-vocab.json
+:::
+
 ## See Also
 
 - [The Bible](article.html?id=bible) — the primary text written in Hebrew and Greek

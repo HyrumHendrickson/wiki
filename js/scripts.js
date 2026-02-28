@@ -722,7 +722,7 @@ async function init() {
   try {
     const [config, data, featuredData] = await Promise.all([
       fetchJSON('config/site.json'),
-      fetchJSON('config/articles.json'),
+      loadArticleRegistry(),
       fetchJSON('config/featured.json')
     ]);
 

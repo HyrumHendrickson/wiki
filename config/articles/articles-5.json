@@ -1,0 +1,348 @@
+[
+    {
+        "id": "catholic-philosophy",
+        "title": "Catholic Philosophy",
+        "category": "philosophy",
+        "path": "articles/article.html?id=catholic-philosophy",
+        "summary": "Catholic philosophy is the rich intellectual tradition of the Church — from Augustine through Aquinas and beyond — that has brought Greek reason and Christian revelation into creative dialogue, insisting that faith and reason are complementary paths to truth and producing in the Scholastic movement some of the greatest philosophical and theological work in human history.",
+        "tags": [
+            "catholic philosophy",
+            "scholasticism",
+            "aquinas",
+            "augustine",
+            "natural law",
+            "thomism",
+            "medieval philosophy"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "fire",
+        "title": "Fire",
+        "category": "science",
+        "path": "articles/article.html?id=fire",
+        "summary": "Fire is the rapid chemical reaction between fuel and oxygen that releases heat and light, and the mastery of fire is what first separated humanity from every other creature on Earth. In the Bible, fire appears as a profound symbol of God's presence, holiness, and purifying work.",
+        "tags": [
+            "fire",
+            "combustion",
+            "chemistry",
+            "heat",
+            "light",
+            "energy",
+            "flame"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "chinese-philosophy",
+        "title": "Chinese Philosophy",
+        "category": "philosophy",
+        "path": "articles/article.html?id=chinese-philosophy",
+        "summary": "Chinese philosophy is one of the oldest and most distinctive intellectual traditions in the world, encompassing the great schools of Confucianism, Taoism, and Legalism born in the turbulent Warring States period, as well as the Chinese forms of Buddhism — traditions that shaped East Asian civilization as profoundly as Plato and Aristotle shaped the West.",
+        "tags": [
+            "chinese philosophy",
+            "confucianism",
+            "taoism",
+            "buddhism",
+            "confucius",
+            "lao tzu",
+            "ancient china"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "oceans",
+        "title": "Oceans",
+        "category": "science",
+        "path": "articles/article.html?id=oceans",
+        "summary": "The oceans cover more than 70 percent of Earth's surface and contain over 97 percent of all the water on our planet, regulating climate, supporting extraordinary biodiversity, and shaping human civilization from the ancient seafarers to the Age of Exploration.",
+        "tags": [
+            "oceans",
+            "marine biology",
+            "oceanography",
+            "seas",
+            "water",
+            "earth science",
+            "ecology"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "western-philosophy",
+        "title": "Western Philosophy",
+        "category": "philosophy",
+        "path": "articles/article.html?id=western-philosophy",
+        "summary": "Western philosophy is the great intellectual tradition stretching from ancient Greece through Rome, medieval Christendom, the Renaissance, the Enlightenment, and into the modern era — a twenty-five-century conversation about reality, knowledge, morality, and the good society that has been shaped at every stage by the creative tension between Greek reason and Christian faith.",
+        "tags": [
+            "western philosophy",
+            "history of philosophy",
+            "rationalism",
+            "empiricism",
+            "enlightenment",
+            "modern philosophy"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "forests",
+        "title": "Forests",
+        "category": "science",
+        "path": "articles/article.html?id=forests",
+        "summary": "Forests are complex, multi-layered communities of trees and organisms that cover about 31 percent of Earth's land surface, performing essential ecological services, sheltering extraordinary biodiversity, and sustaining human civilizations since the beginning of recorded history.",
+        "tags": [
+            "forests",
+            "trees",
+            "ecology",
+            "biome",
+            "woodland",
+            "nature",
+            "environment",
+            "botany"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "eastern-philosophy",
+        "title": "Eastern Philosophy",
+        "category": "philosophy",
+        "path": "articles/article.html?id=eastern-philosophy",
+        "summary": "Eastern philosophy encompasses the rich and diverse philosophical traditions of Asia — the Hindu philosophies of India, the Buddhist traditions flowering across the continent, the Confucian and Taoist schools of China, and the contemplative traditions of Japan and Korea — addressing the same fundamental questions as Western philosophy from strikingly different starting points.",
+        "tags": [
+            "eastern philosophy",
+            "hinduism",
+            "buddhism",
+            "taoism",
+            "confucianism",
+            "vedanta",
+            "asian philosophy"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "moon",
+        "title": "The Moon",
+        "category": "science",
+        "path": "articles/article.html?id=moon",
+        "summary": "The Moon is Earth's only natural satellite — created by God as the 'lesser light to rule the night' — governing tides, measuring time, inspiring poets and theologians for millennia, and serving as the destination of the Apollo missions, one of humanity's greatest achievements.",
+        "tags": [
+            "moon",
+            "lunar",
+            "astronomy",
+            "tides",
+            "earth",
+            "space",
+            "apollo"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "indian-philosophy",
+        "title": "Indian Philosophy",
+        "category": "philosophy",
+        "path": "articles/article.html?id=indian-philosophy",
+        "summary": "Indian philosophy is one of the oldest and deepest philosophical traditions in the world — stretching from the Vedas and Upanishads through the six orthodox Hindu schools, the heterodox traditions of Buddhism and Jainism, and the great medieval Vedanta debates — addressing questions of the self, ultimate reality, liberation, and right action with extraordinary sophistication.",
+        "tags": [
+            "indian philosophy",
+            "hinduism",
+            "buddhism",
+            "vedanta",
+            "upanishads",
+            "yoga",
+            "karma",
+            "dharma"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "planets",
+        "title": "Planets",
+        "category": "science",
+        "path": "articles/article.html?id=planets",
+        "summary": "Planets are large celestial bodies orbiting a star, and our solar system's eight worlds — from scorched Mercury to icy Neptune — testify to the extraordinary variety of God's creative work and have fascinated astronomers and philosophers for thousands of years.",
+        "tags": [
+            "planets",
+            "solar system",
+            "astronomy",
+            "earth",
+            "Jupiter",
+            "Mars",
+            "Saturn",
+            "space"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "world-religions",
+        "title": "World Religions",
+        "category": "faith",
+        "path": "articles/article.html?id=world-religions",
+        "summary": "The study of world religions is among the most important and humanizing of intellectual pursuits — a survey of how billions of human beings across history have answered the deepest questions of existence, from the Abrahamic faiths of the Middle East to the Dharmic traditions of India and the philosophical religions of East Asia.",
+        "tags": [
+            "world religions",
+            "christianity",
+            "islam",
+            "hinduism",
+            "buddhism",
+            "judaism",
+            "comparative religion"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "galaxies",
+        "title": "Galaxies",
+        "category": "science",
+        "path": "articles/article.html?id=galaxies",
+        "summary": "Galaxies are vast systems of billions of stars bound together by gravity — the fundamental building blocks of the universe's large-scale structure. Our Milky Way is one of hundreds of billions of galaxies, making the heavens' declaration of God's glory more staggering than any ancient stargazer could have imagined.",
+        "tags": [
+            "galaxies",
+            "astronomy",
+            "milky way",
+            "cosmos",
+            "universe",
+            "astrophysics",
+            "cosmology"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "abrahamic-religions",
+        "title": "Abrahamic Religions",
+        "category": "faith",
+        "path": "articles/article.html?id=abrahamic-religions",
+        "summary": "The Abrahamic religions — Judaism, Christianity, and Islam — are the three great monotheistic faiths tracing their spiritual ancestry to the patriarch Abraham, together followed by more than half of humanity and having shaped the history, law, philosophy, art, and politics of human civilization more profoundly than any other religious tradition.",
+        "tags": [
+            "abrahamic religions",
+            "judaism",
+            "christianity",
+            "islam",
+            "abraham",
+            "monotheism",
+            "covenant"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "astrophysics",
+        "title": "Astrophysics",
+        "category": "science",
+        "path": "articles/article.html?id=astrophysics",
+        "summary": "Astrophysics applies the laws of physics and chemistry to understand stars, galaxies, and the universe itself — from the Big Bang to black holes, from gravitational waves to dark matter — a field of inquiry that has deepened both scientific knowledge and wonder at the Creator's handiwork.",
+        "tags": [
+            "astrophysics",
+            "astronomy",
+            "cosmology",
+            "physics",
+            "universe",
+            "stars",
+            "relativity",
+            "black holes"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "christianity",
+        "title": "Christianity",
+        "category": "faith",
+        "path": "articles/article.html?id=christianity",
+        "summary": "Christianity is the world's largest religion — the faith of more than two billion people and the spiritual, moral, and intellectual foundation of Western civilization — centered on the person and work of Jesus Christ: his incarnation, crucifixion, bodily resurrection, and the promise of eternal life to all who trust in him.",
+        "tags": [
+            "christianity",
+            "jesus christ",
+            "gospel",
+            "church",
+            "resurrection",
+            "trinity",
+            "salvation",
+            "new testament"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": true
+    },
+    {
+        "id": "lds-philosophy",
+        "title": "Latter-day Saint Philosophy",
+        "category": "philosophy",
+        "path": "articles/article.html?id=lds-philosophy",
+        "summary": "Latter-day Saint philosophy is one of the most distinctive and original theological-philosophical systems in the modern world, introducing through Joseph Smith's Restoration a set of metaphysical and anthropological claims — an embodied God, eternal intelligences, the materiality of spirit, and the destiny of eternal progression — that challenge the basic assumptions of classical Western theology.",
+        "tags": [
+            "lds philosophy",
+            "latter-day saints",
+            "joseph smith",
+            "metaphysics",
+            "eternal progression",
+            "intelligence"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "ancient-egypt",
+        "title": "Ancient Egypt",
+        "category": "history",
+        "path": "articles/article.html?id=ancient-egypt",
+        "summary": "Ancient Egypt is one of the greatest civilizations in human history — flourishing for more than three thousand years along the Nile, producing the pyramids, hieroglyphics, and a sophisticated religion — and holds a unique place in Christian and Jewish faith as the land of Israel's sojourn, the stage of the Exodus, and the training ground of Moses.",
+        "tags": [
+            "ancient egypt",
+            "pharaohs",
+            "pyramids",
+            "nile",
+            "hieroglyphics",
+            "moses",
+            "exodus",
+            "civilization"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "rivers",
+        "title": "Rivers",
+        "category": "science",
+        "path": "articles/article.html?id=rivers",
+        "summary": "Rivers are the arteries of the earth — flowing channels of fresh water that have nourished every great civilization in history, shaped the landscapes we inhabit, and served as powerful symbols of life, purification, and divine provision from the rivers of Eden to the Jordan where Christ was baptized.",
+        "tags": [
+            "rivers",
+            "hydrology",
+            "water",
+            "ecology",
+            "geography",
+            "earth science",
+            "civilization"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    }
+]

@@ -75,7 +75,7 @@ See `admin/wmd-reference.html` (or `admin/create-article.html`) for full documen
 ### Adding a New Article
 
 1. Create `articles/your-article-id.wmd` using the template above.
-2. Add an entry to `config/articles.json`:
+2. Add an entry to the last file in `config/articles/` (e.g. `config/articles/articles-5.json`). Each file in that folder is a JSON array of article objects and must not exceed 600 lines. If the last file is near the limit, create a new `articles-N.json` and add it to the `"files"` list in `config/articles.json`:
    ```json
    {
      "id": "your-article-id",
@@ -134,7 +134,15 @@ wiki/
 ├── wmd-parser.js           # WMD → HTML parser
 ├── config/
 │   ├── site.json           # Site name, logo, colors
-│   └── articles.json       # Article registry
+│   ├── articles.json       # Categories + list of split article files
+│   └── articles/           # Split article registry files (≤600 lines each)
+│       ├── articles-1.json
+│       ├── articles-2.json
+│       └── ...
+├── js/
+│   ├── article-registry.js # Loads and merges all split article files
+│   ├── scripts.js          # Main site JavaScript
+│   └── ...
 ├── media/                  # Images, logos, etc.
 ├── articles/
 │   ├── article.html        # Universal article viewer (single HTML file)

@@ -49,6 +49,21 @@
     ],
     "articles": [
         {
+            "id": "about-eduwiki",
+            "title": "About EduWiki",
+            "category": "admin",
+            "path": "articles/article.html?id=about-eduwiki",
+            "summary": "Learn about EduWiki — what it is, what it covers, and how to navigate and use the site.",
+            "tags": [
+                "help",
+                "about",
+                "getting started",
+                "navigation"
+            ],
+            "author": "EduWiki Team",
+            "lastUpdated": "2026-02-28"
+        },
+        {
             "id": "calculus",
             "title": "Introduction to Calculus",
             "category": "mathematics",

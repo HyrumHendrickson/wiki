@@ -57,12 +57,16 @@ async function applySiteConfig(config) {
     document.title = config.name;
   }
 
-  // Apply CSS custom properties if overrides are provided
-  if (config.primaryColor) {
-    document.documentElement.style.setProperty('--color-primary', config.primaryColor);
-  }
-  if (config.accentColor) {
-    document.documentElement.style.setProperty('--color-accent', config.accentColor);
+  // Apply CSS custom properties if overrides are provided,
+  // but only when the user hasn't chosen a custom theme via cookies.js
+  const savedTheme = (typeof wikiGetSavedTheme === 'function') ? wikiGetSavedTheme() : 'default';
+  if (savedTheme === 'default') {
+    if (config.primaryColor) {
+      document.documentElement.style.setProperty('--color-primary', config.primaryColor);
+    }
+    if (config.accentColor) {
+      document.documentElement.style.setProperty('--color-accent', config.accentColor);
+    }
   }
 }
 
@@ -83,7 +87,8 @@ function buildHeader(config) {
       </div>
       <nav class="header-nav" aria-label="Main navigation">
         <a href="${ROOT}index.html">Home</a>
-        <a href="${ROOT}admin/admin-article.html?id=getting-started">Help</a>
+        <a href="${ROOT}articles/article.html?id=about-eduwiki">Help</a>
+        <a href="${ROOT}settings.html">Settings</a>
       </nav>
     </div>
   `;

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings — EduWiki</title>
+  <script src="cookies.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Header injected by scripts.js -->
+  <header id="wiki-header" role="banner"></header>
+
+  <main id="main-content" class="index-layout">
+
+    <section aria-labelledby="settings-heading">
+      <h1 id="settings-heading" class="wiki-title" style="font-family:var(--font-serif);margin-bottom:1.5rem;">Settings</h1>
+
+      <div class="settings-section">
+        <h2 class="settings-section-title">Color Theme</h2>
+        <p class="settings-section-desc">Choose a color theme for EduWiki. Your preference is saved and applied on every page.</p>
+
+        <div class="theme-grid" id="theme-grid" role="group" aria-labelledby="theme-grid-label">
+          <span id="theme-grid-label" class="sr-only">Select a color theme</span>
+
+          <button class="theme-card" data-theme="default" aria-pressed="false">
+            <div class="theme-preview" style="--p:#2563eb;--a:#0ea5e9;--bg:#f8fafc;--s:#ffffff;--b:#e2e8f0;--t:#1e293b;"></div>
+            <span class="theme-name">Default Blue</span>
+          </button>
+
+          <button class="theme-card" data-theme="dark" aria-pressed="false">
+            <div class="theme-preview" style="--p:#60a5fa;--a:#38bdf8;--bg:#0f172a;--s:#1e293b;--b:#334155;--t:#f1f5f9;"></div>
+            <span class="theme-name">Dark Night</span>
+          </button>
+
+          <button class="theme-card" data-theme="warm" aria-pressed="false">
+            <div class="theme-preview" style="--p:#ea580c;--a:#f59e0b;--bg:#fff7ed;--s:#ffffff;--b:#fed7aa;--t:#431407;"></div>
+            <span class="theme-name">Warm Sunset</span>
+          </button>
+
+          <button class="theme-card" data-theme="nature" aria-pressed="false">
+            <div class="theme-preview" style="--p:#16a34a;--a:#10b981;--bg:#f0fdf4;--s:#ffffff;--b:#bbf7d0;--t:#14532d;"></div>
+            <span class="theme-name">Nature Green</span>
+          </button>
+
+          <button class="theme-card" data-theme="purple" aria-pressed="false">
+            <div class="theme-preview" style="--p:#7c3aed;--a:#a855f7;--bg:#faf5ff;--s:#ffffff;--b:#e9d5ff;--t:#3b0764;"></div>
+            <span class="theme-name">Royal Purple</span>
+          </button>
+        </div>
+
+        <p class="settings-saved-msg" id="settings-saved-msg" aria-live="polite"></p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer injected by scripts.js -->
+  <footer id="wiki-footer" role="contentinfo"></footer>
+
+  <script src="scripts.js"></script>
+  <script>
+    (function () {
+      const cards = document.querySelectorAll('.theme-card');
+      const msg = document.getElementById('settings-saved-msg');
+
+      function updateSelected(activeTheme) {
+        cards.forEach(card => {
+          const isActive = card.dataset.theme === activeTheme;
+          card.classList.toggle('theme-card--active', isActive);
+          card.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+      }
+
+      // Highlight the currently saved theme
+      updateSelected(wikiGetSavedTheme());
+
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          const themeId = card.dataset.theme;
+          wikiSaveTheme(themeId);
+          updateSelected(themeId);
+          msg.textContent = 'Theme saved!';
+          setTimeout(() => { msg.textContent = ''; }, 2000);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

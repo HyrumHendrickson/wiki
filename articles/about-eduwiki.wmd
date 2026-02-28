@@ -1,0 +1,97 @@
+---
+title: About EduWiki
+category: admin
+author: EduWiki Team
+lastUpdated: 2026-02-28
+tags: help, about, getting started, navigation
+---
+
+:::summary
+EduWiki is an open educational wiki designed to make learning deep, meaningful, and
+interactive. This article explains what EduWiki is, what it covers, and how to get
+the most out of it.
+:::
+
+## What Is EduWiki?
+
+EduWiki is a free, open educational resource built in the spirit of a traditional encyclopedia
+but designed from the ground up to *teach*. Every article goes beyond bare facts to explain
+concepts clearly, provide worked examples, and connect ideas across disciplines.
+
+EduWiki currently covers a wide range of subjects:
+
+- **Mathematics** — from arithmetic and algebra to calculus, real analysis, and abstract algebra.
+- **Science** — physics, chemistry, geology, ecology, and more.
+- **History** — ancient civilizations, the Renaissance, the Reformation, American history, and beyond.
+- **Philosophy & Theology** — the great thinkers, logic, ethics, and metaphysics.
+- **Faith & Religion** — world religions, scripture, church history, and doctrine.
+- **Literature & Authors** — classic works, authors, and literary analysis.
+- **Languages** — Latin, Greek, Old English, and more.
+- **Programming & Computer Science** — from Bash to C++, algorithms, and theory.
+
+## Why EduWiki?
+
+Most online references tell you *what* something is but not *why* it matters or *how* it
+works. EduWiki articles are written to explain ideas from first principles, with:
+
+- **Summary boxes** — a quick overview at the top of every article.
+- **Step-by-step explanations** — concepts built up logically.
+- **Interactive Desmos graphs** — explore mathematics visually.
+- **LaTeX typesetting** — beautifully rendered equations.
+- **Expandable dropdowns** — worked examples and extra depth on demand.
+- **Info boxes** — key facts and figures at a glance.
+- **Citations** — sources and further reading at the bottom of every article.
+
+## How to Navigate
+
+### The Header
+
+The sticky header at the top of every page gives you quick access to:
+
+- The **logo** — click to return to the home page at any time.
+- The **search bar** — type a topic to find articles instantly.
+- **Home** — go to the main page.
+- **Help** — return to this page.
+- **Settings** — choose your preferred color theme.
+
+### The Home Page
+
+The home page features a large search box and a curated list of **featured articles** —
+a great starting point if you are not sure where to begin.
+
+### Article Pages
+
+Each article page has a **sidebar** on the left with:
+
+- A **Table of Contents** — click any heading to jump directly to that section.
+  The current section is highlighted automatically as you scroll.
+- A list of **featured articles** for quick navigation.
+
+### Search
+
+Use the search bar in the header or the large search box on the home page. Results appear
+as you type. Press `Enter` or click a suggestion to open an article. You can also go to
+the full search page for more detailed results.
+
+## Settings
+
+Click the **Settings** link in the header to personalize your experience. You can choose
+from five color themes:
+
+- **Default Blue** — the classic EduWiki look.
+- **Dark Night** — easy on the eyes in low-light environments.
+- **Warm Sunset** — warm orange and amber tones.
+- **Nature Green** — fresh greens and teals.
+- **Royal Purple** — rich violet and purple hues.
+
+Your theme choice is saved in a cookie and applied automatically on every visit.
+
+## Contributing
+
+EduWiki is designed to grow. If you would like to add a new article, read the
+[Create a New Article](../admin/admin-article.html?id=create-article) guide for full
+instructions on the `.wmd` article format.
+
+:::citations
+1. EduWiki internal documentation.
+:::

@@ -1,0 +1,130 @@
+---
+title:       Telegrams and the Telegraph
+category:    history
+author:      EduWiki Team
+lastUpdated: 2026-02-28
+tags:        telegraph, telegram, Morse, communication, history, electricity, technology
+featured:    false
+---
+
+:::summary
+The electric telegraph was the first technology to separate communication from physical transportation, allowing a message to travel thousands of miles in seconds rather than days or weeks. Invented in the 1830s and 1840s, it shrank the world, transformed commerce and warfare, and laid the conceptual and physical groundwork for every modern communication technology — telephone, radio, and internet. The telegram, the brief message transmitted by telegraph, became the most important form of long-distance communication for nearly a century and shaped the way people thought, wrote, and conducted their affairs.
+:::
+
+:::infobox Telegrams and the Telegraph at a Glance
+| Invention period | 1830s–1840s |
+| Key inventors | Samuel Morse, Charles Wheatstone, William Cooke, Carl Friedrich Gauss |
+| Signal medium | Electrical current through wire |
+| Code | Morse code (1844) |
+| Era of dominance | 1844–1960s |
+| Legacy | Laid groundwork for telephone, radio, and internet |
+:::
+
+## What Is the Telegraph?
+
+The **electric telegraph** is a system for transmitting text messages over long distances through electrical signals sent along wires. A trained operator encodes a message into a series of electrical pulses — in the case of the American system, using **Morse code** — which travel through wires at nearly the speed of light and are decoded by an operator at the receiving end.
+
+Before the telegraph, information moved only as fast as a person, a horse, or a ship could carry it. A message from New York to London might take two to three weeks by ship. After the completion of the **transatlantic telegraph cable** in 1866, the same message arrived in minutes. The effect on commerce, diplomacy, journalism, and warfare was revolutionary. [1]
+
+## Scientific Background
+
+The telegraph rests on the principles of **electromagnetism**, particularly **Oersted's discovery** (1820) that an electric current produces a magnetic field. If a current flowing through a wire creates a magnetic field, then starting and stopping the current would cause a magnetized needle to deflect — and that deflection, observed at the other end of a long wire, could communicate information.
+
+**André-Marie Ampère** immediately recognized the implication: a set of 26 wires, each connected to a needle indicating a letter of the alphabet, could transmit written language over any distance that could be spanned by wire.
+
+The challenge was practical: early electrochemical batteries were weak and unreliable, and long wire lines had very high electrical resistance. **Carl Friedrich Gauss** and **Wilhelm Weber** built a working electromagnetic telegraph between their laboratory and observatory in Göttingen, Germany, in 1833 — but their system remained a scientific curiosity.
+
+## Key Inventors
+
+### William Cooke and Charles Wheatstone (Britain, 1837)
+
+**William Fothergill Cooke** (1806–1879) and **Charles Wheatstone** (1802–1875) patented the first practical electric telegraph in Britain in 1837. Their **five-needle telegraph** used a grid of letters: five needles deflected in pairs to indicate which letter was being sent. Although ingenious, the system required six wires (one return and five signal wires), making it expensive to install.
+
+The Great Western Railway adopted the Cooke-Wheatstone telegraph in 1838, and it quickly proved its value: in 1845, a murder suspect was apprehended in London after his description was telegraphed from Slough — the first time the telegraph had directly aided law enforcement. [2]
+
+### Samuel Morse (United States, 1837–1844)
+
+**Samuel Finley Breese Morse** (1791–1872) was, improbably, an artist — a portrait painter and founder of the National Academy of Design — before he became the inventor most associated with the telegraph. In 1832, on a transatlantic voyage home, he heard a conversation about the principles of electromagnetism and conceived the idea of an electric telegraph. He spent the next twelve years developing it. [3]
+
+Morse's key insight was to radically simplify the transmission system: rather than multiple wires and needles, use a **single wire** and a **simple on/off code**. In partnership with Alfred Vail and the chemist Leonard Gale (who provided scientific expertise Morse lacked), he developed:
+
+1. **A reliable electromagnet relay** — amplifying the signal every few miles to overcome wire resistance
+2. **The recording telegraph** — which embossed a paper tape with dots and dashes
+3. **Morse code** — an optimized encoding in which the most common letters are assigned the shortest codes
+
+On **May 24, 1844**, Morse sent the first long-distance telegraph message from the Supreme Court chamber in Washington, D.C., to Baltimore, Maryland: **"What hath God wrought?"** — a verse from Numbers 23:23, chosen by Annie Ellsworth, daughter of the Commissioner of Patents. Morse, a devout Christian, considered this providential. He later wrote: "Not to us, but to God be all the glory."
+
+:::quote Samuel Morse, on the first telegraph message
+"Not to us, but to God be all the glory."
+:::
+
+## Morse Code
+
+Morse code encodes letters and numbers as sequences of short signals (**dots**, duration 1 unit) and long signals (**dashes**, duration 3 units), separated by pauses.
+
+The code was designed for efficiency — the most common English letters receive the shortest codes:
+
+| Letter | Code | Letter | Code |
+|--------|------|--------|------|
+| E | · | T | — |
+| I | ·· | A | ·— |
+| S | ··· | N | —· |
+| H | ···· | M | —— |
+| O | ——— | R | ·—· |
+
+A skilled telegraph operator could send and receive 25–35 words per minute. The best operators were highly valued professionals, often among the best-paid workers in their communities. A young **Andrew Carnegie** got his start as a telegraph messenger, and **Thomas Edison** worked as a telegraph operator before becoming an inventor.
+
+## The Expansion of the Telegraph Network
+
+### American Expansion
+
+Following Morse's 1844 demonstration, telegraph lines spread rapidly across America. The **Western Union Telegraph Company**, founded in 1851, consolidated competing lines and became one of the first great national corporations.
+
+The **transcontinental telegraph**, completed on **October 24, 1861**, connected the East and West Coasts of the United States — and simultaneously rendered the **Pony Express** (begun just eighteen months earlier) obsolete. The Civil War demonstrated the military value of rapid communication: President Lincoln spent hours in the War Department telegraph office, receiving battlefield reports and issuing orders that crossed hundreds of miles in minutes.
+
+### The Atlantic Cable
+
+**Cyrus West Field** (1819–1892) organized the effort to lay a telegraph cable across the Atlantic Ocean floor — an engineering project of breathtaking ambition. Two attempts failed (1857, 1858) before a working cable was completed in **1866** using the specially-built cable ship *SS Great Eastern*.
+
+When the cable began operation, *The Times* of London called it "the greatest marvel of the nineteenth century." Queen Victoria and President Andrew Johnson exchanged congratulatory messages; church bells rang; cities held celebrations. The Atlantic cable was understood — correctly — as a world-historical event: for the first time, Europe and America were in instantaneous communication.
+
+## The Telegram as a Cultural Form
+
+A **telegram** (also called a "telegraph" or "wire") was a brief message transmitted by telegraph and delivered to the recipient, usually in printed form on a small slip of paper, by a messenger. Because telegraphy was priced by the word, telegram prose developed distinctive features:
+
+- **Brevity** — every unnecessary word was expensive; senders stripped messages to essentials
+- **The word "STOP"** — used to end sentences (since punctuation was charged as extra words)
+- **Emotionless directness** — no room for pleasantries
+
+The telegram's cultural weight was enormous. Receiving a telegram — especially in wartime — was a moment of high tension: it might announce victory, disaster, birth, death, or urgent business. "I regret to inform you…" was the most dreaded opening in American military history.
+
+## Decline and Legacy
+
+The telegraph began its long decline in the 1870s when **Alexander Graham Bell** invented the telephone (1876), offering voice communication over the same wire networks. Radio communication (Marconi, 1895) further displaced the wire telegraph for marine and military use. By the mid-20th century, long-distance telephony and teletype machines had displaced telegraphy in most applications.
+
+**Western Union** sent its last telegram on **January 27, 2006**.
+
+But the telegraph's legacy is immense. It established:
+
+- The **concept of a network** — a connected system of nodes transmitting information, not goods
+- The **economics of information as a commodity** — the wire services (Associated Press, Reuters) were children of the telegraph
+- The **infrastructure model** for all subsequent communication technologies — telephone, cable, internet
+
+The internet is, in a profound sense, the telegraph reborn: a global network for near-instantaneous text communication, now extended to voice, image, and video.
+
+## See Also
+
+- [Electricity](article.html?id=electricity) — the physical science underlying telegraph operation
+- [Steam Engines](article.html?id=steam-engines) — the parallel technology that transformed transportation during the same era
+- [US History](article.html?id=us-history) — the American history in which the telegraph played a transformative role
+- [Western History](article.html?id=western-history) — the broader sweep of 19th-century technological civilization
+- [Physics](article.html?id=physics) — the electromagnetic principles that made the telegraph possible
+- [Computer Architecture](article.html?id=computer-architecture) — the modern descendant of the telegraph's binary signaling logic
+
+:::citations
+1. Standage, Tom. (1998). *The Victorian Internet: The Remarkable Story of the Telegraph and the Nineteenth Century's On-line Pioneers.* Walker & Company.
+2. Huurdeman, Anton A. (2003). *The Worldwide History of Telecommunications.* Wiley-IEEE Press.
+3. Silverman, Kenneth. (2003). *Lightning Man: The Accursed Life of Samuel F.B. Morse.* Knopf.
+4. Gordon, John Steele. (2002). *A Thread Across the Ocean: The Heroic Story of the Transatlantic Cable.* Walker & Company.
+5. Field, Henry M. (1898). *History of the Atlantic Telegraph.* Scribner.
+:::

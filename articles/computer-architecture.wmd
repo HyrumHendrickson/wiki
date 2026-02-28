@@ -1,0 +1,198 @@
+---
+title:       Computer Architecture
+category:    programming
+author:      EduWiki Team
+lastUpdated: 2026-02-28
+tags:        computer architecture, CPU, memory, instruction set, ALU, registers, binary, digital logic
+featured:    false
+---
+
+:::summary
+Computer architecture is the study of how a computer is organized and how its hardware components work together to execute programs. It bridges the gap between software — the instructions a programmer writes — and hardware — the transistors, logic gates, and circuits that physically perform computation. Understanding computer architecture gives the programmer a far deeper mental model of what their code is actually doing, enables better performance engineering, and reveals how the astonishing capabilities of modern computers emerge from extraordinarily simple underlying operations.
+:::
+
+:::infobox Computer Architecture at a Glance
+| Foundation | Boolean algebra; digital logic; binary arithmetic |
+| Key abstractions | Logic gates → ALU → CPU → memory hierarchy → ISA |
+| Key figures | Von Neumann, Turing, Boole, Shannon, Kilby, Noyce |
+| Modern CPUs | Billions of transistors; multi-core; GHz clock speeds |
+| Related | Assembly language, operating systems, compilers |
+:::
+
+## From Transistors to Computation
+
+### Binary and Boolean Algebra
+
+All digital computers represent information in **binary** — using only two states, conventionally called 0 and 1, which correspond to low and high electrical voltage levels. Any integer can be represented in binary (base 2):
+
+$$1011_2 = 1 \cdot 2^3 + 0 \cdot 2^2 + 1 \cdot 2^1 + 1 \cdot 2^0 = 8 + 0 + 2 + 1 = 11_{10}$$
+
+**Boolean algebra**, developed by **George Boole** (1815–1864), provides the mathematical foundation for digital logic. It operates on values that are either TRUE (1) or FALSE (0) using three fundamental operations:
+
+| Operation | Symbol | Description | Truth Table |
+|-----------|--------|-------------|-------------|
+| AND | · or ∧ | True only if both inputs are true | 0·0=0, 0·1=0, 1·0=0, 1·1=1 |
+| OR | + or ∨ | True if at least one input is true | 0+0=0, 0+1=1, 1+0=1, 1+1=1 |
+| NOT | ¬ or ~ | Inverts the input | ¬0=1, ¬1=0 |
+
+**Claude Shannon** (1916–2001) demonstrated in his 1937 master's thesis that Boolean algebra could be implemented in electrical relay circuits — the conceptual foundation of all digital electronics. [1]
+
+### Logic Gates
+
+Logic gates are electronic circuits that implement Boolean operations. They are built from **transistors** — semiconductor devices that act as electronically controlled switches. Modern CPUs contain over 50 billion transistors in a chip the size of a fingernail.
+
+| Gate | Symbol | Function |
+|------|--------|----------|
+| AND | ▷ | Output is 1 only if all inputs are 1 |
+| OR | ▷ | Output is 1 if any input is 1 |
+| NOT | ○ | Inverts the input |
+| NAND | ▷○ | NOT AND; universal gate |
+| NOR | ▷○ | NOT OR; universal gate |
+| XOR | ▷ | Output is 1 if inputs differ |
+
+**NAND** and **NOR** are called **universal gates** because any Boolean function — and therefore any digital circuit — can be implemented using only NAND gates or only NOR gates. This is why NAND-based circuits dominate semiconductor manufacturing.
+
+### From Gates to Functional Units
+
+By combining logic gates, engineers build functional units:
+
+- **Multiplexer (MUX)** — selects one of many inputs based on a control signal
+- **Decoder** — converts an n-bit binary number into one of $2^n$ output lines
+- **Adder** — adds two binary numbers
+  - **Half adder:** adds two bits; produces sum bit (XOR) and carry bit (AND)
+  - **Full adder:** adds two bits plus a carry-in; produces sum and carry-out
+  - **Ripple-carry adder:** chains full adders to add multi-bit numbers
+
+A **1-bit full adder** implements:
+$$\text{Sum} = A \oplus B \oplus C_{in}$$
+$$C_{out} = (A \cdot B) + (C_{in} \cdot (A \oplus B))$$
+
+Chaining 32 or 64 full adders in sequence produces a 32- or 64-bit adder — the foundation of the ALU.
+
+## The Central Processing Unit (CPU)
+
+### Major Components
+
+A CPU contains several key functional blocks:
+
+| Component | Function |
+|-----------|----------|
+| **ALU (Arithmetic Logic Unit)** | Performs arithmetic (+, −, ×, ÷) and logical (AND, OR, NOT, XOR, compare) operations |
+| **Registers** | Small, ultra-fast storage cells within the CPU; hold operands and results |
+| **Control Unit** | Reads and decodes instructions; directs data flow between components |
+| **Program Counter (PC)** | Register holding the memory address of the next instruction |
+| **Instruction Register (IR)** | Holds the currently executing instruction |
+| **Cache** | Small, fast memory within or adjacent to the CPU (L1, L2, L3) |
+| **Bus Interface** | Connects the CPU to external memory and I/O devices |
+
+### The Fetch-Decode-Execute Cycle
+
+Every instruction a CPU executes passes through the **instruction cycle**:
+
+1. **Fetch** — the Control Unit reads the instruction at the address in the PC from memory into the IR; increments the PC
+2. **Decode** — the Control Unit interprets the instruction's opcode and operand fields
+3. **Execute** — the ALU or other functional unit performs the operation; results are written to registers or memory
+
+A modern CPU executes billions of these cycles per second (measured in GHz — gigahertz). A 3 GHz processor completes 3 billion clock cycles per second; with **instruction-level parallelism**, it may complete more than one instruction per clock cycle.
+
+### Instruction Set Architecture (ISA)
+
+The **Instruction Set Architecture (ISA)** defines the set of instructions a CPU understands — the contract between hardware and software. Key ISA families:
+
+| ISA | Type | Examples |
+|-----|------|---------|
+| x86-64 | CISC | Intel Core, AMD Ryzen (PCs, servers) |
+| ARM | RISC | Apple M-series, Qualcomm Snapdragon (phones, tablets, Macs) |
+| RISC-V | RISC (open) | Embedded systems; growing academic and industrial use |
+| MIPS | RISC | Classic teaching architecture; embedded systems |
+
+**CISC (Complex Instruction Set Computer)** — large instruction sets with complex, variable-length instructions that can do many operations at once. Easier to program in assembly; denser code.
+
+**RISC (Reduced Instruction Set Computer)** — small instruction sets with simple, fixed-length instructions. Easier to pipeline and optimize. Modern RISC processors (ARM, RISC-V) dominate mobile and embedded computing.
+
+### Pipelining
+
+**Pipelining** is the technique of overlapping the execution of multiple instructions — like an assembly line for instructions. A classic 5-stage pipeline:
+
+| Stage | Operation |
+|-------|-----------|
+| IF | Instruction Fetch |
+| ID | Instruction Decode |
+| EX | Execute (ALU operation) |
+| MEM | Memory access |
+| WB | Write Back (result to register) |
+
+While one instruction is executing (EX), the next instruction is being decoded (ID), and the one after that is being fetched (IF). In ideal conditions, a 5-stage pipeline produces one result per clock cycle — a 5× throughput improvement over a non-pipelined design.
+
+**Hazards** interrupt the ideal pipeline:
+- **Data hazard** — an instruction needs a result not yet produced by a previous instruction
+- **Control hazard** — a branch instruction may invalidate fetched instructions
+- **Structural hazard** — two instructions need the same hardware resource simultaneously
+
+Modern CPUs use **out-of-order execution**, **branch prediction**, and **superscalar execution** (multiple execution units) to keep the pipeline as full as possible.
+
+## Memory Hierarchy
+
+No matter how fast the CPU, it is only as fast as it can be fed with data. Memory is arranged in a hierarchy trading off speed, size, and cost:
+
+| Level | Technology | Latency | Size (typical) |
+|-------|-----------|---------|----------------|
+| Registers | Flip-flops in CPU | ~0.3 ns | ~1 KB |
+| L1 Cache | SRAM (on-die) | ~1 ns | 32–64 KB |
+| L2 Cache | SRAM (on-die) | ~5 ns | 256 KB–1 MB |
+| L3 Cache | SRAM (on/near die) | ~20 ns | 4–64 MB |
+| RAM | DRAM | ~60–100 ns | 8–128 GB |
+| SSD | NAND Flash | ~0.1 ms | 256 GB–4 TB |
+| HDD | Magnetic disk | ~5–10 ms | 1–20 TB |
+
+The CPU accesses memory frequently. If data is in L1 cache, access is nearly instant; if it must come from RAM, the CPU may stall for 200+ clock cycles. **Cache-friendly programming** — structuring code to access memory sequentially rather than randomly — can produce dramatic performance differences. This is why a linear array traversal is many times faster than traversing a linked list of the same size.
+
+### Locality of Reference
+
+Caches work because of **locality of reference**:
+- **Temporal locality** — data accessed recently is likely to be accessed again soon (loops)
+- **Spatial locality** — data near recently accessed data is likely to be accessed soon (arrays)
+
+Cache lines (typically 64 bytes) are loaded as a unit — when the CPU accesses one byte of an array, the surrounding 63 bytes come into cache automatically.
+
+## Von Neumann Architecture
+
+The architecture used by virtually all modern computers was described by **John von Neumann** (1903–1957) in his 1945 report on the EDVAC. Key features:
+
+1. **Stored-program principle** — instructions are stored in memory alongside data; the program itself is just data that can be read, written, and modified
+2. **Single memory space** — instructions and data share the same memory
+3. **Sequential execution** — instructions are executed one at a time (modified by pipelining and out-of-order execution in modern CPUs)
+
+The **Harvard architecture** separates instruction and data memory — used in many microcontrollers and DSPs for performance reasons.
+
+## Modern CPU Trends
+
+### Multi-Core Processors
+
+Since the mid-2000s, it has become increasingly difficult to increase single-core performance (due to power and heat constraints). The industry responded by putting **multiple CPU cores** on a single chip. A quad-core processor has 4 independent CPUs sharing cache and memory; a 16-core processor has 16. **Parallel programming** is required to take advantage of multiple cores.
+
+### GPUs and Specialized Processors
+
+A **GPU (Graphics Processing Unit)** has thousands of simpler cores designed for massively parallel workloads — originally 3D graphics, now also scientific computing and machine learning. A modern GPU has 10,000+ cores running simultaneously, each handling a small, independent piece of a large computation.
+
+Other specialized processors:
+- **TPU (Tensor Processing Unit)** — Google's custom chip for neural network inference and training
+- **DSP (Digital Signal Processor)** — optimized for audio, communications, and signal processing
+- **FPGA (Field-Programmable Gate Array)** — user-reconfigurable hardware logic; used for prototyping and specialized tasks
+
+## See Also
+
+- [Assembly](article.html?id=assembly) — the lowest-level human-readable programming language, directly reflecting the ISA
+- [Machine Learning](article.html?id=machine-learning) — the application that increasingly drives GPU and TPU hardware development
+- [Electricity](article.html?id=electricity) — the physical substrate of all digital computation
+- [Mathematics](article.html?id=mathematics) — the Boolean algebra and number theory underlying digital logic
+- [Physics](article.html?id=physics) — the semiconductor physics enabling transistor-based computation
+- [Formal Logic](article.html?id=formal-logic) — the logical foundations that Boolean algebra formalized and computerized
+
+:::citations
+1. Patterson, David A. & Hennessy, John L. (2020). *Computer Organization and Design: The Hardware/Software Interface.* 5th ed. Morgan Kaufmann.
+2. Tanenbaum, Andrew S. (2012). *Structured Computer Organization.* 6th ed. Pearson.
+3. Shannon, Claude E. (1937). "A Symbolic Analysis of Relay and Switching Circuits." *Transactions of the American Institute of Electrical Engineers* 57(12): 713–723.
+4. Von Neumann, John. (1945). "First Draft of a Report on the EDVAC." Moore School of Electrical Engineering.
+5. Hennessy, John L. & Patterson, David A. (2019). *Computer Architecture: A Quantitative Approach.* 6th ed. Morgan Kaufmann.
+:::

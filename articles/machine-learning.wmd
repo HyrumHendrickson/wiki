@@ -1,0 +1,219 @@
+---
+title:       Machine Learning
+category:    programming
+author:      EduWiki Team
+lastUpdated: 2026-02-28
+tags:        machine learning, neural networks, gradient descent, linear algebra, statistics, AI, deep learning
+featured:    false
+---
+
+:::summary
+Machine learning is the branch of computer science and mathematics concerned with building systems that learn patterns from data rather than following explicitly programmed rules. It draws on linear algebra, multivariable calculus, probability theory, and statistics to construct models that can recognize images, translate languages, generate text, predict outcomes, and perform tasks once thought to require human intelligence. Understanding the mathematical foundations of machine learning is one of the most rewarding and practically valuable intellectual pursuits available to the modern student of computer science.
+:::
+
+:::infobox Machine Learning at a Glance
+| Mathematical foundations | Linear algebra, calculus, probability, statistics, optimization |
+| Key algorithms | Linear regression, logistic regression, neural networks, SVMs, decision trees |
+| Key figures | Turing, McCulloch, Rosenblatt, Rumelhart, LeCun, Bengio, Hinton |
+| Major paradigms | Supervised, unsupervised, reinforcement learning |
+| Modern milestone | Deep learning revolution (2012–present) |
+:::
+
+## What Is Machine Learning?
+
+**Machine learning (ML)** is the study and practice of algorithms that improve automatically through experience. Rather than a programmer writing explicit rules — "if the email contains the word 'lottery', classify it as spam" — a machine learning algorithm infers rules from examples: given thousands of emails labeled "spam" or "not spam," it learns the statistical patterns that distinguish them.
+
+The foundational insight, due to **Arthur Samuel** (1959), is that computers can be programmed to *learn* — to adjust their behavior based on data — without being explicitly programmed for every situation. This shift from rule-based to data-driven programming is the defining characteristic of ML.
+
+Machine learning is not magic — it is applied mathematics, and every step in the process has a precise mathematical description. The remarkable capabilities of modern AI systems are the product of mathematical optimization running on vast amounts of data and computing power. [1]
+
+## Mathematical Prerequisites
+
+A serious study of machine learning requires proficiency in:
+
+- **Linear algebra** — vectors, matrices, matrix multiplication, eigenvalues, decompositions
+- **Multivariable calculus** — partial derivatives, gradients, the chain rule
+- **Probability and statistics** — probability distributions, expectation, variance, Bayes' theorem, maximum likelihood estimation
+- **Optimization** — gradient descent and its variants
+
+## Linear Regression: The Foundation
+
+**Linear regression** is the simplest and most important ML algorithm — the starting point for understanding all others.
+
+**Problem:** Given a training set of $m$ examples $\{(x^{(i)}, y^{(i)})\}_{i=1}^m$ where $x^{(i)} \in \mathbb{R}^n$ are feature vectors and $y^{(i)} \in \mathbb{R}$ are target values, find a linear model:
+
+$$\hat{y} = \vec{w}^T \vec{x} + b = w_1 x_1 + w_2 x_2 + \ldots + w_n x_n + b$$
+
+that best predicts $y$ from $x$.
+
+### The Cost Function
+
+"Best" is defined by minimizing the **Mean Squared Error (MSE) cost function**:
+
+$$J(\vec{w}, b) = \frac{1}{2m} \sum_{i=1}^{m} \left(\hat{y}^{(i)} - y^{(i)}\right)^2$$
+
+The factor of $\frac{1}{2}$ is a convenience that cancels when we take the derivative. The goal of training is to find the weights $\vec{w}$ and bias $b$ that minimize $J$.
+
+### The Normal Equation (Closed-Form Solution)
+
+For linear regression, the minimum can be found analytically. In matrix notation, let $X$ be the $m \times (n+1)$ design matrix (with a column of ones prepended for the bias) and $\vec{y}$ the $m$-dimensional target vector. The optimal weights are:
+
+$$\vec{w}^* = (X^T X)^{-1} X^T \vec{y}$$
+
+This is computationally expensive for large $n$ (matrix inversion is $O(n^3)$), which is why iterative methods are preferred.
+
+## Gradient Descent
+
+**Gradient descent** is the workhorse optimization algorithm of machine learning. The idea: start with random parameters, compute the gradient of the cost function with respect to each parameter, and take a small step in the direction that reduces the cost.
+
+$$w_j \leftarrow w_j - \alpha \frac{\partial J}{\partial w_j}$$
+
+$$b \leftarrow b - \alpha \frac{\partial J}{\partial b}$$
+
+where $\alpha > 0$ is the **learning rate** — a hyperparameter controlling step size.
+
+The partial derivatives for linear regression with MSE cost are:
+
+$$\frac{\partial J}{\partial w_j} = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)}) x_j^{(i)}$$
+
+$$\frac{\partial J}{\partial b} = \frac{1}{m} \sum_{i=1}^{m} (\hat{y}^{(i)} - y^{(i)})$$
+
+:::dropdown Variants of Gradient Descent
+**Batch gradient descent** — computes the gradient using the entire training set each step. Precise but slow for large datasets.
+
+**Stochastic gradient descent (SGD)** — computes the gradient using a single randomly selected training example each step. Noisy but fast; the noise can help escape local minima.
+
+**Mini-batch gradient descent** — computes the gradient using a small batch (e.g., 32–256 examples) each step. The standard approach in deep learning; balances precision and speed.
+
+**Momentum** — accumulates a velocity vector in the direction of persistent gradient reduction, damping oscillations and accelerating convergence.
+
+**Adam** — combines momentum with adaptive per-parameter learning rates; the default optimizer for most deep learning tasks.
+:::
+
+## Classification: Logistic Regression
+
+For **binary classification** (predicting one of two classes), linear regression is inappropriate because it can produce outputs outside [0, 1]. **Logistic regression** applies a **sigmoid function** to map the linear output to a probability:
+
+$$\hat{y} = \sigma(z) = \frac{1}{1 + e^{-z}} \qquad \text{where } z = \vec{w}^T \vec{x} + b$$
+
+The sigmoid maps any real number to $(0, 1)$, interpretable as a probability. The decision boundary is $\hat{y} = 0.5$, i.e., $z = 0$.
+
+The appropriate cost function for logistic regression is the **binary cross-entropy loss**:
+
+$$J(\vec{w}, b) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y^{(i)} \log(\hat{y}^{(i)}) + (1 - y^{(i)}) \log(1 - \hat{y}^{(i)}) \right]$$
+
+This is derived from **maximum likelihood estimation** of a Bernoulli distribution — not arbitrarily chosen, but the mathematically correct loss function for probabilistic binary classification.
+
+## Neural Networks
+
+A **neural network** is a composition of many simple parameterized functions arranged in layers. The inspiration comes from biological neurons, but the mathematics is simply matrix multiplication and nonlinear activation functions.
+
+### The Perceptron and Multi-Layer Networks
+
+A single **neuron** (perceptron) computes:
+
+$$a = g(\vec{w}^T \vec{x} + b)$$
+
+where $g$ is a nonlinear **activation function**. Common choices:
+
+| Activation | Formula | Use |
+|------------|---------|-----|
+| Sigmoid | $\sigma(z) = \frac{1}{1+e^{-z}}$ | Binary classification output |
+| Tanh | $\tanh(z) = \frac{e^z - e^{-z}}{e^z + e^{-z}}$ | Hidden layers (older) |
+| ReLU | $\max(0, z)$ | Hidden layers (standard) |
+| Softmax | $\frac{e^{z_k}}{\sum_j e^{z_j}}$ | Multi-class classification output |
+
+A **Multi-Layer Perceptron (MLP)** or **fully connected network** stacks multiple layers. For a network with $L$ layers, the forward pass computes:
+
+$$\vec{a}^{[l]} = g^{[l]}(W^{[l]} \vec{a}^{[l-1]} + \vec{b}^{[l]}) \qquad \text{for } l = 1, 2, \ldots, L$$
+
+where $W^{[l]}$ is the weight matrix and $\vec{b}^{[l]}$ is the bias vector for layer $l$.
+
+### The Universal Approximation Theorem
+
+A key theoretical result: a single-hidden-layer neural network with enough neurons can approximate *any* continuous function on a compact subset of $\mathbb{R}^n$ to arbitrary accuracy. This theorem explains *why* neural networks are powerful — but not *how* to train them efficiently.
+
+### Backpropagation
+
+**Backpropagation** is the algorithm for computing the gradient of the loss with respect to every parameter in the network. It applies the **chain rule** of calculus systematically, propagating error gradients backward from the output layer to the input layer.
+
+For a simple two-layer network:
+
+$$\frac{\partial J}{\partial W^{[1]}} = \frac{\partial J}{\partial \vec{a}^{[2]}} \cdot \frac{\partial \vec{a}^{[2]}}{\partial \vec{z}^{[2]}} \cdot \frac{\partial \vec{z}^{[2]}}{\partial \vec{a}^{[1]}} \cdot \frac{\partial \vec{a}^{[1]}}{\partial \vec{z}^{[1]}} \cdot \frac{\partial \vec{z}^{[1]}}{\partial W^{[1]}}$$
+
+Each factor is a Jacobian matrix. The computational graph formalism makes this systematic and efficient. Modern deep learning frameworks (PyTorch, TensorFlow, JAX) implement **automatic differentiation**, computing gradients exactly through arbitrary computational graphs.
+
+## Deep Learning
+
+**Deep learning** refers to neural networks with many layers (typically dozens to hundreds). Key architectures:
+
+### Convolutional Neural Networks (CNNs)
+
+CNNs exploit the spatial structure of images. Instead of fully connected layers (which don't respect spatial relationships), **convolutional layers** apply a small **filter** (kernel) across the entire input, sharing weights across positions.
+
+A convolution of a filter $W$ of size $k \times k$ with an input $X$ at position $(i, j)$:
+
+$$Z_{i,j} = \sum_{u=0}^{k-1} \sum_{v=0}^{k-1} W_{u,v} \cdot X_{i+u, j+v} + b$$
+
+CNNs achieved breakthrough results in image classification at **ImageNet 2012** (AlexNet), launching the deep learning revolution. Modern CNNs (ResNet, EfficientNet) achieve superhuman accuracy on many visual tasks.
+
+### Recurrent Neural Networks (RNNs) and Transformers
+
+For **sequential data** (text, speech, time series), architecture must account for order. **RNNs** process sequences one element at a time, maintaining a hidden state:
+
+$$\vec{h}_t = g(W_{hh} \vec{h}_{t-1} + W_{xh} \vec{x}_t + \vec{b})$$
+
+**LSTMs (Long Short-Term Memory)** and **GRUs** address the vanishing gradient problem in plain RNNs with gating mechanisms.
+
+**Transformers** (Vaswani et al., 2017) replaced recurrence with **self-attention** — directly comparing every element of a sequence to every other element. This enabled massively parallel training and is the architecture behind GPT, BERT, and all modern large language models. The self-attention score between positions $i$ and $j$ is:
+
+$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right) V$$
+
+where $Q$, $K$, $V$ are query, key, and value matrices derived from the input.
+
+## Overfitting and Regularization
+
+A model that performs well on training data but poorly on new data is **overfitting** — it has memorized the training set rather than learning general patterns.
+
+**Regularization** techniques to prevent overfitting:
+
+- **L2 regularization (weight decay):** Add $\frac{\lambda}{2m} \sum_j w_j^2$ to the cost function; penalizes large weights
+- **L1 regularization:** Add $\frac{\lambda}{m} \sum_j |w_j|$; promotes sparse weights (many exactly zero)
+- **Dropout:** During training, randomly set a fraction of neurons to zero each forward pass; forces the network to learn redundant representations
+- **Early stopping:** Halt training when validation error stops improving
+- **Data augmentation:** Artificially expand the training set (e.g., flip, crop, rotate images)
+
+The **bias-variance tradeoff** captures this tension: a model that is too simple (high bias) underfits; a model that is too complex (high variance) overfits. The goal is a model complex enough to capture the true pattern but not so complex that it memorizes noise.
+
+## Probability and Statistics in ML
+
+Machine learning is fundamentally probabilistic. Key concepts:
+
+**Bayes' Theorem:**
+$$P(h | \mathcal{D}) = \frac{P(\mathcal{D} | h) P(h)}{P(\mathcal{D})}$$
+
+In Bayesian ML: $P(h)$ is the **prior** (belief before seeing data); $P(\mathcal{D} | h)$ is the **likelihood**; $P(h | \mathcal{D})$ is the **posterior**.
+
+**Maximum Likelihood Estimation (MLE):** Choose parameters that maximize the probability of the observed data:
+
+$$\hat{\theta}_{MLE} = \arg\max_{\theta} P(\mathcal{D} | \theta) = \arg\max_{\theta} \sum_{i=1}^m \log P(x^{(i)} | \theta)$$
+
+Most loss functions used in ML training (MSE for regression, cross-entropy for classification) can be derived from MLE under appropriate distributional assumptions.
+
+## See Also
+
+- [Statistics](article.html?id=statistics) — the statistical theory foundational to machine learning
+- [Probability Theory](article.html?id=probability-theory) — probability distributions and inference underlying ML
+- [Calculus](article.html?id=calculus) — the calculus of gradient computation and backpropagation
+- [Computer Architecture](article.html?id=computer-architecture) — the hardware that runs machine learning at scale
+- [Mathematics](article.html?id=mathematics) — the broader mathematical context from which ML draws
+- [Assembly](article.html?id=assembly) — understanding the hardware level that ML frameworks ultimately run on
+
+:::citations
+1. Bishop, Christopher M. (2006). *Pattern Recognition and Machine Learning.* Springer.
+2. Goodfellow, Ian, Bengio, Yoshua & Courville, Aaron. (2016). *Deep Learning.* MIT Press. [deeplearningbook.org](https://www.deeplearningbook.org)
+3. Murphy, Kevin P. (2022). *Probabilistic Machine Learning: An Introduction.* MIT Press.
+4. Nielsen, Michael A. (2015). *Neural Networks and Deep Learning.* Determination Press. [neuralnetworksanddeeplearning.com](http://neuralnetworksanddeeplearning.com)
+5. Vaswani, A. et al. (2017). "Attention Is All You Need." *Advances in Neural Information Processing Systems* 30.
+6. Samuel, Arthur L. (1959). "Some Studies in Machine Learning Using the Game of Checkers." *IBM Journal of Research and Development* 3(3): 210–229.
+:::

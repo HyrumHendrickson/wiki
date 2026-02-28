@@ -1,0 +1,173 @@
+---
+title:       Weather and Meteorology
+category:    science
+author:      EduWiki Team
+lastUpdated: 2026-02-28
+tags:        weather, meteorology, atmosphere, climate, storms, precipitation, forecast
+featured:    false
+---
+
+:::summary
+Weather is the state of the atmosphere at a given time and place — the combination of temperature, humidity, precipitation, wind, and atmospheric pressure that determines whether a day is sunny or stormy, still or turbulent. Meteorology, the science of weather, is one of the most practically important branches of earth science, drawing on physics, chemistry, mathematics, and fluid dynamics to understand and forecast the perpetual motion of Earth's atmosphere. From ancient peoples reading the sky to modern satellite networks and computer models, humanity's effort to understand and predict the weather reflects our enduring desire to comprehend the world God has made.
+:::
+
+:::infobox Weather at a Glance
+| Atmosphere layers | Troposphere, stratosphere, mesosphere, thermosphere, exosphere |
+| Key variables | Temperature, pressure, humidity, wind speed/direction, precipitation |
+| Driving force | Solar energy (uneven heating of Earth's surface) |
+| Timescale | Weather = hours to weeks; Climate = years to centuries |
+| Tools | Barometer, thermometer, hygrometer, anemometer, radar, satellite |
+:::
+
+## The Atmosphere
+
+Earth's atmosphere is a thin envelope of gas — primarily nitrogen (78%), oxygen (21%), and argon (0.9%), with trace amounts of carbon dioxide, water vapor, and other gases — held in place by gravity. Its total mass is approximately $5.15 \times 10^{18}$ kg.
+
+### Atmospheric Layers
+
+| Layer | Altitude | Key Features |
+|-------|----------|--------------|
+| Troposphere | 0–12 km | Contains weather; temperature decreases with altitude |
+| Stratosphere | 12–50 km | Contains ozone layer; temperature increases with altitude |
+| Mesosphere | 50–85 km | Meteors burn up here; coldest layer |
+| Thermosphere | 85–600 km | Aurora borealis; very thin air; very high temperatures |
+| Exosphere | 600+ km | Transition to space |
+
+**Weather occurs almost entirely in the troposphere** — the lowest layer, where the vast majority of atmospheric mass resides and where convective mixing of air constantly occurs.
+
+## Energy and Heat
+
+All weather is ultimately driven by **solar energy**. The Sun does not heat Earth's surface uniformly: tropical regions receive more direct solar radiation than polar regions, and land heats and cools faster than water. This uneven heating creates pressure differences, and pressure differences drive wind.
+
+### The Greenhouse Effect
+
+The atmosphere acts like a blanket: **greenhouse gases** (water vapor, CO₂, methane) absorb outgoing infrared radiation from Earth's surface and re-emit it in all directions, warming the lower atmosphere. Without any greenhouse effect, Earth's average surface temperature would be approximately −18°C (0°F) rather than the actual average of +15°C (59°F). [1]
+
+### Lapse Rate
+
+Temperature normally decreases with altitude in the troposphere at the **environmental lapse rate** of approximately 6.5°C per 1,000 m of altitude. This occurs because pressure decreases with altitude, causing rising air to expand and cool.
+
+When a parcel of air is **warmer** than the surrounding air at the same altitude, it is **unstable** — it continues to rise, potentially forming cumulus and cumulonimbus clouds and thunderstorms. When a parcel of air is **cooler** than its surroundings, it sinks — producing **inversions** that trap pollution and suppress precipitation.
+
+## Atmospheric Pressure and Wind
+
+**Atmospheric pressure** is the weight of the air above a point. Standard sea-level pressure is **1013.25 millibars (mb)** or **29.92 inches of mercury (inHg)**.
+
+- **High pressure (H)** — air sinking and diverging at the surface; skies generally clear and fair
+- **Low pressure (L)** — air rising and converging at the surface; clouds, precipitation, storms
+
+**Wind flows from high pressure to low pressure**, but is deflected by the **Coriolis effect** — a consequence of Earth's rotation that causes moving air to veer to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. The result is that winds around a low-pressure system in the Northern Hemisphere spiral **counterclockwise** (cyclonically), while winds around high-pressure systems spiral **clockwise** (anticyclonically).
+
+$$\vec{F}_{Coriolis} = -2m(\vec{\omega} \times \vec{v})$$
+
+where $\vec{\omega}$ is Earth's angular velocity and $\vec{v}$ is the wind velocity.
+
+## Moisture and Precipitation
+
+### Humidity
+
+**Relative humidity** measures how much water vapor the air contains relative to how much it could hold at that temperature, expressed as a percentage. Warm air can hold more water vapor than cold air.
+
+$$\text{Relative Humidity} = \frac{\text{actual vapor pressure}}{\text{saturation vapor pressure}} \times 100\%$$
+
+When air cools to its **dew point** — the temperature at which it becomes saturated — water vapor begins to condense into droplets, forming clouds, fog, or dew.
+
+### Cloud Formation
+
+Clouds form when moist air rises, cools below its dew point, and water vapor condenses onto **condensation nuclei** (tiny particles of dust, sea salt, or pollution). Cloud types are classified by altitude and shape:
+
+| Cloud Type | Altitude | Description |
+|------------|----------|-------------|
+| Cirrus | High (>6 km) | Wispy, ice crystals; often precede fronts |
+| Altocumulus | Mid (2–6 km) | Gray puffs in rows or waves |
+| Stratus | Low (<2 km) | Flat, gray, uniform; drizzle |
+| Cumulus | Variable base | Puffy, fair-weather clouds |
+| Cumulonimbus | Surface to >12 km | Thunderstorm cloud; lightning, heavy rain, hail |
+| Fog | Surface | Stratus cloud at ground level |
+
+### Precipitation Types
+
+| Type | Formation |
+|------|-----------|
+| Rain | Droplets grow by collision and coalescence; fall unfrozen |
+| Snow | Ice crystals form at temperatures below 0°C; fall as snowflakes |
+| Sleet | Rain freezes as it falls through a below-freezing surface layer |
+| Freezing rain | Rain that freezes on contact with below-freezing surfaces |
+| Hail | Ice pellets grown in strong thunderstorm updrafts |
+
+## Weather Systems
+
+### Air Masses
+
+An **air mass** is a large body of air with relatively uniform temperature and humidity, acquired from a source region. Types:
+
+- **Continental polar (cP)** — cold and dry; originates over northern Canada or Siberia
+- **Maritime polar (mP)** — cool and moist; forms over cold ocean surfaces
+- **Continental tropical (cT)** — hot and dry; originates over desert interiors
+- **Maritime tropical (mT)** — warm and humid; forms over warm ocean surfaces
+
+### Fronts
+
+A **front** is the boundary between two air masses of different temperature and/or humidity.
+
+- **Cold front** — cold air mass advancing and undercutting warm air; produces narrow band of heavy showers and thunderstorms; followed by cooler, drier air
+- **Warm front** — warm air advancing over cold air; produces broad area of steady rain or snow; gradual warming follows
+- **Stationary front** — little movement; can produce prolonged precipitation
+- **Occluded front** — a fast-moving cold front catches up with a warm front
+
+### Thunderstorms
+
+Thunderstorms develop when unstable, moist air rises rapidly. A typical thunderstorm has three stages:
+
+1. **Cumulus stage** — updrafts build towering cumulus clouds
+2. **Mature stage** — downdrafts join updrafts; lightning, heavy rain, hail possible
+3. **Dissipating stage** — downdrafts dominate; the storm weakens
+
+**Lightning** is an enormous electrostatic discharge between regions of opposite charge in a thunderstorm cloud (cloud-to-cloud lightning) or between the cloud and Earth (cloud-to-ground lightning). The rapid heating of the air by the lightning bolt (up to 30,000 K — five times the surface temperature of the Sun) causes explosive expansion of air, heard as **thunder**.
+
+### Tornadoes
+
+A **tornado** is a rapidly rotating column of air in contact with both a cumulonimbus cloud and the ground. Tornadoes form primarily in supercell thunderstorms when wind shear (change in wind speed or direction with altitude) causes horizontal rotation, which is then tilted into vertical rotation by powerful updrafts.
+
+The **Enhanced Fujita (EF) scale** rates tornado intensity by damage:
+| Scale | Wind Speed | Damage |
+|-------|-----------|--------|
+| EF0 | 65–85 mph | Minor — broken branches |
+| EF1 | 86–110 mph | Moderate — roof damage |
+| EF2 | 111–135 mph | Considerable — roof torn off |
+| EF3 | 136–165 mph | Severe — walls collapse |
+| EF4 | 166–200 mph | Devastating — well-built homes leveled |
+| EF5 | >200 mph | Incredible — structures swept away |
+
+### Hurricanes
+
+A **hurricane** (Atlantic) or **typhoon** (Pacific) is a tropical cyclone — a large, organized system of thunderstorms with a well-defined center (the **eye**) and sustained winds of at least 74 mph (64 knots). Hurricanes derive energy from warm ocean surface water (≥26°C). They are classified on the **Saffir-Simpson scale** (Category 1–5) by wind speed.
+
+## Weather Forecasting
+
+Modern weather forecasting uses a combination of:
+
+- **Observational networks** — surface weather stations, ocean buoys, radiosondes (weather balloons), aircraft reports
+- **Remote sensing** — Doppler radar (measures precipitation intensity and wind velocity via the Doppler effect), weather satellites (geostationary and polar-orbiting)
+- **Numerical Weather Prediction (NWP)** — large-scale computer models that solve the atmospheric equations of motion numerically on a three-dimensional grid
+
+The governing equations of atmospheric motion are the **primitive equations** — a simplified form of the Navier-Stokes equations applied to a rotating sphere, combined with equations of state for moist air and parameterizations of physical processes (convection, radiation, boundary-layer turbulence).
+
+Weather forecasting is inherently limited by **chaos**: small errors in the initial state of the atmosphere grow exponentially, making deterministic forecasts useful only to about 1–2 weeks. Beyond that, only probabilistic forecasts (ensemble modeling) are meaningful.
+
+## See Also
+
+- [Physics](article.html?id=physics) — the physical principles underlying atmospheric dynamics
+- [Geology](article.html?id=geology) — Earth's physical structure and its relation to climate
+- [Ecology](article.html?id=ecology) — how weather and climate shape ecosystems
+- [Calculus](article.html?id=calculus) — the mathematical language of fluid dynamics and thermodynamics
+- [Probability Theory](article.html?id=probability-theory) — the basis of probabilistic weather forecasting
+- [Agriculture](article.html?id=agriculture) — how weather fundamentally shapes farming and food production
+
+:::citations
+1. Wallace, John M. & Hobbs, Peter V. (2006). *Atmospheric Science: An Introductory Survey.* 2nd ed. Academic Press.
+2. Ahrens, C. Donald. (2018). *Meteorology Today.* 12th ed. Cengage.
+3. Stull, Roland. (2015). *Practical Meteorology: An Algebra-based Survey of Atmospheric Science.* University of British Columbia.
+4. Emanuel, Kerry. (2005). *Divine Wind: The History and Science of Hurricanes.* Oxford University Press.
+5. Doswell, Charles A. (2001). *Severe Convective Storms.* American Meteorological Society.
+:::

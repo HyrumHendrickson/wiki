@@ -30,8 +30,9 @@ wiki/
 ├── styles.css              ← All styles
 ├── js/
 │   ├── article-registry.js ← Loads and merges split article files
-│   └── scripts.js          ← All JavaScript
-├── wmd-parser.js           ← WMD → HTML converter
+│   ├── scripts.js          ← All JavaScript
+│   ├── wmd-parser.js       ← WMD → HTML converter
+│   └── cookies.js          ← Theme/cookie helpers
 ├── config/
 │   ├── site.json           ← Site name, logo, colors
 │   ├── articles.json       ← Categories + list of split files

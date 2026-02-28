@@ -313,5 +313,170 @@
         "author": "EduWiki Team",
         "lastUpdated": "2026-02-28",
         "featured": false
+    },
+    {
+        "id": "charlemagne",
+        "title": "Charlemagne",
+        "category": "history",
+        "path": "articles/article.html?id=charlemagne",
+        "summary": "Charlemagne (c. 747–814), King of the Franks and first Holy Roman Emperor, united most of Western Europe, championed Christianity and education, and launched the Carolingian Renaissance that laid the foundations for medieval civilization.",
+        "tags": ["Charlemagne", "Holy Roman Empire", "Franks", "medieval Europe", "Carolingian", "Christianity", "education"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "joan-of-arc",
+        "title": "Joan of Arc",
+        "category": "history",
+        "path": "articles/article.html?id=joan-of-arc",
+        "summary": "Joan of Arc (c. 1412–1431) was a French peasant girl who, claiming divine guidance, led France to victory in the Hundred Years' War, secured the coronation of Charles VII, and was burned at the stake before being canonized as a saint in 1920.",
+        "tags": ["Joan of Arc", "Hundred Years War", "France", "saint", "medieval history", "faith", "martyrdom"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "magna-carta",
+        "title": "Magna Carta",
+        "category": "civics",
+        "path": "articles/article.html?id=magna-carta",
+        "summary": "The Magna Carta (1215), the Great Charter forced upon King John of England by rebellious barons, established for the first time that the king was subject to the rule of law and laid the foundational principles of constitutional government.",
+        "tags": ["Magna Carta", "rule of law", "constitutional government", "England", "King John", "civil liberties", "legal history"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "silk-road",
+        "title": "The Silk Road",
+        "category": "history",
+        "path": "articles/article.html?id=silk-road",
+        "summary": "The Silk Road was the ancient network of trade routes connecting China to the Mediterranean world across Central Asia, active for over a millennium, carrying silk, spices, ideas, and religions between civilizations.",
+        "tags": ["Silk Road", "trade routes", "China", "Central Asia", "ancient history", "commerce", "cultural exchange"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "age-of-exploration",
+        "title": "Age of Exploration",
+        "category": "history",
+        "path": "articles/article.html?id=age-of-exploration",
+        "summary": "The Age of Exploration (15th–17th centuries) was the era when European navigators like Columbus, Magellan, and Vasco da Gama opened sea routes to the Americas, Africa, and Asia, transforming global trade, culture, and the spread of Christianity.",
+        "tags": ["Age of Exploration", "Columbus", "Magellan", "Vasco da Gama", "navigation", "New World", "European expansion"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "galileo",
+        "title": "Galileo Galilei",
+        "category": "science",
+        "path": "articles/article.html?id=galileo",
+        "summary": "Galileo Galilei (1564–1642) was the Italian astronomer and physicist who improved the telescope, confirmed heliocentrism, pioneered the experimental method, and whose conflict with the Church has been widely misunderstood.",
+        "tags": ["Galileo", "astronomy", "physics", "scientific revolution", "heliocentric", "telescope", "science and faith"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "beethoven",
+        "title": "Ludwig van Beethoven",
+        "category": "arts",
+        "path": "articles/article.html?id=beethoven",
+        "summary": "Ludwig van Beethoven (1770–1827) was the German composer whose nine symphonies, piano sonatas, and string quartets represent the pinnacle of Western classical music, composed in triumph over progressive and total deafness.",
+        "tags": ["Beethoven", "classical music", "symphony", "piano", "composer", "romanticism", "deafness"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "greek-mythology",
+        "title": "Greek Mythology",
+        "category": "literature",
+        "path": "articles/article.html?id=greek-mythology",
+        "summary": "Greek mythology is the rich body of stories about gods, heroes, and the cosmos that formed the religious and cultural foundation of ancient Greek civilization and profoundly shaped Western literature, art, and thought.",
+        "tags": ["Greek mythology", "gods", "heroes", "Zeus", "Olympus", "ancient Greece", "Western literature", "Homer"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "bill-of-rights",
+        "title": "The Bill of Rights",
+        "category": "civics",
+        "path": "articles/article.html?id=bill-of-rights",
+        "summary": "The Bill of Rights (1791), the first ten amendments to the U.S. Constitution, guarantees fundamental liberties including freedom of speech, religion, press, and assembly, as well as the right to bear arms, due process, and reserved powers to the states.",
+        "tags": ["Bill of Rights", "Constitution", "civil liberties", "First Amendment", "freedom of speech", "American history", "US government"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "mountains",
+        "title": "Mountains",
+        "category": "geography",
+        "path": "articles/article.html?id=mountains",
+        "summary": "Mountains — from the Alps to the Himalayas to the Rockies — are the great elevated landforms of the Earth, shaped by tectonic forces, profoundly influential in human history, and central to the biblical narrative as places where heaven and earth meet.",
+        "tags": ["mountains", "geography", "geology", "Himalayas", "Alps", "Rocky Mountains", "scripture", "creation"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "marco-polo",
+        "title": "Marco Polo",
+        "category": "history",
+        "path": "articles/article.html?id=marco-polo",
+        "summary": "Marco Polo (1254–1324) was the Venetian merchant whose 24-year journey to the court of Kublai Khan in China and whose written account, The Travels of Marco Polo, opened European eyes to the wonders of the Far East and inspired the Age of Exploration.",
+        "tags": ["Marco Polo", "Venice", "China", "Kublai Khan", "exploration", "Silk Road", "medieval travel"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "gothic-architecture",
+        "title": "Gothic Architecture",
+        "category": "arts",
+        "path": "articles/article.html?id=gothic-architecture",
+        "summary": "Gothic architecture, the medieval building style that produced the great cathedrals of Europe — Chartres, Notre-Dame, Canterbury — characterized by pointed arches, ribbed vaults, flying buttresses, and soaring stained-glass windows as an act of worship.",
+        "tags": ["Gothic architecture", "cathedrals", "medieval art", "Chartres", "Notre-Dame", "pointed arch", "stained glass", "Christianity"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "scientific-revolution",
+        "title": "The Scientific Revolution",
+        "category": "science",
+        "path": "articles/article.html?id=scientific-revolution",
+        "summary": "The Scientific Revolution (c. 1543–1687) was the transformative period when Copernicus, Galileo, Kepler, and Newton overturned the ancient Ptolemaic worldview and established the methods and principles of modern science.",
+        "tags": ["Scientific Revolution", "Copernicus", "Galileo", "Kepler", "Newton", "astronomy", "physics", "history of science"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "medieval-literature",
+        "title": "Medieval Literature",
+        "category": "literature",
+        "path": "articles/article.html?id=medieval-literature",
+        "summary": "Medieval literature encompasses the rich body of writing from the fall of Rome to the Renaissance (c. 500–1500 AD), including Beowulf, the Divine Comedy, The Canterbury Tales, and the Arthurian romances, shaped by Christian faith and classical inheritance.",
+        "tags": ["medieval literature", "Beowulf", "Divine Comedy", "Canterbury Tales", "Arthurian legend", "Dante", "Chaucer"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "byzantine-empire",
+        "title": "Byzantine Empire",
+        "category": "history",
+        "path": "articles/article.html?id=byzantine-empire",
+        "summary": "The Byzantine Empire (330–1453 AD), the eastern continuation of the Roman Empire centered at Constantinople, preserved classical learning, produced magnificent Christian art and architecture, and stood as the great bulwark of Christianity for a thousand years.",
+        "tags": ["Byzantine Empire", "Constantinople", "Eastern Roman Empire", "Orthodox Christianity", "medieval history", "Justinian"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
     }
 ]

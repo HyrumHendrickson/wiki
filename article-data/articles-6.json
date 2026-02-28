@@ -1,0 +1,102 @@
+[
+    {
+        "id": "old-testament",
+        "title": "The Old Testament",
+        "category": "faith",
+        "path": "articles/article.html?id=old-testament",
+        "summary": "The Old Testament is the first and foundational portion of Christian Scripture — 39 books recording God's creation of the world, his covenant with Israel, his moral law given through Moses, and his prophetic promises pointing forward to the Messiah — the essential foundation without which the life, death, and resurrection of Jesus Christ cannot be understood.",
+        "tags": [
+            "Old Testament",
+            "Hebrew Bible",
+            "Torah",
+            "prophets",
+            "covenant",
+            "Israel",
+            "Moses",
+            "scripture"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "new-testament",
+        "title": "The New Testament",
+        "category": "faith",
+        "path": "articles/article.html?id=new-testament",
+        "summary": "The New Testament is the fulfillment of everything the Old Testament promised — 27 books written in Greek within a generation of the resurrection of Jesus Christ, proclaiming the good news of redemption through his Son and constituting the most influential set of documents in human history.",
+        "tags": [
+            "New Testament",
+            "Gospels",
+            "Epistles",
+            "Paul",
+            "Acts",
+            "Revelation",
+            "Jesus Christ",
+            "scripture"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "isaiah",
+        "title": "Isaiah",
+        "category": "faith",
+        "path": "articles/article.html?id=isaiah",
+        "summary": "Isaiah son of Amoz is the greatest prophet of the Old Testament — whose 66 chapters encompass the highest poetry, deepest theology, and most explicit messianic prophecy in Hebrew Scripture, cited more than all other prophets combined in the New Testament, and whose words the risen Christ himself commanded the Nephites to search diligently.",
+        "tags": [
+            "Isaiah",
+            "Old Testament",
+            "prophecy",
+            "Messiah",
+            "Suffering Servant",
+            "Israel",
+            "LDS",
+            "Book of Mormon"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "pentateuch",
+        "title": "The Pentateuch",
+        "category": "faith",
+        "path": "articles/article.html?id=pentateuch",
+        "summary": "The Pentateuch — the five books of Moses (Genesis, Exodus, Leviticus, Numbers, and Deuteronomy) — is the foundation of the entire Bible, narrating creation, the fall, the covenant with Abraham, the Exodus, and the giving of God's law at Sinai, forming the bedrock on which all of Jewish, Christian, and Islamic faith is built.",
+        "tags": [
+            "Pentateuch",
+            "Torah",
+            "Moses",
+            "Genesis",
+            "Exodus",
+            "Leviticus",
+            "covenant",
+            "creation"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "the-gospels",
+        "title": "The Gospels",
+        "category": "faith",
+        "path": "articles/article.html?id=the-gospels",
+        "summary": "The four Gospels — Matthew, Mark, Luke, and John — are the four accounts of the life, ministry, death, and resurrection of Jesus Christ that stand at the center of the New Testament and the center of the Christian faith, written that readers 'might believe that Jesus is the Christ, the Son of God' and have life in his name.",
+        "tags": [
+            "Gospels",
+            "Matthew",
+            "Mark",
+            "Luke",
+            "John",
+            "Jesus Christ",
+            "New Testament",
+            "scripture"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    }
+]

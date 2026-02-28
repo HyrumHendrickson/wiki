@@ -203,5 +203,115 @@
         "author": "EduWiki Team",
         "lastUpdated": "2026-02-28",
         "featured": false
+    },
+    {
+        "id": "cleopatra",
+        "title": "Cleopatra VII",
+        "category": "history",
+        "path": "articles/article.html?id=cleopatra",
+        "summary": "Cleopatra VII (69–30 BC) was the last active ruler of the Ptolemaic Kingdom of Egypt — a brilliant, multilingual queen whose alliances with Julius Caesar and Mark Antony shaped the final decades of the Roman Republic.",
+        "tags": ["Cleopatra", "Egypt", "ancient history", "pharaoh", "Rome", "Julius Caesar", "Mark Antony"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "hammurabi",
+        "title": "Hammurabi",
+        "category": "history",
+        "path": "articles/article.html?id=hammurabi",
+        "summary": "Hammurabi (c. 1810–1750 BC) was the sixth king of the First Babylonian Empire, remembered for the Code of Hammurabi — one of the earliest and most complete written legal codes in history.",
+        "tags": ["Hammurabi", "Babylon", "ancient law", "Mesopotamia", "Code of Hammurabi"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "pericles",
+        "title": "Pericles",
+        "category": "history",
+        "path": "articles/article.html?id=pericles",
+        "summary": "Pericles (c. 495–429 BC) was the greatest statesman of ancient Athens — the architect of Athenian democracy and the patron of the Golden Age that produced the Parthenon, Greek drama, and classical philosophy.",
+        "tags": ["Pericles", "Athens", "democracy", "ancient Greece", "Parthenon", "Golden Age"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "hannibal",
+        "title": "Hannibal Barca",
+        "category": "history",
+        "path": "articles/article.html?id=hannibal",
+        "summary": "Hannibal Barca (247–183 BC) was the Carthaginian general widely regarded as one of the greatest military commanders in history, famous for crossing the Alps and his devastating victory at the Battle of Cannae.",
+        "tags": ["Hannibal", "Carthage", "Rome", "Second Punic War", "Cannae", "Alps", "military strategy"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "augustus",
+        "title": "Augustus Caesar",
+        "category": "history",
+        "path": "articles/article.html?id=augustus",
+        "summary": "Augustus Caesar (63 BC–AD 14) was the first Roman Emperor whose long reign established the Pax Romana — the era of peace and unity into which Jesus Christ was born.",
+        "tags": ["Augustus", "Caesar", "Roman Empire", "Pax Romana", "first emperor", "Octavian"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "archimedes",
+        "title": "Archimedes",
+        "category": "history",
+        "path": "articles/article.html?id=archimedes",
+        "summary": "Archimedes of Syracuse (c. 287–212 BC) was the greatest mathematician and inventor of the ancient world, whose discoveries in mathematics and physics anticipated calculus and laid the foundations of mechanics and fluid dynamics.",
+        "tags": ["Archimedes", "ancient Greece", "mathematics", "physics", "Syracuse", "Eureka", "lever"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "ramesses",
+        "title": "Ramesses II",
+        "category": "history",
+        "path": "articles/article.html?id=ramesses",
+        "summary": "Ramesses II (c. 1303–1213 BC), known as Ramesses the Great, was the most powerful pharaoh of ancient Egypt whose 66-year reign saw monumental building projects, military campaigns, and is connected by many scholars to the biblical Exodus.",
+        "tags": ["Ramesses", "Egypt", "pharaoh", "ancient Egypt", "Battle of Kadesh", "Exodus", "Moses"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "thucydides",
+        "title": "Thucydides",
+        "category": "history",
+        "path": "articles/article.html?id=thucydides",
+        "summary": "Thucydides (c. 460–400 BC) was the Athenian historian and general whose account of the Peloponnesian War established the foundations of modern historical writing through his insistence on eyewitness evidence and rational analysis.",
+        "tags": ["Thucydides", "ancient Greece", "history", "Peloponnesian War", "Athens", "Sparta", "historiography"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "herodotus",
+        "title": "Herodotus",
+        "category": "history",
+        "path": "articles/article.html?id=herodotus",
+        "summary": "Herodotus (c. 484–425 BC), called the Father of History, was the first person to systematically investigate and record the past, producing the Histories — a sweeping account of the Greco-Persian Wars and the ancient world.",
+        "tags": ["Herodotus", "ancient Greece", "history", "Persian Wars", "father of history", "Histories"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "constantine",
+        "title": "Constantine the Great",
+        "category": "history",
+        "path": "articles/article.html?id=constantine",
+        "summary": "Constantine the Great (c. AD 272–337) was the first Roman Emperor to embrace Christianity, whose Edict of Milan legalized the faith and whose convening of the Council of Nicaea shaped Christian theology for all time.",
+        "tags": ["Constantine", "Roman Empire", "Christianity", "Edict of Milan", "Council of Nicaea", "Byzantine"],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
     }
 ]

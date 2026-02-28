@@ -1,0 +1,88 @@
+---
+title: Archimedes
+category: history
+author: EduWiki Team
+lastUpdated: 2026-02-28
+tags: Archimedes, ancient Greece, mathematics, physics, Syracuse, Eureka, lever, buoyancy
+featured: false
+---
+
+:::summary
+Archimedes of Syracuse (c. 287–212 BC) was the greatest mathematician and inventor of the ancient world — a genius who discovered the principles of the lever and buoyancy, calculated an approximation of pi, developed methods of measuring curved areas and volumes, and designed ingenious war machines that kept Roman armies at bay for years. His work anticipated calculus by nearly 2,000 years.
+:::
+
+:::infobox Archimedes
+| Born | c. 287 BC, Syracuse, Sicily |
+| Died | 212 BC, Syracuse (age ~75) |
+| Field | Mathematics, physics, engineering |
+| Key Works | *On the Sphere and Cylinder*, *On Floating Bodies*, *The Sand Reckoner* |
+| Famous For | Eureka story, law of the lever, method of exhaustion |
+| Killed By | Roman soldier during the Siege of Syracuse |
+:::
+
+## Life and Context
+
+Archimedes lived in Syracuse — a Greek colony on the island of Sicily — during a period of intense conflict between Rome and Carthage. He was educated in Alexandria, the greatest center of learning in the ancient world, where he likely encountered the works of Euclid and other mathematicians.
+
+He returned to Syracuse and spent most of his life there, corresponding with mathematicians across the Greek world and producing a series of treatises that represent the pinnacle of ancient mathematical and physical science.
+
+## Mathematical Achievements
+
+Archimedes' mathematical work was extraordinary in its rigor and its ambition:
+
+:::dropdown The Method of Exhaustion and Pi
+Archimedes calculated that pi (π) lies between 3 10/71 and 3 1/7 (approximately 3.1408 and 3.1429) — remarkably accurate for the ancient world. He did this by inscribing and circumscribing regular polygons with up to 96 sides around a circle and computing their perimeters.
+
+He also pioneered the *method of exhaustion* — a technique of approximating curved areas by inscribing polygons with ever-increasing numbers of sides. This is essentially the concept of the integral, discovered more than 1,800 years before Newton and Leibniz formalized calculus.
+:::
+
+:::dropdown On the Sphere and Cylinder
+One of Archimedes' proudest achievements was proving that the volume of a sphere is two-thirds the volume of the circumscribing cylinder, and the surface area of the sphere is four times the area of its great circle. He reportedly asked that a diagram of a sphere inscribed in a cylinder be placed on his tomb — and Cicero, visiting Syracuse over a century later, found the tomb by locating this very carving.
+:::
+
+:::dropdown The Sand Reckoner
+In *The Sand Reckoner*, Archimedes set out to calculate the number of grains of sand that would fill the universe. The exercise required him to develop a system for writing and working with enormous numbers far beyond the capacity of standard Greek notation — an early anticipation of exponential notation.
+:::
+
+## Physical Discoveries
+
+Archimedes' work in physics was equally groundbreaking:
+
+- **Law of the Lever**: He rigorously proved the principles governing the lever — "Give me a place to stand, and I shall move the Earth," he reportedly declared.
+- **Archimedes' Principle**: The famous *Eureka!* story tells of Archimedes stepping into a bath and realizing that the volume of water displaced equaled the volume of his submerged body. This insight became the foundation for understanding buoyancy and specific gravity.
+- **Archimedes' Screw**: A helical device for raising water, still used in some parts of the world today.
+
+## War Machines and the Siege of Syracuse
+
+When Rome besieged Syracuse (214–212 BC), Archimedes directed the city's defenses with remarkable inventions:
+
+- Giant cranes ("the Claw of Archimedes") that lifted Roman ships out of the water and capsized them
+- Catapults designed to loft stones at varied ranges
+- Possibly, systems of mirrors to focus sunlight and ignite Roman sails (disputed by historians)
+
+The Roman commander Marcellus reportedly approached with fear, saying the Romans were fighting a "geometrical Briareus." Despite Archimedes' genius, Syracuse eventually fell in 212 BC — and a Roman soldier killed Archimedes while he was drawing a mathematical diagram in the sand, reportedly annoyed that the old man would not stop his calculations.
+
+## Legacy
+
+Archimedes stands as a model of the Christian intellectual tradition: a man who used the gift of reason to probe the order God had built into creation. His willingness to die mid-problem reflects a man whose love of truth was deeper than his fear of death.
+
+| Discovery | Modern Significance |
+|---|---|
+| Method of Exhaustion | Anticipated integral calculus by 1,800 years |
+| Archimedes' Principle | Foundation of fluid mechanics and engineering |
+| Law of the Lever | Foundational principle of all mechanical advantage |
+
+## See Also
+
+- [Mathematics](article.html?id=mathematics) — the discipline Archimedes elevated to a new level of rigor
+- [Geometry](article.html?id=geometry) — the branch of mathematics at the center of his greatest discoveries
+- [Isaac Newton](article.html?id=isaac-newton) — the mathematician who, like Archimedes, unified mathematics and physical science
+- [Ancient Egypt](article.html?id=ancient-egypt) — the civilization whose capital, Alexandria, educated Archimedes
+- [Rome](article.html?id=rome) — the empire whose siege killed Archimedes and ended the independence of Syracuse
+
+:::citations
+1. Dijksterhuis, E.J. (1987). *Archimedes.* Princeton University Press.
+2. Netz, Reviel, and William Noel. (2007). *The Archimedes Codex.* Da Capo Press.
+3. Heath, T.L. (1912). *The Works of Archimedes.* Cambridge University Press.
+4. Plutarch. *Life of Marcellus.* In *Parallel Lives.*
+:::

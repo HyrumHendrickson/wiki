@@ -344,5 +344,213 @@
         "author": "EduWiki Team",
         "lastUpdated": "2026-02-28",
         "featured": false
+    },
+    {
+        "id": "biology",
+        "title": "Biology",
+        "category": "science",
+        "path": "articles/article.html?id=biology",
+        "summary": "Biology is the scientific study of living organisms — from the chemistry of a single cell to the dynamics of a global ecosystem — and stands as one of the most profound explorations of God's creation, revealing at every level the extraordinary complexity, beauty, and purposeful design woven through all living things.",
+        "tags": [
+            "biology",
+            "life science",
+            "cells",
+            "genetics",
+            "ecology",
+            "evolution",
+            "living organisms"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "chemistry",
+        "title": "Chemistry",
+        "category": "science",
+        "path": "articles/article.html?id=chemistry",
+        "summary": "Chemistry is the science of matter — its composition, structure, properties, and transformations — probing the material fabric of God's creation at its most fundamental level and giving humanity the tools to understand, heal, and care for the physical world.",
+        "tags": [
+            "chemistry",
+            "atoms",
+            "molecules",
+            "reactions",
+            "periodic table",
+            "biochemistry",
+            "science"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "human-anatomy",
+        "title": "Human Anatomy",
+        "category": "science",
+        "path": "articles/article.html?id=human-anatomy",
+        "summary": "Human anatomy is the science of the structure of the human body — its bones, muscles, organs, and tissues — and confirms the Psalmist's declaration that we are 'fearfully and wonderfully made,' bearing at every level the unmistakable signature of a master Designer.",
+        "tags": [
+            "human anatomy",
+            "body systems",
+            "organs",
+            "skeleton",
+            "muscles",
+            "physiology",
+            "medicine"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "human-physiology",
+        "title": "Human Physiology",
+        "category": "science",
+        "path": "articles/article.html?id=human-physiology",
+        "summary": "Human physiology is the science of how the human body works — how its organs, tissues, and cells perform their functions and maintain homeostasis — revealing the extraordinary integration and purposeful design of the living body that Paul called the temple of the Holy Spirit.",
+        "tags": [
+            "human physiology",
+            "homeostasis",
+            "organ systems",
+            "metabolism",
+            "health",
+            "body functions"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "healthy-cooking",
+        "title": "Healthy Cooking",
+        "category": "science",
+        "path": "articles/article.html?id=healthy-cooking",
+        "summary": "Healthy cooking is both a practical skill and a profound act of stewardship — preparing wholesome, nourishing food in ways that honor the body God gave us, drawing on the timeless wisdom of Scripture, the Mediterranean tradition, and modern nutritional science.",
+        "tags": [
+            "healthy cooking",
+            "nutrition",
+            "food",
+            "diet",
+            "whole foods",
+            "wellness",
+            "Word of Wisdom"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "united-states",
+        "title": "United States of America",
+        "category": "history",
+        "path": "articles/article.html?id=united-states",
+        "summary": "The United States of America is the greatest experiment in ordered liberty in human history — a nation founded by Providence on the self-evident truths of God-given rights, whose story from the Mayflower Compact to the Constitution is inseparable from the Christian faith of its founders and the conviction that liberty is a divine endowment.",
+        "tags": [
+            "United States",
+            "America",
+            "American history",
+            "founding fathers",
+            "Constitution",
+            "democracy",
+            "liberty"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": true
+    },
+    {
+        "id": "european-history",
+        "title": "European History",
+        "category": "history",
+        "path": "articles/article.html?id=european-history",
+        "summary": "European history is the story of Western civilization — born in ancient Greece and Rome, transformed by Christianity, refined through medieval Christendom, and carrying into the present an inheritance of philosophy, law, science, art, and faith that has shaped the entire world.",
+        "tags": [
+            "European history",
+            "ancient Greece",
+            "Rome",
+            "medieval",
+            "Renaissance",
+            "Reformation",
+            "Western civilization"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "allegory-of-the-cave",
+        "title": "Plato's Allegory of the Cave",
+        "category": "philosophy",
+        "path": "articles/article.html?id=allegory-of-the-cave",
+        "summary": "Plato's Allegory of the Cave — from Book VII of the Republic — is the most famous philosophical illustration in Western history, depicting prisoners who mistake shadows for reality and one who escapes into sunlight, resonating deeply with the Christian journey from spiritual blindness to the light of God.",
+        "tags": [
+            "allegory of the cave",
+            "Plato",
+            "Republic",
+            "epistemology",
+            "theory of forms",
+            "enlightenment",
+            "philosophy"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "holy-ghost",
+        "title": "The Holy Ghost",
+        "category": "faith",
+        "path": "articles/article.html?id=holy-ghost",
+        "summary": "The Holy Ghost — the divine Comforter promised by Jesus Christ — is the third person of the Trinity and a distinct member of the Godhead, present at creation, poured out at Pentecost, and dwelling in the hearts of believers as the agent of conversion, sanctification, spiritual gifts, and divine witness.",
+        "tags": [
+            "Holy Ghost",
+            "Holy Spirit",
+            "Trinity",
+            "Pentecost",
+            "gifts of the Spirit",
+            "LDS",
+            "Godhead"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "god-the-father",
+        "title": "God the Father",
+        "category": "faith",
+        "path": "articles/article.html?id=god-the-father",
+        "summary": "God the Father — Creator, Covenant-maker, and loving Father of all humanity — is the first person of the Godhead, the Almighty whose character and purposes are the subject of the entire Bible, and whose invitation through Jesus Christ to call him 'Abba, Father' is the most astonishing and transformative claim of the Christian gospel.",
+        "tags": [
+            "God the Father",
+            "Heavenly Father",
+            "Trinity",
+            "Creator",
+            "Providence",
+            "theology",
+            "LDS"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
+    },
+    {
+        "id": "angels",
+        "title": "Angels",
+        "category": "faith",
+        "path": "articles/article.html?id=angels",
+        "summary": "Angels — the heavenly messengers and ministers of God — appear throughout Scripture from Genesis to Revelation as heralds of divine communication, guardians of God's people, and worshippers before the throne of the Almighty, bearing persistent testimony to the reality of the spiritual world and God's active presence in human affairs.",
+        "tags": [
+            "angels",
+            "heavenly beings",
+            "Gabriel",
+            "Michael",
+            "Bible",
+            "LDS",
+            "Christianity"
+        ],
+        "author": "EduWiki Team",
+        "lastUpdated": "2026-02-28",
+        "featured": false
     }
 ]

@@ -1,0 +1,109 @@
+---
+title: The Scientific Revolution
+category: science
+author: EduWiki Team
+lastUpdated: 2026-02-28
+tags: Scientific Revolution, Copernicus, Galileo, Kepler, Newton, astronomy, physics, history of science
+featured: false
+---
+
+:::summary
+The Scientific Revolution (c. 1543–1687) was the transformation of humanity's understanding of nature that overturned the ancient Ptolemaic-Aristotelian worldview and established the methods and principles of modern science. Beginning with Copernicus's heliocentric hypothesis (1543) and culminating in Newton's *Principia Mathematica* (1687), it was one of the most profound intellectual revolutions in human history — one that reshaped how educated people understood not only the physical world but humanity's place within it.
+:::
+
+:::infobox Scientific Revolution at a Glance
+| Period | c. 1543–1687 AD |
+| Beginning | Copernicus, *De revolutionibus orbium coelestium* (1543) |
+| Culmination | Newton, *Principia Mathematica* (1687) |
+| Key Figures | Copernicus, Brahe, Kepler, Galileo, Vesalius, Harvey, Descartes, Boyle, Newton |
+| Key Institutions | Royal Society (founded 1660), Académie des Sciences (founded 1666) |
+:::
+
+## The Old Worldview: Ptolemy and Aristotle
+
+To understand the Scientific Revolution, one must understand what it replaced. For nearly two thousand years, educated Europeans had understood the cosmos through the synthesis of Aristotle's physics and Ptolemy's astronomy.
+
+**Aristotle** (384–322 BC) had taught that the Earth was the fixed, motionless center of the universe, composed of four elements (earth, water, air, fire). The heavenly bodies were made of a fifth element (*quintessence* or *aether*) — perfect, unchanging, and naturally moving in circles. Above the earthly realm of change and decay, the celestial spheres moved in eternal, perfect order.
+
+**Claudius Ptolemy** (c. 100–170 AD) had provided the mathematical machinery to predict the positions of the planets within this geocentric framework, using epicycles (circles on circles) and other devices. Despite its complexity, the Ptolemaic system worked tolerably well for the practical purposes of calendar-making and navigation.
+
+This framework had been thoroughly integrated into medieval Christian theology by Aquinas and the Scholastics. The "sublunary" world of change was associated with fallen creation; the celestial spheres with the realm of angels and divine order; God with the "Prime Mover" who set the whole system in motion. The heavens declared the glory of God — and the Ptolemaic cosmos gave that declaration a precise mathematical structure.
+
+## Copernicus and the Heliocentric Hypothesis
+
+Nicolaus Copernicus (1473–1543), a Polish canon of the Church, spent decades developing a radical alternative. In his *De revolutionibus orbium coelestium* (On the Revolutions of the Celestial Spheres), published in the year of his death (1543), he proposed that the Sun, not the Earth, was at the center of the universe, and that the Earth moved around it.
+
+Copernicus's motivation was partly aesthetic: he found the Ptolemaic system's accumulated complexity — all those epicycles and eccentrics — inelegant and unworthy of a cosmos created by God. A heliocentric system was mathematically simpler and more beautiful.
+
+But he was cautious. The book's preface (written without his knowledge by Andreas Osiander) claimed that the heliocentric model was merely a mathematical convenience, not a physical truth. Copernicus himself probably believed it described physical reality, but he was aware of the theological and philosophical objections.
+
+:::dropdown Why Heliocentrism Was Controversial
+The objections to heliocentrism were not merely religious but scientific. If the Earth moved at the enormous speed required to orbit the Sun in a year, why did objects not fly off the surface? Why did a falling stone not land far to the west? And if the Earth orbited the Sun, the fixed stars should show an annual parallax — a slight shift in position as the Earth moved from one side of its orbit to the other. No such parallax had been observed.
+
+Copernicus had no answer to these objections. The answers would come from Galileo (inertia) and Friedrich Bessel (stellar parallax, confirmed 1838). Heliocentrism triumphed eventually not because it was immediately more convincing but because subsequent discoveries made the geocentric system increasingly untenable.
+:::
+
+## Tycho Brahe and Johannes Kepler
+
+Tycho Brahe (1546–1601) was the greatest observational astronomer before the telescope. Working at his observatory Uraniborg in Denmark, he compiled the most accurate tables of planetary positions ever made — observations accurate to within a fraction of a degree, achieved with giant quadrants and sextants but no telescope.
+
+Tycho himself proposed a compromise "Tychonic" system (the planets orbit the Sun, which orbits the Earth). But he bequeathed his observations to his assistant Johannes Kepler.
+
+**Johannes Kepler** (1571–1630) was a German mathematician with a mystical belief that God had built the cosmos on mathematical principles. Struggling for years to reconcile Tycho's data with Copernican theory, he eventually arrived at three laws that described planetary motion with unprecedented precision:
+
+1. **First Law:** Planets move in ellipses, with the Sun at one focus (not circles, as everyone since Aristotle had assumed).
+2. **Second Law:** A planet sweeps out equal areas in equal times (moving faster when closer to the Sun).
+3. **Third Law:** The square of a planet's orbital period is proportional to the cube of its mean distance from the Sun.
+
+These laws demolished the ancient assumption of perfect circular motion and placed planetary astronomy on a mathematical foundation that awaited only Newton to complete.
+
+## Galileo and the New Physics
+
+While Kepler was working on the mathematics of planetary motion, Galileo Galilei (1564–1642) was dismantling Aristotelian physics on Earth and using his telescope to destroy the supposed perfection of the heavens (see also: [Galileo](article.html?id=galileo)).
+
+His discoveries — mountains on the Moon, moons orbiting Jupiter, phases of Venus, sunspots — proved that the heavens were not perfect and incorruptible, and that not everything moved around the Earth. His experiments with falling bodies and projectile motion replaced Aristotle's qualitative physics with a quantitative, mathematical science of motion.
+
+## Biology and Medicine
+
+The Scientific Revolution was not only about astronomy and physics. In biology and medicine, equally radical changes were occurring:
+
+:::dropdown Vesalius and Harvey
+**Andreas Vesalius** (1514–1564), a Flemish anatomist working at Padua, published *De Humani Corporis Fabrica* (On the Fabric of the Human Body, 1543) — the same year as Copernicus. Based on systematic human dissection, it corrected hundreds of errors in Galen's ancient anatomy. The human body, like the heavens, turned out not to conform to the ancient authorities.
+
+**William Harvey** (1578–1657), an English physician, demonstrated through careful experiment that blood circulates continuously through the body — pumped by the heart — rather than being continuously manufactured and consumed, as the ancient Galenic theory had taught. Published in *Exercitatio Anatomica de Motu Cordis et Sanguinis* (1628), Harvey's discovery was a model of the experimental method.
+:::
+
+## Descartes and the Mechanical Philosophy
+
+René Descartes (1596–1650) gave the Scientific Revolution its philosophical framework: the "mechanical philosophy," which held that nature was essentially a machine — complex, but operating according to mathematical laws accessible to reason. Animals were machines; the human body was a machine; even the solar system was a machine. Only the human mind (the *res cogitans*, the "thinking thing") stood outside the mechanical order.
+
+Descartes's strict separation of mind and matter (*Cartesian dualism*) created philosophical problems that persist to this day. But his vision of a mechanistic, mathematically intelligible universe was the philosophical atmosphere in which Newtonian physics flourished.
+
+## Newton and the Synthesis
+
+Isaac Newton (1642–1727) brought the Scientific Revolution to its climax. In his *Philosophiæ Naturalis Principia Mathematica* (Mathematical Principles of Natural Philosophy, 1687), he unified Galileo's terrestrial physics with Kepler's celestial mechanics under a single set of mathematical laws — above all, the law of universal gravitation.
+
+The apple that allegedly fell on Newton's head prompted the insight: the force that pulled the apple to the ground was the same force that kept the Moon in its orbit and the planets in theirs. Gravity was universal, operating identically on Earth and in the heavens. The distinction between the terrestrial and celestial realms — fundamental to Aristotle — collapsed entirely.
+
+Newton's three laws of motion and his law of universal gravitation provided, for the first time, a complete mathematical description of the behavior of matter throughout the universe. The predictive power of his system was astonishing: it could explain the tides, predict the return of comets, and account for every known planetary observation.
+
+## Faith and the Scientific Revolution
+
+Most of the key figures of the Scientific Revolution — Copernicus, Kepler, Galileo, Newton, Boyle — were devout Christians who saw their work as the exploration of God's creation. Newton spent more time studying the Bible than he did on physics. Kepler wrote that he was "thinking God's thoughts after Him." Robert Boyle left money in his will to fund lectures defending Christianity against atheism.
+
+The commonly told story that the Scientific Revolution was a conflict between science and religion is a gross oversimplification. The real conflict was between new and old authorities — between experimental, mathematical science and inherited Aristotelian philosophy. Many churchmen welcomed the new science; many scientific skeptics resisted it. The relationship between faith and science was, and remains, more complex and more interesting than the warfare narrative suggests.
+
+## See Also
+- [Galileo](article.html?id=galileo) — the central figure of the experimental revolution
+- [Isaac Newton](article.html?id=isaac-newton) — whose *Principia* completed the transformation
+- [Astronomy](article.html?id=astronomy) — the discipline transformed by Copernicus, Kepler, and Galileo
+- [Physics](article.html?id=physics) — the science Newton placed on rigorous mathematical foundations
+- [Philosophy](article.html?id=philosophy) — the Cartesian and Baconian frameworks that shaped scientific thinking
+- [Mathematics](article.html?id=mathematics) — the language in which the new science was written
+
+:::citations
+- [1] Kuhn, Thomas S. (1957). *The Copernican Revolution.* Harvard University Press.
+- [2] Henry, John. (2008). *The Scientific Revolution and the Origins of Modern Science.* 3rd ed. Palgrave Macmillan.
+- [3] Westfall, Richard S. (1980). *Never at Rest: A Biography of Isaac Newton.* Cambridge University Press.
+- [4] Cohen, I. Bernard. (1985). *The Birth of a New Physics.* W.W. Norton.
+:::
